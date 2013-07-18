@@ -1,0 +1,25 @@
+author: Remy D <remyd@civx.us>
+classifiers: ['Intended Audience :: Education', 'Topic :: Education :: Computer Aided
+    Instruction (CAI)']
+description: HFOSS course materials via flask
+directories: [/home/decause/code/hflossk/hflossk, /home/decause/code/hflossk/hflossk/tests,
+  /home/decause/code/hflossk/hflossk/docs, /home/decause/code/hflossk/hflossk/hflossk]
+docs_dir: /home/decause/code/hflossk/hflossk/docs
+email: remyd@civx.us
+encoding: utf8
+files: [/home/decause/code/hflossk/hflossk/setup.py, /home/decause/code/hflossk/hflossk/hflossk/__init__.py,
+  /home/decause/code/hflossk/hflossk/tests/__init__.py, /home/decause/code/hflossk/hflossk/tests/hflossk_tests.py]
+init_file: null
+keywords: ['']
+license: GPLv3+
+name: hflossk
+project_dir: /home/decause/code/hflossk/hflossk
+requires: [flask, mako, hovercraft]
+setup_file: /home/decause/code/hflossk/hflossk/setup.py
+shortname: hflossk
+source_dir: /home/decause/code/hflossk/hflossk/hflossk
+test_file: /home/decause/code/hflossk/hflossk/tests/hflossk_tests.py
+test_init_file: /home/decause/code/hflossk/hflossk/tests/__init__.py
+tests_dir: /home/decause/code/hflossk/hflossk/tests
+url: http://fossrit.github.io/hflossk
+version: 0.1.0
