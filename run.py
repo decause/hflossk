@@ -59,14 +59,17 @@ app.template_folder = "templates"
 mako = MakoTemplates(app)
 
 
-#@app.route('/checkblogs')
-#def checkblog():
-#    checkblogs()
-
 @app.route('/')
 def index():
     return render_template('fluid.html', name='mako')
 
+@app.route('/books')
+def books():
+    return render_template('books.html', name='mako')
+
+@app.route('/un')
+def un():
+    return render_template('basic.mak', name='mako')
 
 @app.route('/carousel')
 def carousel():
