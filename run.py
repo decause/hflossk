@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 
@@ -69,7 +71,9 @@ def syllabus():
 
 @app.route('/books')
 def books():
-    return render_template('books.html', name='mako')
+    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'books'))
+    return render_template('books.mak', name='mako', books=books)
 
 @app.route('/un')
 def un():
