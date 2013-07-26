@@ -75,7 +75,7 @@
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
               <li><a href="/syllabus">Syllabus</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="/books">Books</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li class="nav-header">Sidebar</li>
