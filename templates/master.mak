@@ -88,7 +88,9 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        ${self.body()}
+        <div class='span9'>
+          ${self.body()}
+        </div>
       </div><!--/row-->
 
       <hr>
