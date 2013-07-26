@@ -1,96 +1,41 @@
+<%inherit file="master.mak"/>
 
+<%def name="title()">
+    Syllabus &mdash; The FOSS@RIT HFOSS Development Course documentation
+</%def>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Syllabus &mdash; The FOSS@RIT HFOSS Development Course  documentation</title>
-    
-    <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noticia+Text|Open+Sans|Droid+Sans+Mono" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/jquery.cookie.js"></script>
-    <script type="text/javascript" src="_static/cloud.js"></script>
-    <link rel="top" title="The FOSS@RIT HFOSS Development Course  documentation" href="index.html" />
-    <link rel="next" title="Text Books" href="books.html" />
-    <link rel="prev" title="Humanitarian Free/Open Source Software Development (HFOSS) @ RIT" href="index.html" /> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div class="relbar-top">
-        
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="books.html" title="Text Books"
-             accesskey="N">next</a> &nbsp; &nbsp;</li>
-        <li class="right" >
-          <a href="index.html" title="Humanitarian Free/Open Source Software Development (HFOSS) @ RIT"
-             accesskey="P">previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">The FOSS@RIT HFOSS Development Course  documentation</a> &raquo;</li>
- 
-      </ul>
-    </div>
-    </div>
-  
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="syllabus">
-<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">¶</a></h1>
+<div class="hero-unit" id="syllabus">
+    <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
+</div>
 <div class="section" id="projects-seminar-in-floss-game-development">
-<h2>Projects Seminar in FLOSS Game Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li>Syllabus - <a class="reference external" href="http://hfoss.rtfd.org/">http://hfoss.rtfd.org/</a> &#8211; (subject to change)</li>
-<li>Course Number - 4085.582.01</li>
-<li>Room - Bldg 87, Room 1600, RIT MAGIC Center</li>
-<li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
-<li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;<ul>
-<li>Office:  The MAGIC Center</li>
-<li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
-</ul>
-</li>
-<li>Teacher&#8217;s Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <tt class="docutils literal"><span class="pre">HFOSSTA</span></tt> in IRC.</li>
-<li>IRC - irc.freenode.net, <tt class="docutils literal"><span class="pre">#rit-foss</span></tt></li>
-<li>Email list - <a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a></li>
-<li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
-<li>The source for this syllabus can be found at
-<a class="reference external" href="http://github.com/FOSSRIT/hfoss">http://github.com/FOSSRIT/hfoss</a></li>
-</ul>
-</div></blockquote>
+    <h2>Projects Seminar in FLOSS Game Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
+    <blockquote>
+    <div><ul class="simple">
+    <li>Syllabus - <a class="reference external" href="http://hfoss.rtfd.org/">http://hfoss.rtfd.org/</a> &#8211; (subject to change)</li>
+    <li>Course Number - 4085.582.01</li>
+    <li>Room - Bldg 87, Room 1600, RIT MAGIC Center</li>
+    <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
+    <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;<ul>
+    <li>Office:  The MAGIC Center</li>
+    <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
+    </ul>
+    </li>
+    <li>Teacher&#8217;s Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <tt class="docutils literal"><span class="pre">HFOSSTA</span></tt> in IRC.</li>
+    <li>IRC - irc.freenode.net, <tt class="docutils literal"><span class="pre">#rit-foss</span></tt></li>
+    <li>Email list - <a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a></li>
+    <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
+    <li>The source for this syllabus can be found at
+    <a class="reference external" href="http://github.com/FOSSRIT/hfoss">http://github.com/FOSSRIT/hfoss</a></li>
+    </ul>
+    </div></blockquote>
 </div>
 <div class="section" id="text-books">
-<h2>Text Books<a class="headerlink" href="#text-books" title="Permalink to this headline">¶</a></h2>
+<h2>Text Books<a class="headerlink" href="#text-books" title="Permalink to this headline"></a></h2>
 <p>There are a number of textbooks we&#8217;ll be referencing throughout the quarter.  You can
 find these books at <a class="reference external" href="http://hfoss.rtfd.org/books">http://hfoss.rtfd.org/books</a></p>
 </div>
 <div class="section" id="what-you-ll-do">
-<h2>What You&#8217;ll Do<a class="headerlink" href="#what-you-ll-do" title="Permalink to this headline">¶</a></h2>
+<h2>What You&#8217;ll Do<a class="headerlink" href="#what-you-ll-do" title="Permalink to this headline"></a></h2>
 <p>This course will introduce students to the Free and Open Source Software (FOSS)
 and Open Content movements, to the open source development process,
 and to the open questions of the efficacy of technology in the classroom.</p>
@@ -108,7 +53,7 @@ well.  Treat them as you would another instructor, but they’re also your
 peers in moving this innovative project forward.</p>
 </div>
 <div class="section" id="the-spirit-of-the-course">
-<h2>The spirit of the course<a class="headerlink" href="#the-spirit-of-the-course" title="Permalink to this headline">¶</a></h2>
+<h2>The spirit of the course<a class="headerlink" href="#the-spirit-of-the-course" title="Permalink to this headline"></a></h2>
 <p>While still a course where you will receive a letter grade, the spirit of the
 course is intended to be both <cite>open</cite> and <cite>fun</cite>.</p>
 <p>An <cite>open</cite> course &#8211; students will have access to the &#8216;document source&#8217; for the
@@ -119,7 +64,7 @@ dynamic environment in which the course curriculum can develop by the very same
 mechanism being taught during the quarter (community-driven).</p>
 </div>
 <div class="section" id="licensing">
-<h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h2>
+<h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline"></a></h2>
 <p>All code developed by students in the course must be licensed (by the student)
 under any one of the <a class="reference external" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
 <p>Your code that you write is your code, with which you can do what you will;
@@ -127,7 +72,7 @@ true.  However, if you&#8217;re unwilling to license code you write for an open 
 course with an open source license, you may be in the wrong course.</p>
 </div>
 <div class="section" id="schedule">
-<h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h2>
+<h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline"></a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="5%" />
@@ -335,7 +280,7 @@ Final Presentations</td>
 </table>
 </div>
 <div class="section" id="grading">
-<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline"></a></h2>
 <p>Assignments are due at midnight of the day they are marked as due.</p>
 <p>Late submissions will be deducted 10% per day they are late.</p>
 <hr class="docutils" />
@@ -388,7 +333,7 @@ here as well.</li>
 <p>The details for the final can be found at <a class="reference internal" href="final.html"><em>Final</em></a>.</p>
 </div>
 <div class="section" id="lightning-talks-extra-credit">
-<h2>Lightning Talks - Extra Credit<a class="headerlink" href="#lightning-talks-extra-credit" title="Permalink to this headline">¶</a></h2>
+<h2>Lightning Talks - Extra Credit<a class="headerlink" href="#lightning-talks-extra-credit" title="Permalink to this headline"></a></h2>
 <p>Every Wednesday for the first portion of class, any student has the opportunity
 to give a <a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a> on a
 topic of their chosing.  Your lightning talk must be less than 5 minutes in
@@ -399,82 +344,3 @@ allowed during a given class. Talks will be chosen from among those offered by
 students on a FIFO basis.</p>
 </div>
 </div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <div class="sphinxlocaltoc">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Syllabus</a><ul>
-<li><a class="reference internal" href="#projects-seminar-in-floss-game-development">Projects Seminar in FLOSS Game Development</a></li>
-<li><a class="reference internal" href="#text-books">Text Books</a></li>
-<li><a class="reference internal" href="#what-you-ll-do">What You&#8217;ll Do</a></li>
-<li><a class="reference internal" href="#the-spirit-of-the-course">The spirit of the course</a></li>
-<li><a class="reference internal" href="#licensing">Licensing</a></li>
-<li><a class="reference internal" href="#schedule">Schedule</a></li>
-<li><a class="reference internal" href="#grading">Grading</a></li>
-<li><a class="reference internal" href="#lightning-talks-extra-credit">Lightning Talks - Extra Credit</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Humanitarian Free/Open Source Software Development (HFOSS) &#64; RIT</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="books.html"
-                        title="next chapter">Text Books</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/syllabus.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="relbar-bottom">
-        
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="books.html" title="Text Books"
-             >next</a> &nbsp; &nbsp;</li>
-        <li class="right" >
-          <a href="index.html" title="Humanitarian Free/Open Source Software Development (HFOSS) @ RIT"
-             >previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">The FOSS@RIT HFOSS Development Course  documentation</a> &raquo;</li>
- 
-      </ul>
-    </div>
-    </div>
-
-    <div class="footer">
-        &copy; Copyright 2013, Ralph Bean &amp; Remy DeCausemaker, Rochester Institute of Technology.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
-    </div>
-    <!-- cloud_sptheme 1.4 -->
-  </body>
-</html>
