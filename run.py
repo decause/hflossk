@@ -65,6 +65,10 @@ mako = MakoTemplates(app)
 def index():
     return render_template('fluid.mak', name='mako')
 
+@app.route('/decause')
+def decause():
+    return render_template('decause.mak', name='mako')
+
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.mak', name='mako')
