@@ -34,8 +34,8 @@
 </div>
 <div class="section" id="text-books">
   <h2>Text Books<a class="headerlink" href="#text-books" title="Permalink to this headline"></a></h2>
-  <p>There are a number of textbooks we&#8217;ll be referencing throughout the quarter.  You can
-  find these books at <a class="reference external" href="http://hfoss.rtfd.org/books">http://hfoss.rtfd.org/books</a></p>
+  <p>There are a number of textbooks we&#8217;ll be referencing throughout the quarter. You can
+  find these books/texts/articles here <a href="/books">on the books page</a></p>
 </div>
 <div class="section" id="what-you-ll-do">
   <h2>What You&#8217;ll Do<a class="headerlink" href="#what-you-ll-do" title="Permalink to this headline"></a></h2>
