@@ -14,6 +14,7 @@
     <p>${student['blog']}</p>
     <p>${student['forges']}</p>
     <p><a class="btn" href="#">View details &raquo;</a></p>
+	<img src="${gravatar(student['rit_dce'] + '@rit.edu')}" />
     </div><!--/span-->
   %endfor
 </div><!--/row-->
