@@ -81,12 +81,9 @@ def checkblogs():
     #    print student
     return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar, average=average, target_number=target_number)
 
-
-
-
 @app.route('/')
 def index():
-    return render_template('fluid.mak', name='mako')
+    return render_template('home.mak', name='mako')
 
 @app.route('/decause')
 def decause():
@@ -95,6 +92,10 @@ def decause():
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.mak', name='mako')
+
+@app.route('/about')
+def about():
+    return render_template('about.mak', name='mako')
 
 @app.route('/books')
 def books():
