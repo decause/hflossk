@@ -34,8 +34,14 @@
 
 .good {
     color: darkgreen;
+    box-shadow: 1px 1px 10px rgba(0, 100, 0, 0.5);
 }
 
 .bad {
     color: darkred;
+    box-shadow: 1px 1px 10px rgba(139, 0, 0, 0.5);
+}
+
+ul {
+    margin-top: -10px;
 }
