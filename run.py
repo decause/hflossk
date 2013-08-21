@@ -85,5 +85,10 @@ def carousel():
 
 
 if __name__ == "__main__":
-    app.debug=True
-    app.run()
+    if 'OPENSHIFT_PYTHON_IP' in os.environ:
+        host = os.environ['OPENSHIFT_PYTHON_IP']
+        port = int(os.environ['OPENSHIFT_PYTHON_PORT'])
+        app.run(host=host, port=port)
+    else:
+        app.debug=True
+        app.run()
