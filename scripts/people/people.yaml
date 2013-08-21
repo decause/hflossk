@@ -19,14 +19,6 @@
 #  - push back to your forked repository on github.com
 #  - issue a pull request on the upstream repository to be considered for a
 #    merge. 
-- blog: http://threebean.org.blog
-  feed: http://threebean.org/blog/feed/index.xml
-  forges:
-    - http://github.com/ralphbean
-    - http://bitbucket.org/ralphbean
-  irc: threebean
-  name: Ralph Bean
-  rit_dce: rjbpop
 - blog: http://foss.rit.edu/blog/decause
   feed: http://foss.rit.edu/blog/1/feed
   forges:

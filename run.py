@@ -8,10 +8,25 @@ import feedparser
 from datetime import datetime, timedelta
 import time
 
-yaml_file = 'scripts/people.yaml'
+import glob
+
+app = Flask(__name__)
+app.template_folder = "templates"
+mako = MakoTemplates(app)
+
+
+yaml_dir = 'scripts/people/'
+@app.route('/checkblogs')
 def checkblogs():
-    with open(yaml_file) as students:
-        student_data = yaml.load(students)
+    student_data = []
+    for fname in glob.glob(yaml_dir + "*.yaml"):
+        with open(fname) as students:
+            contents = yaml.load(students)
+
+            if not isinstance(contents, list):
+                raise ValueError("%r is fucked up" % fname)
+
+            student_data.extend(contents)
 
     student_posts = {}
     target = datetime(2013, 06, 02)
@@ -53,12 +68,9 @@ def checkblogs():
             print('===%d %s' % (count, student))
     for student in student_data:
         print student
-    return render_template('fluid.html', name='mako', student_data=student_data)
+    return render_template('fluid.mak', name='mako', student_data=student_data)
 
 
-app = Flask(__name__)
-app.template_folder = "templates"
-mako = MakoTemplates(app)
 
 
 @app.route('/')
