@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>${self.title()}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="RIT HFOSS course website">
+    <meta name="author" content="RemyD">
 
     <!-- Le styles -->
     <link href="static/css/bootstrap.css" rel="stylesheet">
@@ -57,12 +57,12 @@
           <a class="brand" href="/">HFOSS@RIT</a>
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-              Fork me on <a href="http://github.com/fossrit/hflossk" class="navbar-link">Github</a>
+              Fork me on <a target="_blank" href="http://github.com/decause/hflossk" class="navbar-link">Github</a>
             </p>
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -74,18 +74,16 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
+              <li class="nav-header">Course Materials</li>
               <li><a href="/syllabus">Syllabus</a></li>
-              <li><a href="/books">Books</a></li>
-              <li><a href="/decause">/whois decause</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="/books">Texts</a></li>
+              <li><a href="/hw">Assignments</a></li>
+              <li class="nav-header">People</li>
+              <li><a href="/decause">Instructor</a></li>
+              <li><a href="/checkblogs">Participants</a></li>
+              <li><a href="#">Coderwall</a></li>
+              <li class="nav-header">Code</li>
+              <li><a class="reference external" href="http://github.com/decause/hflossk">Github Repo</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
