@@ -1,0 +1,41 @@
+.uglymug {
+    float: left;
+    border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+    display: block;
+    margin: 0 auto;
+}
+
+.irc_nick {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.shadowcard {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.padded {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.sticky {
+    float: right;
+    font-size: x-large;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+
+.item {
+    text-align: right;
+}
+
+.good {
+    color: darkgreen;
+}
+
+.bad {
+    color: darkred;
+}
