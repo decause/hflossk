@@ -79,10 +79,6 @@ def books():
                                     'books'))
     return render_template('books.mak', name='mako', books=books)
 
-@app.route('/un')
-def un():
-    return render_template('basic.mak', name='mako')
-
 @app.route('/carousel')
 def carousel():
     return render_template('carousel.html', name='mako')
