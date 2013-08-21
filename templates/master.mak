@@ -10,6 +10,7 @@
 
     <!-- Le styles -->
     <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/site.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
