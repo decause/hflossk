@@ -12,6 +12,7 @@
     <h2>${student['irc']}</h2>
     <p>${student_posts[student['irc']]}</p>
     <p><a class="btn" href="#">View details &raquo;</a></p>
+	<img src="${gravatar(student['rit_dce'] + '@rit.edu')}" />
     </div><!--/span-->
   %endfor
 </div><!--/row-->
