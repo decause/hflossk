@@ -37,7 +37,7 @@ def checkblogs():
                 raise ValueError("%r is fucked up" % fname)
 
             student_data.extend(contents)
-            print gravatar(contents[0]['rit_dce'] + "@rit.edu")
+            #print gravatar(contents[0]['rit_dce'] + "@rit.edu")
 
     student_posts = {}
     target = datetime(2013, 06, 02)
@@ -54,8 +54,8 @@ def checkblogs():
                 #pprint(item)
                 #if 'published' in item:
                 #    print student['name'], item.published
-                if 'summary' in item:
-                    print item.summary
+                ##if 'summary' in item:
+                ##    print item.summary
                 publish_time = datetime.fromtimestamp(time.mktime(item.updated_parsed))
                 if publish_time < target:
                     #print('%s is older than %s, ignoring' % (publish_time, target))
@@ -67,18 +67,18 @@ def checkblogs():
         student_posts[student['irc']] = len(when)
 
     average = sum(student_posts.values()) / float(len(student_posts))
-    print('Average of %f posts' % average)
+    #print('Average of %f posts' % average)
     target_number = (datetime.today() - target).total_seconds() /\
         timedelta(weeks=1).total_seconds()
-    for student, count in student_posts.items():
-        if count > target_number:
-            print('+++%d %s' % (count, student))
-        elif count < target_number:
-            print('---%d %s' % (count, student))
-        else:
-            print('===%d %s' % (count, student))
-    for student in student_data:
-        print student
+    #for student, count in student_posts.items():
+    #    if count > target_number:
+    #        print('+++%d %s' % (count, student))
+    #    elif count < target_number:
+    #        print('---%d %s' % (count, student))
+    #    else:
+    #        print('===%d %s' % (count, student))
+    #for student in student_data:
+    #    print student
     return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar, average=average, target_number=target_number)
 
 
