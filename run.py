@@ -1,3 +1,8 @@
+"""
+Author: Remy D <remyd@civx.us>
+        Ralph Bean <rbean@redhat.com>
+License: Apache 2.0
+"""
 import os
 
 from flask import Flask
