@@ -7,12 +7,22 @@ import yaml
 import feedparser
 from datetime import datetime, timedelta
 import time
+import hashlib
 
 import glob
 
 app = Flask(__name__)
 app.template_folder = "templates"
 mako = MakoTemplates(app)
+
+
+def gravatar(email):
+    """ I wish I could use libravatar here, but honestly, the students
+    will be better off using gravatar at this point (due to github
+    integration :/) """
+
+    slug = hashlib.md5(email).hexdigest()
+    return "https://secure.gravatar.com/avatar/" + slug
 
 
 yaml_dir = 'scripts/people/'
@@ -27,6 +37,7 @@ def checkblogs():
                 raise ValueError("%r is fucked up" % fname)
 
             student_data.extend(contents)
+            print gravatar(contents[0]['rit_dce'] + "@rit.edu")
 
     student_posts = {}
     target = datetime(2013, 06, 02)
@@ -68,7 +79,7 @@ def checkblogs():
             print('===%d %s' % (count, student))
     for student in student_data:
         print student
-    return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts)
+    return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar)
 
 
 
