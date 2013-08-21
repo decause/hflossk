@@ -79,7 +79,7 @@ def checkblogs():
             print('===%d %s' % (count, student))
     for student in student_data:
         print student
-    return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar)
+    return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar, average=average, target_number=target_number)
 
 
 
