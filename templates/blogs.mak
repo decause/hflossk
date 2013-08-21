@@ -2,7 +2,7 @@
 
 <div class="hero-unit">
 <h1>Participants</h1>
-<p>Should have X number of blog posts</p>
+<p>Should have ${int(target_number)} blog posts</p>
 <p>
 <!--<p><a href="#" class="btn btn-primary btn-large">Generate Report&raquo;</a></p>-->
 </div>
