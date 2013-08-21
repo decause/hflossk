@@ -8,9 +8,11 @@
 
 <div class="row-fluid">
   %for student in student_data:
-    <div class="span3">
+    <div class="span6">
     <h2>${student['irc']}</h2>
     <p>${student_posts[student['irc']]}</p>
+    <p>${student['blog']}</p>
+    <p>${student['forges']}</p>
     <p><a class="btn" href="#">View details &raquo;</a></p>
     </div><!--/span-->
   %endfor
