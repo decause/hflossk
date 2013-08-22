@@ -82,7 +82,7 @@
               <li><a href="/decause">Instructor</a></li>
               <li><a href="/checkblogs">Participants</a></li>
               <li class="nav-header">Social</li>
-              <li><a class="reference external" href="http://github.com/fossrit">FOSSBox Github</a></li>
+              <li><a class="reference external" target="_blank" href="http://github.com/fossrit">FOSSBox Github</a></li>
               <li><a class="reference external" target="_blank" href="http://coderwall.com/teams/foss-rit">Coderwall Team</a></li>
               <li><a class="reference external" target="_blank" href="http://www.julython.org/teams/">Julython Leaderboard</a></li>
               <li class="nav-header">Details</li>
