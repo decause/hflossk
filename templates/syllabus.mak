@@ -11,12 +11,12 @@
     <h2>Projects Seminar in FLOSS Game Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
   <blockquote>
     <div>
-      <ul class="simple">
+      <ul class="unstyled">
         <li>Syllabus - <a class="reference external" href="http://hfoss.rtfd.org/">http://hfoss.rtfd.org/</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Bldg 87, Room 1600, RIT MAGIC Center</li>
         <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
-        <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;
+        <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;</li>
           <ul>
             <li>Office:  The MAGIC Center</li>
             <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
