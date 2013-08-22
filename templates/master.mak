@@ -76,11 +76,16 @@
             <ul class="nav nav-list">
               <li class="nav-header">Course Materials</li>
               <li><a href="/syllabus">Syllabus</a></li>
-              <li><a href="/books">Texts</a></li>
+              <li><a href="/oer">Resources</a></li>
               <li><a href="/hw">Assignments</a></li>
               <li class="nav-header">People</li>
               <li><a href="/decause">Instructor</a></li>
               <li><a href="/checkblogs">Participants</a></li>
+              <li class="nav-header">Social</li>
+              <li><a href="/decause">Instructor</a></li>
+              <li><a class="reference external" target="_blank" href="http://github.com/decause/hflossk">Github Repo</a></li>
+              <li><a href="/checkblogs">Participants</a></li>
+              <li><a href="#">Coderwall</a></li>
               <li><a href="#">Coderwall</a></li>
               <li class="nav-header">Code</li>
               <li><a class="reference external" href="http://github.com/decause/hflossk">Github Repo</a></li>
