@@ -6,7 +6,7 @@
 </div>
 <div class="row-fluid">
     <div class="span4">
-        <h2>Places</h2>
+        <h2>Elsewhere</h2>
     <img width="132px" height="132px" src="http://www.libravatar.org/user/5d9d0a14af042b2f7877ab58de9b7702ca29bb9d34155dc58eff4ff6509d562c.png"/>
         <ul class="unstyled">
         <%
