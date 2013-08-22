@@ -82,13 +82,15 @@
               <li><a href="/decause">Instructor</a></li>
               <li><a href="/checkblogs">Participants</a></li>
               <li class="nav-header">Social</li>
-              <li><a href="/decause">Instructor</a></li>
-              <li><a class="reference external" target="_blank" href="http://github.com/decause/hflossk">Github Repo</a></li>
-              <li><a href="/checkblogs">Participants</a></li>
-              <li><a href="#">Coderwall</a></li>
-              <li><a href="#">Coderwall</a></li>
-              <li class="nav-header">Code</li>
-              <li><a class="reference external" href="http://github.com/decause/hflossk">Github Repo</a></li>
+              <li><a class="reference external" href="http://github.com/fossrit">FOSSBox Github</a></li>
+              <li><a class="reference external" target="_blank" href="http://coderwall.com/teams/foss-rit">Coderwall Team</a></li>
+              <li><a class="reference external" target="_blank" href="http://www.julython.org/teams/">Julython Leaderboard</a></li>
+              <li class="nav-header">Details</li>
+            <li><i class="icon-calendar"></i>08/26/2013 - 12/14/2013</li>
+            <li><i class="icon-bell"></i>Mon &amp; Wed 5:00PM - 6:15PM</li>
+            <li><i class="icon-shopping-cart"></i>4085.582.01</li>
+            <li><i class="icon-map-marker"></i>Orange Hall (ORN)-1375</li>
+            <li><i class="icon-envelope"></i>remydcsi[at]rit[dot]edu</li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
