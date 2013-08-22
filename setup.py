@@ -28,10 +28,10 @@ setup(
     install_requires=[
         "flask",
         "mako",
-        "hovercraft",
         "flask-mako",
         "feedparser",
         "pyyaml",
+        "frozen-flask",
     ],
     #TODO: Deal with entry_points
     #entry_points="""
