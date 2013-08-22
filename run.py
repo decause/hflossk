@@ -108,6 +108,26 @@ def books():
                                     'books'))
     return render_template('books.mak', name='mako', books=books)
 
+@app.route('/slides')
+def slides():
+    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'content'))
+
+    return render_template('decks.mak', name='mako', decks=decks)
+
+@app.route('/oer')
+def oer():
+    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'content'))
+
+    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'books'))
+
+    challenges = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'challenges'))
+
+    return render_template('oer.mak', name='mako', decks=decks, books=books, challenges=challenges)
+
 @app.route('/carousel')
 def carousel():
     return render_template('carousel.html', name='mako')
