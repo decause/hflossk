@@ -115,6 +115,13 @@ def slides():
 
     return render_template('decks.mak', name='mako', decks=decks)
 
+@app.route('/hw')
+def hws():
+    hws = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                    'hw'))
+
+    return render_template('hw.mak', name='mako', hws=hws)
+
 @app.route('/oer')
 def oer():
     decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
