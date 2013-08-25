@@ -1,0 +1,48 @@
+1
+    26 a    Welcome, intro, Syllabus, RTFM
+    28 a    First Flight
+2
+    2  a    Guest Lecture: lmacken - Red Hat Software Engineer 
+    4  b    Intro to Git and Github
+3
+    9  a    LIT: What is Open Source?
+    11 b    LIT: Rhetoric, Flamewars, and Trolling
+4
+    16 a    EDU: Pedagogy and Grokkery
+    18 b    EDU: Curriculum Exploration
+    Bonus:  Software Freedom Day
+5
+    23 a    Commarch: Git-by-a-bus and CCF: Callaway Coefficient of Fail
+    25 b    Commarch: Gource (Guest Lecture zanarama)
+6
+    30 a    Bug Fix
+    2  b
+7
+    7  a    OLPC Distribution. Smoke Tests. Vote on Wed Class
+    9  b
+    Bonus:  Weekend Hackathon at SU.
+8
+    14 a    Project Pitches
+    16 b    Team Formation
+9
+    21 a    Guest Lecture: threebean - Red Hat 
+    23 b
+10
+    28 a    Vote on Wed Class. Vote on Monday Class.
+    30 b
+    Bonus:  BarcampROC and Pre-BarcampROC Hackathon
+11
+    4  a    No Class. Election Night Hackathon Tues.
+    6  b
+12
+    11 a
+    13 b
+13
+    18 a
+    20 b   Prof. Ovedotter Alm -- Intro to Natural Language Processing
+14
+    25 a   Final Presentations
+    27 b   Final Presentations
+15
+    2  a   Final Presentations
+    4  b   Final Presentations

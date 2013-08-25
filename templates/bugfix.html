@@ -1,0 +1,221 @@
+<%inherit file="../../templates/master.mak"/>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Homework - Bugfix &mdash; The FOSS@RIT HFOSS Development Course  documentation</title>
+    
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../_static/cloud.js"></script>
+    <link rel="top" title="The FOSS@RIT HFOSS Development Course  documentation" href="../index.html" />
+    <link rel="prev" title="Homework - First Flight" href="fflight.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="relbar-top">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="fflight.html" title="Homework - First Flight"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">The FOSS@RIT HFOSS Development Course  documentation</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="homework-bugfix">
+<h1>Homework - Bugfix<a class="headerlink" href="#homework-bugfix" title="Permalink to this headline">¶</a></h1>
+<p>Real learning in computing comes more from doing and less from studying.
+Debugging, figuring out how some software works and how it doesn&#8217;t, is an
+interactive process that develops basic engineering practices and, in the open
+source context, community engagement and collaboration.</p>
+<div class="section" id="find-a-bug">
+<h2>Find a bug<a class="headerlink" href="#find-a-bug" title="Permalink to this headline">¶</a></h2>
+<p>A bug can be anything: an unintended side-effect in a low-level routine, a
+user-interface cleanup, a feature enhancement, grammatical errors or lack of
+clarity in the project&#8217;s documentation.</p>
+<p>Broadly, you have two different options here.  You can</p>
+<blockquote>
+<div><ul class="simple">
+<li>Find a known bug (or feature enhancement) listed in the project&#8217;s bug
+tracker.</li>
+<li>Find a bug yourself by using the software.</li>
+</ul>
+</div></blockquote>
+<p>In the event of the second case, make sure you file the bug in the project&#8217;s
+tracker before proceeding.</p>
+<p>You can fix a bug in any project you like.  The best to pick is something you <em>already
+use</em>, something with which you&#8217;re already familiar.  If you can&#8217;t think of any
+projects to investigate off the top of your head, here&#8217;s a list of suggestions.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Scope the OpenHatch Volunteer Opportunity Finder for
+<a class="reference external" href="http://openhatch.org/search/?toughness=bitesize">Bite-sized Bugs</a></li>
+<li>Use the search function at <a class="reference external" href="http://github.com/">http://github.com/</a> and filter by language (to a
+language that you know).</li>
+<li>Look up some of the bounties at Gun.io <a class="reference external" href="http://gun.io/">http://gun.io/</a></li>
+</ul>
+</div></blockquote>
+<p>Really, the sky is the limit here.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For background, you might want to also check out the project on
+<a class="reference external" href="http://ohloh.net/">http://ohloh.net/</a>.  It can help you characterize what kind of community
+orbits around your choice.</p>
+</div>
+</div>
+<div class="section" id="use-the-source-luke">
+<h2>Use the Source, Luke<a class="headerlink" href="#use-the-source-luke" title="Permalink to this headline">¶</a></h2>
+<p>Once you&#8217;ve identified a bug that needs fixing, you&#8217;ll need to get ahold of the
+source.  In most cases, the code for a project will be hosted on a forge and the
+process of forking and cloning the source will be straightforward.   If you
+forget how to do this for <a class="reference external" href="http://github.com">github</a>, you can refer to
+<a class="reference internal" href="fflight.html"><em>Homework - First Flight</em></a>.</p>
+<p>For whatever project you&#8217;ve chosen, you should ask that project&#8217;s community for
+help.  Look for <cite>IRC</cite> channels and project mailing lists.  You&#8217;ll be
+communicating with developers who have a lot on their plate so make sure to <a class="reference external" href="http://maymay.net/blog/2009/02/11/how-to-start-contributing-to-open-source-projects/">be
+polite and leave your ego at the door</a>.</p>
+<p>Find the code related to the bug; use whatever code navigation tools you&#8217;re
+more familiar with.  The instructor&#8217;s favorite method is:  <tt class="docutils literal"><span class="pre">grep</span> <span class="pre">-inr</span> <span class="pre">&quot;some</span>
+<span class="pre">string&quot;</span> <span class="pre">project_src/</span></tt>.</p>
+<p>Fix the bug, this may require some thinking, and some more asking around.</p>
+<p>Test your fix!  Project maintainers hate nothing more than receiving a patch
+that breaks every other function of the project.  Often, projects have built-in
+test suites.  If yours does, run it!</p>
+<p>Prepare your patch with descriptive commit messages.  Follow the method for
+submitting patches recommended by your project and submit!</p>
+<p>Make sure the project community can easily understand what you did and
+why you did it.</p>
+<p>Make sure there is a reference in the tracked bug ticket to your patch (that is,
+if the project maintains a bug tracker).</p>
+</div>
+<div class="section" id="the-deliverable">
+<h2>The Deliverable<a class="headerlink" href="#the-deliverable" title="Permalink to this headline">¶</a></h2>
+<p>Write a blog post about this process and provide relevant links where
+possible to documentation.</p>
+<blockquote>
+<div><ul class="simple">
+<li>A link to the patch(es) hosted somewhere on the web, usually forges provide
+the ability to link to changesets.</li>
+<li>A link to any mailing list discussions archived on the web</li>
+<li>Snippets of any relevant IRC conversations.</li>
+</ul>
+</div></blockquote>
+<p>You will be graded on your post and the explanation of your process.  Extra
+kudos (but not extra credit) for super epic patches.</p>
+</div>
+<div class="section" id="an-afterthought-not-required">
+<h2>An Afterthought (not required)<a class="headerlink" href="#an-afterthought-not-required" title="Permalink to this headline">¶</a></h2>
+<p>Once your patch has been accepted, mosey on over to <a class="reference external" href="http://ohloh.net">http://ohloh.net</a>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Create an account</li>
+<li>Find the project you patched<ul>
+<li>If it doesn&#8217;t exist, you can add it yourself</li>
+</ul>
+</li>
+<li>&#8220;Claim your position&#8221; as the author of the commit(s) you sent in to increase
+your rank among open source developers of the world!</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <div class="sphinxlocaltoc">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Homework - Bugfix</a><ul>
+<li><a class="reference internal" href="#find-a-bug">Find a bug</a></li>
+<li><a class="reference internal" href="#use-the-source-luke">Use the Source, Luke</a></li>
+<li><a class="reference internal" href="#the-deliverable">The Deliverable</a></li>
+<li><a class="reference internal" href="#an-afterthought-not-required">An Afterthought (not required)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="fflight.html"
+                        title="previous chapter">Homework - First Flight</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/hw/bugfix.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="fflight.html" title="Homework - First Flight"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">The FOSS@RIT HFOSS Development Course  documentation</a> &raquo;</li>
+ 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Ralph Bean &amp; Remy DeCausemaker, Rochester Institute of Technology.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b1.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
