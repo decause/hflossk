@@ -122,6 +122,10 @@ def hws():
 
     return render_template('hw.mak', name='mako', hws=hws)
 
+@app.route('/firstflight')
+def fflight():
+    return render_template('fflight.mak', name='mako', hws=hws)
+
 @app.route('/oer')
 def oer():
     decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
