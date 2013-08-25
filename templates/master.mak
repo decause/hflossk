@@ -79,18 +79,7 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Course Materials</li>
-              <li><a href="/syllabus">Syllabus</a></li>
-              <li><a href="/oer">Resources</a></li>
-              <li><a href="/hw">Assignments</a></li>
-              <li class="nav-header">People</li>
-              <li><a href="/decause">Instructor</a></li>
-              <li><a href="/checkblogs">Participants</a></li>
-              <li class="nav-header">Social</li>
-              <li><a class="reference external" target="_blank" href="http://github.com/fossrit">FOSSBox Github</a></li>
-              <li><a class="reference external" target="_blank" href="http://coderwall.com/teams/foss-rit">Coderwall Team</a></li>
-              <li><a class="reference external" target="_blank" href="http://www.julython.org/teams/">Julython Leaderboard</a></li>
-              <li class="nav-header">Details</li>
+            <li class="nav-header"></li>
             <li><i class="icon-calendar"></i>08/26/2013 - 12/14/2013</li>
             <li><i class="icon-bell"></i>Mon &amp; Wed 5:00PM - 6:15PM</li>
             <li><i class="icon-shopping-cart"></i>4085.582.01</li>
