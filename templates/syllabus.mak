@@ -88,42 +88,33 @@
   <td>Due</td>
   </tr>
   <tr class="row-even"><td rowspan="2">1</td>
-  <td id="sessionnumber">1</td>
-  <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
-  <td id="assigned">&nbsp;</td>
-  <td id="duedate">&nbsp;</td>
+    <td id="sessionnumber">1</td>
+    <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
+    <td id="assigned">&nbsp;</td>
+    <td id="due">&nbsp;</td>
   </tr>
   <tr>
-  <td id="sessionnumber">2</td>
-  <td id="sessioncontent">First Flight</td>
-  <td id="assigned">&nbsp;</td>
-  <td id="duedate">&nbsp;</td>
+    <td id="sessionnumber">2</td>
+    <td id="sessioncontent">First Flight</td>
+    <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
+    <td id="due">&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">1</td>
-  <td id="sessionnumber">3</td>
-  <td id="sessioncontent">Guest Lecture: Lmacken</td>
-  <td id="assigned">&nbsp;</td>
-  <td id="duedate">&nbsp;</td>
-  <tr class="row-odd">
-  </tr>
-  <tr class="row-even"><td rowspan="2">2</td>
+  <tr class="row-odd"><td rowspan="2">2</td>
   <td>1</td>
-  <td>Introduction to git.</td>
+  <td>Guest Lecture: lmacken</td>
+  <td id="assigned">&nbsp;</td>
   <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
-  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Introduction to Python
-  Introduction to Github</td>
-  <td>&nbsp;</td>
+  <td>Formal Introduction to Git and Github</td>
+  <td><a class="reference internal" href="/books"><em>Steve Weber Reading</em></a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">3</td>
   <td>1</td>
-  <td>Intermediate Python</td>
-  <td><a class="reference internal" href="hw/bugfix.html"><em>Homework - Bugfix</em></a></td>
-  <td><a class="reference internal" href="hw/fflight.html"><em>Homework - First Flight</em></a></td>
+  <td>LIT: What is Open Source?</td>
+  <td>&nbsp;</td>
+  <td><a class="reference internal" href="/books"><em>What Is Open Source? By Weber</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>Lightning Talks.
