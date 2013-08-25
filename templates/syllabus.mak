@@ -8,23 +8,23 @@
     <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 </div>
 <div class="section" id="projects-seminar-in-floss-game-development">
-    <h2>Projects Seminar in FLOSS Game Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
+    <h2>Humanitarian Free/Open Source Software Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
   <blockquote>
     <div>
       <ul class="unstyled">
-        <li>Syllabus - <a class="reference external" href="http://hfoss.rtfd.org/">http://hfoss.rtfd.org/</a> &#8211; (subject to change)</li>
+        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Bldg 87, Room 1600, RIT MAGIC Center</li>
         <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
         <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;</li>
             <li>Office:  The MAGIC Center</li>
             <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
-        <li>Teacher&#8217;s Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <tt class="docutils literal"><span class="pre">HFOSSTA</span></tt> in IRC.</li>
+        <li>Teaching Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <tt class="docutils literal"><span class="pre">HFOSSTA</span></tt> in IRC.</li>
         <li>IRC - irc.freenode.net, <tt class="docutils literal"><span class="pre">#rit-foss</span></tt></li>
         <li>Email list - <a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a></li>
         <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
         <li>The source for this syllabus can be found at
-        <a class="reference external" href="http://github.com/FOSSRIT/hfoss">http://github.com/FOSSRIT/hfoss</a></li>
+        <a class="reference external" href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a></li>
       </ul>
     </div>
   </blockquote>
@@ -57,9 +57,8 @@
   <p>While still a course where you will receive a letter grade, the spirit of the
   course is intended to be both <cite>open</cite> and <cite>fun</cite>.</p>
   <p>An <cite>open</cite> course &#8211; students will have access to the &#8216;document source&#8217; for the
-  syllabus.  While you are reading <cite>the syllabus</cite> right now,
-  as a student of the class you have a right to <a class="reference external" href="http://github.com/ralphbean/hfoss">fork the upstream repository</a>, make modifications,
-  and submit patches for review.  Barring a troll festival, this can create a fun,
+  syllabus. While you are reading <cite>the syllabus</cite> right now,
+  as a student of the class you have a right to <a class="reference external" href="http://github.com/decause/hflossk">fork the upstream repository</a>, make modifications, and submit patches for review. Barring a troll festival, this can create a fun,
   dynamic environment in which the course curriculum can develop by the very same
   mechanism being taught during the quarter (community-driven).</p>
 </div>
@@ -67,8 +66,8 @@
   <h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline"></a></h2>
   <p>All code developed by students in the course must be licensed (by the student)
   under any one of the <a class="reference external" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
-  <p>Your code that you write is your code, with which you can do what you will;
-  true.  However, if you&#8217;re unwilling to license code you write for an open source
+  <p>Your code that you write is your <strong>code</strong>, with which you can do what you will;
+  true. However, if you&#8217;re unwilling to license code you write for an open source
   course with an open source license, you may be in the wrong course.</p>
 </div>
 <div class="section" id="schedule">
@@ -89,21 +88,28 @@
   <td>Due</td>
   </tr>
   <tr class="row-even"><td rowspan="2">1</td>
-  <td>1</td>
-  <td>Introductions
-  Syllabus</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td id="sessionnumber">1</td>
+  <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
+  <td id="assigned">&nbsp;</td>
+  <td id="duedate">&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <tr>
+  <td id="sessionnumber">2</td>
+  <td id="sessioncontent">First Flight</td>
+  <td id="assigned">&nbsp;</td>
+  <td id="duedate">&nbsp;</td>
+  </tr>
+  <tr class="row-even"><td rowspan="2">1</td>
+  <td id="sessionnumber">3</td>
+  <td id="sessioncontent">Guest Lecture: Lmacken</td>
+  <td id="assigned">&nbsp;</td>
+  <td id="duedate">&nbsp;</td>
+  <tr class="row-odd">
   </tr>
   <tr class="row-even"><td rowspan="2">2</td>
   <td>1</td>
   <td>Introduction to git.</td>
-  <td><a class="reference internal" href="hw/fflight.html"><em>Homework - First Flight</em></a></td>
+  <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
@@ -130,8 +136,8 @@
   <td>Git Seminar.
   OLPC Distribution.
   OLPC Smoke Test.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">hw/stest</span></tt></td>
-  <td><a class="reference internal" href="hw/bugfix.html"><em>Homework - Bugfix</em></a></td>
+  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
+  <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>Lightning Talks.
