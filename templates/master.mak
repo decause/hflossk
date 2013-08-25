@@ -62,6 +62,11 @@
             <ul class="nav">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
+              <li><a href="/syllabus">Syllabus</a></li>
+              <li><a href="/oer">Resources</a></li>
+              <li><a href="/hw">Assignments</a></li>
+              <li><a href="/decause">Instructor</a></li>
+              <li><a href="/checkblogs">Participants</a></li>
               <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
