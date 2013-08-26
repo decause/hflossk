@@ -88,7 +88,7 @@ Files that end with the extension ``.rst`` are written in the `reStructuredText
 <http://sphinx.pocoo.org/rest.html>`_ markup language.
 
 Files that end with the extension ``.mak`` are written in the `Mako Templating
-<http://makotemplates.org>1`_ language. The nice thing about .mak files is that
+<http://makotemplates.org>`_ language. The nice thing about .mak files is that
 you can also just write plain html into the template, or you can mix python
 with your html! It has been pointed out that though this is powerful, it can be
 dangerous if you are not careful (or don't know what you are doing) ;)
