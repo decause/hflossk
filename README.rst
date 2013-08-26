@@ -45,7 +45,7 @@ If you don't have virtualenv installed yet, try::
 
  $ sudo easy_install virtualenv virtualenvwrapper
 
-If you're using a distro like Fedora or Ubuntu, you should try this isntead::
+If you're using a distro like Fedora or Ubuntu, you should try this instead::
 
  Fedora:
  $ sudo yum install python-virtualenv
@@ -55,8 +55,10 @@ If you're using a distro like Fedora or Ubuntu, you should try this isntead::
 
 Once you have virtualenv installed, you should be able to run::
 
- $ virtualenv --no-site-packages -p python2 hflosskenv
+ $ cd code
  $ git clone git@github.com:YOUR_USERNAME/hflossk.git
+ $ virtualenv --no-site-packages -p python2 hflosskenv
+ $ . hflosskenv/bin/activate
  $ cd hflossk
  $ python setup.py develop
 
@@ -66,7 +68,7 @@ On Windows
 At the windows command prompt::
 
  $ virtualenv --no-site-packages -p python2 hflosskenv
- $ sphinxenv/Scripts/activate.bat
+ $ hflosskenv/Scripts/activate.bat
 
 In msysGit or git-bash::
 
