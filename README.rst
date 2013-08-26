@@ -3,10 +3,10 @@ HFLOSSK
 
 Wat?
 ----
-This repository is an experiment to use Flask, Mako, and Bootstrap to make a webesite for the Humanitarian Free/Open Source Software Course at RIT. This repository is a work in progress (as any FOSS project is), and will be open for contributions.
+This repository is an experiment to use Flask, Mako, and Bootstrap to make a website for the Humanitarian Free/Open Source Software Course at RIT. This repository is a work in progress (as any FOSS project is), and will be open for contributions.
 
 The content shown here is a compilation of course materials from 4 previous
-professors, who've run the course 5 separate times. Those Profs. are:
+professors, who've run the course 5 separate times. Those profs are:
     - Stephen Jacobs
     - Dave Shein (x2)
     - Ralph Bean
