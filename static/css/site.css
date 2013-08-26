@@ -42,6 +42,30 @@
     box-shadow: 1px 1px 10px rgba(139, 0, 0, 0.5);
 }
 
+.special {
+    background: yellow;
+}
+
+.cancelled {
+    background: red;
+}
+
+.guest {
+    background: lightgreen;
+}
+
+.tbd {
+    background: lightgrey;
+}
+
+.hackathon {
+    background: orange;
+}
+
+.vaycay {
+    background: darkgrey;
+}
+
 ul {
     margin-top: -10px;
 }
