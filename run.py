@@ -35,7 +35,7 @@ yaml_dir = 'scripts/people/'
 def checkblogs():
 
     try:
-        urllib2.urlopen("http://foss.rit.edu", timeout=5)
+        urllib2.urlopen("http://foss.rit.edu", timeout=25)
     except:
         # TODO: fix this right
         # timed out or otherwise couldn't reach foss.rit,
