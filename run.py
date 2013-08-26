@@ -40,7 +40,7 @@ def checkblogs():
         # TODO: fix this right
         # timed out or otherwise couldn't reach foss.rit,
         # so bail for now.
-        return render_template('home.mak', name='mako')
+        return render_template('ohno.mak', name='mako')
     else:
         student_data = []
         for fname in glob.glob(yaml_dir + "*.yaml"):
