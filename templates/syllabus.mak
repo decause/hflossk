@@ -90,7 +90,7 @@
   <tr class="row-even"><td rowspan="2">1</td>
     <td id="sessionnumber">1</td>
     <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
-    <td id="assigned">&nbsp;</td>
+    <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
     <td id="due">&nbsp;</td>
   </tr>
   <tr>
@@ -101,176 +101,184 @@
   </tr>
   <tr class="row-odd"><td rowspan="2">2</td>
   <td>1</td>
-  <td>Guest Lecture: lmacken</td>
+  <td class="guest">Guest Lecture: lmacken</td>
   <td id="assigned">&nbsp;</td>
   <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>Formal Introduction to Git and Github</td>
-  <td><a class="reference internal" href="/books"><em>Steve Weber Reading</em></a></td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">3</td>
   <td>1</td>
-  <td>LIT: What is Open Source?</td>
+  <td>Lit Review: What is Open Source?</td>
   <td>&nbsp;</td>
-  <td><a class="reference internal" href="/books"><em>What Is Open Source? By Weber</em></a></td>
+  <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  &#8220;Advanced&#8221; Python</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>LIT: Rhetoric, Flamewars, and Trolling</td>
+  <td>Rhetological Fallacies Quiz</td>
+  <td>Rhetological Fallacies Quiz</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">4</td>
+  <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
-  <td>Git Seminar.
-  OLPC Distribution.
-  OLPC Smoke Test.</td>
-  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
+  <td>EDU: Pedagogy and Grokkery</td>
+  <td>&nbsp;</td>
   <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Introduction to Sugar</td>
+  <td>EDU: Curriculum Exploration</td>
+  <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   <td>&nbsp;</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">hw/stest</span></tt></td>
   </tr>
+  <tr class="row-odd"><td>***</td>
+  <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish)</td>
+  <td>&nbsp;</td>
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
-  <td>Project Choices and Teams
-  <a class="reference external" href="http://bit.ly/AeDmaK">http://bit.ly/AeDmaK</a></td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/project</span></tt></td>
+  <td>COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  In class development.</td>
-  <td>&nbsp;</td>
+  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama</td>
+  <td>Commarch Report</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
-  <td>User Testing</td>
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>Commarch Presentations</td>
+  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+  <td>Commarch Report</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  In class development.</td>
+  <td>"Teams Draft"</td>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   </tr>
-  <tr class="row-even"><td rowspan="2">7</td>
+  <tr class="row-even"><td rowspan="3">7</td>
   <td>1</td>
-  <td>User Testing</td>
-  <td>&nbsp;</td>
+  <td>OLPC Distribution &amp; Smoke testing</td>
+  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  In class development.</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
+  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
+  <tr class="row-odd"><td>***</td>
+  <td> Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">8</td>
   <td>1</td>
-  <td>User Testing</td>
-  <td>&nbsp;</td>
+  <td class="special">TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)</td>
+  <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  In class development.</td>
-  <td>&nbsp;</td>
+  <td class="cancelled">decause flying to Google HQ. No Class.</td>
+  <td><a target="_blank" href="https://www.google-melange.com/gsoc/events/google/gsoc2013">Google Summer of Code Mentor Summit</a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">9</td>
   <td>1</td>
-  <td>User Testing</td>
+  <td class="tbd" >Guest Lecture: Advanced Python with threebean</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Crunch Time.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
+  <td>TBD</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">10</td>
+  <tr class="row-even"><td rowspan="4">10</td>
   <td>1</td>
-  <td>Crunch Time.</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Final Presentations</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/assmnt</span></tt></td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt>
-  <tt class="xref doc docutils literal"><span class="pre">fnl/project</span></tt></td>
+  <td>TBD</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr class="row-odd"><td>***</td>
+  <td class="hackathon"><a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr class="row-odd"><td>***</td>
+  <td class="hackathon"><a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">11</td>
   <td>1</td>
-  <td>Return the OLPCs
-  User Testing</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/assmnt</span></tt></td>
+  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Crunch Time.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
+  <td>TBD</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">12</td>
   <td>1</td>
-  <td>&#8220;Advanced&#8221; Python
-  User Testing</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Crunch Time.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
-  <td>&nbsp;</td>
-  </tr>
-  <tr class="row-even"><td rowspan="2">13</td>
-  <td>1</td>
   <td>User Testing</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
+  <tr class="row-even"><td rowspan="2">13</td>
+  <td>1</td>
+  <td class="special">TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)</td>
+  <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Crunch Time.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
+  <td class="guest">Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">14</td>
   <td>1</td>
-  <td>&#8220;Advanced&#8221; Python
-  User Testing</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Crunch Time.</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
+  <td class="cancelled">Thanksgiving Break. No Class.</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">15</td>
   <td>1</td>
-  <td>&#8220;Advanced&#8221; Python
-  Final Presentations</td>
+  <td>Packaging &amp; Releases</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Lightning Talks.
-  Final Presentations</td>
-  <td><tt class="xref doc docutils literal"><span class="pre">fnl/present</span></tt></td>
+  <td>Packaging &amp; Releases</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr class="row-even"><td rowspan="2">16</td>
+  <td></td>
+  <td class="special">FINAL PRESENTATIONS</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  </tr>
+  <tr class="row-odd"><td>2</td>
+  <td>Return XO's &amp; Final Presentations (w/ Pizza)</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   </tbody>
@@ -278,7 +286,7 @@
 </div>
 <div class="section" id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline"></a></h2>
-<p>Assignments are due at midnight of the day they are marked as due.</p>
+<p>Assignments are due at 4:59pm of the day they are marked as due, to be useful in class.</p>
 <p>Late submissions will be deducted 10% per day they are late.</p>
 <hr class="docutils" />
 <p>Your final grade for the quarter will be derived from the following weights.</p>
@@ -294,36 +302,38 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>In-Class Participation</td>
-<td>15%</td>
+<td>10%</td>
 </tr>
-<tr class="row-odd"><td>FLOSS Dev Practices (Blogging, patching, writing, IRC)</td>
-<td>25%</td>
+<tr class="row-even"><td>Quizzes</td>
+<td>10%</td>
+</tr>
+<tr class="row-even"><td>Literature Reviews</td>
+<td>10%</td>
 </tr>
 <tr class="row-even"><td>Team Peer Assessment</td>
-<td>20%</td>
+<td>15%</td>
 </tr>
 <tr class="row-odd"><td>Completed Project</td>
-<td>20%</td>
+<td>15%</td>
 </tr>
 <tr class="row-even"><td>Final Presentation</td>
 <td>20%</td>
+<tr class="row-odd"><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
+<td>20%</td>
+</tr>
 </tr>
 </tbody>
 </table>
 <hr class="docutils" />
 <p><em>Blog updates</em> &#8211; students are required to keep a blog to which they post updates
-about their investigations, progress, success, and pitfalls.  This blog can be
-hosted anywhere, but must be added to the course <a class="reference external" href="http://threebean.org/floss-planet/">planet</a> (there are instructions on how to do this
+about their investigations, progress, success, and pitfalls. This blog can be
+hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
 in <a class="reference internal" href="hw/fflight.html"><em>Homework - First Flight</em></a>).</p>
 <blockquote>
 <div><ul class="simple">
-<li>You must make at least one blog post per week to receive full credit.</li>
-<li>You must participate regularly in the course&#8217;s IRC channel: asking and
-answering questions.</li>
-<li>You must participate in the course&#8217;s mailman list,
-<a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a>.</li>
-<li>Contributions to the course curriculum, syllabus, and rubric are factored in
-here as well.</li>
+<li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
+<li>You must participate regularly in the course&#8217;s IRC channel: asking and answering questions.</li>
+<li>Contributions to the course curriculum, syllabus, and rubric are factored in here as well.</li>
 </ul>
 </div></blockquote>
 <p>Blogging is good for you and good for the <a class="reference external" href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
