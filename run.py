@@ -31,6 +31,8 @@ def gravatar(email):
 
 
 yaml_dir = 'scripts/people/'
+
+
 @app.route('/checkblogs')
 def checkblogs():
 
@@ -58,7 +60,7 @@ def checkblogs():
         for student in student_data:
             when = []
             if student.get('feed'):
-                print('Checking %s' % student['irc'])	
+                print('Checking %s' % student['irc'])
 
                 feed = feedparser.parse(student['feed'])
                 #print feed.version
@@ -70,9 +72,11 @@ def checkblogs():
                     #    print student['name'], item.published
                     ##if 'summary' in item:
                     ##    print item.summary
-                    publish_time = datetime.fromtimestamp(time.mktime(item.updated_parsed))
+                    publish_time = datetime.fromtimestamp(time.mktime
+                                                         (item.updated_parsed))
                     if publish_time < target:
-                        #print('%s is older than %s, ignoring' % (publish_time, target))
+                        #print('%s is older than %s, ignoring' % (publish_time,
+                        #                                         target))
                         continue
                     when.append(item.updated)
             else:
@@ -93,29 +97,46 @@ def checkblogs():
         #        print('===%d %s' % (count, student))
         #for student in student_data:
         #    print student
-        return render_template('blogs.mak', name='mako', student_data=student_data, student_posts=student_posts, gravatar=gravatar, average=average, target_number=target_number)
+        return render_template('blogs.mak', name='mako',
+                               student_data=student_data,
+                               student_posts=student_posts,
+                               gravatar=gravatar, average=average,
+                               target_number=target_number)
+
 
 @app.route('/')
 def index():
     return render_template('home.mak', name='mako')
 
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
+
+
+@app.route('/lectures')
+def lectures():
+    lectures = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
+                                       'lectures'))
+    return render_template('lectures.mak', name='mako', lectures=lectures)
+
 
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.mak', name='mako')
 
+
 @app.route('/about')
 def about():
     return render_template('about.mak', name='mako')
+
 
 @app.route('/books')
 def books():
     books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
                                     'books'))
     return render_template('books.mak', name='mako', books=books)
+
 
 @app.route('/slides')
 def slides():
@@ -124,16 +145,14 @@ def slides():
 
     return render_template('decks.mak', name='mako', decks=decks)
 
+
 @app.route('/hw')
 def hws():
     hws = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'hw'))
+                                  'hw'))
 
     return render_template('hw.mak', name='mako', hws=hws)
 
-@app.route('/firstflight')
-def fflight():
-    return render_template('fflight.mak', name='mako', hws=hws)
 
 @app.route('/oer')
 def oer():
@@ -144,13 +163,10 @@ def oer():
                                     'books'))
 
     challenges = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'challenges'))
+                                         'challenges'))
 
-    return render_template('oer.mak', name='mako', decks=decks, books=books, challenges=challenges)
-
-@app.route('/carousel')
-def carousel():
-    return render_template('carousel.html', name='mako')
+    return render_template('oer.mak', name='mako', decks=decks, books=books,
+                           challenges=challenges)
 
 
 if __name__ == "__main__":
@@ -159,5 +175,5 @@ if __name__ == "__main__":
         port = int(os.environ['OPENSHIFT_PYTHON_PORT'])
         app.run(host=host, port=port)
     else:
-        app.debug=True
+        app.debug = True
         app.run()
