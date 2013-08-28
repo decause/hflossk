@@ -8,7 +8,7 @@
     <div class="span4">
         <ul class="unstyled">
             <h2>Notes</h2>
-            <li><a href="/w1c2">Week 1 - Class 2</a></li>
+            <li><a href="/lectures/w1c2">Week 1 - Class 2</a></li>
         </ul>
     </div>
 </div>
