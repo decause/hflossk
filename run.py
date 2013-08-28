@@ -109,6 +109,11 @@ def index():
     return render_template('home.mak', name='mako')
 
 
+@app.route('/w1c2')
+def w1c2():
+    return render_template('w1c2.mak', name='mako')
+
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
