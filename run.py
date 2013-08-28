@@ -131,6 +131,11 @@ def about():
     return render_template('about.mak', name='mako')
 
 
+@app.route('/firstflight')
+def fflight():
+    return render_template('fflight.mak', name='mako')
+
+
 @app.route('/books')
 def books():
     books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
