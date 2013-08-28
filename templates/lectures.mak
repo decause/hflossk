@@ -8,9 +8,7 @@
     <div class="span4">
         <ul class="unstyled">
             <h2>Notes</h2>
-            %for lecture in lectures:
-                <li><a href="/static/lectures/${lecture}">${lecture}</a></li>
-            %endfor
+            <li><a href="/w1c2">Week 1 - Class 2</a></li>
         </ul>
     </div>
 </div>
