@@ -121,9 +121,7 @@ def decause():
 
 @app.route('/lectures')
 def lectures():
-    lectures = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                       'lectures'))
-    return render_template('lectures.mak', name='mako', lectures=lectures)
+    return render_template('lectures.mak', name='mako')
 
 
 @app.route('/syllabus')
