@@ -16,7 +16,7 @@
     <i class="icon-pencil"></i>
     <span>${student_posts[student['irc']]}</span></div>
     <a target="_blank" href="${student['blog']}">${student['blog']}</a></p>
-    <ul class="unstyled">
+    <ul class="unstyled cardlist">
     % for geordi in student['forges']:
     <li><a target="_blank" class="reference external" href="${geordi}">${geordi}</a></li>
     %endfor
