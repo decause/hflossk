@@ -64,6 +64,7 @@
               <li><a href="/about">About</a></li>
               <li><a href="/syllabus">Syllabus</a></li>
               <li><a href="/oer">Resources</a></li>
+              <li><a href="/lectures">Lectures</a></li>
               <li><a href="/hw">Assignments</a></li>
               <li><a href="/decause">Instructor</a></li>
               <li><a href="/checkblogs">Participants</a></li>
