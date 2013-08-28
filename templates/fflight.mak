@@ -26,7 +26,7 @@ Practices component of your final grade.
 
 <div class="alert alert-success">
 <dl>
-    <dt><h3>Tasks:</h3></dt>
+    <dt><h3 class="label label-success">Tasks:</h3></dt>
         <dd><ul class="first last simple">
             <li>Download and install an IRC client on your development machine.<ul>
             <li>Windows: <a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
@@ -56,7 +56,7 @@ also the easiest (lowest overhead) method for getting your questions answered.
 
 <div class="alert alert-info">
 <p>
-    <strong>Note</strong>
+    <span class="label label-info">Note</span>
 </p>
 
 <p>
@@ -82,7 +82,6 @@ have an existing mailing list where messages of these sort are to be posted.
 </p>
 
 
-
 <h2>Blogging</h2>
 
     <p>Setup a blog if you don’t have one. Much like mailing lists, blogs are
@@ -98,13 +97,13 @@ have an existing mailing list where messages of these sort are to be posted.
 Blogs around a topic are also typically aggregated by a planet (an RSS feed
 aggregator). This way, all developers blogging about Project X can have their
 blog posts fast-tracked to a readership subscribed to Planet X. For instance,
-here’s a link to Planet Python.
+here’s a link to <code><a target="_blank" href="http://planet.python.org">Planet Python</a></code>.
 </p>
 
 <p>
-The Planet for the course is hosted at <a target="_blank" href="http://yacht.rit.edu/planet">http://yacht.rit.edu/planet</a>.
-There are instructions for how to subscribe your blog to it in the Patch the
-Course Project section below.
+The Planet for the course <em>may</em> be hosted at some point in the future at
+<code><a target="_blank"
+        href="http://yacht.rit.edu/planet">http://yacht.rit.edu/planet</a></code>.
 </p>
 
 
@@ -115,18 +114,22 @@ and/or all of the above.
 </p>
 
 <div class="alert alert-success">
-<h3>Tasks:</h3>
+<h3 class="label label-success">Tasks:</h3>
 
     <ol>
         <li>
         Create a blog if you don’t already have one. There are lots of free
-        services available. You might try http://wordpress.com or
-        http://blogspot.com, or foss.rit.edu.
+        services available. You might try <code><a target="_blank" href="http://wordpress.com">http://wordpress.com</a></code> or
+        <code><a target="_blank"
+                href="http://blogspot.com">http://blogspot.com</a></code>, or
+        even <code><a target="_blank"
+        href="http://foss.rit.edu">http://foss.rit.edu</a></code>.
         </li>
         <li>Write an introductory post, detailing the process you went through
         to complete the <em>FirstFlight</em> assignment.</li>
     </ol>
 </div>
+
 
 <h2>Github</h2>
 
@@ -155,9 +158,9 @@ course should be tracked on that forge. Github is, after all, the most popular
 forge.
 </p>
 <div class="alert alert-success">
-<h3>Tasks:</h3>
+<h3 class="label label-success">Tasks:</h3>
     <ol>
-        <li>Create a github account if you don’t already have one.</li>
+        <li>Create a <code><a target="_blank" href="http://github.com">Github</a></code> account if you don’t already have one.</li>
     </ol>
 </div>
 <div>
@@ -166,7 +169,7 @@ forge.
     <a class="reference external" href="https://github.com/decause/hflossk">https://github.com/decause/hflossk</a>.</p>
     <p>Inside the repository, we’ll keep an index of all the students in the course and metadata about them (you!).</p>
     <dl class="alert alert-success">
-        <dt><h3>Tasks:</h3></dt>
+        <dt><h3 class="label label-success">Tasks:</h3></dt>
         <dd><ul>
             <li>Load up the git cheatsheet at <a
                 href="http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html"><em>Zack
