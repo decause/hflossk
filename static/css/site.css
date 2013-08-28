@@ -70,3 +70,7 @@
     margin-top: -10px;
     list-style-type: none;
 }
+
+.nobullets {
+    list-style-type: none;
+}
