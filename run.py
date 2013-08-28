@@ -109,7 +109,7 @@ def index():
     return render_template('home.mak', name='mako')
 
 
-@app.route('/w1c2')
+@app.route('/lectures/w1c2')
 def w1c2():
     return render_template('w1c2.mak', name='mako')
 
@@ -136,10 +136,9 @@ def about():
     return render_template('about.mak', name='mako')
 
 
-@app.route('/firstflight')
+@app.route('/hw/firstflight')
 def fflight():
     return render_template('fflight.mak', name='mako')
-
 
 @app.route('/books')
 def books():
