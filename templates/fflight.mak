@@ -27,23 +27,34 @@ Practices component of your final grade.
 <div class="alert alert-success">
 <dl>
     <dt><h3 class="label label-success">Tasks:</h3></dt>
-        <dd><ul class="first last simple">
-            <li>Download and install an IRC client on your development machine.<ul>
-            <li>Windows: <a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
+    <dd><ul class="first last simple">
+        <li>Download and install an IRC client on your development machine.
+          <ul>
+          	<li>Windows:
+          	  <ul>
+                <li><a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
+                <li><a class="reference external" href="http://hexchat.github.io/">HexChat</a></li>
+              </ul>
+            </li>
             <li>Mac OS X: <a class="reference external" href="http://colloquy.info/">Colloquy</a></li>
-            <li>Linux: <a class="reference external" href="http://irssi.org/">irssi</a></li>
-            </ul>
+            <li>Linux:
+              <ul>
+                <li><a class="reference external" href="http://irssi.org/">irssi</a> (Command-line)</li>
+                <li><a class="reference external" href="http://hexchat.github.io/">HexChat</a></li>
+                <li><a class="reference external" href="http://xchat.org/">XChat</a> (Older version of HexChat)</li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li>Choose a nick and <a
 href="http://freenode.net/faq.shtml#userregistration">register yourself with
 the NickServ</a>.</li>
         <li>Connect to <code>#rit-foss</code> on <code>irc.freenode.net</code> and introduce yourself.
-        <ul>
-        <li>The instructor’s nick is <code>decause</code>.</li>
-    </ul>
+          <ul>
+            <li>The instructor’s nick is <code>decause</code>.</li>
+          </ul>
         </li>
-    </ul>
-    </dd>
+    </ul></dd>
 </dl>
 </div>
 
