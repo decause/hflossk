@@ -85,8 +85,8 @@ def checkblogs():
 
         average = sum(student_posts.values()) / float(len(student_posts))
         #print('Average of %f posts' % average)
-        target_number = (datetime.today() - target).total_seconds() /\
-            timedelta(weeks=1).total_seconds() + 1
+        target_number = int((datetime.today() - target).total_seconds() /\
+            timedelta(weeks=1).total_seconds() + 1)
         #for student, count in student_posts.items():
         #    if count > target_number:
         #        print('+++%d %s' % (count, student))
