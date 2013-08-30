@@ -11,7 +11,7 @@
   %for student in student_data:
     <div class="span4 shadowcard padded">
     <img class="uglymug" src="${gravatar(student['rit_dce'] + '@rit.edu')}" />
-    <h2 class="irc_nick">${student['irc']}</h2>
+    <h3 class="irc_nick">${student['irc']}</h3>
     <div class="sticky padded ${'bad' if student_posts[student['irc']] < target_number else 'good'}">
     <i class="icon-pencil"></i>
     <span>${student_posts[student['irc']]}</span></div>
