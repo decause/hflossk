@@ -43,13 +43,6 @@
   irc: oddshocks
   name: David Gay
   rit_dce: dtg5645
-- blog: http://joeprezioso.blogspot.com/
-  feed: http://joeprezioso.blogspot.com/feeds/posts/default
-  forges:
-  	- https://github.com/ArcticSphinx
-  irc: ArcticSphinx
-  name: Joseph Prezioso
-  rit_dce: jxp8159
 - blog: http://foss.rit.edu/blog/41977
   feed: http://foss.rit.edu/blog/41977/feed
   forges:
