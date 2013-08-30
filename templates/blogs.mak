@@ -12,7 +12,7 @@
     <div class="span4 shadowcard padded">
     <img class="uglymug" src="${gravatar(student['rit_dce'] + '@rit.edu')}" />
     <h3 class="irc_nick">${student['irc']}</h3>
-    <div class="sticky padded ${'bad' if student_posts[student['irc']] < target_number else 'good'}">
+    <div class="sticky padded ${'good' if student_posts[student['irc']] >= target_number else 'bad'}">
     <i class="icon-pencil"></i>
     <span>${student_posts[student['irc']]}</span></div>
     <a target="_blank" href="${student['blog']}">${student['blog']}</a></p>
