@@ -1,7 +1,7 @@
 - blog: http://joeprezioso.blogspot.com/
   feed: http://joeprezioso.blogspot.com/feeds/posts/default
   forges:
-  	- https://github.com/ArcticSphinx
+  - https://github.com/ArcticSphinx
   irc: ArcticSphinx
   name: Joseph Prezioso
   rit_dce: jxp8159
