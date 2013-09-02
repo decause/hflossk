@@ -101,8 +101,7 @@ have an existing mailing list where messages of these sort are to be posted.
     and you typically find that solution in a blog post of some developer who
     has run into a similar situation. Blogging about your attempts, successes
     and failures (and writing tutorials!) is a best practice for increasing the
-    general body of searchable knowledge available, for increasing the Wisdom
-    of the Ancients.  </p>
+    general body of searchable knowledge available, for increasing the <code><a class="reference external" href="http://xkcd.com/979/">Wisdom of the Ancients.</a></code></p>
 
 <p>
 Blogs around a topic are also typically aggregated by a planet (an RSS feed
