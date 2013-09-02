@@ -302,24 +302,24 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>In-Class Participation</td>
-<td><span class="badge badge-warning">10%</span></td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Quizzes</td>
-<td><span class="badge badge-warning">10%</span></td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Literature Reviews</td>
-<td><span class="badge badge-warning">10%</span></td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Team Peer Assessment</td>
-<td><span class="badge badge-info">15%</span></td>
+<td class="center"><span class="badge badge-info">15%</span></td>
 </tr>
 <tr class="row-even"><td>Completed Project</td>
-<td><span class="badge badge-info">15%</span></td>
+<td class="center"><span class="badge badge-info">15%</span></td>
 </tr>
 <tr class="row-even"><td>Final Presentation</td>
-<td><span class="badge badge-success">20%</span></td>
+<td class="center"><span class="badge badge-success">20%</span></td>
 <tr class="row-even"><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
-<td><span class="badge badge-success">20%</span></td>
+<td class="center"><span class="badge badge-success">20%</span></td>
 </tr>
 </tr>
 </tbody>
@@ -342,12 +342,12 @@ in <a class="reference internal" href="hw/firstflight"><em>Homework - First Flig
 <div class="section" id="lightning-talks-extra-credit">
 <h2>Lightning Talks - Extra Credit<a class="headerlink" href="#lightning-talks-extra-credit" title="Permalink to this headline"></a></h2>
 <p>Every Wednesday for the first portion of class, any student has the opportunity
-to give a <a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a> on a
+to give a <code><a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
 topic of their chosing.  Your lightning talk must be less than 5 minutes in
 length and must be at least remotely related to the course material.</p>
 <p>You will receive +1 extra credit points towards your final grade for every
-lightning talk you give. Only the first <span class="badge badge-success">2</span> lightning talks offered will be
+lightning talk you give. Only the first <span class="badge badge-important">2</span> lightning talks offered will be
 allowed during a given class. Talks will be chosen from among those offered by
-students on a FIFO basis.</p>
+students on a <code><a target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code> basis.</p>
 </div>
 </div>
