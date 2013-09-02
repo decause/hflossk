@@ -39,7 +39,7 @@
         </h3>
             <ul class="nobullets">
             <h4>
-                <a class="alert alert-info" href="http://hfoss-fossrit.rhcloud.com/hw/firstflight">First flight</a>
+                <a class="alert alert-info" href="/hw/firstflight">First flight</a>
             </h4>
         </ul>
 
