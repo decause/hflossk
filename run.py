@@ -55,7 +55,7 @@ def checkblogs():
                 #print gravatar(contents[0]['rit_dce'] + "@rit.edu")
 
         student_posts = {}
-        target = datetime(2013, 8, 26)
+        target = datetime(2013, 8, 25)
         for student in student_data:
             when = []
             if student.get('feed'):
@@ -85,8 +85,8 @@ def checkblogs():
 
         average = sum(student_posts.values()) / float(len(student_posts))
         #print('Average of %f posts' % average)
-        target_number = int((datetime.today() - target).total_seconds() /\
-            timedelta(weeks=1).total_seconds() + 1)
+        target_number = int((datetime.today() - target).total_seconds() /
+                            timedelta(weeks=1).total_seconds() + 1)
         #for student, count in student_posts.items():
         #    if count > target_number:
         #        print('+++%d %s' % (count, student))
