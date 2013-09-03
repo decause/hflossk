@@ -2,7 +2,7 @@
 - blog: http://beta.chrisknepper.com/blog
   feed: http://beta.chrisknepper.com/feed
   forges:
-    - http://github.com/ralphbean
+    - http://github.com/chrisknepper
   irc: ChrisKnepper
   name: Chris Knepper
   rit_dce: cxk1108
