@@ -35,6 +35,20 @@
   irc: CDeLorme
   name: Casey DeLorme
   rit_dce: cxd4280
+- blog: http://foss.rit.edu/blog/41974
+  feed: http://foss.rit.edu/blog/41974/feed
+  forges:
+    - https://github.com/fortnight
+  irc: Fortnight
+  name: Fernando Axel Ellis
+  rit_dce: fae6505
+- blog: http://foss.rit.edu/blog/41991
+  feed: http://foss.rit.edu/blog/41991/feed
+  forges:
+    - https://github.com/Thengrad
+  irc: Thengrad
+  name: Ian Furry
+  rit_dce: ixf2768
 - blog: http://oddshocks.com/
   feed: http://www.oddshocks.com/feeds/all.atom.xml
   forges:
@@ -43,41 +57,6 @@
   irc: oddshocks
   name: David Gay
   rit_dce: dtg5645
-- blog: http://foss.rit.edu/blog/41977
-  feed: http://foss.rit.edu/blog/41977/feed
-  forges:
-    - https://github.com/Zanarama
-  irc: zanarama
-  name: Suzanne Reed
-  rit_dce: scr5025
-- blog: http://foss.rit.edu/blog/41941
-  feed: http://foss.rit.edu/blog/41941/feed
-  forges:
-    - https://github.com/DAWacker
-  irc: DAWacker
-  name: David Wilson
-  rit_dce: daw4475
-- blog: http://foss.rit.edu/blog/41974
-  feed: http://foss.rit.edu/blog/41974/feed
-  forges:
-    - https://github.com/fortnight
-  irc: Fortnight
-  name: Fernando Axel Ellis
-  rit_dce: fae6505
-- blog: http://foss.rit.edu/blog/41940
-  feed: http://foss.rit.edu/blog/41940/feed
-  forges:
-    - https://github.com/RAMstush
-  irc: RAMstush
-  name: Ryan Stush
-  rit_dce: ras8502
-- blog: http://foss.rit.edu/blog/41991
-  feed: http://foss.rit.edu/blog/41991/feed
-  forges:
-    - https://github.com/Thengrad
-  irc: Thengrad
-  name: Ian Furry
-  rit_dce: ixf2768
 - blog: http://foss.rit.edu/blog/6426
   feed: http://foss.rit.edu/blog/6246/feed
   forges:
@@ -85,3 +64,31 @@
   irc: Jenneh
   name: Jenn Kotler
   rit_dce: jlk9713
+- blog: http://foss.rit.edu/blog/41977
+  feed: http://foss.rit.edu/blog/41977/feed
+  forges:
+    - https://github.com/Zanarama
+  irc: zanarama
+  name: Suzanne Reed
+  rit_dce: scr5025
+- blog: http://foss.rit.edu/blog/41940
+  feed: http://foss.rit.edu/blog/41940/feed
+  forges:
+    - https://github.com/RAMstush
+  irc: RAMstush
+  name: Ryan Stush
+  rit_dce: ras8502
+- blog: http://edwfoss.wordpress.com/
+  feed: http://edwfoss.wordpress.com/feed
+  forges:
+    - http://github.com/edwfoss
+  irc: edwfoss
+  name: Erik Whalen
+  rit_dce: edw6640
+- blog: http://foss.rit.edu/blog/41941
+  feed: http://foss.rit.edu/blog/41941/feed
+  forges:
+    - https://github.com/DAWacker
+  irc: DAWacker
+  name: David Wilson
+  rit_dce: daw4475
