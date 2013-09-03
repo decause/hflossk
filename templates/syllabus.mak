@@ -96,7 +96,7 @@
   <tr>
     <td id="sessionnumber">2</td>
     <td id="sessioncontent">First Flight</td>
-    <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
+    <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
     <td id="due">&nbsp;</td>
   </tr>
   <tr class="row-odd"><td rowspan="2">2</td>
@@ -108,7 +108,7 @@
   <tr class="row-odd"><td>2</td>
   <td>Formal Introduction to Git and Github</td>
   <td>&nbsp;</td>
-  <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
+  <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
   </tr>
   <tr class="row-even"><td rowspan="2">3</td>
   <td>1</td>
@@ -328,7 +328,7 @@
 <p><em>Blog updates</em> &#8211; students are required to keep a blog to which they post updates
 about their investigations, progress, success, and pitfalls. This blog can be
 hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
-in <a class="reference internal" href="hw/firstflight"><em>Homework - First Flight</em></a>).</p>
+in <a class="reference internal" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
 <blockquote>
 <div><ul class="simple">
 <li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
