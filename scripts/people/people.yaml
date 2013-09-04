@@ -86,9 +86,9 @@
   name: Jenn Kotler
   rit_dce: jlk9713
 - blog: http://gigglefoss.wordpress.com/
-feed: http://gigglefoss.wordpress.com/?feed=rss
-forges:
-  - http://github.com/LinkSlayer64
-irc: LinkSlayer64
-name: Zachary Behrmann
-rit_dce: zab5156
+  feed: http://gigglefoss.wordpress.com/?feed=rss
+  forges:
+    - http://github.com/LinkSlayer64
+  irc: LinkSlayer64
+  name: Zachary Behrmann
+  rit_dce: zab5156
