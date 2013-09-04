@@ -38,7 +38,7 @@
             <li>Assignment-ery</li>
         </h3>
             <ul class="nobullets">
-                <strong><li class="alert alert-error"><i class="icon-plane"></i> <a href="/hw/firstflight">First flight</a></strong>: If you didn't finish this, you need to email me ASAP. If you get it in by 11:59pm tonight, you will not lose the 10% per day penalty, this time... &lt;/villain laugh&gt;</li>
+                <strong><li class="alert alert-error"><i class="icon-plane"></i> <a href="/hw/firstflight">First flight</a></strong>: If you didn't finish this, you need to email me ASAP. If you get it in by 11:59pm tonight, you will not lose the 10% per day penalty, this time... &lt;villain laugh /&gt;</li>
                 <div class="alert alert-success"><strong><li><i class="icon-book"></i> <a href="/static/books/Weber-SuccessofOpenSource-Chap3.pdf">Weber Reading</a></strong>: Was assigned W1C1, remember?</li>
                 <strong><li><i class="icon-pencil"></i> <a href="/static/hw/litreview.txt">Literature Review Template:</a></strong> Weber Review Due W3C1</li></div>
         </ul>
