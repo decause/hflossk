@@ -12,7 +12,7 @@
   <blockquote>
     <div>
       <ul class="unstyled">
-        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
+        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhbutt.com/syllabus">http://hfoss-fossrit.rhbutt.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Orange Hall Room 1375 </li>
         <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
@@ -89,7 +89,7 @@
   </tr>
   <tr class="row-even"><td rowspan="2">1</td>
     <td id="sessionnumber">1</td>
-    <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
+    <td id="sessioncontent"><a href="/lectures/w1c2">Welcome, intro, Syllabus, RTFM</a></td>
     <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
     <td id="due">&nbsp;</td>
   </tr>
@@ -106,7 +106,7 @@
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Formal Introduction to Git and Github</td>
+  <td><a href="/lectures/w2c2">Formal Introduction to Git and Github</a></td>
   <td>&nbsp;</td>
   <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
   </tr>
