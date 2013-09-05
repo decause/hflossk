@@ -25,9 +25,9 @@ Practices component of your final grade.
 </p>
 
 <div class="alert alert-success">
-<dl>
-    <dt><h3 class="label label-success">Tasks:</h3></dt>
-    <dd><ul class="first last simple">
+
+    <h3 class="label label-success">Tasks:</h3>
+    <ul class="first last simple">
         <li>Download and install an IRC client on your development machine.
           <ul>
           	<li>Windows:
@@ -54,8 +54,8 @@ the NickServ</a>.</li>
             <li>The instructor’s nick is <code>decause</code>.</li>
           </ul>
         </li>
-    </ul></dd>
-</dl>
+    </ul>
+
 </div>
 
 <p>
@@ -178,9 +178,9 @@ forge.
     <p>Check out the source repository for this course; it’s hosted at
     <a class="reference external" href="https://github.com/decause/hflossk">https://github.com/decause/hflossk</a>.</p>
     <p>Inside the repository, we’ll keep an index of all the students in the course and metadata about them (you!).</p>
-    <dl class="alert alert-success">
-        <dt><h3 class="label label-success">Tasks:</h3></dt>
-        <dd><ul>
+    <div class="alert alert-success">
+        <h3 class="label label-success">Tasks:</h3>
+        <ul>
             <li>Load up the git cheatsheet at <a
                 href="http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html"><em>Zack
             Rusin's blog</em></a> and keep it nearby.</li>
@@ -194,21 +194,18 @@ forge.
             <li>Clone a local copy.</li>
             <li>Add a file in the <code>/scripts/people</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
             a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example.
-            </li>
-
+            
+			
             <div class="alert alert-warning">
             <strong>BE WARNED</strong>: Your .yaml file must match the format *exactly* (meaning it is case and whitespace sensitive.)
             </div>
             <div class="alert alert-warning">
             <strong>CRUFTY</strong>: There is a <code>people.yaml</code> file in that directory.  It is a legacy hangover from older code.  Do not bother editing it.  It will actually make merges more difficult.
-            </div>
+            </div></li>
 
             <li>Once you've confirmed your .yaml file matches exactly, commit and push your changes to github, and issue a pull request.</li>
             <li>Once the patch is accepted upstream and pushed to production, this
-            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>
-            </ul>
-            </li>
+            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>          
         </ul>
-        </dd>
-    </dl>
+    </div>
 </div>
