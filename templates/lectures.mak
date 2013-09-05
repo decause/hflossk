@@ -7,7 +7,7 @@
 <div class="row-fluid">
     <div class="span4">
         <ul class="unstyled">
-            <h2>Notes</h2>
+            <li><h2>Notes</h2></li>
             <li><a href="/lectures/w1c2">Week 1 - Class 2</a></li>
             <li><a href="/lectures/w2c2">Week 2 - Class 2</a></li>
         </ul>
