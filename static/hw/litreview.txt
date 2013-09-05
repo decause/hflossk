@@ -45,6 +45,9 @@ to remember the basics:
         will be easy to forget or 
         made you want to send a patch
 
+    The Questions
+    3 Questions you have after reading the literature.
+
     Your Review
         Imagine you are on Yelp, Amazon, Ebay, Netflix, or any other online
         community that has customer reviews. This is the message that you want
