@@ -7,7 +7,7 @@
 <div class="row-fluid">
     <div class="span4">
         <ul class="unstyled">
-            <h2>Tasks</h2>
+            <li><h2>Tasks</h2></li>
             %for hw in hws:
                 <li><a href="/static/hw/${hw}">${hw}</a></li>
             %endfor
