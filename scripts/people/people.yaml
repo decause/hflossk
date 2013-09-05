@@ -18,7 +18,7 @@
 #  - commit this in git
 #  - push back to your forked repository on github.com
 #  - issue a pull request on the upstream repository to be considered for a
-#    merge.
+#    merge. 
 - blog: http://foss.rit.edu/blog/decause
   feed: http://foss.rit.edu/blog/1/feed
   forges:
