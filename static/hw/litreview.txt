@@ -49,3 +49,5 @@ to remember the basics:
         Imagine you are on Yelp, Amazon, Ebay, Netflix, or any other online
         community that has customer reviews. This is the message that you want
         to leave behind, to represent yourself, and inform (or warn) others.
+		You should add a quick rating system of your choosing (X/Y stars, X thumbs
+		up) as part of the review. 
