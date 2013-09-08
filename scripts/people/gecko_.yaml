@@ -1,5 +1,6 @@
 # Hi, this is Greg!
-- blog: gecko231.wordpress.com
+- blog: http://gecko231.wordpress.com
+  feed: http://gecko231.wordpress.com/feed/
   forges:
     - http://github.com/gecko231
   irc: gecko_
