@@ -25,26 +25,37 @@ Practices component of your final grade.
 </p>
 
 <div class="alert alert-success">
-<dl>
-    <dt><h3 class="label label-success">Tasks:</h3></dt>
-        <dd><ul class="first last simple">
-            <li>Download and install an IRC client on your development machine.<ul>
-            <li>Windows: <a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
+
+    <h3 class="label label-success">Tasks:</h3>
+    <ul class="first last simple">
+        <li>Download and install an IRC client on your development machine.
+          <ul>
+          	<li>Windows:
+          	  <ul>
+                <li><a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
+                <li><a class="reference external" href="http://hexchat.github.io/">HexChat</a></li>
+              </ul>
+            </li>
             <li>Mac OS X: <a class="reference external" href="http://colloquy.info/">Colloquy</a></li>
-            <li>Linux: <a class="reference external" href="http://irssi.org/">irssi</a></li>
-            </ul>
+            <li>Linux:
+              <ul>
+                <li><a class="reference external" href="http://irssi.org/">irssi</a> (Command-line)</li>
+                <li><a class="reference external" href="http://hexchat.github.io/">HexChat</a></li>
+                <li><a class="reference external" href="http://xchat.org/">XChat</a> (Older version of HexChat)</li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li>Choose a nick and <a
 href="http://freenode.net/faq.shtml#userregistration">register yourself with
 the NickServ</a>.</li>
         <li>Connect to <code>#rit-foss</code> on <code>irc.freenode.net</code> and introduce yourself.
-        <ul>
-        <li>The instructor’s nick is <code>decause</code>.</li>
-    </ul>
+          <ul>
+            <li>The instructor’s nick is <code>decause</code>.</li>
+          </ul>
         </li>
     </ul>
-    </dd>
-</dl>
+
 </div>
 
 <p>
@@ -90,8 +101,7 @@ have an existing mailing list where messages of these sort are to be posted.
     and you typically find that solution in a blog post of some developer who
     has run into a similar situation. Blogging about your attempts, successes
     and failures (and writing tutorials!) is a best practice for increasing the
-    general body of searchable knowledge available, for increasing the Wisdom
-    of the Ancients.  </p>
+    general body of searchable knowledge available, for increasing the <code><a class="reference external" href="http://xkcd.com/979/">Wisdom of the Ancients.</a></code></p>
 
 <p>
 Blogs around a topic are also typically aggregated by a planet (an RSS feed
@@ -168,9 +178,9 @@ forge.
     <p>Check out the source repository for this course; it’s hosted at
     <a class="reference external" href="https://github.com/decause/hflossk">https://github.com/decause/hflossk</a>.</p>
     <p>Inside the repository, we’ll keep an index of all the students in the course and metadata about them (you!).</p>
-    <dl class="alert alert-success">
-        <dt><h3 class="label label-success">Tasks:</h3></dt>
-        <dd><ul>
+    <div class="alert alert-success">
+        <h3 class="label label-success">Tasks:</h3>
+        <ul>
             <li>Load up the git cheatsheet at <a
                 href="http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html"><em>Zack
             Rusin's blog</em></a> and keep it nearby.</li>
@@ -184,17 +194,18 @@ forge.
             <li>Clone a local copy.</li>
             <li>Add a file in the <code>/scripts/people</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
             a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example.
-
-<br/><br/>
+            
+			
             <div class="alert alert-warning">
-            <strong>BE WARNED</strong>: Your .yaml file must match the format *exactly* (meaning it is case and whitespace sensitive.)</li>
+            <strong>BE WARNED</strong>: Your .yaml file must match the format *exactly* (meaning it is case and whitespace sensitive.)
+            </div>
+            <div class="alert alert-warning">
+            <strong>CRUFTY</strong>: There is a <code>people.yaml</code> file in that directory.  It is a legacy hangover from older code.  Do not bother editing it.  It will actually make merges more difficult.
+            </div></li>
+
             <li>Once you've confirmed your .yaml file matches exactly, commit and push your changes to github, and issue a pull request.</li>
             <li>Once the patch is accepted upstream and pushed to production, this
-            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>
-        </div>
-            </ul>
-            </li>
+            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>          
         </ul>
-        </dd>
-    </dl>
+    </div>
 </div>

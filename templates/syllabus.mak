@@ -12,15 +12,15 @@
   <blockquote>
     <div>
       <ul class="unstyled">
-        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
+        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhbutt.com/syllabus">http://hfoss-fossrit.rhbutt.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Orange Hall Room 1375 </li>
         <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
         <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;</li>
             <li>Office:  The MAGIC Center</li>
             <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
-        <li>Teaching Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <tt class="docutils literal"><span class="pre">HFOSSTA</span></tt> in IRC.</li>
-        <li>IRC - irc.freenode.net, <tt class="docutils literal"><span class="pre">#rit-foss</span></tt></li>
+        <li>Teaching Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">HFOSSTA</span></span> in IRC.</li>
+        <li>IRC - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
         <li>Email list - <a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a></li>
         <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
         <li>The source for this syllabus can be found at
@@ -74,13 +74,13 @@
   <h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline"></a></h2>
   <table border="1" class="docutils">
   <colgroup>
-  <col width="5%" />
-  <col width="4%" />
-  <col width="38%" />
-  <col width="26%" />
-  <col width="26%" />
+  <col style="width: 5%;" />
+  <col style="width: 4%;" />
+  <col style="width: 38%;" />
+  <col style="width: 26%;" />
+  <col style="width: 26%;" />
   </colgroup>
-  <tbody valign="top">
+  <tbody style="vertical-align: top;">
   <tr class="row-odd"><td>Week</td>
   <td>Day</td>
   <td>Topic</td>
@@ -88,27 +88,27 @@
   <td>Due</td>
   </tr>
   <tr class="row-even"><td rowspan="2">1</td>
-    <td id="sessionnumber">1</td>
-    <td id="sessioncontent">Welcome, intro, Syllabus, RTFM</td>
+    <td class="sessionnumber">1</td>
+    <td class="sessioncontent"><a href="/lectures/w1c2">Welcome, intro, Syllabus, RTFM</a></td>
     <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
-    <td id="due">&nbsp;</td>
+    <td class="due">&nbsp;</td>
   </tr>
   <tr>
-    <td id="sessionnumber">2</td>
-    <td id="sessioncontent">First Flight</td>
-    <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
-    <td id="due">&nbsp;</td>
+    <td class="sessionnumber">2</td>
+    <td class="sessioncontent">First Flight</td>
+    <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
+    <td class="due">&nbsp;</td>
   </tr>
   <tr class="row-odd"><td rowspan="2">2</td>
   <td>1</td>
-  <td class="guest">Guest Lecture: lmacken</td>
+  <td class="cancelled">RIT CLOSED - Labor Day</td>
   <td id="assigned">&nbsp;</td>
-  <td><a href="/firstflight"><em>Homework - First Flight</em></a></td>
+  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>Formal Introduction to Git and Github</td>
+  <td><a href="/lectures/w2c2">Formal Introduction to Git and Github</a></td>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
   </tr>
   <tr class="row-even"><td rowspan="2">3</td>
   <td>1</td>
@@ -135,6 +135,7 @@
   <tr class="row-odd"><td>***</td>
   <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish)</td>
   <td>&nbsp;</td>
+  <td>&nbsp;</td>
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
   <td>COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail</td>
@@ -160,15 +161,16 @@
   <tr class="row-even"><td rowspan="3">7</td>
   <td>1</td>
   <td>OLPC Distribution &amp; Smoke testing</td>
-  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
+  <td><span style="font-family:monospace;"><a href="/smoketest">Smoke Test</a></span></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>TBD</td>
   <td>&nbsp;</td>
-  <td><tt><a href="/smoketest">Smoke Test</a></tt></td>
+  <td><span style="font-family: monospace;"><a href="/smoketest">Smoke Test</a></span></td>
   <tr class="row-odd"><td>***</td>
   <td> Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">8</td>
@@ -241,7 +243,6 @@
   <td class="special">TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)</td>
   <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td class="guest">Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm</td>
@@ -292,35 +293,35 @@
 <p>Your final grade for the quarter will be derived from the following weights.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="80%" />
-<col width="20%" />
+<col style="width: 80%;" />
+<col style="width: 20%;" />
 </colgroup>
-<thead valign="bottom">
+<thead style="vertical-align: bottom;">
 <tr class="row-odd"><th class="head">Component</th>
 <th class="head">Weight</th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody style="vertical-align: top;">
 <tr class="row-even"><td>In-Class Participation</td>
-<td>10%</td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Quizzes</td>
-<td>10%</td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Literature Reviews</td>
-<td>10%</td>
+<td class="center"><span class="badge badge-warning">10%</span></td>
 </tr>
 <tr class="row-even"><td>Team Peer Assessment</td>
-<td>15%</td>
+<td class="center"><span class="badge badge-info">15%</span></td>
 </tr>
-<tr class="row-odd"><td>Completed Project</td>
-<td>15%</td>
+<tr class="row-even"><td>Completed Project</td>
+<td class="center"><span class="badge badge-info">15%</span></td>
 </tr>
 <tr class="row-even"><td>Final Presentation</td>
-<td>20%</td>
-<tr class="row-odd"><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
-<td>20%</td>
+<td class="center"><span class="badge badge-success">20%</span></td>
 </tr>
+<tr class="row-even"><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
+<td class="center"><span class="badge badge-success">20%</span></td>
 </tr>
 </tbody>
 </table>
@@ -328,7 +329,7 @@
 <p><em>Blog updates</em> &#8211; students are required to keep a blog to which they post updates
 about their investigations, progress, success, and pitfalls. This blog can be
 hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
-in <a class="reference internal" href="hw/fflight.html"><em>Homework - First Flight</em></a>).</p>
+in <a class="reference internal" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
 <blockquote>
 <div><ul class="simple">
 <li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
@@ -342,12 +343,11 @@ in <a class="reference internal" href="hw/fflight.html"><em>Homework - First Fli
 <div class="section" id="lightning-talks-extra-credit">
 <h2>Lightning Talks - Extra Credit<a class="headerlink" href="#lightning-talks-extra-credit" title="Permalink to this headline"></a></h2>
 <p>Every Wednesday for the first portion of class, any student has the opportunity
-to give a <a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a> on a
+to give a <code><a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
 topic of their chosing.  Your lightning talk must be less than 5 minutes in
 length and must be at least remotely related to the course material.</p>
 <p>You will receive +1 extra credit points towards your final grade for every
-lightning talk you give. Only the first three lightning talks offered will be
+lightning talk you give. Only the first <span class="badge badge-important">2</span> lightning talks offered will be
 allowed during a given class. Talks will be chosen from among those offered by
-students on a FIFO basis.</p>
-</div>
+students on a <code><a target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code> basis.</p>
 </div>
