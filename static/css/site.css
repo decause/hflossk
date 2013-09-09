@@ -81,14 +81,14 @@
 
 
 .lecture_list>li{
-	font-size: 24.5px;
-	margin: -10px 0;
-	font-weight: bold;
-	line-height: 40px;
+    font-size: 24.5px;
+    margin: -10px 0;
+    font-weight: bold;
+    line-height: 40px;
 }
 .lecture_list>li ol, .lecture_list>li ul{
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 20px;
-	margin-top: -10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: -10px;
 }
