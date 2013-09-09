@@ -2,4 +2,5 @@
 *.egg*
 *.gz
 *.swp
+*~
 build
