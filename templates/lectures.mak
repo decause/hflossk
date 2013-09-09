@@ -10,6 +10,7 @@
             <li><h2>Notes</h2></li>
             <li><a href="/lectures/w1c2">Week 1 - Class 2</a></li>
             <li><a href="/lectures/w2c2">Week 2 - Class 2</a></li>
+            <li><a href="/lectures/w3c1">Week 3 - Class 1</a></li>
         </ul>
     </div>
 </div>
