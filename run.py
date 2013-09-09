@@ -156,6 +156,11 @@ def w2c2():
     return render_template('w2c2.mak', name='mako')
 
 
+@app.route('/lectures/w3c1')
+def w3c1():
+    return render_template('w3c1.mak', name='mako')
+
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
@@ -164,6 +169,11 @@ def decause():
 @app.route('/lectures')
 def lectures():
     return render_template('lectures.mak', name='mako')
+
+
+@app.route('/quiz1')
+def quiz1():
+    return render_template('quiz1.mak', name='mako')
 
 
 @app.route('/syllabus')
