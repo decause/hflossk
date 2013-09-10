@@ -1,8 +1,9 @@
 # Hiya I am Nolski
-blog: http://blog.michael-nolan.com/
-feed: http://blog.michael-nolan.com//
-forges:  - http://github.com/mpn3712
-irc: Nolski
-name: Mike Nolan
-rit_dce: lle6138
-reading1_post: http://blog.michael-nolan.com/?p=9
+- blog: http://blog.michael-nolan.com/
+  feed: http://blog.michael-nolan.com/?feed=rss2
+  forges:  
+    - http://github.com/mpn3712
+  irc: Nolski
+  name: Mike Nolan
+  rit_dce: mpn3712
+  litreview1: http://blog.michael-nolan.com/?p=9
