@@ -123,13 +123,13 @@
   </tr>
   <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
-  <td>COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail</td>
+  <td>EDU: Pedagogy and Grokkery</td>
   <td>&nbsp;</td>
   <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama</td>
-  <td>&nbsp;</td>
+  <td>EDU: Curriculum Exploration</td>
+  <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>***</td>
@@ -138,14 +138,14 @@
   <td>&nbsp;</td>
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
-  <td>EDU: Pedagogy and Grokkery</td>
-  <td>Commarch Report</td>
+  <td>COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail</td>
+  <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>EDU: Curriculum Exploration</td>
+  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama</td>
+  <td>Commarch Report</td>
   <td>&nbsp;</td>
-  <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
