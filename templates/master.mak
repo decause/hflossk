@@ -1,16 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>${self.title()}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RIT HFOSS course website">
-    <meta name="author" content="RemyD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RIT HFOSS course website" />
+    <meta name="author" content="RemyD" />
 
     <!-- Le styles -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/css/site.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/static/css/site.css" rel="stylesheet" />
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -29,7 +28,7 @@
         }
       }
     </style>
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -37,11 +36,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png">-->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="static/img/favicon.png">
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png" />-->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png" />
+                    <link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png" />
+                                   <link rel="shortcut icon" href="static/img/favicon.png" />
   </head>
 
   <body>
@@ -68,7 +67,7 @@
               <li><a href="/hw">Assignments</a></li>
               <li><a href="/decause">Instructor</a></li>
               <li><a href="/checkblogs">Participants</a></li>
-              <li><a class="unstyled" target="_blank" href="http://webchat.freenode.net/?&channels=rit-foss">Instant IRC</a></li>
+              <li><a class="unstyled" target="_blank" href="http://webchat.freenode.net/?&amp;channels=rit-foss">Instant IRC</a></li>
               <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -95,7 +94,7 @@
         </div>
       </div><!--/row-->
 
-      <hr>
+      <hr />
 
       <footer>
       </footer>
