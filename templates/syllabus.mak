@@ -122,14 +122,13 @@
   </tr>
   <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
-  <td>EDU: Pedagogy and Grokkery</td>
-  <td>&nbsp;</td>
+  <td class="cancelled">MONDAY CANCELLED. GO TO ROC.py Tuesday!</td>
   <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
+  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>EDU: Curriculum Exploration</td>
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
-  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>***</td>
   <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish)</td>
@@ -138,8 +137,8 @@
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
   <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
-  <td><a target="_blank" href="/static/content/gitbyabus-edmundjorgensen.pdf">Git-By-A-Bus Activity</a></td>
   <td>&nbsp;</td>
+  <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Pending Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
@@ -149,13 +148,13 @@
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
   <td>Commarch Presentations</td>
-  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+  <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>"Teams Draft"</td>
   <td>&nbsp;</td>
-  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+  <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   </tr>
   <tr class="row-even"><td rowspan="3">7</td>
   <td>1</td>
