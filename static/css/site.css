@@ -32,6 +32,10 @@
     text-align: right;
 }
 
+.center {
+    text-align: center;
+}
+
 .good {
     color: darkgreen;
     box-shadow: 1px 1px 10px rgba(0, 100, 0, 0.5);
@@ -73,4 +77,18 @@
 
 .nobullets {
     list-style-type: none;
+}
+
+
+.lecture_list>li{
+    font-size: 24.5px;
+    margin: -10px 0;
+    font-weight: bold;
+    line-height: 40px;
+}
+.lecture_list>li ol, .lecture_list>li ul{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: -10px;
 }
