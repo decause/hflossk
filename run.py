@@ -170,9 +170,10 @@ def w3c2():
 def decause():
     return render_template('decause.mak', name='mako')
 
-@app.route('/bugfix')
+
+@app.route('/hw/bugfix')
 def bugfix():
-    return render_template('bugfix.html', name='mako')
+    return render_template('bugfix.mak', name='mako')
 
 
 @app.route('/lectures')
