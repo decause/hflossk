@@ -12,16 +12,15 @@
   <blockquote>
     <div>
       <ul class="unstyled">
-        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhbutt.com/syllabus">http://hfoss-fossrit.rhbutt.com/syllabus</a> &#8211; (subject to change)</li>
+        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Orange Hall Room 1375 </li>
         <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
         <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;</li>
             <li>Office:  The MAGIC Center</li>
             <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
-        <li>Teaching Assistant - TBA &lt;<a class="reference external" href="mailto:HFOSSTA&#37;&#52;&#48;gmail&#46;com">HFOSSTA<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">HFOSSTA</span></span> in IRC.</li>
+        <li>Teaching Assistant - David Wilson &lt;<a class="reference external" href="mailto:daw4475&#37;&#52;&#48;rit&#46;edu">daw4475<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">DAWacker</span></span> in IRC.</li>
         <li>IRC - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
-        <li>Email list - <a class="reference external" href="https://lists.rit.edu/mailman/listinfo.cgi/floss-seminar">floss-seminar&#64;lists.rit.edu</a></li>
         <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
         <li>The source for this syllabus can be found at
         <a class="reference external" href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a></li>
@@ -39,11 +38,11 @@
   <p>This course will introduce students to the Free and Open Source Software (FOSS)
   and Open Content movements, to the open source development process,
   and to the open questions of the efficacy of technology in the classroom.</p>
-  <p>Students will learn FOSS process and Tools with class projects that support
-  the One Laptop Per Child community by creating content and
+  <p>Students will learn FOSS process and Tools with class projects that
+  support the One Laptop Per Child community by creating content and
   software for free distribution to students and teachers around the world.
-  The OLPC project is driven by a world-wide community&#8211;one that students in
-  HFOSS will become part of.</p>
+  The OLPC project is driven by a world-wide community&#8211;one that students
+  in HFOSS will become part of.</p>
   <p>For this course students will be expected to attend and make final
   presentations to the RIT and Rochester FOSS communities via the regular
   Rochester Pythonistas meet-ups and FOSSBox hack-a-thons when possible.
@@ -118,19 +117,18 @@
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>LIT: Rhetoric, Flamewars, and Trolling</td>
-  <td>Rhetological Fallacies Quiz</td>
-  <td>Rhetological Fallacies Quiz</td>
+  <td><a href="/quiz1">TOSW Quiz</a></td>
+  <td><a href="/quiz1">TOSW Quiz</a></td>
   </tr>
   <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
-  <td>EDU: Pedagogy and Grokkery</td>
-  <td>&nbsp;</td>
+  <td class="cancelled">MONDAY CANCELLED. GO TO ROC.py Tuesday!</td>
   <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
+  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>EDU: Curriculum Exploration</td>
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
-  <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>***</td>
   <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish)</td>
@@ -138,25 +136,25 @@
   <td>&nbsp;</td>
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
-  <td>COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail</td>
+  <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
   <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama</td>
-  <td>Commarch Report</td>
+  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Pending Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
+  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
   <td>Commarch Presentations</td>
-  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
-  <td>Commarch Report</td>
+  <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>"Teams Draft"</td>
   <td>&nbsp;</td>
-  <td><a  href="/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+  <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   </tr>
   <tr class="row-even"><td rowspan="3">7</td>
   <td>1</td>

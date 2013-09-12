@@ -161,9 +161,19 @@ def w3c1():
     return render_template('w3c1.mak', name='mako')
 
 
+@app.route('/lectures/w3c2')
+def w3c2():
+    return render_template('w3c2.mak', name='mako')
+
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
+
+
+@app.route('/hw/bugfix')
+def bugfix():
+    return render_template('bugfix.mak', name='mako')
 
 
 @app.route('/lectures')
