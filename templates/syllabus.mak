@@ -131,7 +131,7 @@
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
   <tr class="row-odd"><td>***</td>
-  <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a href="http://bit.ly/rsvpsfdroc13">Sign-up</a></td>
+  <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a></td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   <tr class="row-even"><td rowspan="2">5</td>
