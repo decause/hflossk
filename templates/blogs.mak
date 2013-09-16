@@ -10,7 +10,11 @@
 <div class="row-fluid">
   %for student in student_data:
     <div class="span4 shadowcard padded">
+    % if student.get('gravatar_email'):
+    <img class="uglymug" src="${gravatar(student['gravatar_email'])}" alt="${student['irc']}'s Avatar" />
+    % else:
     <img class="uglymug" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
+    % endif
     <h4 class="irc_nick">${student['irc']}</h4>
     <div class="sticky padded ${'good' if student_posts[student['irc']] >= target_number else 'bad'}">
     <i class="icon-pencil"></i>
