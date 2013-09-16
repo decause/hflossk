@@ -70,15 +70,22 @@ def checkblogs():
 
             student_posts[student['irc']] = len(when)
 
+            if student.get('quiz1'):
+                print('Checking %s' % student['quiz1'])
+                student_quizes = student['quiz1']
+
         average = sum(student_posts.values()) / float(len(student_posts))
 
+        assignments = ['quiz1', 'litreview1']
         target_number = int((datetime.today() - target).total_seconds() /
-                            timedelta(weeks=1).total_seconds() + 1)
+                            timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+
         return render_template('blogs.mak', name='mako',
                                student_data=student_data,
                                student_posts=student_posts,
                                gravatar=gravatar, average=average,
-                               target_number=target_number)
+                               target_number=target_number,
+                               student_quizes=student_quizes)
 
     #Raw block, no try/except
     #student_data = []
