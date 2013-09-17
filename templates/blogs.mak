@@ -15,11 +15,25 @@
     <div class="sticky padded ${'good' if student_posts[student['irc']] >= target_number else 'bad'}">
     <i class="icon-pencil"></i>
     <span>${student_posts[student['irc']]}</span></div>
-    <p><a target="_blank" href="${student['blog']}">${student['blog']}</a></p>
+    <p><a target="_blank" href="${student['blog']}">Blog</a></p>
     <ul class="unstyled cardlist">
+
     % for geordi in student['forges']:
-    <li><a target="_blank" class="reference external" href="${geordi}">${geordi}</a></li>
+    <li><a target="_blank" href="${geordi}">${geordi}</a></li>
     %endfor
+
+    % if student_quizes.get(student['irc']):
+    <li><a target="_blank" href="${student_quizes[student['irc']]}">Quiz1</a></li>
+    % else:
+    <li class="redtext">quiz1?</li>
+    % endif
+
+    % if student_litreview1.get(student['irc']):
+    <li><a target="_blank" href="${student_litreview1[student['irc']]}">litreview1</a></li>
+    % else:
+    <li class="redtext">litreview1?</li>
+    % endif
+
     </ul>
     <p><a class="btn" href="#">View details &raquo;</a></p>
     </div><!--/span-->
