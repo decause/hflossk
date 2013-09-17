@@ -123,7 +123,7 @@
   <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
   <td class="cancelled">MONDAY CANCELLED. GO TO ROC.py Tuesday!</td>
-  <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
+  <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
@@ -138,7 +138,7 @@
   <td>1</td>
   <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
   <td>&nbsp;</td>
-  <td><a  href="/bugfix.html"><em>Homework - Bugfix</em></a></td>
+  <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Pending Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
