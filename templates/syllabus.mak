@@ -141,7 +141,7 @@
   <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td class="tbd">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Pending Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
+  <td class="guest">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   <td>&nbsp;</td>
   </tr>
