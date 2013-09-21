@@ -160,7 +160,7 @@
   <td>1</td>
   <td>OLPC Distribution &amp; Smoke testing</td>
   <td><span style="font-family:monospace;"><a href="/smoketest">Smoke Test</a></span></td>
-  <td>&nbsp;</td>
+  <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>TBD</td>
