@@ -34,6 +34,18 @@
     <li class="redtext">litreview1?</li>
     % endif
 
+    % if student_bugfixes.get(student['irc']):
+    <li><a target="_blank" href="${student_bugfixes[student['irc']]}">bugfix</a></li>
+    % else:
+    <li class="redtext">bugfix?</li>
+    % endif
+
+    <!--This block used for quick grading reference ;)
+    % if student_names.get(student['irc']):
+    <li>${student_names[student['irc']]}</li>
+    % endif
+    -->
+
     </ul>
     <p><a class="btn" href="#">View details &raquo;</a></p>
     </div><!--/span-->
