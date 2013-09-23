@@ -11,6 +11,8 @@
             %for hw in hws:
                 <li><a href="/static/hw/${hw}">${hw}</a></li>
             %endfor
+            <li><a href="/hw/firstflight">First Flight</a></li>
+						<li><a href="/hw/bugfix">Bug Fix</a></li>
         </ul>
     </div>
 </div>
