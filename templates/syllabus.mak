@@ -137,13 +137,13 @@
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
   <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
-  <td>&nbsp;</td>
+  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a><br/>Commarch Team Formation</td>
   <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td class="guest">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
-  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   <td>&nbsp;</td>
+  <td>Commarch Team Formation</td>
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
