@@ -53,6 +53,8 @@ def checkblogs():
         student_posts = {}
         student_quizes = {}
         student_litreview1 = {}
+        student_names = {}
+        student_bugfixes= {}
 
         target = datetime(2013, 8, 25)
         for student in student_data:
@@ -81,6 +83,14 @@ def checkblogs():
                 print('Checking %s' % student['litreview1'])
                 student_litreview1[student['irc']] = student['litreview1']
 
+            if student.get('name'):
+                print('Checking %s' % student['name'])
+                student_names[student['irc']] = student['name']
+
+            if student.get('bugfix'):
+                print('Checking %s' % student['name'])
+                student_bugfixes[student['irc']] = student['name']
+
         average = sum(student_posts.values()) / float(len(student_posts))
 
         assignments = ['quiz1', 'litreview1']
@@ -93,7 +103,9 @@ def checkblogs():
                                gravatar=gravatar, average=average,
                                target_number=target_number,
                                student_quizes=student_quizes,
-                               student_litreview1=student_litreview1)
+                               student_litreview1=student_litreview1,
+                               student_bugfixes=student_bugfixes,
+                               student_names=student_names)
 
     #Raw block, no try/except
     #student_data = []
