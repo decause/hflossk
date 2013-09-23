@@ -89,7 +89,7 @@ def checkblogs():
 
             if student.get('bugfix'):
                 print('Checking %s' % student['name'])
-                student_bugfixes[student['irc']] = student['name']
+                student_bugfixes[student['irc']] = student['bugfix']
 
         average = sum(student_posts.values()) / float(len(student_posts))
 
