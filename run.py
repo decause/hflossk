@@ -192,6 +192,10 @@ def w3c1():
 def w3c2():
     return render_template('w3c2.mak', name='mako')
 
+@app.route('/lectures/w5c1')
+def w5c1():
+    return render_template('w5c1.mak', name='mako')
+
 
 @app.route('/decause')
 def decause():
