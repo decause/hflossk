@@ -2,7 +2,7 @@
 
 <div class="hero-unit">
     <h1>W5C1</h1>
-    <p>Week 3 - Class 2</p>
+    <p>Week 5 - Class 1</p>
 </div>
 
 <div>
