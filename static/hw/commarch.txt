@@ -27,7 +27,7 @@ to contribute to for your term project (highly recommended!)
 3.  Calculate your project's "Callaway Coefficient of Fail" using the rubric available here:
     http://hfoss-fossrit.rhcloud.com/static/books/tomspotcallaway-howtotellifyourfossprojectisdoomedtofail.pdf
 
-3.  Dig deeper. Provide answers to the following questions:
+4.  Dig deeper. Provide answers to the following questions:
 
     If applicable, list or provide links to:
         I.      The project's IRC Channel
@@ -94,10 +94,10 @@ to contribute to for your term project (highly recommended!)
     R.  Is this the kind of structure you would enjoy working in? Why, or
         why not?
 
-4.  Write up a set of answers to these questions including how you arrived at
+5.  Write up a set of answers to these questions including how you arrived at
     your conclusions (links, convo quotes, irc logs, email threads, etc.) to be
     posted to your blogs individually. Each member can link to the same
     analysis, but should give a personal account "in your own voice."
 
-5.  Prepare in a brief slide-deck to present as a group to the class based on
+6.  Prepare in a brief slide-deck to present as a group to the class based on
     your research.
