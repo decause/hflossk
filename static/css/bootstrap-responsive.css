@@ -65,7 +65,7 @@
   display: inherit !important;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 943px) {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -106,6 +106,15 @@
   .hidden-print {
     display: none !important;
   }
+}
+
+@media (min-width: 944px) and (max-width: 1185px) {
+  .sidebar-nav {
+    margin-top: 42px;
+  }
+  .hero-unit {
+    margin-top: 42px;
+  }  
 }
 
 @media (min-width: 1200px) {
@@ -949,7 +958,7 @@
   }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 943px) {
   body {
     padding-top: 0;
   }
@@ -1101,7 +1110,7 @@
   }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 944px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
