@@ -1,0 +1,106 @@
+<!-- Note: To whomever may edit this next, feel free to add the
+ appropriate CSS to make this page more consistent with the rest of the site -Edwfoss -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HFOSS@RIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RIT HFOSS course website" />
+    <meta name="author" content="RemyD" />
+
+    <!-- Le styles -->
+    <link href="/../css/bootstrap.css" rel="stylesheet" />
+    <link href="/../css/site.css" rel="stylesheet" />
+    <style type="text/css">
+      body {
+        padding-top: 5px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+		<div class='span9'>
+		
+			<div class="hero-unit">
+				<h1>Add Yourself To The Course Website</h1>
+			</div>
+			<div>
+				<p>Check out the source repository for this course; it's hosted at
+				<a class="reference external" href="https://github.com/decause/hflossk">https://github.com/decause/hflossk</a>.</p>
+				<p>Inside the repository, we'll keep an index of all the students in the course and metadata about them (you!).</p>
+				<div class="alert alert-success">
+					<h3 class="label label-success">Tasks:</h3>
+					<ul>
+						<li>Load up the git cheatsheet at <a
+							href="http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html"><em>Zack
+							Rusin's blog</em></a> and keep it nearby.</li>
+						<li>Work through this <a
+							href="http://gitimmersion.com/index.html">git tutorial</a> if
+							you don't have any experience with git.</li>
+						<li>Fork <a href="https://github.com/decause/hflossk">the
+							repository</a> (link to <a
+							href="http://help.github.com/fork-a-repo/">github help</a> on
+							this).</li>
+						<li>Clone a local copy.</li>
+						<li>Add a file in the <code>/scripts/people</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
+							a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example.
+								
+								
+						<div class="alert alert-warning">
+							<strong>BE WARNED</strong>: Your .yaml file must match the format *exactly* (meaning it is case and whitespace sensitive.)
+						</div>
+						<div class="alert alert-warning">
+							<strong>CRUFTY</strong>: There is a <code>people.yaml</code> file in that directory.  It is a legacy hangover from older code.  Do not bother editing it.  It will actually make merges more difficult.
+						</div></li>
+
+						<li>Once you've confirmed your .yaml file matches exactly, commit and push your changes to github, and issue a pull request.</li>
+						<li>Once the patch is accepted upstream and pushed to production, this
+							should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>          
+					</ul>
+				</div>
+			</div>
+		</div>
+      </div><!--/row-->
+
+      <hr />
+
+      <footer>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/../js/jquery.js"></script>
+    <script src="/../js/bootstrap-transition.js"></script>
+    <script src="/../js/bootstrap-alert.js"></script>
+    <script src="/../js/bootstrap-modal.js"></script>
+    <script src="/../js/bootstrap-dropdown.js"></script>
+    <script src="/../js/bootstrap-scrollspy.js"></script>
+    <script src="/../js/bootstrap-tab.js"></script>
+    <script src="/../js/bootstrap-tooltip.js"></script>
+    <script src="/../js/bootstrap-popover.js"></script>
+    <script src="/../js/bootstrap-button.js"></script>
+    <script src="/../js/bootstrap-collapse.js"></script>
+    <script src="/../js/bootstrap-carousel.js"></script>
+    <script src="/../js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
