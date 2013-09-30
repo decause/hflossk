@@ -200,6 +200,10 @@ def w5c1():
 def w5c2():
     return render_template('w5c2.mak', name='mako')
 
+@app.route('/lectures/w6c1')
+def w6c1():
+    return render_template('w6c1.mak', name='mako')
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
