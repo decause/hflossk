@@ -147,7 +147,7 @@
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
-	<td>Commarch Presentations<div class="guest">Community Speaker: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rocehster">Hacks/Hackers Rochester</a> with Chris Horn</div></td>
+	<td>Commarch Presentations<div class="guest">Community Speaker: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a> with Chris Horn</div></td>
 	<td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   </tr>
