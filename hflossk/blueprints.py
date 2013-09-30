@@ -12,12 +12,20 @@ def display_homework(page):
     if page == 'index':
         hws = os.listdir(os.path.join(os.path.split(__file__)[0], '..',
                                       'static', 'hw'))
-    else:
-        hws = None
+        hws.extend(os.listdir(os.path.join(os.path.split(__file__)[0],
+                                           '..', 'templates', 'hw')))
+        hws = [hw for hw in sorted(hws) if not hw == "index.mak"]
 
     return render_template('hw/{}.mak'.format(page), name='mako', hws=hws)
 
 @lectures.route('/', defaults={'page': 'index'})
 @lectures.route('/<page>')
 def display_lecture(page):
-    return render_template('lectures/{}.mak'.format(page), name='mako')
+    if page == 'index':
+        lecture_notes = os.listdir(os.path.join(os.path.split(__file__)[0],
+                                                '..', 'templates',
+                                                'lectures'))
+        lecture_notes = [note for note in sorted(lecture_notes)
+                         if not note == "index.mak"]
+    return render_template('lectures/{}.mak'.format(page), name='mako',
+                           lectures=lecture_notes)

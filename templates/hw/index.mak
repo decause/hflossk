@@ -9,10 +9,12 @@
         <ul class="unstyled">
             <li><h2>Tasks</h2></li>
             %for hw in hws:
+              % if hw.split('.')[1] == 'mak':
+                <li><a href="/hw/${hw.split('.')[0]}">${hw}</a></li>
+              % else:
                 <li><a href="/static/hw/${hw}">${hw}</a></li>
+              % endif
             %endfor
-            <li><a href="/hw/firstflight">First Flight</a></li>
-            <li><a href="/hw/bugfix">Bug Fix</a></li>
         </ul>
     </div>
 </div>
