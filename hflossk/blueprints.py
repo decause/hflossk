@@ -15,6 +15,8 @@ def display_homework(page):
         hws.extend(os.listdir(os.path.join(os.path.split(__file__)[0],
                                            '..', 'templates', 'hw')))
         hws = [hw for hw in sorted(hws) if not hw == "index.mak"]
+    else:
+        hws = None
 
     return render_template('hw/{}.mak'.format(page), name='mako', hws=hws)
 
@@ -27,5 +29,8 @@ def display_lecture(page):
                                                 'lectures'))
         lecture_notes = [note for note in sorted(lecture_notes)
                          if not note == "index.mak"]
+    else:
+        lecture_notes = None
+
     return render_template('lectures/{}.mak'.format(page), name='mako',
                            lectures=lecture_notes)
