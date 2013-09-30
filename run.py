@@ -173,50 +173,19 @@ def index():
     return render_template('home.mak', name='mako')
 
 
-@app.route('/lectures/w1c2')
-def w1c2():
-    return render_template('w1c2.mak', name='mako')
+@app.route('/lectures')
+def lectures():
+    return render_template('lectures.mak', name='mako')
 
 
-@app.route('/lectures/w2c2')
-def w2c2():
-    return render_template('w2c2.mak', name='mako')
+@app.route('/lectures/<lecture>')
+def lecture(lecture):
+    return render_template('{}.mak'.format(lecture), name='mako')
 
-
-@app.route('/lectures/w3c1')
-def w3c1():
-    return render_template('w3c1.mak', name='mako')
-
-
-@app.route('/lectures/w3c2')
-def w3c2():
-    return render_template('w3c2.mak', name='mako')
-
-@app.route('/lectures/w5c1')
-def w5c1():
-    return render_template('w5c1.mak', name='mako')
-
-@app.route('/lectures/w5c2')
-def w5c2():
-    return render_template('w5c2.mak', name='mako')
-
-@app.route('/lectures/w6c1')
-def w6c1():
-    return render_template('w6c1.mak', name='mako')
 
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
-
-
-@app.route('/hw/bugfix')
-def bugfix():
-    return render_template('bugfix.mak', name='mako')
-
-
-@app.route('/lectures')
-def lectures():
-    return render_template('lectures.mak', name='mako')
 
 
 @app.route('/quiz1')
@@ -232,11 +201,6 @@ def syllabus():
 @app.route('/about')
 def about():
     return render_template('about.mak', name='mako')
-
-
-@app.route('/hw/firstflight')
-def fflight():
-    return render_template('fflight.mak', name='mako')
 
 
 @app.route('/books')
@@ -260,6 +224,11 @@ def hws():
                                   'hw'))
 
     return render_template('hw.mak', name='mako', hws=hws)
+
+
+@app.route('/hw/<homework>')
+def homework(homework):
+    return render_template('{}.mak'.format(homework), name='mako')
 
 
 @app.route('/oer')
