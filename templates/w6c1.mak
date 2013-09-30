@@ -11,8 +11,8 @@
         <li>
         <h3>Guest Speakers</h3>
             <ol class="alert alert-success nobullets" >
-                <li><i class="icon-bullhorn"></i> Andrew Mandula: <a href="http://www.csh.rit.edu/~ajman/lightingtalk/multiplayerpt1/lightingtalk.html#/tiny" target="_blank">Every Multiplayer Game Mechanic Ever: Part I</a></li>
                 <li><i class="icon-bullhorn"></i> Chris Horn: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a></li>
+                <li><i class="icon-bullhorn"></i> Andrew Mandula: <a href="http://www.csh.rit.edu/~ajman/lightingtalk/multiplayerpt1/lightingtalk.html#/tiny" target="_blank">Every Multiplayer Game Mechanic Ever: Part I</a></li>
             </ol>
 </li>
         <li>
