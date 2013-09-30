@@ -35,6 +35,12 @@ def gravatar(email):
 yaml_dir = 'scripts/people/'
 
 
+@app.route('/', defaults=dict(page='home'))
+@app.route('/<page>')
+def simple(page):
+    return render_template('{}.mak'.format(page), name='mako')
+
+
 @app.route('/checkblogs')
 def checkblogs():
     try:
@@ -170,26 +176,6 @@ def checkblogs():
     #                        target_number=target_number)
 
 
-@app.route('/')
-def index():
-    return render_template('home.mak', name='mako')
-
-
-@app.route('/decause')
-def decause():
-    return render_template('decause.mak', name='mako')
-
-
-@app.route('/syllabus')
-def syllabus():
-    return render_template('syllabus.mak', name='mako')
-
-
-@app.route('/about')
-def about():
-    return render_template('about.mak', name='mako')
-
-
 @app.route('/books')
 def books():
     books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
@@ -205,10 +191,6 @@ def slides():
     return render_template('decks.mak', name='mako', decks=decks)
 
 
-app.register_blueprint(homework, url_prefix='/hw')
-app.register_blueprint(lectures, url_prefix='/lectures')
-app.register_blueprint(quizzes, url_prefix='/quiz')
-
 @app.route('/oer')
 def oer():
     decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
@@ -222,6 +204,11 @@ def oer():
 
     return render_template('oer.mak', name='mako', decks=decks, books=books,
                            challenges=challenges)
+
+
+app.register_blueprint(homework, url_prefix='/hw')
+app.register_blueprint(lectures, url_prefix='/lectures')
+app.register_blueprint(quizzes, url_prefix='/quiz')
 
 
 if __name__ == "__main__":
