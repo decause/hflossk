@@ -12,6 +12,8 @@
             <li><a href="/lectures/w2c2">Week 2 - Class 2</a></li>
             <li><a href="/lectures/w3c1">Week 3 - Class 1</a></li>
             <li><a href="/lectures/w3c2">Week 3 - Class 2</a></li>
+            <li><a href="/lectures/w5c1">Week 5 - Class 1</a></li>
+            <li><a href="/lectures/w5c2">Week 5 - Class 2</a></li>
         </ul>
     </div>
 </div>

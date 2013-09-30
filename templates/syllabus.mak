@@ -137,18 +137,18 @@
   <tr class="row-even"><td rowspan="2">5</td>
   <td>1</td>
   <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
-  <td>&nbsp;</td>
+  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a><br/>Commarch Team Formation</td>
   <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
   <td class="guest">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
-  <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   <td>&nbsp;</td>
+  <td>Commarch Team Formation</td>
   </tr>
   <tr class="row-even"><td rowspan="2">6</td>
   <td>1</td>
-  <td>Commarch Presentations</td>
-  <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
+	<td>Commarch Presentations<div class="guest">Community Speaker: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rocehster">Hacks/Hackers Rochester</a> with Chris Horn</div></td>
+	<td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
