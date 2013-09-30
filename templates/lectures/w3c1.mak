@@ -1,4 +1,4 @@
-<%inherit file="master.mak" />
+<%inherit file="../master.mak" />
 
 <div class="hero-unit">
     <h1>W3C1</h1>
