@@ -16,7 +16,7 @@ import hashlib
 import urllib2
 import glob
 
-from hflossk.blueprints import homework, lectures
+from hflossk.blueprints import homework, lectures, quizzes
 
 app = Flask(__name__)
 app.template_folder = "templates"
@@ -180,11 +180,6 @@ def decause():
     return render_template('decause.mak', name='mako')
 
 
-@app.route('/quiz1')
-def quiz1():
-    return render_template('quiz1.mak', name='mako')
-
-
 @app.route('/syllabus')
 def syllabus():
     return render_template('syllabus.mak', name='mako')
@@ -212,6 +207,7 @@ def slides():
 
 app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
+app.register_blueprint(quizzes, url_prefix='/quiz')
 
 @app.route('/oer')
 def oer():

@@ -5,6 +5,7 @@ from flask.ext.mako import MakoTemplates, render_template
 
 homework = Blueprint('homework', __name__, template_folder='templates')
 lectures = Blueprint('lectures', __name__, template_folder='templates')
+quizzes = Blueprint('quizzes', __name__, template_folder='templates')
 
 @homework.route('/', defaults={'page': 'index'})
 @homework.route('/<page>')
@@ -34,3 +35,7 @@ def display_lecture(page):
 
     return render_template('lectures/{}.mak'.format(page), name='mako',
                            lectures=lecture_notes)
+
+@quizzes.route('/<quiz_num>')
+def show_quiz(quiz_num):
+    return render_template('quiz/{}.mak'.format(quiz_num), name='mako')
