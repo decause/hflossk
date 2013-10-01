@@ -11,10 +11,10 @@ quizzes = Blueprint('quizzes', __name__, template_folder='templates')
 @homework.route('/<page>')
 def display_homework(page):
     if page == 'index':
-        hws = os.listdir(os.path.join(os.path.split(__file__)[0], '..',
+        hws = os.listdir(os.path.join(os.path.split(__file__)[0],
                                       'static', 'hw'))
         hws.extend(os.listdir(os.path.join(os.path.split(__file__)[0],
-                                           '..', 'templates', 'hw')))
+                                           'templates', 'hw')))
         hws = [hw for hw in sorted(hws) if not hw == "index.mak"]
     else:
         hws = None
@@ -26,8 +26,7 @@ def display_homework(page):
 def display_lecture(page):
     if page == 'index':
         lecture_notes = os.listdir(os.path.join(os.path.split(__file__)[0],
-                                                '..', 'templates',
-                                                'lectures'))
+                                                'templates', 'lectures'))
         lecture_notes = [note for note in sorted(lecture_notes)
                          if not note == "index.mak"]
     else:
