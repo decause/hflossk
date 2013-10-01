@@ -40,35 +40,33 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="/">HFOSS@RIT</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Fork me on <a target="_blank" href="http://github.com/decause/hflossk" class="navbar-link">Github</a>
-            </p>
-            <ul class="nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/syllabus">Syllabus</a></li>
-              <li><a href="/oer">Resources</a></li>
-              <li><a href="/lectures">Lectures</a></li>
-              <li><a href="/hw">Assignments</a></li>
-              <li><a href="/decause">Instructor</a></li>
-              <li><a href="/checkblogs">Participants</a></li>
-              <li><a class="unstyled" target="_blank" href="http://webchat.freenode.net/?&amp;channels=rit-foss">Instant IRC</a></li>
-              <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">HFOSS@RIT</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    </div>
+      <div class="navbar-collapse collapse">
+        <p class="navbar-text pull-right">
+          Fork me on <a target="_blank" href="http://github.com/decause/hflossk" class="navbar-link">Github</a>
+        </p>
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/syllabus">Syllabus</a></li>
+          <li><a href="/oer">Resources</a></li>
+          <li><a href="/lectures">Lectures</a></li>
+          <li><a href="/hw">Assignments</a></li>
+          <li><a href="/decause">Instructor</a></li>
+          <li><a href="/checkblogs">Participants</a></li>
+          <li><a class="unstyled" target="_blank" href="http://webchat.freenode.net/?&amp;channels=rit-foss">Instant IRC</a></li>
+          <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
 
     <div class="container">
       <div class="row">
