@@ -25,7 +25,7 @@
         <h2>Challenges</h2>
         <ul class="unstyled">
             %for challenge in challenges:
-                <li><a href="/static/content/${challenge}">${challenge}</a></li>
+                <li><a href="/static/challenges/${challenge}">${challenge}</a></li>
             %endfor
         </ul>
     </div>
