@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>W6C1</h1>
     <p>Week 6 - Class 1</p>
 </div>

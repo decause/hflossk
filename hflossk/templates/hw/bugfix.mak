@@ -1,6 +1,6 @@
 <%inherit file="../master.mak"/>
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>HWBF</h1>
     <p>Homework - Bugfix</p>
 </div>

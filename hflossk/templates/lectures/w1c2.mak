@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>W1C2</h1>
     <p>Week 1 - Class 2</p>
 </div>
@@ -8,9 +8,9 @@
 <div>
     <h2>Agenda:</h2>
     <ol class="lecture_list">
-        <li>	
+        <li>
 		<h3>Syllabus Correction</h3>
-		
+
 		<ul class="nobullets">
                 <li class="alert alert-error"><strong>THERE IS NO CLASS ON LABOR DAY,
                 for the first time since I've been at RIT.</strong> Ever. This is super
@@ -21,10 +21,10 @@
             </ul>
 
 		</li>
-            
+
 
         <li>
-		
+
 		<h3>RollCall</h3>
 		<ul class="alert alert-success nobullets">
             <li><h4>Name</h4></li>
@@ -34,7 +34,7 @@
         </ul>
 		</li>
 
-        
+
 
         <li>
 		<h3>Review Hackathon Schedule</h3>
@@ -44,19 +44,19 @@
                 <li><p><a target="_blank" class="btn btn-large btn-success" href="http://foss.rit.edu/election-night-2013"><i class="icon-home"></i> <strong>Election Night @ RIT</strong></a></p></li>
             </ul>
 		</li>
-            
 
-        
+
+
             <li>
-			
+
 			<h3>Assignment</h3>
-			
+
 			<ul class="nobullets alert alert-info">
 			<li><strong><i class="icon-plane"></i> <a href="/hw/firstflight">First flight</a></strong></li>
         </ul>
 			</li>
-        
-            
+
+
 
     </ol>
 	</div>

@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class='hero-unit'>
+<div class='jumbotron'>
   <h1>LN</h1>
   <p>Lecture Notes: Agenda-y type things to keep the train on the tracks</p>
 </div>

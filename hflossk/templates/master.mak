@@ -8,7 +8,7 @@
     <meta name="author" content="RemyD" />
 
     <!-- Le styles -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/static/css/site.css" rel="stylesheet" />
     <style type="text/css">
       body {
@@ -28,7 +28,6 @@
         }
       }
     </style>
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -71,9 +70,9 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
             <li class="nav-header"></li>
@@ -85,7 +84,7 @@
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
-        <div class='span9'>
+        <div class='col-md-9'>
           ${self.body()}
         </div>
       </div><!--/row-->
@@ -101,18 +100,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/static/js/jquery.js"></script>
-    <script src="/static/js/bootstrap-transition.js"></script>
-    <script src="/static/js/bootstrap-alert.js"></script>
-    <script src="/static/js/bootstrap-modal.js"></script>
-    <script src="/static/js/bootstrap-dropdown.js"></script>
-    <script src="/static/js/bootstrap-scrollspy.js"></script>
-    <script src="/static/js/bootstrap-tab.js"></script>
-    <script src="/static/js/bootstrap-tooltip.js"></script>
-    <script src="/static/js/bootstrap-popover.js"></script>
-    <script src="/static/js/bootstrap-button.js"></script>
-    <script src="/static/js/bootstrap-collapse.js"></script>
-    <script src="/static/js/bootstrap-carousel.js"></script>
-    <script src="/static/js/bootstrap-typeahead.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
 
   </body>
 </html>

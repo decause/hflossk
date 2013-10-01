@@ -1,15 +1,15 @@
 <%inherit file="master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
 <h1>Participants</h1>
 <p>Should have ${int(target_number)} blog posts</p>
 <p>
-<!--<p><a href="#" class="btn btn-primary btn-large">Generate Report&raquo;</a></p>-->
+<!--<p><a href="#" class="btn btn-primary btn-lg">Generate Report&raquo;</a></p>-->
 </div>
 
-<div class="row-fluid">
+<div class="row">
   %for student in student_data:
-    <div class="span4 shadowcard padded">
+    <div class="col-md-4 shadowcard padded">
     <img class="uglymug" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
     <h4 class="irc_nick">${student['irc']}</h4>
     <div class="sticky padded ${'good' if student_posts[student['irc']] >= target_number else 'bad'}">
@@ -51,7 +51,7 @@
     </div><!--/span-->
     %if (loop.index + 1) % 3 == 0:
         </div>
-        <div class="row-fluid">
+        <div class="row">
     %endif
   %endfor
 </div><!--/row-->

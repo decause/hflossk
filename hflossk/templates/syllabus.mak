@@ -4,7 +4,7 @@
     Syllabus &mdash; The RIT HFOSS Development Course documentation
 </%def>
 
-<div class="hero-unit" id="syllabus">
+<div class="jumbotron" id="syllabus">
     <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 </div>
 <div class="section" id="projects-seminar-in-floss-game-development">

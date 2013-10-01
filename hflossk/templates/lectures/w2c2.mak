@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>W2C2</h1>
     <p>Week 2 - Class 2</p>
 </div>
@@ -10,7 +10,7 @@
     <ol class="lecture_list">
         <li>
 		<h3>IRC is your friend</h3>
-		
+
             <ol class="alert alert-error nobullets" >
                 <li>1. Always start with IRC. Email me only if you cannot get
                 help in channel.</li>
@@ -24,7 +24,7 @@
 
         <li>
 		<h3>#topic RollCall</h3>
-		
+
         <ol class="alert alert-success nobullets">
             <li>1. decause will <code>#startmeeting</code> in channel, which
             turns on logging, and activates foss_bot's meeting
@@ -40,7 +40,7 @@
 		</li?
          <li>
 			<h3>Assignment-ery</h3>
-			
+
            <ul class="nobullets alert alert-error">
                 <li><strong><i class="icon-plane"></i> <a href="/hw/firstflight">First flight</a></strong>: If you didn't finish this, you need to email me ASAP. If you get it in by 11:59pm tonight, you will not lose the 10% per day penalty, this time... &lt;villain laugh /&gt;</li>
                 </ul>

@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>W3C1</h1>
     <p>Week 3 - Class 1</p>
 </div>
@@ -50,7 +50,7 @@
                 <li class="btn btn-info padded"><strong><i class="icon-question-sign icon-white"></i> <a style="color:white;" href="/quiz/quiz1">Quiz:</a></strong> FYI There is a quiz happening in class on W3C2</li>
         </ul>
     </li>
-    <li> 
+    <li>
         <h3>Assignment Submission</h3>
         <ul class="alert alert-info nobullets padded">
             <li>1. Create a blog post that includes each question, and the answer below it, on the HFOSS Blog you set up in <a target="_blank" href="/hw/firstflight"><em>First Flight</em></a>.</li>

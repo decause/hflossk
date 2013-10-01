@@ -1,6 +1,6 @@
 <%inherit file="../master.mak"/>
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>TOSW</h1>
     <p>The Success of Open Source &amp; The Open Source Way</p>
 </div>
