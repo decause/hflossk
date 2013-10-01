@@ -36,7 +36,7 @@
         <h3>Pop Quiz Hot Shot!</h3>
 
             <ol class="nobullets btn btn-danger" >
-                <li><i class="icon-question-sign icon-white"></i><a style="color:white" target="_blank" href="/quiz1"> TOSW Quiz</a></li>
+                <li><i class="icon-question-sign icon-white"></i><a style="color:white" target="_blank" href="/quiz/quiz1"> TOSW Quiz</a></li>
             </ol>
             </li>
 
@@ -48,7 +48,7 @@
             </ul>
             <br/>
             <ul class="lecture-list nobullets btn btn-success">
-                <li><i class="icon-question-sign icon-white"></i> <a style="color:white;" target="_blank" href="/quiz1">TOSW Quiz</a></li>
+                <li><i class="icon-question-sign icon-white"></i> <a style="color:white;" target="_blank" href="/quiz/quiz1">TOSW Quiz</a></li>
         </ul>
 </li>
 

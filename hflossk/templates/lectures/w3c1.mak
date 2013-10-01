@@ -47,7 +47,7 @@
         email me ASAP.</li><br/>
         <li class="btn btn-danger padded"><strong><i class="icon-book icon-white"></i> <a style="color:white;" href="/static/books/Weber-SuccessofOpenSource-Chap3.pdf">Weber Reading</a></strong>: Was assigned W1C1, remember?</li><br/>
         <li class="btn btn-danger padded"><strong><i class="icon-pencil icon-white"></i> <a style="color:white;" href="/static/hw/litreview.txt">Literature Review Template:</a></strong> Weber Review was due 4:59pm today</li><br/>
-                <li class="btn btn-info padded"><strong><i class="icon-question-sign icon-white"></i> <a style="color:white;" href="/quiz1">Quiz:</a></strong> FYI There is a quiz happening in class on W3C2</li>
+                <li class="btn btn-info padded"><strong><i class="icon-question-sign icon-white"></i> <a style="color:white;" href="/quiz/quiz1">Quiz:</a></strong> FYI There is a quiz happening in class on W3C2</li>
         </ul>
     </li>
     <li> 

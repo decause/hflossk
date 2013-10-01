@@ -117,8 +117,8 @@
   </tr>
   <tr class="row-odd"><td>2</td>
   <td>LIT: Rhetoric, Flamewars, and Trolling</td>
-  <td><a href="/quiz1">TOSW Quiz</a></td>
-  <td><a href="/quiz1">TOSW Quiz</a></td>
+  <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
+  <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
   </tr>
   <tr class="row-even"><td rowspan="3">4</td>
   <td>1</td>
