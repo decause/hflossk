@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap-glyphicons.css" rel="stylesheet" />
     <link href="/static/css/site.css" rel="stylesheet" />
     <style type="text/css">
       body {
@@ -74,11 +75,11 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
             <li class="nav-header"></li>
-            <li><i class="icon-calendar"></i>08/26/2013 - 12/14/2013</li>
-            <li><i class="icon-bell"></i>Mon &amp; Wed 5:00PM - 6:15PM</li>
-            <li><i class="icon-shopping-cart"></i>4085.582.01</li>
-            <li><i class="icon-map-marker"></i>Orange Hall (ORN)-1375</li>
-            <li><i class="icon-envelope"></i>remydcsi[at]rit[dot]edu</li>
+            <li><span class="glyphicon glyphicon-calendar"></span>08/26/2013 - 12/14/2013</li>
+            <li><span class="glyphicon glyphicon-bell"></span>Mon &amp; Wed 5:00PM - 6:15PM</li>
+            <li><span class="glyphicon glyphicon-shopping-cart"></span>4085.582.01</li>
+            <li><span class="glyphicon glyphicon-map-marker"></span>Orange Hall (ORN)-1375</li>
+            <li><span class="glyphicon glyphicon-envelope"></span>remydcsi[at]rit[dot]edu</li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
