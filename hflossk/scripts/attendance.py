@@ -63,16 +63,36 @@ for link in html:
 
     # Populate a list of people who were present during rollcall
     for name in people:
-        present.append(name.getText().split()[0])
+        present.append(name.getText().split()[0].lower())
 
     # List of students in the class
-    class_list = ["AgitatedBadger", "Akaleth", "ArcticSphinx", "Fangy",
-                  "BeruBeruFunBot", "ChrisKnepper", "Consuuume",
-                  "Destroyer675000", "dudeman514", "ExplosiveHippo",
-                  "Grub0", "LinkSlayer64", "Nolski", "Obliv|class",
-                  "Spectralshadow5", "TheOnlyTaters", "Waterseas", "Xethik",
-                  "edwfoss", "emmix", "gecko_", "h2g2guy", "valeatory",
-                  "zanarama1"]
+
+    classDict = {
+        "AgitatedBadger": [],
+        "Akaleth": ["Akaleth|Class"],
+        "ArcticSphinx": [],
+        "Fangy": [],
+        "BeruBeruFunBot": [],
+        "ChrisKnepper": [],
+        "Consuuume": [],
+        "Destroyer675000": [],
+        "dudeman514": ["Dudeman514"],
+        "ExplosiveHippo": [],
+        "Grub0": [],
+        "LinkSlayer64": ["XLS64|Lappy", "LS64"],
+        "Nolski": [],
+        "Obliv": ["Obliv|class"],
+        "Spectralshadow": ["Spectralshadow5"],
+        "TheOnlyTaters": [],
+        "Waterseas": [],
+        "Xethik": ["XethikClass"],
+        "edwfoss": [],
+        "emmix": [],
+        "gecko_": [],
+        "h2g2guy": [],
+        "valeatory": [],
+        "zanarama": ["zanarama1"]
+    }
 
     date = link.getText().split('.')[1]
     year = date.split('-')[0]
@@ -84,8 +104,17 @@ for link in html:
         year, month, day))
 
     # Print out each student's status that day
-    for student in class_list:
-        if student in present:
+    for student in classDict.keys():
+        if student.lower() in present:
             print("%s was present!" % student)
         else:
-            print("%s was not in class." % student)
+            has_alias = False
+            for alias in classDict[student]:
+                if alias.lower() in present:
+                    has_alias = True
+                    break
+
+            if has_alias:
+                print ("%s was present!" % student)
+            else:
+                print("%s was not in class." % student)
