@@ -32,9 +32,6 @@ def gravatar(email):
     return "https://secure.gravatar.com/avatar/" + slug
 
 
-yaml_dir = os.path.join(os.path.split(__file__)[0], 'scripts/people/')
-
-
 @app.route('/', defaults=dict(page='home'))
 @app.route('/<page>')
 def simple(page):
@@ -43,6 +40,7 @@ def simple(page):
 
 @app.route('/checkblogs')
 def checkblogs():
+    yaml_dir = 'scripts/people/'
     try:
         urllib2.urlopen("http://foss.rit.edu", timeout=15)
     except:
