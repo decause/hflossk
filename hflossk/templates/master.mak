@@ -36,7 +36,7 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="/static/img/favicon.png" />
+    <link rel="shortcut icon" href="${url_for('static', filename='img/favicon.png')}">
   </head>
 
   <body>
