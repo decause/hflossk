@@ -11,7 +11,7 @@
     <h2>Humanitarian Free/Open Source Software Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
   <blockquote>
     <div>
-      <ul class="unstyled">
+      <ul class="list-unstyled">
         <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Orange Hall Room 1375 </li>

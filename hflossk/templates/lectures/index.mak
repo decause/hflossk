@@ -6,7 +6,7 @@
 </div>
 <div class="row-fluid">
     <div class="span4">
-        <ul class="unstyled">
+        <ul class="list-unstyled">
             <li><h2>Notes</h2></li>
             % for lecture in lectures:
               <li><a href="/lectures/${lecture.split('.')[0]}">Week ${lecture[1]} - Class
