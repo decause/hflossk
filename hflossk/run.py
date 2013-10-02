@@ -32,6 +32,9 @@ def gravatar(email):
     return "https://secure.gravatar.com/avatar/" + slug
 
 
+base_dir = os.path.split(__file__)[0]
+
+
 @app.route('/', defaults=dict(page='home'))
 @app.route('/<page>')
 def simple(page):
