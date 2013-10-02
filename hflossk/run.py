@@ -174,21 +174,6 @@ def checkblogs():
     #                        target_number=target_number)
 
 
-@app.route('/books')
-def books():
-    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'books'))
-    return render_template('books.mak', name='mako', books=books)
-
-
-@app.route('/slides')
-def slides():
-    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'content'))
-
-    return render_template('decks.mak', name='mako', decks=decks)
-
-
 @app.route('/oer')
 def oer():
     decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
