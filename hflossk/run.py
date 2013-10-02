@@ -32,7 +32,7 @@ def gravatar(email):
     return "https://secure.gravatar.com/avatar/" + slug
 
 
-yaml_dir = 'scripts/people/'
+yaml_dir = os.path.join(os.path.split(__file__)[0], 'scripts/people/')
 
 
 @app.route('/', defaults=dict(page='home'))
