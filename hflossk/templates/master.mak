@@ -72,16 +72,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-            <li class="nav-header"></li>
-            <li><span class="glyphicon glyphicon-calendar"></span>08/26/2013 - 12/14/2013</li>
-            <li><span class="glyphicon glyphicon-bell"></span>Mon &amp; Wed 5:00PM - 6:15PM</li>
-            <li><span class="glyphicon glyphicon-shopping-cart"></span>4085.582.01</li>
-            <li><span class="glyphicon glyphicon-map-marker"></span>Orange Hall (ORN)-1375</li>
-            <li><span class="glyphicon glyphicon-envelope"></span>remydcsi[at]rit[dot]edu</li>
+          <div class="well">
+            <ul class="nav">
+              <li><span class="glyphicon glyphicon-calendar"></span> 08/26/2013 - 12/14/2013</li>
+              <li><span class="glyphicon glyphicon-bell"></span> Mon &amp; Wed 5:00PM - 6:15PM</li>
+              <li><span class="glyphicon glyphicon-shopping-cart"></span> 4085.582.01</li>
+              <li><span class="glyphicon glyphicon-map-marker"></span> Orange Hall (ORN)-1375</li>
+              <li><span class="glyphicon glyphicon-envelope"></span> remydcsi[at]rit[dot]edu</li>
             </ul>
-          </div><!--/.well -->
+          </div>
         </div><!--/span-->
         <div class='col-md-9'>
           ${self.body()}
