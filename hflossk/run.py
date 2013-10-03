@@ -179,17 +179,12 @@ def checkblogs():
 
 @app.route('/oer')
 def oer():
-    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'content'))
+    resources = dict()
+    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'content'))
+    resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
+    resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
 
-    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'books'))
-
-    challenges = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                         'challenges'))
-
-    return render_template('oer.mak', name='mako', decks=decks, books=books,
-                           challenges=challenges)
+    return render_template('oer.mak', name='mako', resources=resources)
 
 
 app.register_blueprint(homework, url_prefix='/hw')
