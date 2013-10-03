@@ -35,7 +35,7 @@
             <ul class="lecture-list list-unstyled alert alert-danger">
                 <li><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span> <a href="/static/hw/commarch.txt" target="_blank">Commarch Presentations</a></li>
         </ul>
-            <ul class="lecture-list list-unstyled btn btn-danger">
+            <ul class="lecture-list list-unstyled btn btn-default">
                 <li><span class="glyphicon glyphicon-list-alt"></span> <a style="color:white;" href="/static/hw/commarch.txt" target="_blank">Commarch Report: Last Chance on Monday!</a> </li></ul>
             <br/>
             <ul class="lecture-list list-unstyled btn btn-info">
