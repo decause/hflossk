@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .irc_nick {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: right;
 }
 
@@ -26,10 +26,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .sticky {
-    float: right;
+    text-align: right;
     font-size: x-large;
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
+    padding-bottom: 20px;
 }
 
 .item {
@@ -75,12 +74,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .cardlist {
-    margin-top: -10px;
-    list-style-type: none;
-}
-
-.nobullets {
-    list-style-type: none;
+    margin-top: 10px;
+    clear: both;
 }
 
 .redtext {
