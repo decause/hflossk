@@ -1,6 +1,6 @@
 <%inherit file="../master.mak"/>
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>TOSW</h1>
     <p>The Success of Open Source &amp; The Open Source Way</p>
 </div>
@@ -24,13 +24,12 @@
     <li><span class="label label-warning">Triple-Bonus:</span> Where can this keen analysis be found? (Answer in URL form, i.e. <code>http://placeofkeenanalysisis.com/analysis</code>)</li>
 </ol>
 
-    <div class="alert alert-info">
-        <h4>Q: <em>How do I quiz?</em></h4>
-        <h4>A: <em>3 Steps:</em></h4>
-        <ul class="unstyled padded">
-            <li>1) Create a blog post that includes each question, with the answer
-            to each question below it, on your HFOSS Blog you set up in <a target="_blank" href="/hw/firstflight"><em>First Flight</em></a>.</li>
-            <li>2) Add a line to the bottom of your .yaml file you edited in first flight, with the link to your post.</li>
-            <li>3) Send decause a pull request. Once your pull-request is accepted, you have completed the quiz.</li>
-        </ul>
-    </div>
+<div class="alert alert-info">
+    <h4>Q: <em>How do I quiz?</em></h4>
+    <h4>A: <em>3 Steps:</em></h4>
+    <ol>
+        <li>Create a blog post that includes each question, with the answer to each question below it, on your HFOSS Blog you set up in <a target="_blank" href="/hw/firstflight"><em>First Flight</em></a>.</li>
+        <li>Add a line to the bottom of your .yaml file you edited in first flight, with the link to your post.</li>
+        <li>Send decause a pull request. Once your pull-request is accepted, you have completed the quiz.</li>
+    </ol>
+</div>

@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>First Flight</h1>
 </div>
 
@@ -194,8 +194,8 @@ forge.
             <li>Clone a local copy.</li>
             <li>Add a file in the <code>/scripts/people</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
             a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example.
-            
-			
+
+
             <div class="alert alert-warning">
             <strong>BE WARNED</strong>: Your .yaml file must match the format *exactly* (meaning it is case and whitespace sensitive.)
             </div>
@@ -205,7 +205,7 @@ forge.
 
             <li>Once you've confirmed your .yaml file matches exactly, commit and push your changes to github, and issue a pull request.</li>
             <li>Once the patch is accepted upstream and pushed to production, this
-            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>          
+            should add your blog feed to the <a href="http://hfoss-fossrit.rhcloud.com/checkblogs">Participants</a> page.)</li>
         </ul>
     </div>
 </div>
