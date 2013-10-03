@@ -1,6 +1,6 @@
 <%inherit file="../master.mak" />
 
-<div class="hero-unit">
+<div class="jumbotron">
     <h1>W6C1</h1>
     <p>Week 6 - Class 1</p>
 </div>
@@ -10,14 +10,14 @@
     <ol class="lecture_list">
         <li>
         <h3>Guest Speakers</h3>
-            <ol class="alert alert-success nobullets" >
-                <li><i class="icon-bullhorn"></i> Chris Horn: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a></li>
-                <li><i class="icon-bullhorn"></i> Andrew Mandula: <a href="http://www.csh.rit.edu/~ajman/lightingtalk/multiplayerpt1/lightingtalk.html#/tiny" target="_blank">Every Multiplayer Game Mechanic Ever: Part I</a></li>
+            <ol class="alert alert-success list-unstyled" >
+                <li><span class="glyphicon glyphicon-bullhorn"></span> Chris Horn: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a></li>
+                <li><span class="glyphicon glyphicon-bullhorn"></span> Andrew Mandula: <a href="http://www.csh.rit.edu/~ajman/lightingtalk/multiplayerpt1/lightingtalk.html#/tiny" target="_blank">Every Multiplayer Game Mechanic Ever: Part I</a></li>
             </ol>
 </li>
         <li>
         <h3>#topic RollCall</h3>
-        <ol class="alert alert-success nobullets">
+        <ol class="alert alert-success list-unstyled">
             <li>1. decause will <code>#startmeeting</code> in channel, which
             turns on logging, and activates foss_bot's meeting
             functionality!</li>
@@ -33,14 +33,14 @@
          <li>
 
             <h3>Assignment-ery</h3>
-            <ul class="lecture-list nobullets alert alert-error">
-                <li><i class="icon-user"></i><i class="icon-user"></i><i class="icon-user"></i> <a href="/static/hw/commarch.txt" target="_blank">Commarch Presentations</a></li>
+            <ul class="lecture-list list-unstyled alert alert-danger">
+                <li><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span> <a href="/static/hw/commarch.txt" target="_blank">Commarch Presentations</a></li>
         </ul>
-            <ul class="lecture-list nobullets btn btn-danger">
-                <li><i class="icon-list-alt icon-white"></i> <a style="color:white;" href="/static/hw/commarch.txt" target="_blank">Commarch Report</a> </li></ul>
+            <ul class="lecture-list list-unstyled btn btn-danger">
+                <li><span class="glyphicon glyphicon-list-alt"></span> <a href="/static/hw/commarch.txt" target="_blank">Commarch Report</a> </li></ul>
             <br/>
-            <ul class="lecture-list nobullets btn btn-warning">
-                <li><i class="icon-list-alt icon-white"></i> <a style="color:white;" href="/static/hw/teamproposal.html" target="_blank">Team Proposal Postponed</a> </li></ul>
+            <ul class="lecture-list list-unstyled btn btn-warning">
+                <li><span class="glyphicon glyphicon-list-alt"></span> <a href="/static/hw/teamproposal.html" target="_blank">Team Proposal Postponed</a> </li></ul>
 
 
             </li>

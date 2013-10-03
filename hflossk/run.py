@@ -32,6 +32,9 @@ def gravatar(email):
     return "https://secure.gravatar.com/avatar/" + slug
 
 
+base_dir = os.path.split(__file__)[0]
+
+
 @app.route('/', defaults=dict(page='home'))
 @app.route('/<page>')
 def simple(page):
@@ -174,34 +177,14 @@ def checkblogs():
     #                        target_number=target_number)
 
 
-@app.route('/books')
-def books():
-    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'books'))
-    return render_template('books.mak', name='mako', books=books)
-
-
-@app.route('/slides')
-def slides():
-    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'content'))
-
-    return render_template('decks.mak', name='mako', decks=decks)
-
-
 @app.route('/oer')
 def oer():
-    decks = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'content'))
+    resources = dict()
+    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'content'))
+    resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
+    resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
 
-    books = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                    'books'))
-
-    challenges = os.listdir(os.path.join(os.path.split(__file__)[0], 'static',
-                                         'challenges'))
-
-    return render_template('oer.mak', name='mako', decks=decks, books=books,
-                           challenges=challenges)
+    return render_template('oer.mak', name='mako', resources=resources)
 
 
 app.register_blueprint(homework, url_prefix='/hw')

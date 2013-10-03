@@ -4,14 +4,14 @@
     Syllabus &mdash; The RIT HFOSS Development Course documentation
 </%def>
 
-<div class="hero-unit" id="syllabus">
+<div class="jumbotron" id="syllabus">
     <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 </div>
 <div class="section" id="projects-seminar-in-floss-game-development">
     <h2>Humanitarian Free/Open Source Software Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
   <blockquote>
     <div>
-      <ul class="unstyled">
+      <ul class="list-unstyled">
         <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
         <li>Course Number - 4085.582.01</li>
         <li>Room - Orange Hall Room 1375 </li>
