@@ -11,9 +11,9 @@
     <div class="col-sm-4">
       <div class="shadowcard padded">
         <div>
-          <img class="uglymug" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
-          <h4 class="irc_nick">${student['irc']}</h4>
-          <div class="sticky">
+          <img class="uglymug pull-left" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
+          <h4 class="item">${student['irc']}</h4>
+          <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
             <span class="label label-${'success' if student_posts[student['irc']] >= target_number else 'warning' if student_posts[student['irc']] >= target_number*.8 else 'danger'}">${student_posts[student['irc']]}</span>
           </div>

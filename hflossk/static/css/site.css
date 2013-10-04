@@ -2,33 +2,9 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
 }
 
-.uglymug {
-    float: left;
-    border-radius: 64px;
-    -webkit-border-radius: 64px;
-    -moz-border-radius: 64px;
-    display: block;
-    margin: 0 auto;
-}
-
-.irc_nick {
-    margin-bottom: 10px;
-    text-align: right;
-}
-
-.shadowcard {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-
 .padded {
     margin-bottom: 10px;
     padding: 10px;
-}
-
-.sticky {
-    text-align: right;
-    font-size: x-large;
-    padding-bottom: 20px;
 }
 
 .item {
@@ -39,6 +15,40 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
+.lecture_list>li{
+    font-size: 24.5px;
+    margin: -10px 0;
+    font-weight: bold;
+    line-height: 40px;
+}
+.lecture_list>li ol, .lecture_list>li ul{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+/* showblogs-specific */
+.uglymug {
+    border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+}
+
+.blog {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.cardlist {
+    margin-top: 10px;
+}
+
+.shadowcard {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Colors! */
 .special {
     background: yellow;
 }
@@ -63,24 +73,6 @@ h1,h2,h3,h4,h5,h6 {
     background: darkgrey;
 }
 
-.cardlist {
-    margin-top: 10px;
-    clear: both;
-}
-
 .redtext {
     color: darkred;
-}
-
-.lecture_list>li{
-    font-size: 24.5px;
-    margin: -10px 0;
-    font-weight: bold;
-    line-height: 40px;
-}
-.lecture_list>li ol, .lecture_list>li ul{
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 20px;
-    margin-top: -10px;
 }
