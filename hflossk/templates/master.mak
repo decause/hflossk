@@ -42,7 +42,7 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">HFOSS@RIT</a>
+        <a class="navbar-brand" href="/">${course['name']}@${course['place']}</a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -72,11 +72,11 @@
         <div class="col-md-3">
           <div class="well">
             <ul class="nav">
-              <li><span class="glyphicon glyphicon-calendar"></span> 08/26/2013 - 12/14/2013</li>
-              <li><span class="glyphicon glyphicon-bell"></span> Mon &amp; Wed 5:00PM - 6:15PM</li>
-              <li><span class="glyphicon glyphicon-shopping-cart"></span> 4085.582.01</li>
-              <li><span class="glyphicon glyphicon-map-marker"></span> Orange Hall (ORN)-1375</li>
-              <li><span class="glyphicon glyphicon-envelope"></span> remydcsi[at]rit[dot]edu</li>
+              <li><span class="glyphicon glyphicon-calendar"></span> ${course['dates']}</li>
+              <li><span class="glyphicon glyphicon-bell"></span> ${course['times']}</li>
+              <li><span class="glyphicon glyphicon-shopping-cart"></span> ${course['course']}</li>
+              <li><span class="glyphicon glyphicon-map-marker"></span> ${course['location']}</li>
+              <li><span class="glyphicon glyphicon-envelope"></span> ${instructor['email']}</li>
             </ul>
           </div>
         </div><!--/span-->
@@ -101,4 +101,4 @@
   </body>
 </html>
 
-<%def name="title()">HFOSS@RIT</%def>
+<%def name="title()">${course['name']}@${course['place']}</%def>

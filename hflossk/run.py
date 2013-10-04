@@ -23,6 +23,17 @@ app.template_folder = "templates"
 mako = MakoTemplates(app)
 
 
+base_dir = os.path.split(__file__)[0]
+
+
+# Automatically include site config
+@app.context_processor
+def inject_yaml():
+    with open(os.path.join(base_dir, 'site.yaml')) as site_yaml:
+        site_config = yaml.load(site_yaml)
+    return site_config
+
+
 def gravatar(email):
     """ I wish I could use libravatar here, but honestly, the students
     will be better off using gravatar at this point (due to github
@@ -30,9 +41,6 @@ def gravatar(email):
 
     slug = hashlib.md5(email.lower()).hexdigest()
     return "https://secure.gravatar.com/avatar/" + slug
-
-
-base_dir = os.path.split(__file__)[0]
 
 
 @app.route('/', defaults=dict(page='home'))
