@@ -9,7 +9,6 @@
 
     <!-- Le styles -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/static/css/bootstrap-glyphicons.css" rel="stylesheet" />
     <link href="/static/css/site.css" rel="stylesheet" />
     <style type="text/css">
       body {
