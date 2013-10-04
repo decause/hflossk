@@ -9,14 +9,7 @@
         <h2>Elsewhere</h2>
     <img width="132" height="132" alt="Prof. Decause's avatar" src="http://www.libravatar.org/user/5d9d0a14af042b2f7877ab58de9b7702ca29bb9d34155dc58eff4ff6509d562c.png"/>
         <ul class="list-unstyled">
-        <%
-            links = ['http://foss.rit.edu/blog/decause',
-                     'http://linkedin.com/in/decause',
-                     'http://github.com/decause',
-                     'http://opensource.com/users/remyd',
-                    ]
-        %>
-        %for link in links:
+        %for link in instructor['links'].values():
             <li><a href="${link}">${link}</a></li>
         %endfor
         </ul>
