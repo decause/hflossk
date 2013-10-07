@@ -62,6 +62,9 @@
               </li>
             </ul>
           </div>
+          <div class="affix well">
+            ${self.doc_toc()}
+          </div>
         </div><!--/span-->
         <div class='col-md-9'>
           ${self.body()}

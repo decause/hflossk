@@ -4,6 +4,18 @@
     Syllabus &mdash; The RIT HFOSS Development Course documentation
 </%def>
 
+<%def name="doc_toc()">
+  <ul class="list-unstyled">
+    <li><a href="#text-books">Text Books</a></li>
+    <li><a href="#what-you-ll-do">What You'll Do</a></li>
+    <li><a href="#the-spirit-of-the-course">The spirit</a></li>
+    <li><a href="#licensing">Licensing</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#grading">Grading</a></li>
+    <li><a href="#lightning-talks-extra-credit">Lightning Talks</a></li>
+  </ul>
+</%def>
+
 <div class="jumbotron" id="syllabus">
     <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 </div>
