@@ -188,7 +188,7 @@
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>TBD</td>
+  <td>Decause lightening talk about conferences</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
