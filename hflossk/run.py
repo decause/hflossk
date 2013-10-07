@@ -188,7 +188,7 @@ def checkblogs():
 @app.route('/oer')
 def oer():
     resources = dict()
-    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'content'))
+    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
     resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
     resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
 
