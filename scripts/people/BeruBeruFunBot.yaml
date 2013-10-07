@@ -1,9 +1,12 @@
 # I regret everything I've ever done.
-- blog: http://liesslanderdeceit.wordpress.com
-  feed: http://liesslanderdeceit.wordpress.com/feed/
+- blog: http://beru.co/blog/
+  feed: http://beru.co/blog/feeds/hfoss.rss.xml
   forges:
     - http://github.com/berulacks
   irc: BeruBeruFunBot
   name: Derin Yarsuvat
   rit_dce: dmy4324
-  litreview1: http://liesslanderdeceit.wordpress.com/2013/09/10/this-weber-guy/
+  litreview1: http://beru.co/blog/this-weber-guy.html 
+  quiz1: http://beru.co/blog/i-be-quizzin.html
+  bugfix: http://beru.co/blog/pesticide.html
+  commarchteam: Obliv, Xethik

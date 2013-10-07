@@ -19,10 +19,11 @@
 #  - push back to your forked repository on github.com
 #  - issue a pull request on the upstream repository to be considered for a
 #    merge. 
-- blog: http://foss.rit.edu/blog/6426
-  feed: http://foss.rit.edu/blog/6246/feed
+- blog: http://threebean.org/blog
+  feed: http://threebean.org/blog/feed/index.xml
   forges:
-    - https://github.com/Jenneh
-  irc: Jenneh
-  name: Jenn Kotler
-  rit_dce: jlk9713
+    - http://github.com/ralphbean
+    - http://bitbucket.org/ralphbean
+  irc: threebean
+  name: Ralph Bean
+  rit_dce: rjbpop
