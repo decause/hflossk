@@ -1,4 +1,8 @@
 <%inherit file="master.mak" />
+<head>
+    <script src="/pace/pace.js"></script>
+  <link href="/pace/themes/pace-theme-barber-shop.css" rel="stylesheet" />
+</head>
 
 <div class="jumbotron">
   <h1>Participants</h1>
@@ -22,21 +26,37 @@
           % for geordi in student['forges']:
             <li><a target="_blank" href="${geordi}">${geordi}</a></li>
           %endfor
+
           % if student_quizes.get(student['irc']):
             <li><a target="_blank" href="${student_quizes[student['irc']]}">Quiz1</a></li>
           % else:
             <li class="redtext">quiz1?</li>
           % endif
+
           % if student_litreview1.get(student['irc']):
             <li><a target="_blank" href="${student_litreview1[student['irc']]}">litreview1</a></li>
           % else:
             <li class="redtext">litreview1?</li>
           % endif
+
           % if student_bugfixes.get(student['irc']):
             <li><a target="_blank" href="${student_bugfixes[student['irc']]}">bugfix</a></li>
           % else:
             <li class="redtext">bugfix?</li>
           % endif
+
+          % if student_commarches.get(student['irc']):
+            <li><a target="_blank" href="${student_commarches[student['irc']]}">Commarch Report</a></li>
+          % else:
+            <li class="redtext">commarch?</li>
+          % endif
+
+          % if student_teamproposals.get(student['irc']):
+            <li><a target="_blank" href="${student_teamproposals[student['irc']]}">Team Proposal</a></li>
+          % else:
+            <li class="redtext">Team Proposal?</li>
+          % endif
+
           <!--This block used for quick grading reference ;)
           % if student_names.get(student['irc']):
             <li>${student_names[student['irc']]}</li>
