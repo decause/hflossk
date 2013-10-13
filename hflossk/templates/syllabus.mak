@@ -31,7 +31,7 @@
 <div class="section" id="text-books">
   <h2>Text Books<a class="headerlink" href="#text-books" title="Permalink to this headline"></a></h2>
   <p>There are a number of textbooks we&#8217;ll be referencing throughout the quarter. You can
-  find these books/texts/articles here <a href="/books">on the books page</a></p>
+  find these books/texts/articles here <a href="/oer">on the resources page</a></p>
 </div>
 <div class="section" id="what-you-ll-do">
   <h2>What You&#8217;ll Do<a class="headerlink" href="#what-you-ll-do" title="Permalink to this headline"></a></h2>
@@ -158,23 +158,22 @@
   </tr>
   <tr class="row-even"><td rowspan="3">7</td>
   <td>1</td>
-  <td>OLPC Distribution &amp; Smoke testing</td>
-  <td><span style="font-family:monospace;"><a href="/smoketest">Smoke Test</a></span></td>
+  <td>Final Commarch Presentations and Open Team Time</td>
+  <td>&nbsp;</td>
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>TBD</td>
-  <td>&nbsp;</td>
-  <td><span style="font-family: monospace;"><a href="/smoketest">Smoke Test</a></span></td>
+  <td>OLPC Distribution &amp; Smoke testing</td>
+  <td><span style="font-family: monospace;"><a target="_blank" href="/http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
   <tr class="row-odd"><td>***</td>
-  <td> Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR</td>
+  <td>Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-even"><td rowspan="2">8</td>
   <td>1</td>
   <td class="special">TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)</td>
-  <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
+  <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a><br/><span style="font-family: monospace;"><a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
@@ -189,7 +188,7 @@
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>TBD</td>
+  <td>Decause lightening talk about conferences</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>

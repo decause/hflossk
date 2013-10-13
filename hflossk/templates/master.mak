@@ -44,7 +44,6 @@
           <li><a href="/decause">Instructor</a></li>
           <li><a href="/checkblogs">Participants</a></li>
           <li><a target="_blank" href="http://webchat.freenode.net/?&amp;channels=rit-foss">Instant IRC</a></li>
-          <li><a href="mailto:remydcsi@rit.edu">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </nav>
@@ -53,12 +52,14 @@
       <div class="row">
         <div class="col-md-3">
           <div class="well">
-            <ul class="nav">
+            <ul class="list-unstyled">
               <li><span class="glyphicon glyphicon-calendar"></span> ${course['dates']}</li>
               <li><span class="glyphicon glyphicon-bell"></span> ${course['times']}</li>
               <li><span class="glyphicon glyphicon-shopping-cart"></span> ${course['course']}</li>
               <li><span class="glyphicon glyphicon-map-marker"></span> ${course['location']}</li>
-              <li><span class="glyphicon glyphicon-envelope"></span> ${instructor['email']}</li>
+              <li><span class="glyphicon glyphicon-envelope"></span>
+                <a href="mailto:${instructor['email']}">${instructor['email']}</a>
+              </li>
             </ul>
           </div>
         </div><!--/span-->

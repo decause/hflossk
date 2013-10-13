@@ -71,7 +71,9 @@ def checkblogs():
         student_quizes = {}
         student_litreview1 = {}
         student_names = {}
-        student_bugfixes= {}
+        student_bugfixes = {}
+        student_commarches = {}
+        student_teamproposals = {}
 
         target = datetime(2013, 8, 25)
         for student in student_data:
@@ -108,6 +110,14 @@ def checkblogs():
                 print('Checking %s' % student['name'])
                 student_bugfixes[student['irc']] = student['bugfix']
 
+            if student.get('commarch'):
+                print('Checking %s' % student['name'])
+                student_commarches[student['irc']] = student['commarch']
+
+            if student.get('teamproposal'):
+                print('Checking %s' % student['name'])
+                student_teamproposals[student['irc']] = student['teamproposal']
+
         average = sum(student_posts.values()) / float(len(student_posts))
 
         assignments = ['quiz1', 'litreview1']
@@ -122,6 +132,8 @@ def checkblogs():
                                student_quizes=student_quizes,
                                student_litreview1=student_litreview1,
                                student_bugfixes=student_bugfixes,
+                               student_commarches=student_commarches,
+                               student_teamproposals=student_teamproposals,
                                student_names=student_names)
 
     #Raw block, no try/except
@@ -188,7 +200,7 @@ def checkblogs():
 @app.route('/oer')
 def oer():
     resources = dict()
-    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'content'))
+    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
     resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
     resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
 
