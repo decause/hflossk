@@ -62,9 +62,7 @@
               </li>
             </ul>
           </div>
-          <div class="affix well">
-            ${self.doc_toc()}
-          </div>
+          ${self.doc_toc()}
         </div><!--/span-->
         <div class='col-md-9'>
           ${self.body()}
@@ -88,3 +86,5 @@
 </html>
 
 <%def name="title()">${course['name']}@${course['place']}</%def>
+
+<%def name="doc_toc()"></%def>
