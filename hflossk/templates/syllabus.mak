@@ -18,7 +18,6 @@
     </ul>
   </div>
 </%def>
-
 <div class="jumbotron" id="syllabus">
     <h1>Syllabus</h1>
 </div>
@@ -88,6 +87,10 @@
 <div class="section">
   <a class="headerlink" name="schedule"></a>
   <h2>Schedule</h2>
+  <%
+    from datetime import datetime, timedelta
+    week = 0
+  %>
   <table border="1" class="docutils">
   <colgroup>
   <col style="width: 5%;" />
@@ -103,47 +106,50 @@
   <td>Assigned</td>
   <td>Due</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">1</td>
-    <td class="sessionnumber">1</td>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+    <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
     <td class="sessioncontent"><a href="/lectures/w1c2">Welcome, intro, Syllabus, RTFM</a></td>
     <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
     <td class="due">&nbsp;</td>
   </tr>
   <tr>
-    <td class="sessionnumber">2</td>
+    <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
     <td class="sessioncontent">First Flight</td>
     <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
     <td class="due">&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td rowspan="2">2</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-odd"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="cancelled">RIT CLOSED - Labor Day</td>
   <td id="assigned">&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td><a href="/lectures/w2c2">Formal Introduction to Git and Github</a></td>
   <td>&nbsp;</td>
   <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
   </tr>
-  <tr class="row-even"><td rowspan="2">3</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>Lit Review: What is Open Source?</td>
   <td>&nbsp;</td>
   <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>LIT: Rhetoric, Flamewars, and Trolling</td>
   <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
   <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
   </tr>
-  <tr class="row-even"><td rowspan="3">4</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="3">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="cancelled">MONDAY CANCELLED. GO TO ROC.py Tuesday!</td>
   <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>EDU: Curriculum Exploration</td>
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
@@ -151,35 +157,39 @@
   <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a></td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
-  <tr class="row-even"><td rowspan="2">5</td>
-  <td>1</td>
+  </tr>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a><br/>Commarch Team Formation</td>
   <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td class="guest">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
   <td>&nbsp;</td>
   <td>Commarch Team Formation</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">6</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
 	<td>Commarch Presentations<div class="guest">Community Speaker: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a> with Chris Horn</div></td>
 	<td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>"Teams Draft"</td>
   <td>&nbsp;</td>
   <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
   </tr>
-  <tr class="row-even"><td rowspan="3">7</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="3">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>Final Commarch Presentations and Open Team Time</td>
   <td>&nbsp;</td>
   <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>OLPC Distribution &amp; Smoke testing</td>
   <td><span style="font-family: monospace;"><a target="_blank" href="/http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
   <tr class="row-odd"><td>***</td>
@@ -187,36 +197,39 @@
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">8</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="special">TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)</td>
   <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a><br/><span style="font-family: monospace;"><a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td class="cancelled">decause flying to Google HQ. No Class.</td>
   <td><a target="_blank" href="https://www.google-melange.com/gsoc/events/google/gsoc2013">Google Summer of Code Mentor Summit</a></td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">9</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="tbd" >Guest Lecture: Advanced Python with threebean</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>Decause lightening talk about conferences</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="4">10</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="4">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
-  <td>Guest Lecture: FOSS gives you super hero powers with Nate Aune</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
+  <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
@@ -230,68 +243,74 @@
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">11</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">12</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>User Testing</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">13</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td class="special">TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)</td>
   <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td class="guest">Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">14</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>TBD</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td class="cancelled">Thanksgiving Break. No Class.</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">15</td>
-  <td>1</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
+  <td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
   <td>Packaging &amp; Releases</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>Packaging &amp; Releases</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-even"><td rowspan="2">16</td>
+  <% week += 1 %>
+  <tr class="row-even"><td rowspan="2">${week+1}</td>
   <td></td>
   <td class="special">FINAL PRESENTATIONS</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
-  <tr class="row-odd"><td>2</td>
+  <tr class="row-odd"><td class="sessionnumber">${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
   <td>Return XO's &amp; Final Presentations (w/ Pizza)</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
