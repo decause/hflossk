@@ -16,6 +16,14 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 50px;
 }
 
+/* Don't overlap affix below md size*/
+@media(max-width:991px){
+    .affix {
+        position: relative;
+         width: auto;
+    }
+}
+
 .item {
     text-align: right;
 }
