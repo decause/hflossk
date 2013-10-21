@@ -8,17 +8,13 @@
     <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
 </div>
 <div class="section" id="projects-seminar-in-floss-game-development">
-    <h2>Humanitarian Free/Open Source Software Development<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
+    <h2>${course['desc']}<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
   <blockquote>
     <div>
       <ul class="list-unstyled">
-        <li>Syllabus - <a class="reference external" href="http://hfoss-fossrit.rhcloud.com/syllabus">http://hfoss-fossrit.rhcloud.com/syllabus</a> &#8211; (subject to change)</li>
-        <li>Course Number - 4085.582.01</li>
-        <li>Room - Orange Hall Room 1375 </li>
-        <li>Monday, Wednesday &#8211; 5:00pm-6:15pm</li>
-        <li>Instructor - Remy DeCausemaker &lt;<a class="reference external" href="mailto:remydcsi&#37;&#52;&#48;rit&#46;edu">remydcsi<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;</li>
-            <li>Office:  The MAGIC Center</li>
-            <li>Office Hours:  Monday, Wednesday, 4:00-5:00pm</li>
+        <li>Instructor - ${instructor['name']} &lt;<a class="reference external" href="mailto:${instructor['email']}">${instructor['email']}</a>&gt;</li>
+            <li>Office: ${instructor['office']['location']}</li>
+            <li>Office Hours: ${instructor['office']['hours']}</li>
         <li>Teaching Assistant - David Wilson &lt;<a class="reference external" href="mailto:daw4475&#37;&#52;&#48;rit&#46;edu">daw4475<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">DAWacker</span></span> in IRC.</li>
         <li>IRC - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
         <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
