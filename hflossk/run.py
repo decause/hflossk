@@ -95,27 +95,21 @@ def checkblogs():
             student_posts[student['irc']] = len(when)
 
             if student.get('quiz1'):
-                print('Checking %s' % student['quiz1'])
                 student_quizes[student['irc']] = student['quiz1']
 
             if student.get('litreview1'):
-                print('Checking %s' % student['litreview1'])
                 student_litreview1[student['irc']] = student['litreview1']
 
             if student.get('name'):
-                print('Checking %s' % student['name'])
                 student_names[student['irc']] = student['name']
 
             if student.get('bugfix'):
-                print('Checking %s' % student['name'])
                 student_bugfixes[student['irc']] = student['bugfix']
 
             if student.get('commarch'):
-                print('Checking %s' % student['name'])
                 student_commarches[student['irc']] = student['commarch']
 
             if student.get('teamproposal'):
-                print('Checking %s' % student['name'])
                 student_teamproposals[student['irc']] = student['teamproposal']
 
         average = sum(student_posts.values()) / float(len(student_posts))
