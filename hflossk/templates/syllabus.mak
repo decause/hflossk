@@ -4,11 +4,27 @@
     Syllabus &mdash; The RIT HFOSS Development Course documentation
 </%def>
 
+<%def name="doc_toc()">
+  <div class='affix well'>
+    <ul class="list-unstyled">
+      <li><a href="#course-info">Course Information</a></li>
+      <li><a href="#text-books">Text Books</a></li>
+      <li><a href="#what-you-ll-do">What You'll Do</a></li>
+      <li><a href="#the-spirit-of-the-course">The spirit</a></li>
+      <li><a href="#licensing">Licensing</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#grading">Grading</a></li>
+      <li><a href="#lightning-talks-extra-credit">Lightning Talks</a></li>
+    </ul>
+  </div>
+</%def>
+
 <div class="jumbotron" id="syllabus">
-    <h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h1>
+    <h1>Syllabus</h1>
 </div>
-<div class="section" id="projects-seminar-in-floss-game-development">
-    <h2>${course['desc']}<a class="headerlink" href="#projects-seminar-in-floss-game-development" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="course-info"></a>
+  <h2>${course['desc']}</h2>
   <blockquote>
     <div>
       <ul class="list-unstyled">
@@ -24,13 +40,15 @@
     </div>
   </blockquote>
 </div>
-<div class="section" id="text-books">
-  <h2>Text Books<a class="headerlink" href="#text-books" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="text-books"></a>
+  <h2>Text Books</h2>
   <p>There are a number of textbooks we&#8217;ll be referencing throughout the quarter. You can
   find these books/texts/articles here <a href="/oer">on the resources page</a></p>
 </div>
-<div class="section" id="what-you-ll-do">
-  <h2>What You&#8217;ll Do<a class="headerlink" href="#what-you-ll-do" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="what-you-ll-do"></a>
+  <h2>What You&#8217;ll Do</h2>
   <p>This course will introduce students to the Free and Open Source Software (FOSS)
   and Open Content movements, to the open source development process,
   and to the open questions of the efficacy of technology in the classroom.</p>
@@ -47,8 +65,9 @@
   well.  Treat them as you would another instructor, but they’re also your
   peers in moving this innovative project forward.</p>
 </div>
-<div class="section" id="the-spirit-of-the-course">
-  <h2>The spirit of the course<a class="headerlink" href="#the-spirit-of-the-course" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="the-spirit-of-the-course"></a>
+  <h2>The spirit of the course</h2>
   <p>While still a course where you will receive a letter grade, the spirit of the
   course is intended to be both <cite>open</cite> and <cite>fun</cite>.</p>
   <p>An <cite>open</cite> course &#8211; students will have access to the &#8216;document source&#8217; for the
@@ -57,16 +76,18 @@
   dynamic environment in which the course curriculum can develop by the very same
   mechanism being taught during the quarter (community-driven).</p>
 </div>
-<div class="section" id="licensing">
-  <h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="licensing"></a>
+  <h2>Licensing</h2>
   <p>All code developed by students in the course must be licensed (by the student)
   under any one of the <a class="reference external" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
   <p>Your code that you write is your <strong>code</strong>, with which you can do what you will;
   true. However, if you&#8217;re unwilling to license code you write for an open source
   course with an open source license, you may be in the wrong course.</p>
 </div>
-<div class="section" id="schedule">
-  <h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="schedule"></a>
+  <h2>Schedule</h2>
   <table border="1" class="docutils">
   <colgroup>
   <col style="width: 5%;" />
@@ -278,8 +299,9 @@
   </tbody>
   </table>
 </div>
-<div class="section" id="grading">
-<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="grading"></a>
+  <h2>Grading</h2>
 <p>Assignments are due at 4:59pm of the day they are marked as due, to be useful in class.</p>
 <p>Late submissions will be deducted 10% per day they are late.</p>
 <hr class="docutils" />
@@ -333,8 +355,9 @@ in <a class="reference internal" href="/hw/firstflight"><em>Homework - First Fli
 <p>Blogging is good for you and good for the <a class="reference external" href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
 <p>The details for the final can be found at <a class="reference internal" href="final.html"><em>Final</em></a>.</p>
 </div>
-<div class="section" id="lightning-talks-extra-credit">
-<h2>Lightning Talks - Extra Credit<a class="headerlink" href="#lightning-talks-extra-credit" title="Permalink to this headline"></a></h2>
+<div class="section">
+  <a class="headerlink" name="lightning-talks-extra-credit"></a>
+  <h2>Lightning Talks - Extra Credit</h2>
 <p>Every Wednesday for the first portion of class, any student has the opportunity
 to give a <code><a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
 topic of their chosing.  Your lightning talk must be less than 5 minutes in
