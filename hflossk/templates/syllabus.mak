@@ -216,7 +216,7 @@
   <td>&nbsp;</td>
   </tr>
   <tr class="row-odd"><td>2</td>
-  <td>TBD</td>
+  <td>Guest Lecture: FOSS gives you super hero powers with Nate Aune</td>
   <td>&nbsp;</td>
   <td>&nbsp;</td>
   </tr>
