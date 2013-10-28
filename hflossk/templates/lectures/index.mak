@@ -9,8 +9,8 @@
         <ul class="list-unstyled">
             <li><h2>Notes</h2></li>
             % for lecture in lectures:
-              <li><a href="/lectures/${lecture.split('.')[0]}">Week ${lecture[1]} - Class
-              ${lecture[3]}</a></li>
+              <li><a href="/lectures/${lecture.split('.')[0]}">Week ${lecture[1:3]} - Class
+              ${lecture[4]}</a></li>
             % endfor
         </ul>
     </div>
