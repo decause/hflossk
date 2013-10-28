@@ -49,6 +49,13 @@ def simple(page):
     return render_template('{}.mak'.format(page), name='mako')
 
 
+@app.route('/syllabus')
+def syllabus():
+    with open(os.path.join(base_dir, 'syllabus.yaml')) as syllabus_yaml:
+        syllabus = yaml.load(syllabus_yaml)
+    return render_template('syllabus.mak', syllabus=syllabus, name='mako')
+
+
 @app.route('/checkblogs')
 def checkblogs():
     yaml_dir = 'scripts/people/'

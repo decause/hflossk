@@ -109,282 +109,71 @@
         <th>Assigned</td>
         <th>Due</td>
       </tr>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="sessioncontent"><a href="/lectures/w1c2">Welcome, intro, Syllabus, RTFM</a></td>
-        <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
-        <td class="due">&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td class="sessioncontent">First Flight</td>
-        <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
-        <td class="due">&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="cancelled">RIT CLOSED - Labor Day</td>
-        <td id="assigned">&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td><a href="/lectures/w2c2">Formal Introduction to Git and Github</a></td>
-        <td>&nbsp;</td>
-        <td><a href="/hw/firstflight"><em>Homework - First Flight</em></a></td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>Lit Review: What is Open Source?</td>
-        <td>&nbsp;</td>
-        <td><a href="/books"><em>What is Open Source?</em> by Steve Weber</a></td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>LIT: Rhetoric, Flamewars, and Trolling</td>
-        <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
-        <td><a href="/quiz/quiz1">TOSW Quiz</a></td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="3">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="cancelled">MONDAY CANCELLED. GO TO ROC.py Tuesday!</td>
-        <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>EDU: Curriculum Exploration</td>
-        <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
-      </tr>
-      <tr>
-        <td>***</td><td>***</td>
-        <td><a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a></td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="guest">COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat</td>
-        <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a><br/>Commarch Team Formation</td>
-        <td><a  href="/hw/bugfix"><em>Homework - Bugfix</em></a></td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td class="guest">Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook.</td>
-        <td>&nbsp;</td>
-        <td>Commarch Team Formation</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>Commarch Presentations<div class="guest">Community Speaker: <a href="http://barcamproc.org" target="_blank" alt="Bar Camp Rochester">BarCamp Rochester</a> & <a href="http://www.meetup.com/HackshackersROC/" target="_blank" alt="Hacks and Hackers Rochester">Hacks/Hackers Rochester</a> with Chris Horn</div></td>
-        <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
-        <td><a target="_blank" href="/static/hw/commarch.txt">Commarch Report</a></td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>"Teams Draft"</td>
-        <td>&nbsp;</td>
-        <td><a  href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="3">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>Final Commarch Presentations and Open Team Time</td>
-        <td>&nbsp;</td>
-        <td><a href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a></td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>OLPC Distribution &amp; Smoke testing</td>
-        <td><span style="font-family: monospace;"><a target="_blank" href="/http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
+      % for week_no, week in enumerate(syllabus):
         <tr>
-        <td>***</td><td>***</td>
-        <td>Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="special">TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)</td>
-        <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a><br/><span style="font-family: monospace;"><a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a></span></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td class="cancelled">decause flying to Google HQ. No Class.</td>
-        <td><a target="_blank" href="https://www.google-melange.com/gsoc/events/google/gsoc2013">Google Summer of Code Mentor Summit</a></td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="tbd" >Guest Lecture: Advanced Python with threebean</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>Decause lightening talk about conferences</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="4">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>***</td><td>***</td>
-        <td class="hackathon"><a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>***</td><td>***</td>
-        <td class="hackathon"><a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>User Testing</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td class="special">TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)</td>
-        <td><a target="_blank" href="http://www.meetup.com/Rochester-Python-Meetup/">ROCpy on Meetup.com</a></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td class="guest">Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>TBD</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td class="cancelled">Thanksgiving Break. No Class.</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week), '%m/%d')}</td>
-        <td>Packaging &amp; Releases</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>Packaging &amp; Releases</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <% week += 1 %>
-      <tr>
-        <td rowspan="2">${week+1}</td>
-        <td class="sessionnumber">1</td>
-        <td></td>
-        <td class="special">FINAL PRESENTATIONS</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td class="sessionnumber">2</td>
-        <td>${datetime.strftime(course['start'] + timedelta(weeks=week, days=2), '%m/%d')}</td>
-        <td>Return XO's &amp; Final Presentations (w/ Pizza)</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
+          <td rowspan="${len(week['week'])}">${week_no+1}</td>
+         % for day_no, _class in enumerate(week['week']):
+            % if not day_no == 0:
+              </tr><tr>
+            % endif
+           % if _class.get('class'):
+              <td class="sessionnumber">${day_no+1}</td>
+              <td>${datetime.strftime(course['start'] + timedelta(weeks=week_no, days=day_no*2), '%m/%d')}</td>
+              <td>
+              % for topic in _class['class'].get('topics', []):
+                <p class="topic ${topic.get('special', '')}">
+                % if topic.get('link'):
+                  <a href="${topic['link']}">${topic['name']}</a>
+                % else:
+                  ${topic['name']}
+                % endif
+                </p>
+                % endfor
+              </td>
+              <td>
+              % for assign in _class['class'].get('assign', []):
+                  <p class='topic'>
+                % if assign.get('link'):
+                    <a href="${assign['link']}">${assign['name']}</a>
+                % else:
+                    ${assign['name']}
+                  % endif
+                  </p>
+                % endfor
+              </td>
+              <td>
+              % for due in _class['class'].get('due', []):
+                  <p class='topic'>
+                % if due.get('link'):
+                    <a href="${due['link']}">${due['name']}</a>
+                % else:
+                    ${due['name']}
+                  % endif
+                  </p>
+                % endfor
+              </td>
+            % endif
+          % endfor
+         % for topic in _class.get('extras', {}).get('topics', []):
+            <tr>
+              <td></td>
+              <td>***</td>
+              <td>***</td>
+              <td>
+                <p class="topic ${topic.get('special', '')}">
+                % if topic.get('link'):
+                    <a href="${topic['link']}">${topic['name']}</a>
+                % else:
+                    ${topic['name']}
+                  % endif
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          % endfor
+        </tr>
+      % endfor
     </tbody>
   </table>
 </div>
