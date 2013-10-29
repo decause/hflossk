@@ -1,3 +1,41 @@
+# How to use:
+#  Items in a week are grouped together under week #X
+#  a class has a classnumber and an automatic date
+#  anything that fits in an href
+#  both of these take the same arguments as topics.
+#  and all three are optional.
+#
+#  You can have as many parts to topics, assign, or due as
+#  you like.
+#
+#  An extra identifier 'date' may be used to specify the date
+#  of an event or move a single class.
+#
+#  In addition to name and link, special can be used to style
+#  sections. Options include 'cancelled', 'guest', 'tba',
+#  'hackathon', and others.
+#
+# - week:
+#    - class:
+#        topics:
+#          - name: The name of this class
+#            link: /some/link
+#        assign:
+#          - name: The name of this assignment
+#          - name: The other assignment given
+#        due:
+#          - name: The name of the assignment due
+#    - class: # This class has no assignments issued or due
+#        topics:
+#          - special: guest
+#            name: The name of this class
+#            link: /some/link
+#    - extra:
+#        date: 2013-12-23
+#        topics:
+#          - name: this is a non-class event
+# - week: # And so on...
+#
 - week:
     - class:
         topics:
