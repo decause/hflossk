@@ -57,6 +57,7 @@
     - extras:
       - special: hackathon
         name: <a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a>
+        date: 09-21
 - week:
     - class:
         topics:
