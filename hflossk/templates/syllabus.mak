@@ -124,12 +124,12 @@
               ${topic_block(_class['class'].get('due', []))}
             % endif
           % endfor
-         % for topic in _class.get('extras', {}).get('topics', []):
+         % for topic in _class.get('extras', []):
             <tr>
               <td></td>
               <td>***</td>
-              <td>***</td>
-              <td>
+              <td>${topic['date'] if topic.get('date') else '***'}</td>
+              <td colspan="3">
                 <p class="topic ${topic.get('special', '')}">
                 % if topic.get('link'):
                     <a href="${topic['link']}">${topic['name']}</a>
@@ -138,8 +138,6 @@
                   % endif
                 </p>
               </td>
-              <td></td>
-              <td></td>
             </tr>
           % endfor
         </tr>
