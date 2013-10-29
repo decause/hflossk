@@ -53,7 +53,7 @@
         <div class="col-md-3">
           <div class="well">
             <ul class="list-unstyled">
-              <li><span class="glyphicon glyphicon-calendar"></span> ${course['dates']}</li>
+              <li><span class="glyphicon glyphicon-calendar"></span> ${course['start']} &mdash; ${course['end']}</li>
               <li><span class="glyphicon glyphicon-bell"></span> ${course['times']}</li>
               <li><span class="glyphicon glyphicon-shopping-cart"></span> ${course['course']}</li>
               <li><span class="glyphicon glyphicon-map-marker"></span> ${course['location']}</li>
