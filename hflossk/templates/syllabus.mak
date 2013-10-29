@@ -90,7 +90,6 @@
   <h2>Schedule</h2>
   <%
     from datetime import datetime, timedelta
-    week = 0
   %>
   <table border="1" class="docutils">
     <colgroup>
