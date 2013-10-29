@@ -108,7 +108,7 @@
         <th>Assigned</td>
         <th>Due</td>
       </tr>
-      % for week_no, week in enumerate(syllabus):
+      % for week_no, week in enumerate(schedule):
         <tr>
           <td rowspan="${len(week['week'])}">${week_no+1}</td>
           % for day_no, _class in enumerate(week['week']):
