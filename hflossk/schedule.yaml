@@ -60,7 +60,7 @@
           - name: Formal Introduction to Git and Github
             link: /lectures/w2c2
         due:
-          - name: Homework - First Flight
+          - name: <em>Homework - First Flight</em>
             link: /hw/firstflight
 - week:
     - class:
@@ -103,7 +103,8 @@
           - special: guest
             name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat"
         assign:
-          - name: Commarch Team Formation &amp; Commarch Report
+          - name: Commarch Team Formation
+          - name: Commarch Report
             link: /static/hw/commarch.txt
         due:
           - name: <em>Homework - Bugfix</em>
@@ -169,7 +170,8 @@
 - week:
     - class:
         topics:
-          - name: "Guest Lecture: Advanced Python with threebean"
+          - special: guest
+            name: "Guest Lecture: Advanced Python with threebean"
     - class:
         topics:
           - name: Decause lightning talk about conferences
