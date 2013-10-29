@@ -7,17 +7,18 @@
 <%def name="doc_toc()">
   <div class='affix well'>
     <ul class="list-unstyled">
-      <li><a href="#course-info">Course Information</a></li>
-      <li><a href="#text-books">Text Books</a></li>
-      <li><a href="#what-you-ll-do">What You'll Do</a></li>
-      <li><a href="#the-spirit-of-the-course">The spirit</a></li>
-      <li><a href="#licensing">Licensing</a></li>
-      <li><a href="#schedule">Schedule</a></li>
-      <li><a href="#grading">Grading</a></li>
-      <li><a href="#lightning-talks-extra-credit">Lightning Talks</a></li>
+      <li><span class='glyphicon glyphicon-info-sign'></span> <a href="#course-info">Course Information</a></li>
+      <li><span class='glyphicon glyphicon-book'></span> <a href="#text-books">Text Books</a></li>
+      <li><span class='glyphicon glyphicon-tasks'></span> <a href="#what-you-ll-do">What You'll Do</a></li>
+      <li><span class='glyphicon glyphicon-heart'></span> <a href="#the-spirit-of-the-course">The spirit</a></li>
+      <li><span class='glyphicon glyphicon-briefcase'></span> <a href="#licensing">Licensing</a></li>
+      <li><span class='glyphicon glyphicon-calendar'></span> <a href="#schedule">Schedule</a></li>
+      <li><span class='glyphicon glyphicon-check'></span> <a href="#grading">Grading</a></li>
+      <li><span class='glyphicon glyphicon-flash'></span> <a href="#lightning-talks-extra-credit">Lightning Talks</a></li>
     </ul>
   </div>
 </%def>
+
 <div class="jumbotron" id="syllabus">
     <h1>Syllabus</h1>
 </div>
