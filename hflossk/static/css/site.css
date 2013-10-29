@@ -65,6 +65,10 @@ h1,h2,h3,h4,h5,h6 {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
+.topic {
+    margin: 0;
+}
+
 /* Colors! */
 .special {
     background: yellow;
