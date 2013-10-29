@@ -119,39 +119,9 @@
            % if _class.get('class'):
               <td class="sessionnumber">${day_no+1}</td>
               <td>${datetime.strftime(course['start'] + timedelta(weeks=week_no, days=day_no*2), '%m/%d')}</td>
-              <td>
-              % for topic in _class['class'].get('topics', []):
-                <p class="topic ${topic.get('special', '')}">
-                % if topic.get('link'):
-                  <a href="${topic['link']}">${topic['name']}</a>
-                % else:
-                  ${topic['name']}
-                % endif
-                </p>
-                % endfor
-              </td>
-              <td>
-              % for assign in _class['class'].get('assign', []):
-                  <p class='topic'>
-                % if assign.get('link'):
-                    <a href="${assign['link']}">${assign['name']}</a>
-                % else:
-                    ${assign['name']}
-                  % endif
-                  </p>
-                % endfor
-              </td>
-              <td>
-              % for due in _class['class'].get('due', []):
-                  <p class='topic'>
-                % if due.get('link'):
-                    <a href="${due['link']}">${due['name']}</a>
-                % else:
-                    ${due['name']}
-                  % endif
-                  </p>
-                % endfor
-              </td>
+              ${topic_block(_class['class'].get('topics', []))}
+              ${topic_block(_class['class'].get('assign', []))}
+              ${topic_block(_class['class'].get('due', []))}
             % endif
           % endfor
          % for topic in _class.get('extras', {}).get('topics', []):
@@ -245,3 +215,17 @@ lightning talk you give. Only the first <span class="badge badge-important">2</s
 allowed during a given class. Talks will be chosen from among those offered by
 students on a <code><a target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code> basis.</p>
 </div>
+
+<%def name='topic_block(section)'>
+  <td>
+   % for topic in section:
+      <p class="topic ${topic.get('special', '')}">
+	    % if topic.get('link'):
+	      <a href="${topic['link']}">${topic['name']}</a>
+	    % else:
+	      ${topic['name']}
+	    % endif
+	  </p>
+	% endfor
+  </td>
+</%def>
