@@ -54,10 +54,11 @@
         assign:
           - name: <em>NY &amp; MA 4th Grade Curriculum</em>
             link: /oer
-    - extras:
-      - special: hackathon
-        name: <a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a>
-        date: 09-21
+    - extra:
+        date: 2013-09-21
+        topics:
+          - special: hackathon
+            name: <a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a>
 - week:
     - class:
         topics:
@@ -106,9 +107,10 @@
         assign:
           - name: Smoke Test
             link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
-    - extras:
-      - special: hackathon
-        name: Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR
+    - extra:
+        topics:
+          - special: hackathon
+            name: Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR
 - week:
     - class:
         topics:
@@ -140,12 +142,15 @@
     - class:
         topics:
           - name: TBD
-    - extras:
-      - special: hackathon
-        name: <a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT
-      - special: hackathon
-        name: <a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT
-        date: 11/02
+    - extra:
+        topics:
+          - special: hackathon
+            name: <a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT
+    - extra:
+        date: 2013-11-02
+        topics:
+          - special: hackathon
+            name: <a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT
 - week:
     - class:
         topics:

@@ -112,33 +112,33 @@
       % for week_no, week in enumerate(syllabus):
         <tr>
           <td rowspan="${len(week['week'])}">${week_no+1}</td>
-         % for day_no, _class in enumerate(week['week']):
+          % for day_no, _class in enumerate(week['week']):
             % if not day_no == 0:
               </tr><tr>
             % endif
-           % if _class.get('class'):
+            % if _class.get('class'):
+              <%
+                 class_type = 'class'
+                 _class = _class['class']
+              %>
               <td class="sessionnumber">${day_no+1}</td>
-              <td>${datetime.strftime(course['start'] + timedelta(weeks=week_no, days=day_no*2), '%m/%d')}</td>
-              ${topic_block(_class['class'].get('topics', []))}
-              ${topic_block(_class['class'].get('assign', []))}
-              ${topic_block(_class['class'].get('due', []))}
-            % endif
-          % endfor
-         % for topic in _class.get('extras', []):
-            <tr>
-              <td></td>
+            % else:
+              <%
+                class_type = 'extra'
+                _class = _class['extra']
+              %>
               <td>***</td>
-              <td>${topic['date'] if topic.get('date') else '***'}</td>
-              <td colspan="3">
-                <p class="topic ${topic.get('special', '')}">
-                % if topic.get('link'):
-                    <a href="${topic['link']}">${topic['name']}</a>
-                % else:
-                    ${topic['name']}
-                  % endif
-                </p>
-              </td>
-            </tr>
+            % endif
+            % if _class.get('date'):
+              <td>${datetime.strftime(_class['date'], '%m/%d')}</td>
+            % elif class_type == 'class':
+              <td>${datetime.strftime(course['start'] + timedelta(weeks=week_no, days=day_no*2), '%m/%d')}</td>
+            % else:
+              <td>***</td>
+            % endif
+            ${topic_block(_class.get('topics', []))}
+            ${topic_block(_class.get('assign', []))}
+            ${topic_block(_class.get('due', []))}
           % endfor
         </tr>
       % endfor
