@@ -200,6 +200,12 @@
     - class: true
       topics:
         - name: TBD
+    - class: false
+      date: 2013-11-05
+      topics:
+        - special: hackathon
+          name: Election Night Hackathon
+          link: http://foss.rit.edu/election-night-2013
     - class: true
       topics:
         - name: TBD
