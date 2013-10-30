@@ -210,7 +210,7 @@ students on a <code><a target="_blank" href="http://en.wikipedia.org/wiki/FIFO">
    % for topic in section:
       <p class="topic ${topic.get('special', '')}">
 	    % if topic.get('link'):
-	      <a href="${topic['link']}">${topic['name']}</a>
+	      <a target="_blank" href="${topic['link']}">${topic['name']}</a>
 	    % else:
 	      ${topic['name']}
 	    % endif
