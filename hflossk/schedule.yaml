@@ -181,7 +181,8 @@
           - name: TBD
     - class:
         topics:
-          - name: TBD
+          - special: guest
+            name: "Guest Lecture: FOSS gives you super hero powers with Nate Aune"
     - extra:
         topics:
           - special: hackathon
