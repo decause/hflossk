@@ -1,8 +1,8 @@
 <%inherit file="../master.mak" />
 
 <div class="jumbotron">
-    <h1>W9C1</h1>
-    <p>Week 9 - Class 1</p>
+    <h1>W10C1</h1>
+    <p>Week 10 - Class 1</p>
 </div>
 
 <div>
