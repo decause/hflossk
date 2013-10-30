@@ -1,39 +1,42 @@
 # How to use:
-#  Items in a week are grouped together under week #X
-#  a class has a classnumber and an automatic date
-#  anything that fits in an href
-#  both of these take the same arguments as topics.
-#  and all three are optional.
+#  Items in a week are grouped together under week #X. An item
+#  can has 'class: true' or 'class: false'. This is the only required
+#  parameter.
+#
+#  When class is true, it is given an automatic classnumber and date,
+#  though a manual date may be given with the 'date' parameter.
+#
+#  Items may have topics, assign, and due. All three are optional.
+#
+#  Each of topics, assign, and due are treated the same. There is a
+#  required 'name' parameter, and and optional 'special' and 'link'
+#  parameters. A link may contain anything that fits in an href,
+#  and special attaches an HTML class to the finished cell.
+#  Built-in options include 'cancelled', 'guest', 'tba',
+#  'hackathon', and others.
 #
 #  You can have as many parts to topics, assign, or due as
 #  you like.
 #
-#  An extra identifier 'date' may be used to specify the date
-#  of an event or move a single class.
-#
-#  In addition to name and link, special can be used to style
-#  sections. Options include 'cancelled', 'guest', 'tba',
-#  'hackathon', and others.
-#
 # - week:
-#    - class:
-#        topics:
-#          - name: The name of this class
-#            link: /some/link
-#        assign:
-#          - name: The name of this assignment
-#          - name: The other assignment given
-#        due:
-#          - name: The name of the assignment due
-#    - class: # This class has no assignments issued or due
-#        topics:
-#          - special: guest
-#            name: The name of this class
-#            link: /some/link
-#    - extra:
-#        date: 2013-12-23
-#        topics:
-#          - name: this is a non-class event
+#    - class: true
+#      topics:
+#        - name: The name of this class
+#          link: /some/link
+#      assign:
+#        - name: The name of this assignment
+#        - name: The other assignment given
+#      due:
+#        - name: The name of the assignment due
+#    - class: true # This class has no assignments issued or due
+#      topics:
+#        - special: guest
+#          name: The name of this class
+#          link: /some/link
+#    - class: false
+#      date: 2013-12-23
+#      topics:
+#        - name: this is a non-class event
 # - week: # And so on...
 #
 #
