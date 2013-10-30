@@ -153,7 +153,8 @@
     - class: false
       topics:
         - special: hackathon
-          name: Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR
+          name: HackUpstate in Syracuse
+          link: http://hackupstate.com
 - week:
     - class: true
       topics:
@@ -190,12 +191,14 @@
     - class: false
       topics:
         - special: hackathon
-          name: <a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT
+          name: Pre-BarcampROC Hackathon @ RIT
+          link: http://barcamproc.org
     - class: false
       date: 2013-11-02
       topics:
         - special: hackathon
-          name: <a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT
+          name: BarcampROC @ RIT
+          link: http://barcamproc.org
 - week:
     - class: true
       topics:
