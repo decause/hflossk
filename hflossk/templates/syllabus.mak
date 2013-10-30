@@ -116,21 +116,13 @@
               </tr><tr>
             % endif
             % if _class.get('class'):
-              <%
-                 class_type = 'class'
-                 _class = _class['class']
-              %>
               <td class="sessionnumber">${day_no+1}</td>
             % else:
-              <%
-                class_type = 'extra'
-                _class = _class['extra']
-              %>
               <td>***</td>
             % endif
             % if _class.get('date'):
               <td>${datetime.strftime(_class['date'], '%m/%d')}</td>
-            % elif class_type == 'class':
+            % elif _class.get('class'):
               <td>${datetime.strftime(course['start'] + timedelta(weeks=week_no, days=day_no*2), '%m/%d')}</td>
             % else:
               <td>***</td>

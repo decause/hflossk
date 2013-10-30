@@ -36,208 +36,209 @@
 #          - name: this is a non-class event
 # - week: # And so on...
 #
+#
 - week:
-    - class:
-        topics:
-          - name: Welcome, intro, Syllabus, RTFM
-            link: /lectures/w1c2
-        assign:
-          - name: <em>What is Open Source?</em> by Steve Weber
-            link: /books
-    - class:
-        topics:
-          - name: First Flight
-        assign:
-          - name: <em>Homework - First Flight</em>
-            link: /hw/firstflight
+    - class: true
+      topics:
+        - name: Welcome, intro, Syllabus, RTFM
+          link: /lectures/w1c2
+      assign:
+        - name: <em>What is Open Source?</em> by Steve Weber
+          link: /books
+    - class: true
+      topics:
+        - name: First Flight
+      assign:
+        - name: <em>Homework - First Flight</em>
+          link: /hw/firstflight
 - week:
-    - class:
-        topics:
-          - special: cancelled
-            name: RIT CLOSED - Labor Day
-    - class:
-        topics:
-          - name: Formal Introduction to Git and Github
-            link: /lectures/w2c2
-        due:
-          - name: <em>Homework - First Flight</em>
-            link: /hw/firstflight
+    - class: true
+      topics:
+        - special: cancelled
+          name: RIT CLOSED - Labor Day
+    - class: true
+      topics:
+        - name: Formal Introduction to Git and Github
+          link: /lectures/w2c2
+      due:
+        - name: <em>Homework - First Flight</em>
+          link: /hw/firstflight
 - week:
-    - class:
-        topics:
-          - name: "Lit Review: What is Open Source?"
-        due:
-          - name: <em>What is Open Source?</em> by Steve Weber
-            link: /books
-    - class:
-        topics:
-          - name: "LIT: Rhetoric, Flamewars, and Trolling"
-        assign:
-          - name: TOSW Quiz
-            link: /quiz/quiz1
-        due:
-          - name: TOSW Quiz
-            link: /quiz/quiz1
+    - class: true
+      topics:
+        - name: "Lit Review: What is Open Source?"
+      due:
+        - name: <em>What is Open Source?</em> by Steve Weber
+          link: /books
+    - class: true
+      topics:
+        - name: "LIT: Rhetoric, Flamewars, and Trolling"
+      assign:
+        - name: TOSW Quiz
+          link: /quiz/quiz1
+      due:
+        - name: TOSW Quiz
+          link: /quiz/quiz1
 - week:
-    - class:
-        topics:
-          - special: cancelled
-            name: MONDAY CANCELLED. GO TO ROC.py Tuesday!
-        assign:
-          - name: Homework - Bugfix</em>
-            link: /hw/bugfix
-    - class:
-        topics:
-          - name: "EDU: Curriculum Exploration"
-        assign:
-          - name: <em>NY &amp; MA 4th Grade Curriculum</em>
-            link: /oer
-    - extra:
-        date: 2013-09-21
-        topics:
-          - special: hackathon
-            name: <a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a>
+    - class: true
+      topics:
+        - special: cancelled
+          name: MONDAY CANCELLED. GO TO ROC.py Tuesday!
+      assign:
+        - name: Homework - Bugfix</em>
+          link: /hw/bugfix
+    - class: true
+      topics:
+        - name: "EDU: Curriculum Exploration"
+      assign:
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
+    - class: false
+      date: 2013-09-21
+      topics:
+        - special: hackathon
+          name: <a target="_blank" href="http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT">Software Freedom Day ROC 2013</a> location TBD(ish) <a target="_blank" href="http://bit.ly/rsvpsfdroc13">Sign-up</a>
 - week:
-    - class:
-        topics:
-          - special: guest
-            name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat"
-        assign:
-          - name: Commarch Team Formation
-          - name: Commarch Report
-            link: /static/hw/commarch.txt
-        due:
-          - name: <em>Homework - Bugfix</em>
-            link: /hw/bugfix
-    - class:
-        topics:
-          - special: guest
-            name: "Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook."
-        due:
-          - name: Commarch Team Formation
+    - class: true
+      topics:
+        - special: guest
+          name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat"
+      assign:
+        - name: Commarch Team Formation
+        - name: Commarch Report
+          link: /static/hw/commarch.txt
+      due:
+        - name: <em>Homework - Bugfix</em>
+          link: /hw/bugfix
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook."
+      due:
+        - name: Commarch Team Formation
 - week:
-    - class:
-        topics:
-          - name: Commarch Presentations
-          - special: guest
-            name: "Community Speaker: <a href='http://barcamproc.org' target='_blank' alt='Bar Camp Rochester'>BarCamp Rochester</a> & <a href='http://www.meetup.com/HackshackersROC/' target='_blank' alt='Hacks and Hackers Rochester'>Hacks/Hackers Rochester</a> with Chris Horn"
-        assign:
-          - name: <em>Homework - Team Proposal</em>
-            link: /static/hw/teamproposal.html
-        due:
-          - name: Commarch Report
-            link: /static/hw/commarch.txt
-    - class:
-        topics:
-            - name: Teams Draft
-        due:
-          - name: <em>Homework - Team Proposal</em>
-            link: /static/hw/teamproposal.html
+    - class: true
+      topics:
+        - name: Commarch Presentations
+        - special: guest
+          name: "Community Speaker: <a href='http://barcamproc.org' target='_blank' alt='Bar Camp Rochester'>BarCamp Rochester</a> & <a href='http://www.meetup.com/HackshackersROC/' target='_blank' alt='Hacks and Hackers Rochester'>Hacks/Hackers Rochester</a> with Chris Horn"
+      assign:
+        - name: <em>Homework - Team Proposal</em>
+          link: /static/hw/teamproposal.html
+      due:
+        - name: Commarch Report
+          link: /static/hw/commarch.txt
+    - class: true
+      topics:
+          - name: Teams Draft
+      due:
+        - name: <em>Homework - Team Proposal</em>
+          link: /static/hw/teamproposal.html
 - week:
-    - class:
-        topics:
-          - name: Final Commarch Presentations and Open Team Time
-        due:
-          - name: <em>NY &amp; MA 4th Grade Curriculum</em>
-            link: /oer
-    - class:
-        topics:
-          - name: OLPC Distribution &amp; Smoke testing
-        assign:
-          - name: Smoke Test
-            link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
-    - extra:
-        topics:
-          - special: hackathon
-            name: Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR
+    - class: true
+      topics:
+        - name: Final Commarch Presentations and Open Team Time
+      due:
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
+    - class: true
+      topics:
+        - name: OLPC Distribution &amp; Smoke testing
+      assign:
+        - name: Smoke Test
+          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
+    - class: false
+      topics:
+        - special: hackathon
+          name: Weekend Hackathon <a target="_blank" href="http://hackupstate.com">HackUpstate</a> in SYR
 - week:
-    - class:
-        topics:
-          - special: special
-            name: "TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)"
-        assign:
-          - name: ROCpy on Meetup.com
-            link: http://www.meetup.com/Rochester-Python-Meetup/
-          - name: Smoke Test
-            link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
-    - class:
-        topics:
-          - special: cancelled
-            name: decause flying to Google HQ. No Class.
-        assign:
-          - name: Google Summer of Code Mentor Summit
-            link: https://www.google-melange.com/gsoc/events/google/gsoc2013
+    - class: true
+      topics:
+        - special: special
+          name: "TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)"
+      assign:
+        - name: ROCpy on Meetup.com
+          link: http://www.meetup.com/Rochester-Python-Meetup/
+        - name: Smoke Test
+          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
+    - class: true
+      topics:
+        - special: cancelled
+          name: decause flying to Google HQ. No Class.
+      assign:
+        - name: Google Summer of Code Mentor Summit
+          link: https://www.google-melange.com/gsoc/events/google/gsoc2013
 - week:
-    - class:
-        topics:
-          - special: guest
-            name: "Guest Lecture: Advanced Python with threebean"
-    - class:
-        topics:
-          - name: Decause lightning talk about conferences
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture: Advanced Python with threebean"
+    - class: true
+      topics:
+        - name: Decause lightning talk about conferences
 - week:
-    - class:
-        topics:
-          - name: TBD
-    - class:
-        topics:
-          - special: guest
-            name: "Guest Lecture: FOSS gives you super hero powers with Nate Aune"
-    - extra:
-        topics:
-          - special: hackathon
-            name: <a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT
-    - extra:
-        date: 2013-11-02
-        topics:
-          - special: hackathon
-            name: <a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture: FOSS gives you super hero powers with Nate Aune"
+    - class: false
+      topics:
+        - special: hackathon
+          name: <a target="_blank" href="http://barcamproc.org">Pre-BarcampROC Hackathon </a> @ RIT
+    - class: false
+      date: 2013-11-02
+      topics:
+        - special: hackathon
+          name: <a target="_blank" href="http://barcamproc.org">BarcampROC</a> @ RIT
 - week:
-    - class:
-        topics:
-          - name: TBD
-    - class:
-        topics:
-          - name: TBD
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - name: TBD
 - week:
-    - class:
-        topics:
-          - name: TBD
-    - class:
-        topics:
-          - name: User Testing
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - name: User Testing
 - week:
-    - class:
-        topics:
-          - special: special
-            name: "TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)"
-        assign:
-          - name: ROCpy on Meetup.com
-            link: http://www.meetup.com/Rochester-Python-Meetup/
-    - class:
-        topics:
-          - special: guest
-            name: "Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm"
+    - class: true
+      topics:
+        - special: special
+          name: "TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)"
+      assign:
+        - name: ROCpy on Meetup.com
+          link: http://www.meetup.com/Rochester-Python-Meetup/
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm"
 - week:
-    - class:
-        topics:
-          - name: TBD
-    - class:
-        topics:
-          - special: cancelled
-            name: Thanksgiving Break. No Class.
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - special: cancelled
+          name: Thanksgiving Break. No Class.
 - week:
-    - class:
-        topics:
-          - name: Packaging &amp; Releases
-    - class:
-        topics:
-          - name: Packaging &amp; Releases
+    - class: true
+      topics:
+        - name: Packaging &amp; Releases
+    - class: true
+      topics:
+        - name: Packaging &amp; Releases
 - week:
-    - class:
-        topics:
-          - special: special
-            name: FINAL PRESENTATIONS
-    - class:
-        topics:
-          - name: Return XO's &amp; Final Presentations (w/ Pizza)
+    - class: true
+      topics:
+        - special: special
+          name: FINAL PRESENTATIONS
+    - class: true
+      topics:
+        - name: Return XO's &amp; Final Presentations (w/ Pizza)
