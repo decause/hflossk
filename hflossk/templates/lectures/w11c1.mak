@@ -33,6 +33,13 @@
                 <li><span class="glyphicon glyphicon-list-alt"></span> Review Tickets/Attack Plan</li>
                 <li>Use in-class time to meet with decause about milestones and tickets</li>
             </ul>
+            <ul class="alert alert-danger list-unstyled">
+                <li><span class="glyphicon glyphicon-list-alt"></span> Election Night Hackathon</li>
+                <li>At the MAGIC Center (big round glass building connected to
+                GCCIS) <br/>Bldg 87 (USC Hall) Room 1600. <br/>4:30pm Set-up.
+                6pm doors open.  Shut down Midnight. Participation Credit
+                opportunities. Lightning talk opportunities.<br/>RSVP via decause's inbox.</li>
+            </ul>
         </li>
     </ol>
 </div>
