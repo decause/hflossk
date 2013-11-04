@@ -33,9 +33,6 @@
                 <li><span class="glyphicon glyphicon-list-alt"></span> Review Tickets/Attack Plan</li>
                 <li>Use in-class time to meet with decause about milestones and tickets</li>
             </ul>
-            <ul class="btn btn-danger list-unstyled">
-                <li><span class="glyphicon glyphicon-pencil"></span> Tickets and Milestones DUE Nov 1st 11:59pm</li>
-            </ul>
         </li>
     </ol>
 </div>
