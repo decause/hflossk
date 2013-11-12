@@ -237,7 +237,7 @@
 - week:
     - class: true
       topics:
-        - name: TBD
+        - name: Tricking out your .vimrc and becoming a vim ninja
     - class: true
       topics:
         - special: cancelled
