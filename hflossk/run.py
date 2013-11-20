@@ -74,14 +74,6 @@ def checkblogs():
 
                 student_data.extend(contents)
 
-        student_posts = {}
-        student_quizes = {}
-        student_litreview1 = {}
-        student_names = {}
-        student_bugfixes = {}
-        student_commarches = {}
-        student_teamproposals = {}
-
         target = datetime(2013, 8, 25)
         for student in student_data:
             when = []
@@ -101,24 +93,6 @@ def checkblogs():
 
             student_posts[student['irc']] = len(when)
 
-            if student.get('quiz1'):
-                student_quizes[student['irc']] = student['quiz1']
-
-            if student.get('litreview1'):
-                student_litreview1[student['irc']] = student['litreview1']
-
-            if student.get('name'):
-                student_names[student['irc']] = student['name']
-
-            if student.get('bugfix'):
-                student_bugfixes[student['irc']] = student['bugfix']
-
-            if student.get('commarch'):
-                student_commarches[student['irc']] = student['commarch']
-
-            if student.get('teamproposal'):
-                student_teamproposals[student['irc']] = student['teamproposal']
-
         average = sum(student_posts.values()) / float(len(student_posts))
 
         assignments = ['quiz1', 'litreview1']
@@ -130,12 +104,7 @@ def checkblogs():
                                student_posts=student_posts,
                                gravatar=gravatar, average=average,
                                target_number=target_number,
-                               student_quizes=student_quizes,
-                               student_litreview1=student_litreview1,
-                               student_bugfixes=student_bugfixes,
-                               student_commarches=student_commarches,
-                               student_teamproposals=student_teamproposals,
-                               student_names=student_names)
+                               )
 
 
 @app.route('/oer')
