@@ -24,9 +24,9 @@
           </div>
         </div>
         <ul class="cardlist list-unstyled">
-          % for geordi in student['forges']:
-            <li><a target="_blank" href="${geordi}">${geordi}</a></li>
-          %endfor
+          % for forge_link in student['forges']:
+            <li><a target="_blank" href="${forge_link}">${forge_link}</a></li>
+          % endfor
 
           <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposals'] %>
           % for key in keys:
