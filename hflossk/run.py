@@ -58,6 +58,21 @@ def syllabus():
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
 
+def check_blog(queue, feed, name, target):
+    """
+    Returns the number of entries made to this feed since target.
+    """
+
+    feed = feedparser.parse(feed)
+    when = []
+    for item in feed.entries:
+        publish_time = datetime.fromtimestamp(time.mktime(item.updated_parsed))
+        if publish_time < target:
+            continue
+        when.append(item.updated)
+    queue.append((name, len(when)))
+
+
 @app.route('/checkblogs')
 def checkblogs():
     yaml_dir = 'scripts/people/'
@@ -73,23 +88,26 @@ def checkblogs():
             student_data.extend(contents)
 
     target = datetime(2013, 8, 25)
+    student_posts = {}
+    threads = []
+    results = []
     for student in student_data:
-        when = []
         if student.get('feed'):
             print('Checking %s' % student['irc'])
-
-            feed = feedparser.parse(student['feed'])
-
-            for item in feed.entries:
-                publish_time = datetime.fromtimestamp(time.mktime
-                                                     (item.updated_parsed))
-                if publish_time < target:
-                    continue
-                when.append(item.updated)
+            t = threading.Thread(target=check_blog,
+                                 args=(results, student['feed'],
+                                       student['irc'], target))
+            t.start()
+            threads.append(t)
         else:
             print('No feed listed for %s!' % student['irc'])
 
-        student_posts[student['irc']] = len(when)
+    for t in threads:
+        # Don't give it more than 5 seconds to try.
+        t.join(5)
+
+    for name, result in results:
+        student_posts[name] = result
 
     average = sum(student_posts.values()) / len(student_data)
 

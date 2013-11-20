@@ -19,7 +19,8 @@
           <h4 class="item">${student['irc']}</h4>
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
-            <span class="label label-${'success' if student_posts[student['irc']] >= target_number else 'warning' if student_posts[student['irc']] >= target_number*.8 else 'danger'}">${student_posts[student['irc']]}</span>
+            <% post_count = student_posts.get(student['irc'], 0) %>
+            <span class="label label-${'success' if post_count >= target_number else 'warning' if post_count >= target_number*.8 else 'danger'}">${post_count}</span>
           </div>
         </div>
         <ul class="cardlist list-unstyled">
