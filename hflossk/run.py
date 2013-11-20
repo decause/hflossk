@@ -136,13 +136,3 @@ def oer():
 app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quiz')
-
-
-if __name__ == "__main__":
-    if 'OPENSHIFT_PYTHON_IP' in os.environ:
-        host = os.environ['OPENSHIFT_PYTHON_IP']
-        port = int(os.environ['OPENSHIFT_PYTHON_PORT'])
-        app.run(host=host, port=port)
-    else:
-        app.debug = True
-        app.run()
