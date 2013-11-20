@@ -102,8 +102,9 @@ def checkblogs():
             print('No feed listed for %s!' % student['irc'])
 
     for t in threads:
-        # Don't give it more than 5 seconds to try.
-        t.join(5)
+        # One second should be enough for any non-stressed webserver
+        # Anything that fails can still be checked manually.
+        t.join(1)
 
     for name, result in results:
         student_posts[name] = result
