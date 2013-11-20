@@ -3,7 +3,9 @@ Author: Remy D <remyd@civx.us>
         Ralph Bean <rbean@redhat.com>
 License: Apache 2.0
 """
+from __future__ import division
 import os
+import threading
 
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
@@ -89,7 +91,7 @@ def checkblogs():
 
         student_posts[student['irc']] = len(when)
 
-    average = sum(student_posts.values()) / float(len(student_posts))
+    average = sum(student_posts.values()) / len(student_data)
 
     assignments = ['quiz1', 'litreview1']
     target_number = int((datetime.today() - target).total_seconds() /
@@ -100,7 +102,7 @@ def checkblogs():
                            student_posts=student_posts,
                            gravatar=gravatar, average=average,
                            target_number=target_number,
-                           )
+                          )
 
 
 @app.route('/oer')
