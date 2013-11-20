@@ -15,7 +15,6 @@ import feedparser
 from datetime import datetime, timedelta
 import time
 import hashlib
-import urllib2
 import glob
 
 from hflossk.blueprints import homework, lectures, quizzes
