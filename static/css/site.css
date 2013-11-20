@@ -79,6 +79,9 @@
     list-style-type: none;
 }
 
+.redtext {
+    color: darkred;
+}
 
 .lecture_list>li{
     font-size: 24.5px;

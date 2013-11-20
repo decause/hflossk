@@ -51,6 +51,9 @@ def checkblogs():
                 student_data.extend(contents)
 
         student_posts = {}
+        student_quizes = {}
+        student_litreview1 = {}
+
         target = datetime(2013, 8, 25)
         for student in student_data:
             when = []
@@ -70,15 +73,27 @@ def checkblogs():
 
             student_posts[student['irc']] = len(when)
 
+            if student.get('quiz1'):
+                print('Checking %s' % student['quiz1'])
+                student_quizes[student['irc']] = student['quiz1']
+
+            if student.get('litreview1'):
+                print('Checking %s' % student['litreview1'])
+                student_litreview1[student['irc']] = student['litreview1']
+
         average = sum(student_posts.values()) / float(len(student_posts))
 
+        assignments = ['quiz1', 'litreview1']
         target_number = int((datetime.today() - target).total_seconds() /
-                            timedelta(weeks=1).total_seconds() + 1)
+                            timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+
         return render_template('blogs.mak', name='mako',
                                student_data=student_data,
                                student_posts=student_posts,
                                gravatar=gravatar, average=average,
-                               target_number=target_number)
+                               target_number=target_number,
+                               student_quizes=student_quizes,
+                               student_litreview1=student_litreview1)
 
     #Raw block, no try/except
     #student_data = []
@@ -161,9 +176,19 @@ def w3c1():
     return render_template('w3c1.mak', name='mako')
 
 
+@app.route('/lectures/w3c2')
+def w3c2():
+    return render_template('w3c2.mak', name='mako')
+
+
 @app.route('/decause')
 def decause():
     return render_template('decause.mak', name='mako')
+
+
+@app.route('/hw/bugfix')
+def bugfix():
+    return render_template('bugfix.mak', name='mako')
 
 
 @app.route('/lectures')
