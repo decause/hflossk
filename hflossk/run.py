@@ -59,52 +59,48 @@ def syllabus():
 @app.route('/checkblogs')
 def checkblogs():
     yaml_dir = 'scripts/people/'
-    try:
-        urllib2.urlopen("http://foss.rit.edu", timeout=15)
-    except:
-        return render_template('ohno.mak', name='mako')
-    else:
-        student_data = []
-        for fname in glob.glob(yaml_dir + "*.yaml"):
-            with open(fname) as students:
-                contents = yaml.load(students)
 
-                if not isinstance(contents, list):
-                    raise ValueError("%r is borked" % fname)
+    student_data = []
+    for fname in glob.glob(yaml_dir + "*.yaml"):
+        with open(fname) as students:
+            contents = yaml.load(students)
 
-                student_data.extend(contents)
+            if not isinstance(contents, list):
+                raise ValueError("%r is borked" % fname)
 
-        target = datetime(2013, 8, 25)
-        for student in student_data:
-            when = []
-            if student.get('feed'):
-                print('Checking %s' % student['irc'])
+            student_data.extend(contents)
 
-                feed = feedparser.parse(student['feed'])
+    target = datetime(2013, 8, 25)
+    for student in student_data:
+        when = []
+        if student.get('feed'):
+            print('Checking %s' % student['irc'])
 
-                for item in feed.entries:
-                    publish_time = datetime.fromtimestamp(time.mktime
-                                                         (item.updated_parsed))
-                    if publish_time < target:
-                        continue
-                    when.append(item.updated)
-            else:
-                print('No feed listed for %s!' % student['irc'])
+            feed = feedparser.parse(student['feed'])
 
-            student_posts[student['irc']] = len(when)
+            for item in feed.entries:
+                publish_time = datetime.fromtimestamp(time.mktime
+                                                     (item.updated_parsed))
+                if publish_time < target:
+                    continue
+                when.append(item.updated)
+        else:
+            print('No feed listed for %s!' % student['irc'])
 
-        average = sum(student_posts.values()) / float(len(student_posts))
+        student_posts[student['irc']] = len(when)
 
-        assignments = ['quiz1', 'litreview1']
-        target_number = int((datetime.today() - target).total_seconds() /
-                            timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+    average = sum(student_posts.values()) / float(len(student_posts))
 
-        return render_template('blogs.mak', name='mako',
-                               student_data=student_data,
-                               student_posts=student_posts,
-                               gravatar=gravatar, average=average,
-                               target_number=target_number,
-                               )
+    assignments = ['quiz1', 'litreview1']
+    target_number = int((datetime.today() - target).total_seconds() /
+                        timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+
+    return render_template('blogs.mak', name='mako',
+                           student_data=student_data,
+                           student_posts=student_posts,
+                           gravatar=gravatar, average=average,
+                           target_number=target_number,
+                           )
 
 
 @app.route('/oer')
