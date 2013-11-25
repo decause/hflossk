@@ -1,6 +1,6 @@
 <%inherit file="master.mak" />
 
-<div class="hero-unit">
-    <h1>HFOSS</h1>
-<p>The RIT Humanitarian Free/Open Source Software Development Course</p>
+<div class="jumbotron">
+    <h1>${course['name']}</h1>
+    <p>${course['desc']}</p>
 </div>

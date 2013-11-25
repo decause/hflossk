@@ -1,12 +1,12 @@
 <%inherit file="../master.mak" />
 
-<div class='hero-unit'>
+<div class='jumbotron'>
   <h1>HW</h1>
   <p>"Work From Home" gets better later, promise.</p>
 </div>
 <div class="row-fluid">
     <div class="span4">
-        <ul class="unstyled">
+        <ul class="list-unstyled">
             <li><h2>Tasks</h2></li>
             %for hw in hws:
               % if hw.split('.')[1] == 'mak':
