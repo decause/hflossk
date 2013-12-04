@@ -15,7 +15,7 @@
             </ol>
         </li>
         <li>
-        <h3>House-keeping</h3>
+        <h3>Housekeeping</h3>
             <ul class="alert alert-info list-unstyled">
                 <li>In light of the discussions and topics from last class, I would just like to provide some additional resources and reminders:</li>
                 <li><code><a target="_blank" href="http://www.rit.edu/studentaffairs/studentconduct/documents/SRandRHandbook20112012_000.pdf">The RIT Student Handbook</a></code></li>
