@@ -43,6 +43,7 @@
         <li><strong>Your Presentation will be graded on aspects such
         as:</strong></li>
         <ul>
+            <li>Presentation Skills (Projection, Posture, Body Language)</li>
             <li>Grammar/Spelling</li>
             <li>Design (colorschemes, graphics, look/feel)</li>
             <li>Timing (significantly over/under time limit)</li>
