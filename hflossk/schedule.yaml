@@ -237,7 +237,7 @@
 - week:
     - class: true
       topics:
-        - name: TBD
+        - name: Lit Review 2
     - class: true
       topics:
         - special: cancelled
@@ -245,15 +245,36 @@
 - week:
     - class: true
       topics:
-        - name: Packaging &amp; Releases
+        - name: Status Meeting
     - class: true
       topics:
-        - name: Packaging &amp; Releases
+        - name: Vim Seminar
 - week:
     - class: true
       topics:
-        - special: special
-          name: FINAL PRESENTATIONS
+        - name: Regular Class
     - class: true
       topics:
-        - name: Return XO's &amp; Final Presentations (w/ Pizza)
+        - name: Regular Class
+    - class: false
+      date: 2013-12-10
+      topics:
+        - special: hackathon
+          name: Playtesting Section 1 - Meet at 1:15pm
+    - class: false
+      date: 2013-12-11
+      topics:
+        - special: hackathon
+          name: Playtesting Section 2 - Meet at 12:15pm
+- week:
+    - class: true
+      topics:
+        - special: cancelled
+          name: Finals Week, No Class 
+    - class: true
+      topics:
+        - special: special
+          name: Return XO's &amp; Final Presentations (w/ Pizza)
+      assign:
+        - name: Final Presentation Details
+          link: /hw/final
