@@ -24,9 +24,9 @@
     <ul>
         <li>Your presentations should last 10 minutes with another 5 minutes
         for discussion.</li>
-        <li>Your team will need to present from the front of the classroom
-        with some sort of presentation software (powerpoint, libreoffice,
-        impress.js, prezi,... your choice).</li>
+        <li>Your team will need to present from the front of the room. You can
+        either: <br/>1) Make your slides web-accessible, or <br/>2) Email slides as a .pdf
+        to your instructor.</li>
         <li>Every member of your team needs to speak for a roughly equal
         amount of the presentation. Be prepared.</li>
         <li>Give a demonstration of your project.</li>
