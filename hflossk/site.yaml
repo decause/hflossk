@@ -2,8 +2,8 @@ course:
     name: HFOSS
     desc: The RIT Humanitarian Free/Open Source Software Development Course
     place: RIT
-    start: 2013-08-26
-    end: 2013-12-14
+    start: 2014-01-27
+    end: 2014-05-17
     times: Mon & Wed 5:00PM - 6:15PM
     course: 4085.582.01
     location: Orange Hall (ORN)-1375
@@ -16,7 +16,7 @@ instructor:
     coderwall: https://coderwall.com/decause
     twitter: https://twitter.com/Remy_D
     office:
-        location: The MAGIC Center
+        location: The MAGIC Center - SIH 1680
         hours: Monday, Wednesday, 4:00-5:00pm
     links:
         blog: http://foss.rit.edu/blog/decause
