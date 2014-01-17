@@ -28,14 +28,15 @@
   <blockquote>
     <div>
       <ul class="list-unstyled">
-        <li>Instructor - ${instructor['name']} &lt;<a class="reference external" href="mailto:${instructor['email']}">${instructor['email']}</a>&gt;</li>
+        <li>Instructor - ${instructor['name']} &lt;<a class="" href="mailto:${instructor['email']}">${instructor['email']}</a>&gt;</li>
             <li>Office: ${instructor['office']['location']}</li>
             <li>Office Hours: ${instructor['office']['hours']}</li>
-        <li>Teaching Assistant - David Wilson &lt;<a class="reference external" href="mailto:daw4475&#37;&#52;&#48;rit&#46;edu">daw4475<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">DAWacker</span></span> in IRC.</li>
+        <li>Teaching Assistant - TBA 
+        <!--&lt;<a href="mailto:daw4475&#37;&#52;&#48;rit&#46;edu">daw4475<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">DAWacker</span></span> in IRC.</li>-->
         <li>IRC - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
-        <li>Blog Planet - <a class="reference external" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
+        <li>Blog Planet - <a class="" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
         <li>The source for this syllabus can be found at
-        <a class="reference external" href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a></li>
+        <a href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a></li>
       </ul>
     </div>
   </blockquote>
@@ -72,7 +73,7 @@
   course is intended to be both <cite>open</cite> and <cite>fun</cite>.</p>
   <p>An <cite>open</cite> course &#8211; students will have access to the &#8216;document source&#8217; for the
   syllabus. While you are reading <cite>the syllabus</cite> right now,
-  as a student of the class you have a right to <a class="reference external" href="http://github.com/decause/hflossk">fork the upstream repository</a>, make modifications, and submit patches for review. Barring a troll festival, this can create a fun,
+  as a student of the class you have a right to <a class="" href="http://github.com/decause/hflossk">fork the upstream repository</a>, make modifications, and submit patches for review. Barring a troll festival, this can create a fun,
   dynamic environment in which the course curriculum can develop by the very same
   mechanism being taught during the quarter (community-driven).</p>
 </div>
@@ -80,7 +81,7 @@
   <a class="headerlink" name="licensing"></a>
   <h2>Licensing</h2>
   <p>All code developed by students in the course must be licensed (by the student)
-  under any one of the <a class="reference external" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
+  under any one of the <a class="" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
   <p>Your code that you write is your <strong>code</strong>, with which you can do what you will;
   true. However, if you&#8217;re unwilling to license code you write for an open source
   course with an open source license, you may be in the wrong course.</p>
@@ -137,10 +138,16 @@
   </table>
 </div>
 <div class="section">
+    <a class="headerlink" name="attendance"></a>
+    <h2>Attendance</h2>
+    <p>Attendance is <em><strong>required</strong></em> for this course. Students are allotted <span class="label label-danger">2</span> <strong><u>excused</u></strong> absences per semester.</p>
+    <p>Subsequent absences will result in a <span class="label label-danger">10%</span> reduction of your final letter grade <strong><em>for each</em></strong> class missed.</p>
+</div>
+<div class="section">
   <a class="headerlink" name="grading"></a>
   <h2>Grading</h2>
 <p>Assignments are due at 4:59pm of the day they are marked as due, to be useful in class.</p>
-<p>Late submissions will be deducted 10% per day they are late.</p>
+<p>Late submissions will be deducted <span class="label label-danger">10%</span> per day they are late.</p>
 <hr class="docutils" />
 <p>Your final grade for the quarter will be derived from the following weights.</p>
 <table border="1" class="docutils">
@@ -148,32 +155,32 @@
 <col style="width: 80%;" />
 <col style="width: 20%;" />
 </colgroup>
-<thead style="vertical-align: bottom;">
-<tr class="row-odd"><th class="head">Component</th>
+<thead>
+<tr><th class="head">Component</th>
 <th class="head">Weight</th>
 </tr>
 </thead>
-<tbody style="vertical-align: top;">
-<tr class="row-even"><td>In-Class Participation</td>
-<td class="center"><span class="badge badge-warning">10%</span></td>
+<tbody>
+<tr><td>In-Class Participation</td>
+<td class="center padded"><span class="label label-warning">10%</span></td>
 </tr>
-<tr class="row-even"><td>Quizzes</td>
-<td class="center"><span class="badge badge-warning">10%</span></td>
+<tr><td>Quizzes</td>
+<td class="center padded"><span class="label label-warning">10%</span></td>
 </tr>
-<tr class="row-even"><td>Literature Reviews</td>
-<td class="center"><span class="badge badge-warning">10%</span></td>
+<tr><td>Literature Reviews</td>
+<td class="center padded"><span class="label label-warning">10%</span></td>
 </tr>
-<tr class="row-even"><td>Team Peer Assessment</td>
-<td class="center"><span class="badge badge-info">15%</span></td>
+<tr><td>Team Peer Assessment</td>
+<td class="center padded"><span class="label label-info">15%</span></td>
 </tr>
-<tr class="row-even"><td>Completed Project</td>
-<td class="center"><span class="badge badge-info">15%</span></td>
+<tr><td>Completed Project</td>
+<td class="center padded"><span class="label label-info">15%</span></td>
 </tr>
-<tr class="row-even"><td>Final Presentation</td>
-<td class="center"><span class="badge badge-success">20%</span></td>
+<tr><td>Final Presentation</td>
+<td class="center padded"><span class="label label-success">20%</span></td>
 </tr>
-<tr class="row-even"><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
-<td class="center"><span class="badge badge-success">20%</span></td>
+<tr><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
+<td class="center padded"><span class="label label-success">20%</span></td>
 </tr>
 </tbody>
 </table>
@@ -181,7 +188,7 @@
 <p><em>Blog updates</em> &#8211; students are required to keep a blog to which they post updates
 about their investigations, progress, success, and pitfalls. This blog can be
 hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
-in <a class="reference internal" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
+in <a class="" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
 <blockquote>
 <div><ul class="simple">
 <li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
@@ -189,32 +196,33 @@ in <a class="reference internal" href="/hw/firstflight"><em>Homework - First Fli
 <li>Contributions to the course curriculum, syllabus, and rubric are factored in here as well.</li>
 </ul>
 </div></blockquote>
-<p>Blogging is good for you and good for the <a class="reference external" href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
-<p>The details for the final can be found at <a class="reference internal" href="final.html"><em>Final</em></a>.</p>
+<p>Blogging is good for you and good for the <a href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
+<p>The details for the final can be found at <a href="/hw/final"><em>Final</em></a>.</p>
 </div>
 <div class="section">
   <a class="headerlink" name="lightning-talks-extra-credit"></a>
   <h2>Lightning Talks - Extra Credit</h2>
 <p>Every Wednesday for the first portion of class, any student has the opportunity
-to give a <code><a class="reference external" href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
-topic of their chosing.  Your lightning talk must be less than 5 minutes in
+to give a <code><a href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
+topic of their chosing. Your lightning talk must be less than 5 minutes in
 length and must be at least remotely related to the course material.</p>
 <p>You will receive +1 extra credit points towards your final grade for every
-lightning talk you give. Only the first <span class="badge badge-important">2</span> lightning talks offered will be
-allowed during a given class. Talks will be chosen from among those offered by
-students on a <code><a target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code> basis.</p>
-</div>
+lightning talk you give. Only the first <span class="label
+label-success">2</span> lightning talks offered will be allowed during a given
+class. Talks will be chosen from among those offered by students on a <code><a
+target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code>
+basis.</p> </div>
 
 <%def name='topic_block(section)'>
   <td>
    % for topic in section:
       <p class="topic ${topic.get('special', '')}">
-	    % if topic.get('link'):
-	      <a target="_blank" href="${topic['link']}">${topic['name']}</a>
-	    % else:
-	      ${topic['name']}
-	    % endif
-	  </p>
-	% endfor
+        % if topic.get('link'):
+          <a target="_blank" href="${topic['link']}">${topic['name']}</a>
+        % else:
+          ${topic['name']}
+        % endif
+      </p>
+    % endfor
   </td>
 </%def>
