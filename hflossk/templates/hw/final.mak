@@ -2,7 +2,7 @@
 
 <div class="jumbotron">
     <h1>FINAL</h1>
-    <p>Wed 10/18 in USC-1600 (The Big Room in the MAGIC Center)</p>
+    <p>TBA</p>
 </div>
 
 <div class="alert alert-info">
