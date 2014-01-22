@@ -1,0 +1,10 @@
+# I break computers.
+- blog: http://oddshocks.com/
+  feed: http://oddshocks.com/feeds/all.atom.xml
+  forges:
+    - http://github.com/oddshocks
+    - http://bitbucket.org/oddshocks
+    - https://gitorious.org/~oddshocks
+  irc: oddshocks
+  name: David Gay
+  rit_dce: oddshocks
