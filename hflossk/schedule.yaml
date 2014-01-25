@@ -43,33 +43,38 @@
 - week:
     - class: true
       topics:
-        - name: Welcome, intro, Syllabus, RTFM
-          link: /lectures/w1c2
+        - name: "Welcome, intro, Syllabus, RTFM"
+          link: /lectures/w01c2
       assign:
         - name: <em>What is Open Source?</em> by Steve Weber
-          link: /books
+          link: /static/books/Weber-SuccessofOpenSource-Chap3.pdf
     - class: true
       topics:
-        - name: First Flight
+        - name: "First Flight"
       assign:
         - name: <em>Homework - First Flight</em>
           link: /hw/firstflight
 - week:
     - class: true
       topics:
-        - special: cancelled
-          name: RIT CLOSED - Labor Day
+        - name: "Writing for HFOSS - litreviews and blog posts"
+      assign:
+        - name: grok litreview.txt
+          link: /static/hw/litreview.txt
+      due:
+        - name: grok litreview.txt
+          link: /static/hw/litreview.txt
     - class: true
       topics:
-        - name: Formal Introduction to Git and Github
-          link: /lectures/w2c2
+        - name: "Formal Introduction to Git and Github"
+          link: /lectures/w02c2
       due:
         - name: <em>Homework - First Flight</em>
           link: /hw/firstflight
 - week:
     - class: true
       topics:
-        - name: "Lit Review: What is Open Source?"
+        - name: "Lit Review Discussion: What is Open Source?"
       due:
         - name: <em>What is Open Source?</em> by Steve Weber
           link: /books
@@ -92,23 +97,14 @@
           link: /hw/bugfix
     - class: true
       topics:
-        - name: "EDU: Curriculum Exploration"
+        - name: OLPC Distribution &amp; Smoke testing
       assign:
-        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
-          link: /oer
-    - class: false
-      date: 2013-09-21
-      topics:
-        - special: hackathon
-          name: Software Freedom Day ROC 2013
-          link: http://wiki.softwarefreedomday.org/2013/USA/NY/Rochester/FOSS%40RIT
-        - name: Sign-up
-          link: http://bit.ly/rsvpsfdroc13
+        - name: Smoke Test
+          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
 - week:
     - class: true
       topics:
-        - special: guest
-          name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail. Special Guests: Tom Callaway and Ruth Suehle of Red Hat"
+        - name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail."
       assign:
         - name: Commarch Team Formation
         - name: Commarch Report
@@ -119,7 +115,7 @@
     - class: true
       topics:
         - special: guest
-          name: "Guest Lecture: Gource, Mutli-Gource, Gourciferous by Zanarama. Special Guest Yannick Gingras, Production Engineer at Facebook."
+          name: "Special Guest Lecturers from RIT Career Fair - TBA"
       due:
         - name: Commarch Team Formation
 - week:
@@ -149,15 +145,10 @@
           link: /oer
     - class: true
       topics:
-        - name: OLPC Distribution &amp; Smoke testing
+        - name: "EDU: Curriculum Exploration"
       assign:
-        - name: Smoke Test
-          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
-    - class: false
-      topics:
-        - special: hackathon
-          name: HackUpstate in Syracuse
-          link: http://hackupstate.com
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
 - week:
     - class: true
       topics:
