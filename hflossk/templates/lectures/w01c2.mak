@@ -9,54 +9,38 @@
     <h2>Agenda:</h2>
     <ol class="lecture_list">
         <li>
-		<h3>Syllabus Correction</h3>
+            <h3>Welcome</h3>
 
-		<ul class="list-unstyled">
-                <li class="alert alert-danger"><strong>THERE IS NO CLASS ON LABOR DAY,
-                for the first time since I've been at RIT.</strong> Ever. This is super
-                lame, because it means there will not be a physical guest
-                lecture from lmacken. We'll likely videochat him in at some
-                point, and he is almost always available in IRC too if you have
-                questions.</li>
+            <ul class="list-unstyled">
+                <li class="alert alert-success">/whois decause</li>
             </ul>
-
-		</li>
-
+        </li>
 
         <li>
-
-		<h3>RollCall</h3>
-		<ul class="alert alert-success list-unstyled">
-            <li><h4>Name</h4></li>
-            <li><h4>Year/Major</h4></li>
-            <li><h4>Weapon Of Choice</h4></li>
-            <li><h4>Favorite Game</h4></li>
-        </ul>
-		</li>
-
-
+            <h3>RollCall</h3>
+            <ul class="alert alert-success list-unstyled">
+                <li><h4>Name</h4></li>
+                <li><h4>Year/Major</h4></li>
+                <li><h4>Weapon Of Choice</h4></li>
+                <li><h4>Favorite Game</h4></li>
+            </ul>
+        </li>
 
         <li>
-		<h3>Review Hackathon Schedule</h3>
-		<ul class="list-unstyled">
-                <li><p><a target="_blank" class="btn btn-large btn-success" href="http://foss.rit.edu/sfd13"><span class="glyphicon glyphicon-home"></span> <strong>Software Freedom Day @ RIT</strong></a></p></li>
+            <h3>Review Hackathon Schedule</h3>
+            <ul class="list-unstyled">
+                <li><p><a target="_blank" class="btn btn-large btn-success" href="http://foss.rit.edu/rcac"><span class="glyphicon glyphicon-home"></span> <strong>2/20 - Rochester Civic App Challenge @ MAGIC Center (SIH-1600)</strong></a></p></li>
                 <li><p><a target="_blank" class="btn btn-large btn-warning" href="http://foss.rit.edu/hackupstate-fall-2013"><span class="glyphicon glyphicon-road"></span> <strong>HackUpstate @ SYR</strong></a></p></li>
                 <li><p><a target="_blank" class="btn btn-large btn-success" href="http://foss.rit.edu/election-night-2013"><span class="glyphicon glyphicon-home"></span> <strong>Election Night @ RIT</strong></a></p></li>
             </ul>
-		</li>
+        </li>
 
-
-
-            <li>
-
-			<h3>Assignment</h3>
-
-			<ul class="list-unstyled alert alert-info">
-			<li><strong><span class="glyphicon glyphicon-plane"></span> <a href="/hw/firstflight">First flight</a></strong></li>
-        </ul>
-			</li>
-
-
+        <li>
+            <h3>Assignment</h3>
+            <ul class="list-unstyled alert alert-info">
+                <li><strong><span class="glyphicon glyphicon-plane"></span> <a href="/hw/firstflight">First flight</a></strong></li>
+            </ul>
+        </li>
 
     </ol>
-	</div>
+</div>
