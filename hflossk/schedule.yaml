@@ -44,17 +44,20 @@
     - class: true
       topics:
         - name: "Welcome, intro, Syllabus, RTFM"
-          link: /lectures/w01c2
       assign:
-        - name: <em>What is Open Source?</em> by Steve Weber
+        - name: "LitReview1: <em>What is Open Source?</em> by Steve Weber"
           link: /static/books/Weber-SuccessofOpenSource-Chap3.pdf
     - class: true
       topics:
         - name: "First Flight"
+          link: /lectures/w01c2
       assign:
         - name: <em>Homework - First Flight</em>
           link: /hw/firstflight
 - week:
+    - class: true
+      topics:
+        - name: "Formal Introduction to Git and Github"
     - class: true
       topics:
         - name: "Writing for HFOSS - litreviews and blog posts"
@@ -62,21 +65,16 @@
         - name: grok litreview.txt
           link: /static/hw/litreview.txt
       due:
-        - name: grok litreview.txt
-          link: /static/hw/litreview.txt
-    - class: true
-      topics:
-        - name: "Formal Introduction to Git and Github"
-          link: /lectures/w02c2
-      due:
         - name: <em>Homework - First Flight</em>
           link: /hw/firstflight
+        - name: grok litreview.txt
+          link: /static/hw/litreview.txt
 - week:
     - class: true
       topics:
         - name: "Lit Review Discussion: What is Open Source?"
       due:
-        - name: <em>What is Open Source?</em> by Steve Weber
+        - name: "LitReview1: <em>What is Open Source?</em> by Steve Weber"
           link: /books
     - class: true
       topics:
@@ -105,6 +103,8 @@
     - class: true
       topics:
         - name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail."
+        - special: guest
+          name: "Special Guest Lecturers from RIT Career Fair - TBA"
       assign:
         - name: Commarch Team Formation
         - name: Commarch Report
@@ -122,8 +122,6 @@
     - class: true
       topics:
         - name: Commarch Presentations
-        - special: guest
-          name: "Community Speaker: <a href='http://barcamproc.org' target='_blank' alt='Bar Camp Rochester'>BarCamp Rochester</a> & <a href='http://www.meetup.com/HackshackersROC/' target='_blank' alt='Hacks and Hackers Rochester'>Hacks/Hackers Rochester</a> with Chris Horn"
       assign:
         - name: <em>Homework - Team Proposal</em>
           link: /static/hw/teamproposal.html
@@ -140,9 +138,6 @@
     - class: true
       topics:
         - name: Final Commarch Presentations and Open Team Time
-      due:
-        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
-          link: /oer
     - class: true
       topics:
         - name: "EDU: Curriculum Exploration"
@@ -161,58 +156,44 @@
           link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
     - class: true
       topics:
+          - name: "TBD"
+      due:
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
+- week:
+    - class: true
+      topics:
         - special: cancelled
-          name: decause flying to Google HQ. No Class.
-      assign:
-        - name: Google Summer of Code Mentor Summit
-          link: https://www.google-melange.com/gsoc/events/google/gsoc2013
+          name: "NO CLASS - Spring Break"
+    - class: true
+      topics:
+        - special: cancelled
+          name: "NO CLASS - Spring Break"
+- week:
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - name: TBD
 - week:
     - class: true
       topics:
         - special: guest
-          name: "Guest Lecture: Advanced Python with threebean"
-    - class: true
-      topics:
-        - name: Decause lightning talk about conferences
-- week:
-    - class: true
-      topics:
-        - name: TBD
+          name: "Guest Lecture - TBA"
     - class: true
       topics:
         - special: guest
-          name: "Guest Lecture: FOSS gives you super hero powers with Nate Aune"
-    - class: false
-      topics:
-        - special: hackathon
-          name: Pre-BarcampROC Hackathon @ RIT
-          link: http://barcamproc.org
-    - class: false
-      date: 2013-11-02
-      topics:
-        - special: hackathon
-          name: BarcampROC @ RIT
-          link: http://barcamproc.org
+          name: "Guest Lecture - TBA"
 - week:
     - class: true
       topics:
-        - name: TBD
-    - class: false
-      date: 2013-11-05
-      topics:
-        - special: hackathon
-          name: Election Night Hackathon
-          link: http://foss.rit.edu/election-night-2013
+        - special: guest
+          name: "Tele-Lecture from PyCON"
     - class: true
       topics:
-        - name: TBD
-- week:
-    - class: true
-      topics:
-        - name: TBD
-    - class: true
-      topics:
-        - name: User Testing
+        - special: guest
+          name: "Tele-Lecture from PyCON"
 - week:
     - class: true
       topics:
@@ -224,22 +205,21 @@
     - class: true
       topics:
         - special: guest
-          name: "Guest Lecture: Intro to Natural Language Processing with Prof. Ovesdotter Alm"
+          name: TBD
 - week:
     - class: true
       topics:
         - name: Lit Review 2
     - class: true
       topics:
-        - special: cancelled
-          name: Thanksgiving Break. No Class.
+        - name: TBD
 - week:
     - class: true
       topics:
-        - name: Status Meeting
+        - name: TBD
     - class: true
       topics:
-        - name: Vim Seminar
+        - name: TBD
 - week:
     - class: true
       topics:
