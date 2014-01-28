@@ -1,0 +1,9 @@
+# Hey, it's msoucy!
+- blog: http://msoucy.me
+  feed: http://msoucy.me/feeds/tag/hfoss.atom.xml
+  forges:
+    - http://github.com/msoucy
+    - http://bitbucket.org/msoucy
+  irc: msoucy
+  name: Matt Soucy
+  rit_dce: mas5997
