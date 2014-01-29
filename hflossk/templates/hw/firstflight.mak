@@ -34,6 +34,7 @@ Practices component of your final grade.
           	  <ul>
                 <li><a class="reference external" href="http://www.mirc.com/">mIRC</a></li>
                 <li><a class="reference external" href="http://hexchat.github.io/">HexChat</a></li>
+                <li><a class="reference external" href="http://www.hydrairc.com/">HydraIRC</a></li>
               </ul>
             </li>
             <li>Mac OS X: <a class="reference external" href="http://colloquy.info/">Colloquy</a></li>
