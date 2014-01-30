@@ -28,6 +28,7 @@
             <li><a target="_blank" href="${forge_link}">${forge_link}</a></li>
           % endfor
 
+          <!--
           <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposal', 'litreview2', 'finalpost'] %>
           % for key in keys:
               % if student.get(key):
@@ -36,6 +37,7 @@
                 <li class="redtext">${key}?</li>
               % endif
           % endfor
+          -->
 
           <!--This block used for quick grading reference ;)
           % if student.get('name'):
