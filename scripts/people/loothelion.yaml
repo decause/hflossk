@@ -1,5 +1,5 @@
-- blog: 
-  feed: 
+- blog: http://gearchicken.com/TestWebsite/GearChicken/wordpress/
+  feed: http://gearchicken.com/TestWebsite/GearChicken/wordpress/?feed=rss
   forges:
     - http://github.com/liam-middlebrook
     - http://bitbucket.org/liam-middlebrook
