@@ -1,0 +1,8 @@
+- blog: http://gearchicken.com/TestWebsite/GearChicken/wordpress/
+  feed: http://gearchicken.com/TestWebsite/GearChicken/wordpress/?feed=rss
+  forges:
+    - http://github.com/liam-middlebrook
+    - http://bitbucket.org/liam-middlebrook
+  irc: loothelion
+  name: Liam Middlebrook
+  rit_dce: ljm2906
