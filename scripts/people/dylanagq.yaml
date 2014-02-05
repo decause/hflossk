@@ -1,6 +1,6 @@
 # I really ghettoed up this blog thingy
-- blog: http://85.17.29.115:2368/rss/
-  feed: http://dxa4481.wordpress.com/rss/
+- blog: http://dxa4481.wordpress.com/rss/
+  feed: http://dxa4481.wordpress.com/
   forges:
     - http://github.com/dxa4481
   irc: dylanagq
