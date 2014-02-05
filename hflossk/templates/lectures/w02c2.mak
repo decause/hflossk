@@ -49,7 +49,7 @@
                 <li><strong><span class="glyphicon glyphicon-pencil"></span> <a href="/static/hw/litreview.txt">Literature Review Template:</a></strong> Weber Review Due W3C1</li>
         </ul>
 </li>
-        <li><h3>Github &amp; Git Seminar</h3></li>
+        <li><h3>Lit Review<h3></li>
 
     </ol>
 </div>
