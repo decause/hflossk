@@ -6,7 +6,7 @@
 
 <div class="jumbotron">
   <h1>Participants</h1>
-  <p>Should have ${int(target_number)} blog posts</p>
+  <p>Should have ${int(target_number)} blog post(s)</p>
   <!--<p><a href="#" class="btn btn-primary btn-lg">Generate Report&raquo;</a></p>-->
 </div>
 
