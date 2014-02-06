@@ -15,7 +15,7 @@
     <div class="col-sm-4">
       <div class="shadowcard padded">
         <div>
-          <img class="uglymug pull-left" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
+          <img class="uglymug pull-left" src="${gravatar(student.get('avatar', student['rit_dce'] + '@rit.edu'))}" alt="${student['irc']}'s Avatar" />
           <h4 class="item">${student['irc']}</h4>
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
