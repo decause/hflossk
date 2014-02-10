@@ -63,7 +63,33 @@
         <h3>"The Open Source Way"</h3>
         <ul class="alert alert-info list-unstyled padded">
             <li><a target="_blank" href="http://opensource.com/open-source-way">Opensource.com - The Open Source Way</a></li>
-            <li><a target="_blank" href="http://tedxtalks.ted.com/video/TEDxBuffalo-2011-Remy-DeCausema">Prof. DeCause's <strike>bastardization</strike> Interpretation</a></li>
+        </ul>
+        <h3>Prof. DeCause's <strike>bastardization</strike> Interpretation</h3>
+        <ul class="alert alert-info list-unstyled padded">
+            <li><a target="_blank" href="http://tedxtalks.ted.com/video/TEDxBuffalo-2011-Remy-DeCausema">Prof. DeCause's TED Talk</a></li>
+            <li><pre>
+            1. Open Exchange
+            We learn more from eachother when information is open. ReUsing
+            Information frees up our cognitive surplus to solve new problems,
+            and not recreate the wheel.
+
+            2. Participation
+            When the barriers of entry are few, and the barriers are low, creation and
+            innovation thrive.
+
+            3. Rapid Prototyping
+            Learn by doing. Release early, release often. Fail early, fail often, find
+            the right answer faster.
+
+            4. Meritocracy
+            In a free marketplace of ideas, everyone has access to the same
+            information. Successful work determines which ideas rise and gather
+            momentum from the community.
+
+            5. Community 
+            The more people who look at a problem, the faster and more likely we are
+            to solve it.
+            </li>
         </ul>
 
     </ol>
