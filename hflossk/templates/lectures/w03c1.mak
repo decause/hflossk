@@ -58,5 +58,13 @@
             <li>3. Send decause a pull request. Once your pull-request is accepted, you have completed the assignment.</li>
         </ul>
 
+
+    <li>
+        <h3>"The Open Source Way"</h3>
+        <ul class="alert alert-info list-unstyled padded">
+            <li><a target="_blank" href="http://opensource.com/open-source-way">Opensource.com - The Open Source Way</a></li>
+            <li><a target="_blank" href="http://tedxtalks.ted.com/video/TEDxBuffalo-2011-Remy-DeCausema">Prof. DeCause's <strike>bastardization</strike> Interpretation</a></li>
+        </ul>
+
     </ol>
 </div>
