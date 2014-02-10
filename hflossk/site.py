@@ -86,7 +86,7 @@ def checkblogs():
 
             student_data.extend(contents)
 
-    target = datetime(2014, 1, 27)
+    target = datetime(2014, 2, 02)
     student_posts = {}
     threads = []
     results = []
@@ -110,7 +110,7 @@ def checkblogs():
 
     average = sum(student_posts.values()) / len(student_data)
 
-    assignments = []
+    assignments = ['litreview1']
     target_number = int((datetime.today() - target).total_seconds() /
                         timedelta(weeks=1).total_seconds() + 1 + len(assignments))
 
