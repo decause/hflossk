@@ -10,6 +10,7 @@ import threading
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 from flask_mail import Mail, Message
+import email_config
 
 import yaml
 import feedparser
@@ -22,11 +23,11 @@ from hflossk.blueprints import homework, lectures, quizzes
 
 app = Flask(__name__)
 app.config.update(
-    MAIL_SERVER='stmp.gmail.com',
-    MAIL_PORT=465,
-    MAIL_USE_SSL=True,
-    MAIL_USERNAME = 'USERNAMEGOESHERE',
-    MAIL_PASSWORD = 'PASSWORDGOESHERE'
+    MAIL_SERVER = email_config.MAIL_SERVER,
+    MAIL_PORT = email_config.MAIL_PORT,
+    MAIL_USE_SSL = email_config.MAIL_USE_SSL,
+    MAIL_USERNAME = email_config.MAIL_USERNAME,
+    MAIL_PASSWORD = email_config.MAIL_PASSWORD
     )
 mail=Mail(app)
 app.template_folder = "templates"
@@ -70,6 +71,7 @@ def homework_reminder():
         send_time = due_date - datetime.now().date() - two_days
         if send_time.total_seconds() > 0:
             t = threading.Timer(send_time.total_seconds(), send_email)
+	    t.daemon = True
             t.start()
 
 def send_email():
@@ -83,7 +85,8 @@ def send_email():
             sender='YOUREMAILHERE',
             recipients=emails)
         msg.body = "YO, DO THAT HOMEWORK"
-        mail.send(msg)
+	with app.app_context():
+	    mail.send(msg)
     except:
         print "error sending email, make sure you configured an email"
    
