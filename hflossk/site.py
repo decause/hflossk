@@ -69,7 +69,7 @@ def homework_reminder():
     for due_date in due_dates:
         send_time = due_date - datetime.now().date() - two_days
 	if send_time.total_seconds() > 0:
-	    t = threading.Timer(send_time.total_seconds(), send_email())
+	    t = threading.Timer(send_time.total_seconds(), send_email)
 	    t.start()
 
 def send_email():
