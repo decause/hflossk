@@ -34,6 +34,31 @@ def inject_yaml():
         site_config = yaml.load(site_yaml)
     return site_config
 
+def get_schedule():
+    with open(os.path.join(base_dir, 'schedule.yaml')) as schedule_yaml:
+        schedule = yaml.load(schedule_yaml)
+    return schedule
+
+
+def homework_reminder():
+    site_config = inject_yaml()
+    schedule = get_schedule()
+    start_date = site_config['course']['start']
+    due_dates = []
+    one_week = datetime(1,1,8) - datetime(1,1,1)
+    two_days = datetime(1,1,3) - datetime(1,1,1)
+    current_week = start_date
+    for week in schedule:
+        second_day = False
+        for weeks_class in week['week']:
+            if 'due' in weeks_class:
+                if(second_day):
+	            due_dates.append(current_week)
+                else:
+                    due_dates.append(current_week + two_days)
+            second_day = True
+        current_week = current_week + one_week
+
 
 def gravatar(email):
     """ I wish I could use libravatar here, but honestly, the students
@@ -52,8 +77,7 @@ def simple(page):
 
 @app.route('/syllabus')
 def syllabus():
-    with open(os.path.join(base_dir, 'schedule.yaml')) as schedule_yaml:
-        schedule = yaml.load(schedule_yaml)
+    schedule = get_schedule()
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
 
