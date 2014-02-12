@@ -53,24 +53,24 @@ def homework_reminder():
     schedule = get_schedule()
     start_date = site_config['course']['start']
     due_dates = []
-    one_week = datetime(1,1,8) - datetime(1,1,1)
-    two_days = datetime(1,1,3) - datetime(1,1,1)
+    one_week = timedelta(weeks=1)
+    two_days = timedelta(days=2)
     current_week = start_date
     for week in schedule:
         second_day = False
         for weeks_class in week['week']:
             if 'due' in weeks_class:
                 if(second_day):
-	            due_dates.append(current_week)
+                    due_dates.append(current_week)
                 else:
                     due_dates.append(current_week + two_days)
             second_day = True
         current_week = current_week + one_week
     for due_date in due_dates:
         send_time = due_date - datetime.now().date() - two_days
-	if send_time.total_seconds() > 0:
-	    t = threading.Timer(send_time.total_seconds(), send_email)
-	    t.start()
+        if send_time.total_seconds() > 0:
+            t = threading.Timer(send_time.total_seconds(), send_email)
+            t.start()
 
 def send_email():
     try:
@@ -80,8 +80,8 @@ def send_email():
             emails.append(student['rit_dce'] + '@rit.edu')
         msg = Message(
             'HFOSS HW DUE IN 2 DAYS', 
-	    sender='YOUREMAILHERE',
-	    recipients=emails)
+            sender='YOUREMAILHERE',
+            recipients=emails)
         msg.body = "YO, DO THAT HOMEWORK"
         mail.send(msg)
     except:
