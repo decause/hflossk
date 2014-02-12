@@ -61,9 +61,9 @@ def homework_reminder():
         for weeks_class in week['week']:
             if 'due' in weeks_class:
                 if(second_day):
-                    due_dates.append(current_week)
-                else:
                     due_dates.append(current_week + two_days)
+                else:
+                    due_dates.append(current_week)
             second_day = True
         current_week = current_week + one_week
     for due_date in due_dates:
