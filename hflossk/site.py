@@ -9,6 +9,7 @@ import threading
 
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
+from flask_mail import Mail, Message
 
 import yaml
 import feedparser
@@ -20,6 +21,14 @@ import glob
 from hflossk.blueprints import homework, lectures, quizzes
 
 app = Flask(__name__)
+app.config.update(
+    MAIL_SERVER='stmp.gmail.com',
+    MAIL_PORT=465,
+    MAIL_USE_SSL=True,
+    MAIL_USERNAME = 'USERNAMEGOESHERE',
+    MAIL_PASSWORD = 'PASSWORDGOESHERE'
+    )
+mail=Mail(app)
 app.template_folder = "templates"
 mako = MakoTemplates(app)
 
@@ -57,9 +66,27 @@ def homework_reminder():
                     due_dates.append(current_week + two_days)
             second_day = True
         current_week = current_week + one_week
-    student_data = get_student_data()
-    for student in student_data:
-        print student
+    for due_date in due_dates:
+        send_time = due_date - datetime.now().date() - two_days
+	if send_time.total_seconds() > 0:
+	    t = threading.Timer(send_time.total_seconds(), send_email())
+	    t.start()
+
+def send_email():
+    try:
+        student_data = get_student_data()
+        emails = []
+        for student in student_data:
+            emails.append(student['rit_dce'] + '@rit.edu')
+        msg = Message(
+            'HFOSS HW DUE IN 2 DAYS', 
+	    sender='YOUREMAILHERE',
+	    recipients=emails)
+        msg.body = "YO, DO THAT HOMEWORK"
+        mail.send(msg)
+    except:
+        print "error sending email, make sure you configured an email"
+   
 
 def gravatar(email):
     """ I wish I could use libravatar here, but honestly, the students
@@ -98,6 +125,7 @@ def check_blog(queue, feed, name, target):
 
 def get_student_data():
     student_data = []
+    yaml_dir = 'scripts/people/' 
     for fname in glob.glob(yaml_dir + "*.yaml"):
         with open(fname) as students:
             contents = yaml.load(students)
@@ -110,7 +138,6 @@ def get_student_data():
 
 @app.route('/checkblogs')
 def checkblogs():
-    yaml_dir = 'scripts/people/'
     
     student_data = get_student_data()
 
@@ -159,7 +186,7 @@ def oer():
 
     return render_template('oer.mak', name='mako', resources=resources)
 
-
+homework_reminder()
 app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quiz')

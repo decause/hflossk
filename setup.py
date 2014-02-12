@@ -29,6 +29,7 @@ setup(
         "flask",
         "mako",
         "flask-mako",
+	"flask-mail",
         "feedparser",
         "pyyaml",
         "frozen-flask",
