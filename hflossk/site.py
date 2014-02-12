@@ -39,7 +39,6 @@ def get_schedule():
         schedule = yaml.load(schedule_yaml)
     return schedule
 
-
 def homework_reminder():
     site_config = inject_yaml()
     schedule = get_schedule()
@@ -58,7 +57,9 @@ def homework_reminder():
                     due_dates.append(current_week + two_days)
             second_day = True
         current_week = current_week + one_week
-
+    student_data = get_student_data()
+    for student in student_data:
+        print student
 
 def gravatar(email):
     """ I wish I could use libravatar here, but honestly, the students
@@ -95,11 +96,7 @@ def check_blog(queue, feed, name, target):
         when.append(item.updated)
     queue.append((name, len(when)))
 
-
-@app.route('/checkblogs')
-def checkblogs():
-    yaml_dir = 'scripts/people/'
-
+def get_student_data():
     student_data = []
     for fname in glob.glob(yaml_dir + "*.yaml"):
         with open(fname) as students:
@@ -109,6 +106,13 @@ def checkblogs():
                 raise ValueError("%r is borked" % fname)
 
             student_data.extend(contents)
+    return student_data
+
+@app.route('/checkblogs')
+def checkblogs():
+    yaml_dir = 'scripts/people/'
+    
+    student_data = get_student_data()
 
     target = datetime(2014, 1, 27)
     student_posts = {}
