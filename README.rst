@@ -87,13 +87,13 @@ Homework emailer configuration
 ------------------------------
 
 To add email reminder functionality to the app create a file in the main directory called `email_config.py` which will contains the following
+::
 
-.. code-block:: python
-    AIL_SERVER='smtp.gmail.com'
-    MAIL_PORT=465
-    MAIL_USE_SSL=True
-    MAIL_USERNAME = 'USERNAMEGOESHERE'
-    MAIL_PASSWORD = 'PASSWORDGOESHERE'
+     AIL_SERVER='smtp.gmail.com'
+     MAIL_PORT=465
+     MAIL_USE_SSL=True
+     MAIL_USERNAME = 'USERNAMEGOESHERE'
+     MAIL_PASSWORD = 'PASSWORDGOESHERE'
 
 
 
