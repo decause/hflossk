@@ -10,7 +10,6 @@ import threading
 from flask import Flask
 from flask.ext.mako import MakoTemplates, render_template
 from flask_mail import Mail, Message
-import email_config
 
 import yaml
 import feedparser
@@ -22,14 +21,22 @@ import glob
 from hflossk.blueprints import homework, lectures, quizzes
 
 app = Flask(__name__)
-app.config.update(
-    MAIL_SERVER = email_config.MAIL_SERVER,
-    MAIL_PORT = email_config.MAIL_PORT,
-    MAIL_USE_SSL = email_config.MAIL_USE_SSL,
-    MAIL_USERNAME = email_config.MAIL_USERNAME,
-    MAIL_PASSWORD = email_config.MAIL_PASSWORD
-    )
-mail=Mail(app)
+
+send_emails = True
+
+try:
+    import email_config
+    app.config.update(
+        MAIL_SERVER = email_config.MAIL_SERVER,
+        MAIL_PORT = email_config.MAIL_PORT,
+        MAIL_USE_SSL = email_config.MAIL_USE_SSL,
+        MAIL_USERNAME = email_config.MAIL_USERNAME,
+        MAIL_PASSWORD = email_config.MAIL_PASSWORD)
+    mail=Mail(app)
+except:
+    send_emails = False
+    print("no email configuration file")
+
 app.template_folder = "templates"
 mako = MakoTemplates(app)
 
@@ -189,7 +196,8 @@ def oer():
 
     return render_template('oer.mak', name='mako', resources=resources)
 
-homework_reminder()
+if send_emails:
+    homework_reminder()
 app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quiz')
