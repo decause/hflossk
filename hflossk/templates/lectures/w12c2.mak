@@ -24,7 +24,7 @@
             <li>3. You will post a link to your most recent blog post, like so: <code>#link http://blog.blogopolis.net/latest-post</code></li>
             <li>4. This will provide a attendance for today's class
             and is publicly available here: </br><code> <a
-                target="_blank" href="http://yacht.rit.edu/meetings/rit-foss/2013">http://yacht.rit.edu/meetings/rit-foss/2013/</a></code></li>
+                target="_blank" href="http://yacht.rit.edu/meetings/rit-foss/2014">http://yacht.rit.edu/meetings/rit-foss/2014/</a></code></li>
         </ol>
         </li>
         <li>

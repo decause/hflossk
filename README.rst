@@ -114,7 +114,7 @@ In order to do that, first make sure you have your virtualenv activated.
 
 Being certain of that, in the root directory, simply run::
 
- $ python run.py
+ $ python app.py
 
 You should see a success message such as::
 

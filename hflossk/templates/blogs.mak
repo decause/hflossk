@@ -6,7 +6,7 @@
 
 <div class="jumbotron">
   <h1>Participants</h1>
-  <p>Should have ${int(target_number)} blog posts</p>
+  <p>Should have ${int(target_number)} blog post(s)</p>
   <!--<p><a href="#" class="btn btn-primary btn-lg">Generate Report&raquo;</a></p>-->
 </div>
 
@@ -28,6 +28,12 @@
             <li><a target="_blank" href="${forge_link}">${forge_link}</a></li>
           % endfor
 
+          % if student.get('litreview1'):
+            <li><a target="_blank" href="${student['litreview1']}">Litreview1</a></li>
+          % else:
+            <li class="redtext">litreview1?</li>
+          % endif
+
           <!--
           <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposal', 'litreview2', 'finalpost'] %>
           % for key in keys:
@@ -45,7 +51,7 @@
           % endif
           -->
         </ul>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+        <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
       </div>
     </div><!--/span-->
     %if (loop.index + 1) % 3 == 0:
