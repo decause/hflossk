@@ -12,13 +12,10 @@
             <h3>Assignment-ery</h3>
 
                 <ul class="lecture-list list-unstyled btn btn-default">
-                    <li><strong><span class="glyphicon glyphicon-pencil"></span> <a href="/hw/bugfix">Bug Fix:</a></strong> If you did not submit your pull request by 4:59pm today, email me ASAP. You are losing 10% per day it is late :(</li>
+                    <li><strong><span class="glyphicon glyphicon-pencil"></span> <a href="/hw/bugfix">Bug Fix:</a></strong> Some of you already submitted your bugfix assignments, and that is *wonderful* and I will take note of who paid attention to the syllabus and turned in their work already. Bugfix is "officially" assigned today, and due next Monday.</li>
             </ul>
             <br/>
             <br/>
-            <ul class="lecture-list list-unstyled alert alert-success">
-                <li><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span><span class="glyphicon glyphicon-user"></span> <a href="/static/hw/commarch.txt" target="_blank">Commarch Teams</a>: You have until the end of next class to form your teams for the commarch assignment. <strong>EACH</strong> of you will be submitting a pull request in your <code>.yaml</code> file with each team members' IRC Nick: Like so:<br/><code> commarchteam: fangy, beruberufunbot, waterseas</code></li>
-        </ul>
             <ul class="lecture-list list-unstyled btn btn-success">
                 <li><span class="glyphicon glyphicon-list-alt"></span> <a style="color:white;" href="/static/hw/commarch.txt" target="_blank">Commarch Report</a></li>
         </ul>
@@ -42,7 +39,7 @@
          <li>
         <h3>Guest Lecture</h3>
             <ol class="alert alert-success list-unstyled" >
-                <li><span class="glyphicon glyphicon-wrench"></span> Tom 'Spot' Callaway, <a target="_blank" href="http://fedoraproject.org">Fedora Engineering Manager</a> and<br/> <span class="glyphicon glyphicon-bullhorn"></span> Ruth Suehle, <a target="_blank" href="http://redhat.com">Red Hat Community Marketing Manger</a></li>
+                <li><span class="glyphicon glyphicon-wrench"></span> Special Guests Next Class! Stay Tuned!</li>
             </ol>
             </li>
     </ol>
