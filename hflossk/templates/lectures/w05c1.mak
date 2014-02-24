@@ -12,7 +12,7 @@
             <h3>Assignment-ery</h3>
 
                 <ul class="lecture-list list-unstyled btn btn-default">
-                    <li><strong><span class="glyphicon glyphicon-pencil"></span> <a href="/hw/bugfix">Bug Fix:</a></strong> Some of you already submitted your bugfix assignments, and that is *wonderful* and I will take note of who paid attention to the syllabus and turned in their work already. Bugfix is "officially" assigned today, and due next Monday.</li>
+                    <li><strong><span class="glyphicon glyphicon-pencil"></span> <p><a href="/hw/bugfix">Bug Fix:</a></strong> Some of you already submitted your bugfix assignments, and that is *wonderful* and I will take note of who paid attention to the syllabus and turned in their work already. Bugfix is "officially" assigned today, and due next Monday.</p></li>
             </ul>
             <br/>
             <br/>
