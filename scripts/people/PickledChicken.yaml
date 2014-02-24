@@ -1,6 +1,6 @@
 # PickledChicken likes to make cool things. Does both design and development.
-- blog: http://changbaili.blogspot.com/
-  feed: http://changbaili.blogspot.com/feeds/posts/default
+- blog: http://changbaili.blogspot.com/search/label/HFOSS
+  feed: http://changbaili.blogspot.com/feeds/posts/default/-/HFOSS
   forges:
     - http://github.com/lcb931023
   irc: PickledChicken
