@@ -8,6 +8,7 @@ months = ["02", "03", "04", "05"]
 
 # Scrape the whole page
 page = urllib2.urlopen("http://yacht.rit.edu/meetings/rit-foss/2014/")
+
 bigSoup = BeautifulSoup(page)
 
 # Find all of the links
