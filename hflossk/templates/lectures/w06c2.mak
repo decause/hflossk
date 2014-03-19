@@ -26,7 +26,7 @@
             <li>4. This will provide useful meeting notes, confirm you've
             completed the assignment, and be publicly available here: <code><a
             target="_blank"
-    href="http://yacht.rit.edu/meetings/rit-foss/2013">http://yacht.rit.edu/meetings/rit-foss/2013/</a></code></li>
+    href="http://yacht.rit.edu/meetings/rit-foss/2014">http://yacht.rit.edu/meetings/rit-foss/2014/</a></code></li>
         </ol>
         </li>
          <li>

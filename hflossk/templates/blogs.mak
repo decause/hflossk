@@ -29,7 +29,17 @@
           % endfor
 
           <!--
+          % if student.get('litreview1'):
+            <li><a target="_blank" href="${student['litreview1']}">Litreview1</a></li>
+          % else:
+            <li class="redtext">litreview1?</li>
+          % endif
+          -->
+
+          <!--
           <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposal', 'litreview2', 'finalpost'] %>
+          -->
+          <% keys = ['quiz1', 'litreview1', 'bugfix'] %>
           % for key in keys:
               % if student.get(key):
                 <li><a target="_blank" href="${student[key]}">${key}</a></li>
@@ -37,7 +47,6 @@
                 <li class="redtext">${key}?</li>
               % endif
           % endfor
-          -->
 
           <!--This block used for quick grading reference ;)
           % if student.get('name'):
@@ -45,7 +54,7 @@
           % endif
           -->
         </ul>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+        <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
       </div>
     </div><!--/span-->
     %if (loop.index + 1) % 3 == 0:

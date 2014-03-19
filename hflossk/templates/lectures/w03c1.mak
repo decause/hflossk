@@ -34,7 +34,7 @@
             <li>4. This will provide useful meeting notes, confirm you've
             completed the assignment, and be publicly available here: <code><a
             target="_blank"
-    href="http://yacht.rit.edu/meetings/rit-foss/2013">http://yacht.rit.edu/meetings/rit-foss/2013/</a></code></li>
+    href="http://yacht.rit.edu/meetings/rit-foss/2014">http://yacht.rit.edu/meetings/rit-foss/2014/</a></code></li>
         </ol>
         </li>
          <li>
@@ -56,6 +56,40 @@
             <li>1. Create a blog post that includes each question, and the answer below it, on the HFOSS Blog you set up in <a target="_blank" href="/hw/firstflight"><em>First Flight</em></a>.</li>
             <li>2. Add a line to the bottom of your .yaml file you edited in first flight, with the link to your post.</li>
             <li>3. Send decause a pull request. Once your pull-request is accepted, you have completed the assignment.</li>
+        </ul>
+
+
+    <li>
+        <h3>"The Open Source Way"</h3>
+        <ul class="alert alert-info list-unstyled padded">
+            <li><a target="_blank" href="http://opensource.com/open-source-way">Opensource.com - The Open Source Way</a></li>
+        </ul>
+        <h3>Prof. DeCause's <strike>bastardization</strike> Interpretation</h3>
+        <ul class="alert alert-info list-unstyled padded">
+            <li><a target="_blank" href="http://tedxtalks.ted.com/video/TEDxBuffalo-2011-Remy-DeCausema">Prof. DeCause's TED Talk</a></li>
+            <li><pre>
+            1. Open Exchange
+            We learn more from eachother when information is open. ReUsing
+            Information frees up our cognitive surplus to solve new problems,
+            and not recreate the wheel.
+
+            2. Participation
+            When the barriers of entry are few, and the barriers are low, creation and
+            innovation thrive.
+
+            3. Rapid Prototyping
+            Learn by doing. Release early, release often. Fail early, fail often, find
+            the right answer faster.
+
+            4. Meritocracy
+            In a free marketplace of ideas, everyone has access to the same
+            information. Successful work determines which ideas rise and gather
+            momentum from the community.
+
+            5. Community 
+            The more people who look at a problem, the faster and more likely we are
+            to solve it.
+            </li>
         </ul>
 
     </ol>

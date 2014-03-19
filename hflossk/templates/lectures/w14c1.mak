@@ -31,7 +31,7 @@
             <li>3. You will post a link to your litreview2 blogpost, like so: <code>#link http://blog.blogopolis.net/litreview2</code></li>
             <li>4. This will provide a attendance for today's class
             and is publicly available here: </br><code> <a
-                target="_blank" href="http://yacht.rit.edu/meetings/rit-foss/2013">http://yacht.rit.edu/meetings/rit-foss/2013/</a></code></li>
+                target="_blank" href="http://yacht.rit.edu/meetings/rit-foss/2014">http://yacht.rit.edu/meetings/rit-foss/2014/</a></code></li>
             <li>5. #topic Overview (2-liner description of project)</li>
             <li>6. #topic oldbiz (stuff you did last week)</li>
             <li>7. #topic newbiz (stuff you're going to do next week)</li>
