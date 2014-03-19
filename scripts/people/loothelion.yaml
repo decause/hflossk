@@ -1,11 +1,14 @@
-- blog: http://gearchicken.com/TestWebsite/GearChicken/wordpress/
-  feed: http://gearchicken.com/TestWebsite/GearChicken/wordpress/?feed=rss
+- blog: http://gearchicken.com/wordpress/
+  feed: http://gearchicken.com/wordpress/?feed=rss
   forges:
     - http://github.com/liam-middlebrook
     - http://bitbucket.org/liam-middlebrook
   irc: loothelion
   name: Liam Middlebrook
   rit_dce: ljm2906
-  litreview1: http://gearchicken.com/TestWebsite/GearChicken/wordpress/?p=17
-  quiz1: http://gearchicken.com/TestWebsite/GearChicken/wordpress/?p=20
+  litreview1: http://gearchicken.com/wordpress/?p=17
+  quiz1: http://gearchicken.com/wordpress/?p=20
+  bugfix: http://gearchicken.com/wordpress/?p=33
   teamprop1: http://gearchicken.com/wordpress/?p=47
+  commarchreport: http://gearchicken.com/wordpress/?p=57
+  commarchpreso: http://gearchicken.com/commarch_hfoss.pdf #Displays incorrectly in FireFox for GNU/Linux
