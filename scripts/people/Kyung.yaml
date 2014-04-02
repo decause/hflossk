@@ -1,5 +1,5 @@
 #I am KyungHwan Chang. Yeahi.
-#mmmmm,mm,mkjmjh
+#i fixed bug. example yaml https://github.com/kyung01/hflossk/blob/master/scripts/people/decause.yaml
 - blog: http://bluebugblog.weebly.com/1/category/hfoss/1.html
   feed: http://bluebugblog.weebly.com/1/feed
   forges:   
@@ -9,4 +9,8 @@
   name: kyunghwan chang
   litreview1: http://bluebugblog.weebly.com/1/post/2014/02/school-assignment.html
   quiz1: http://bluebugblog.weebly.com/1/post/2014/02/schoolassignment-hfoss_quiz.html
-  bugfix: http://bluebugblog.weebly.com/1/post/2014/02/bugfix.html 
+  bugfix: http://bluebugblog.weebly.com/1/post/2014/03/bug-fix-found-bug.html
+  bugfixupstream: https://github.com/hvp/Squareosity/commit/65fa8202a950c846cc0d295470d15d8c85c156ae
+  teamproposal: http://bluebugblog.weebly.com/1/post/2014/03/hfoss-my-team.html
+  commarch: http://bluebugblog.weebly.com/1/post/2014/03/hfoss-commarch-my-thought-on-the-project.html
+  commarchteam: https://docs.google.com/document/d/19AUYrdaJROWOed72IL4Bgj8tbT2xSfbl5-AZRIF-XhE/edit?usp=sharing
