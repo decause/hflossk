@@ -40,7 +40,8 @@ def gravatar(email):
     will be better off using gravatar at this point (due to github
     integration :/) """
 
-    slug = hashlib.md5(email.lower()).hexdigest()
+    email = email.encode('utf8').lower()
+    slug = hashlib.md5(email).hexdigest()
     return "https://secure.gravatar.com/avatar/" + slug
 
 
