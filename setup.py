@@ -32,6 +32,7 @@ setup(
         "feedparser",
         "pyyaml",
         "frozen-flask",
+	"tornado"
     ],
     #TODO: Deal with entry_points
     #entry_points="""
