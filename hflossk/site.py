@@ -42,7 +42,9 @@ def gravatar(email):
 
     email = email.encode('utf8').lower()
     slug = hashlib.md5(email).hexdigest()
-    return "https://seccdn.libravatar.org/avatar/" + slug +"?d=https://secure.gravatar.com/avatar/" + slug
+    libravatarURL = "https://seccdn.libravatar.org/avatar/"
+    gravatarURL = "https://secure.gravatar.com/avatar/"
+    return libravatarURL + slug +"?d=" + gravatarURL + slug
 
 
 @app.route('/', defaults=dict(page='home'))
