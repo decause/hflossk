@@ -1,7 +1,43 @@
 <%inherit file="master.mak" />
 <head>
-    <script src="/pace/pace.js"></script>
-  <link href="/pace/themes/pace-theme-barber-shop.css" rel="stylesheet" />
+    <script src="/static/js/pace.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <link href="/static/css/pace.css" rel="stylesheet" />
+  <script>
+
+    /**
+     * getPostCount
+     *
+     *
+     */
+    function getPostCount(username) {
+      var target = ${int(target_number)};
+      $.ajax({
+        url: "/blog/" + username,
+        method: "GET",
+        dataType: "json",
+        success: function(data) {
+          var count = data['number'];
+          $('span#' + username).text(count);
+          if (count >= target) {
+            $('span#' + username).addClass('label-success');
+          } else if (count >= target * 0.8) {
+            $('span#' + username).addClass('label-warning');
+          } else {
+            $('span#' + username).addClass('label-danger');
+          }
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      $.each($("div.student"), function(index, elem) {
+        var username = $(elem).data('student');
+        getPostCount(username);
+      });
+    });
+
+  </script>
 </head>
 
 <div class="jumbotron">
@@ -13,14 +49,13 @@
 <div class="row">
   %for student in student_data:
     <div class="col-sm-4">
-      <div class="shadowcard padded">
+      <div class="student shadowcard padded" data-student=${student['irc']}>
         <div>
           <img class="uglymug pull-left" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
           <h4 class="item">${student['irc']}</h4>
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
-            <% post_count = student_posts.get(student['irc'], 0) %>
-            <span class="label label-${'success' if post_count >= target_number else 'warning' if post_count >= target_number*.8 else 'danger'}">${post_count}</span>
+            <span class="label" id=${student['irc']}></span>
           </div>
         </div>
         <ul class="cardlist list-unstyled">

@@ -1,7 +1,7 @@
 import os
 
-from flask import Blueprint, abort
-from flask.ext.mako import MakoTemplates, render_template
+from flask import Blueprint
+from flask.ext.mako import render_template
 
 homework = Blueprint('homework', __name__, template_folder='templates')
 lectures = Blueprint('lectures', __name__, template_folder='templates')
