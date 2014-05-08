@@ -1,6 +1,7 @@
 """
 Author: Remy D <remyd@civx.us>
         Ralph Bean <rbean@redhat.com>
+        Sam Lucidi <mansam@csh.rit.edu>
 License: Apache 2.0
 
 """
