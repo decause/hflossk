@@ -6,30 +6,6 @@
   user-select: none;
 }
 
-<<<<<<< HEAD
-.pace .pace-progress {
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 0;
-  height: 5rem;
-  width: 5rem;
-}
-
-.pace .pace-progress:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: .5rem;
-  content: attr(data-progress);
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 100;
-  font-size: 5rem;
-  line-height: 1;
-  text-align: right;
-  color: rgba(0, 0, 0, 0.19999999999999996);
-}
-=======
 .pace-inactive {
   display: none;
 }
@@ -93,4 +69,3 @@
   0% { transform: none; transform: none; }
   100% { transform: translate(-32px, 0); transform: translate(-32px, 0); }
 }
->>>>>>> 12ca216510970e9c92f75c3cb32fd439843267da
