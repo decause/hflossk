@@ -9,4 +9,4 @@ if __name__ == "__main__":
         app.run(host=host, port=port)
     else:
         app.debug = True
-        app.run()
+        app.run(threaded=True)
