@@ -158,5 +158,6 @@ def resources():
 
 
 app.register_blueprint(homework, url_prefix='/assignments')
+app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quizzes')
