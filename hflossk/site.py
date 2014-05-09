@@ -54,7 +54,9 @@ def gravatar(email):
 
     email = email.encode('utf8').lower()
     slug = hashlib.md5(email).hexdigest()
-    return "https://secure.gravatar.com/avatar/" + slug
+    libravatarURL = "https://seccdn.libravatar.org/avatar/"
+    gravatarURL = "https://secure.gravatar.com/avatar/"
+    return libravatarURL + slug +"?d=" + gravatarURL + slug
 
 
 @app.route('/', defaults=dict(page='home'))
@@ -156,5 +158,7 @@ def resources():
 
 
 app.register_blueprint(homework, url_prefix='/assignments')
+app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quizzes')
+app.register_blueprint(quizzes, url_prefix='/quiz')
