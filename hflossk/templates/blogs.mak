@@ -71,10 +71,7 @@
           % endif
           -->
 
-          <!--
-          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposal', 'litreview2', 'finalpost'] %>
-          -->
-          <% keys = ['quiz1', 'litreview1', 'bugfix', 'teamproposal', 'commarchpreso', 'commarchreport'] %>
+          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'commarchpreso', 'commarchreport', 'teamproposal', 'litreview2', 'finalpost'] %>
           % for key in keys:
               % if student.get(key):
                 <li><a target="_blank" href="${student[key]}">${key}</a></li>
