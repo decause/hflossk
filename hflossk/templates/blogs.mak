@@ -71,7 +71,7 @@
           % endif
           -->
 
-          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'commarchpreso', 'commarchreport', 'teamproposal', 'litreview2', 'finalpost'] %>
+          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'commarchpreso', 'commarchreport', 'teamproposal', 'litreview2'] %>
           % for key in keys:
               % if student.get(key):
                 <li><a target="_blank" href="${student[key]}">${key}</a></li>
@@ -80,11 +80,10 @@
               % endif
           % endfor
 
-          <!--This block used for quick grading reference ;)
+          <!--This block used for quick grading reference ;)-->
           % if student.get('name'):
             <li>${student['name']}</li>
           % endif
-          -->
         </ul>
         <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
       </div>
