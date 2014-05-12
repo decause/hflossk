@@ -74,7 +74,7 @@
           <!--
           <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarch', 'teamproposal', 'litreview2', 'finalpost'] %>
           -->
-          <% keys = ['quiz1', 'litreview1', 'bugfix'] %>
+          <% keys = ['quiz1', 'litreview1', 'bugfix', 'teamproposal', 'commarchpreso', 'commarchreport'] %>
           % for key in keys:
               % if student.get(key):
                 <li><a target="_blank" href="${student[key]}">${key}</a></li>

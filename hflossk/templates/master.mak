@@ -51,7 +51,6 @@
       <div class="row">
         <div class="col-md-3">
           <div class="well">
-            <h2>Course Information</h2>
             <ul class="list-unstyled">
               <li><span class="glyphicon glyphicon-calendar"></span> ${course['start']} &mdash; ${course['end']}</li>
               <li><span class="glyphicon glyphicon-bell"></span> ${course['times']}</li>
