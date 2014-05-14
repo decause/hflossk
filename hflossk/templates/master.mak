@@ -36,13 +36,12 @@
           Fork me on <a target="_blank" href="http://github.com/decause/hflossk" class="navbar-link">Github</a>
         </p>
         <ul class="nav navbar-nav">
-          <li><a href="/about">About</a></li>
           <li><a href="/syllabus">Syllabus</a></li>
-          <li><a href="/oer">Resources</a></li>
+          <li><a href="/resources">Resources</a></li>
           <li><a href="/lectures">Lectures</a></li>
-          <li><a href="/hw">Assignments</a></li>
-          <li><a href="/decause">Instructor</a></li>
-          <li><a href="/checkblogs">Participants</a></li>
+          <li><a href="/assignments">Assignments</a></li>
+          <li><a href="/instructor">Instructor</a></li>
+          <li><a href="/participants">Participants</a></li>
           <li><a target="_blank" href="http://webchat.freenode.net/?&amp;channels=rit-foss">Instant IRC</a></li>
         </ul>
       </div><!--/.nav-collapse -->

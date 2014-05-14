@@ -28,16 +28,18 @@
   <blockquote>
     <div>
       <ul class="list-unstyled">
-        <li>Instructor - ${instructor['name']} &lt;<a class="" href="mailto:${instructor['email']}">${instructor['email']}</a>&gt;</li>
-            <li>Office: ${instructor['office']['location']}</li>
-            <li>Office Hours: ${instructor['office']['hours']}</li>
-        <li>Teaching Assistant - TBA 
-        <!--&lt;<a href="mailto:daw4475&#37;&#52;&#48;rit&#46;edu">daw4475<span>&#64;</span>rit<span>&#46;</span>edu</a>&gt;.  <span class="docutils literal" style="font-family: monospace;"><span class="pre">DAWacker</span></span> in IRC.</li>-->
-        <li>IRC - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
-        <li>Blog Planet - <a class="" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
-        <li>The source for this syllabus can be found at
-        <a href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a></li>
+        <li><b>Instructor</b> - ${instructor['name']} &lt;<a class="" href="mailto:${instructor['email']}">${instructor['email']}</a>&gt;</li>
+            <li><b>Office:</b> ${instructor['office']['location']}</li>
+            <li><b>Office Hours:</b> ${instructor['office']['hours']}</li>
+        % if assistant:
+        <li><b>Teaching Assistant</b> - ${assistant['name']} &lt;<a class="" href="mailto:${assistant['email']}">${assistant['email']}</a>&gt;</li>
+        % endif
+        <li><b>IRC</b> - irc.freenode.net, <span class="docutils literal" style="font-family: monospace;"><span class="pre">#rit-foss</span></span></li>
+        <li><b>Blog Planet</b> - <a class="" href="http://foss.rit.edu/planet">http://foss.rit.edu/planet</a></li>
       </ul>
+        The source for this syllabus can be found at
+        <a href="http://github.com/decause/hflossk">http://github.com/decause/hflossk</a>
+
     </div>
   </blockquote>
 </div>
@@ -92,7 +94,7 @@
   <%
     from datetime import datetime, timedelta
   %>
-  <table border="1" class="docutils">
+  <table class="table table-striped table-bordered" class="docutils">
     <colgroup>
       <col style="width: 2%;" />
       <col style="width: 2%;" />
@@ -146,72 +148,73 @@
 <div class="section">
   <a class="headerlink" name="grading"></a>
   <h2>Grading</h2>
-<p>Assignments are due at 4:59pm of the day they are marked as due, to be useful in class.</p>
-<p>Late submissions will be deducted <span class="label label-danger">10%</span> per day they are late.</p>
-<hr class="docutils" />
-<p>Your final grade for the quarter will be derived from the following weights.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col style="width: 80%;" />
-<col style="width: 20%;" />
-</colgroup>
-<thead>
-<tr><th class="head">Component</th>
-<th class="head">Weight</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>In-Class Participation</td>
-<td class="center padded"><span class="label label-warning">10%</span></td>
-</tr>
-<tr><td>Quizzes</td>
-<td class="center padded"><span class="label label-warning">10%</span></td>
-</tr>
-<tr><td>Literature Reviews</td>
-<td class="center padded"><span class="label label-warning">10%</span></td>
-</tr>
-<tr><td>Team Peer Assessment</td>
-<td class="center padded"><span class="label label-info">15%</span></td>
-</tr>
-<tr><td>Completed Project</td>
-<td class="center padded"><span class="label label-info">15%</span></td>
-</tr>
-<tr><td>Final Presentation</td>
-<td class="center padded"><span class="label label-success">20%</span></td>
-</tr>
-<tr><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
-<td class="center padded"><span class="label label-success">20%</span></td>
-</tr>
-</tbody>
+  <p>Assignments are due at 4:59pm of the day they are marked as due, to be useful in class.</p>
+  <p>Late submissions will be deducted <span class="label label-danger">10%</span> per day they are late.</p>
+  <hr class="docutils" />
+  <p>Your final grade for the quarter will be derived from the following weights.</p>
+  <table class="table table-striped table-bordered"
+   class="docutils">
+    <colgroup>
+    <col style="width: 80%;" />
+    <col style="width: 20%;" />
+  </colgroup>
+  <thead>
+    <tr><th class="head">Component</th>
+      <th class="head">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>In-Class Participation</td>
+      <td class="center padded"><span class="label label-warning">10%</span></td>
+    </tr>
+    <tr><td>Quizzes</td>
+      <td class="center padded"><span class="label label-warning">10%</span></td>
+    </tr>
+    <tr><td>Literature Reviews</td>
+      <td class="center padded"><span class="label label-warning">10%</span></td>
+    </tr>
+    <tr><td>Team Peer Assessment</td>
+      <td class="center padded"><span class="label label-info">15%</span></td>
+    </tr>
+    <tr><td>Completed Project</td>
+      <td class="center padded"><span class="label label-info">15%</span></td>
+    </tr>
+    <tr><td>Final Presentation</td>
+      <td class="center padded"><span class="label label-success">20%</span></td>
+    </tr>
+    <tr><td>FOSS Dev Practices (Blog posts, commits, tickets, IRC)</td>
+      <td class="center padded"><span class="label label-success">20%</span></td>
+    </tr>
+  </tbody>
 </table>
 <hr class="docutils" />
 <p><em>Blog updates</em> &#8211; students are required to keep a blog to which they post updates
-about their investigations, progress, success, and pitfalls. This blog can be
-hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
-in <a class="" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
-<blockquote>
-<div><ul class="simple">
-<li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
-<li>You must participate regularly in the course&#8217;s IRC channel: asking and answering questions.</li>
-<li>Contributions to the course curriculum, syllabus, and rubric are factored in here as well.</li>
-</ul>
-</div></blockquote>
-<p>Blogging is good for you and good for the <a href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
-<p>The details for the final can be found at <a href="/hw/final"><em>Final</em></a>.</p>
+  about their investigations, progress, success, and pitfalls. This blog can be
+  hosted anywhere, but must be added to the course <a href="/checkblogs">participant page</a> (there are instructions on how to do this
+  in <a class="" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
+  <blockquote>
+    <div><ul class="simple">
+      <li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
+      <li>You must participate regularly in the course&#8217;s IRC channel: asking and answering questions.</li>
+      <li>Contributions to the course curriculum, syllabus, and rubric are factored in here as well.</li>
+    </ul>
+  </div></blockquote>
+  <p>Blogging is good for you and good for the <a href="http://xkcd.com/979/">FLOSS community at large</a>.</p>
+  <p>The details for the final can be found at <a href="/hw/final"><em>Final</em></a>.</p>
 </div>
 <div class="section">
   <a class="headerlink" name="lightning-talks-extra-credit"></a>
   <h2>Lightning Talks - Extra Credit</h2>
-<p>Every Wednesday for the first portion of class, any student has the opportunity
-to give a <code><a href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
-topic of their chosing. Your lightning talk must be less than 5 minutes in
-length and must be at least remotely related to the course material.</p>
-<p>You will receive +1 extra credit points towards your final grade for every
-lightning talk you give. Only the first <span class="label
-label-success">2</span> lightning talks offered will be allowed during a given
-class. Talks will be chosen from among those offered by students on a <code><a
-target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code>
-basis.</p> </div>
+  <p>Every Wednesday for the first portion of class, any student has the opportunity
+    to give a <code><a href="http://en.wikipedia.org/wiki/Lightning_Talk">lightning talk</a></code> on a
+    topic of their chosing. Your lightning talk must be less than 5 minutes in
+    length and must be at least remotely related to the course material.</p>
+    <p>You will receive +1 extra credit points towards your final grade for every
+      lightning talk you give. Only the first <span class="label
+      label-success">2</span> lightning talks offered will be allowed during a given
+      class. Talks will be chosen from among those offered by students on a <code><a
+      target="_blank" href="http://en.wikipedia.org/wiki/FIFO">FIFO</a></code>
+      basis.</p> </div>
 
 <%def name='topic_block(section)'>
   <td>
