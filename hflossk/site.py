@@ -153,6 +153,7 @@ def resources():
     resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
     resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
     resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
+    resources['Videos'] = os.listdir(os.path.join(base_dir, 'static', 'videos'))
 
     return render_template('resources.mak', name='mako', resources=resources)
 
