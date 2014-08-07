@@ -1,0 +1,6 @@
+Linux Torvalds Git Talk
+=======================
+
+Below is a link to a talk that was given by Linus Torvalds
+to Google that goes over the Git version control system.
+http://www.youtube.com/watch?v=4XpnKHJAok8
