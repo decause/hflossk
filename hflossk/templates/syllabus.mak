@@ -194,7 +194,9 @@
   in <a class="" href="/hw/firstflight"><em>Homework - First Flight</em></a>).</p>
   <blockquote>
     <div><ul class="simple">
-      <li>You must make at least one blog post per week to receive full credit. A week Ends on Sunday at 11:59pm.</li>
+      <li>You must make at least one blog post per week to receive full credit.
+      This is in addition to any assignments that are posted to your blog for
+      that week. A week Ends on Sunday at 11:59pm.</li>
       <li>You must participate regularly in the course&#8217;s IRC channel: asking and answering questions.</li>
       <li>Contributions to the course curriculum, syllabus, and rubric are factored in here as well.</li>
     </ul>
