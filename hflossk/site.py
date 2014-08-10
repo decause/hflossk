@@ -36,6 +36,7 @@ def inject_yaml():
         site_config = yaml.load(site_yaml)
     return site_config
 
+app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
@@ -110,6 +111,7 @@ def blog_posts(username):
 
     return jsonify(number=num_posts)
 
+@app.route('/blogs')
 @app.route('/participants')
 @app.route('/checkblogs')
 def participants():
