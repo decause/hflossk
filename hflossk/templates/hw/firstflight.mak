@@ -141,6 +141,35 @@ and/or all of the above.
     </ol>
 </div>
 
+<div class="alert alert-info">
+<p>
+    <span class="label label-info">Note</span>
+</p>
+
+<p>
+<strong>
+Attention Wordpress Users!
+</strong>
+By default Wordpress will limit the number of posts that are listed in the
+RSS feed to 10. This will create an issue roughly halfway through the term when
+you are supposed to have more than 10 blog posts. In order to fix this issue
+you must take the following steps.
+  <ol>
+      <li>
+      Log in to your Wordpress Administration Site
+      </li>
+      <li>
+      Go to Settings
+      </li>
+      <li>
+      Go to Reading
+      </li>
+      <li>
+      Set "Syndication feeds show the most recent"
+      </li>
+  </ol>
+</p>
+</div>
 
 <h2>Github</h2>
 
