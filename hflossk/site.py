@@ -23,6 +23,7 @@ from werkzeug.exceptions import NotFound
 # hflossk
 from hflossk.util import count_posts
 from hflossk.blueprints import homework, lectures, quizzes
+from hflossk.participants import participants_bp
 
 app = Flask(__name__)
 app.template_folder = "templates"
@@ -40,7 +41,6 @@ app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
-
 
 
 def gravatar(email):
@@ -132,102 +132,6 @@ def participant_page(year, term, username):
     )
 
 
-@app.route('/blogs/')
-@app.route('/participants/')
-@app.route('/checkblogs/')
-def participants():
-    """
-    This is the default landing
-    for the participants listing page.
-    It will list all of the participants
-    in the current term for HFOSS
-    """
-    year = str(date.today().year)
-    term = "fall" if date.today().month > 7 else "spring"
-    return participants_year_term(year, term)
-
-
-@app.route('/blogs')
-@app.route('/participants')
-@app.route('/checkblogs')
-def participants_raw():
-    """
-    Catches any requests for the
-    participants listing page that
-    are coming from the root directory
-    """
-    return redirect(url_for('/blogs/'))
-
-
-@app.route('/blogs/<year>')
-@app.route('/participants/<year>')
-@app.route('/checkblogs/<year>')
-def participants_year(year): return participants(year + '/')
-"""
-This will get all the participants
-within a given year
-"""
-
-@app.route('/blogs/<year>/<term>')
-@app.route('/participants/<year>/<term>')
-@app.route('/checkblogs/<year>/<term>')
-def participants_year_term(year, term): return participants(year + '/' + term + '/')
-"""
-This will get all the participants
-within a given year and term
-"""
-
-@app.route('/blogs/all')
-@app.route('/participants/all')
-@app.route('/checkblogs/all')
-def participants_all():
-    return participants('')
-"""
-This will get all the participants
-who have taken HFOSS
-"""
-
-
-def participants(root_dir):
-    """
-    Render the participants page,
-    which shows a directory of all
-    the students with their forge
-    links, blog posts, assignment
-    links, and etc.
-
-    """
-
-    yaml_dir = 'scripts/people/' + root_dir
-
-    student_data = []
-    for dirpath, dirnames, files in os.walk(yaml_dir):
-        for fname in files:
-            if fname.endswith('.yaml'):
-                with open(dirpath + '/' + fname) as students:
-                    contents = yaml.load(students)
-                    contents[0]['yaml'] = dirpath + '/' + fname
-                    year_term_data = dirpath.split('/')
-                    print year_term_data
-                    contents[0]['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
-
-                    if not isinstance(contents, list):
-                        raise ValueError("%r is borked" % fname)
-
-                    student_data.extend(contents)
-
-    assignments = ['litreview1']
-    target_number = int((datetime.today() - COURSE_START).total_seconds() /
-                        timedelta(weeks=1).total_seconds() + 1 + len(assignments))
-
-    return render_template(
-        'blogs.mak', name='mako',
-        student_data=student_data,
-        gravatar=gravatar,
-        target_number=target_number
-    )
-
-
 @app.route('/oer')
 @app.route('/resources')
 def resources():
@@ -245,3 +149,6 @@ app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quizzes')
 app.register_blueprint(quizzes, url_prefix='/quiz')
+app.register_blueprint(participants_bp, url_prefix='/participants')
+app.register_blueprint(participants_bp, url_prefix='/blogs')
+app.register_blueprint(participants_bp, url_prefix='/checkblogs')
