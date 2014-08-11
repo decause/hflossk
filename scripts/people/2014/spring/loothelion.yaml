@@ -16,3 +16,9 @@
   teamprop2: http://gearchicken.com/wordpress/?p-76 # Isn't this covered in the projprop?
   litreview2: http://gearchicken.com/wordpress/?p=98
   quiz2: http://gearchicken.com/wordpress/?p=101
+  bio: |
+    This is a long string of text
+    that I'm using as my personal biography on
+    the RIT HFOSS site
+  github: liam-middlebrook
+  twitter: liammiddlebrook
