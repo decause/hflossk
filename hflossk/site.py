@@ -12,7 +12,7 @@ import os
 import glob
 import yaml
 import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 # flask dependencies
 from flask import Flask
@@ -93,9 +93,8 @@ def blog_posts(username):
     """
 
     student_data = None
-    yaml_dir = 'scripts/people/'
 
-    fname = os.path.join(yaml_dir, username + ".yaml")
+    fname = username
     with open(fname) as student:
         contents = yaml.load(student)
         if not isinstance(contents, list):
@@ -140,6 +139,24 @@ def participant_page(year, term, username):
 @app.route('/participants')
 @app.route('/checkblogs')
 def participants():
+    year = str(date.today().year)
+    print year
+    return participants_year(year)
+
+
+@app.route('/blogs/<year>')
+@app.route('/participants/<year>')
+@app.route('/checkblogs/<year>')
+def participants_year(year): return participants(year + '/')
+
+
+@app.route('/blogs/<year>/<term>')
+@app.route('/participants/<year>/<term>')
+@app.route('/checkblogs/<year>/<term>')
+def participants_year_term(year, term): return participants(year + '/' + term + '/')
+
+
+def participants(root_dir):
     """
     Render the participants page,
     which shows a directory of all
@@ -149,7 +166,7 @@ def participants():
 
     """
 
-    yaml_dir = 'scripts/people/'
+    yaml_dir = 'scripts/people/' + root_dir
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
@@ -157,6 +174,7 @@ def participants():
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
                     contents = yaml.load(students)
+                    contents[0]['yaml'] = dirpath + '/' + fname
 
                     if not isinstance(contents, list):
                         raise ValueError("%r is borked" % fname)
