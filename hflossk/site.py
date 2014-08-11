@@ -94,6 +94,7 @@ def blog_posts(username):
 
     student_data = None
     yaml_dir = 'scripts/people/'
+
     fname = os.path.join(yaml_dir, username + ".yaml")
     with open(fname) as student:
         contents = yaml.load(student)
@@ -110,6 +111,30 @@ def blog_posts(username):
         raise NotFound()
 
     return jsonify(number=num_posts)
+
+@app.route('/blogs/<year>/<term>/<username>')
+@app.route('/participants/<year>/<term>/<username>')
+@app.route('/checkblogs/<year>/<term>/<username>')
+def participant_page(year, term, username):
+    print year
+    print term
+    print username
+    """
+    Render a page that shows some stats about the selected participant
+    """
+
+    participant_data = {}
+    yaml_dir = 'scripts/people/'
+    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    with open(participant_yaml) as participant_data:
+        participant_data = yaml.load(participant_data)
+    
+    return render_template(
+        'participant.mak', name='make',
+        participant_data=participant_data[0],
+        gravatar=gravatar
+    )
+
 
 @app.route('/blogs')
 @app.route('/participants')
