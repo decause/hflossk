@@ -152,14 +152,16 @@ def participants():
     yaml_dir = 'scripts/people/'
 
     student_data = []
-    for fname in glob.glob(yaml_dir + "*.yaml"):
-        with open(fname) as students:
-            contents = yaml.load(students)
+    for dirpath, dirnames, files in os.walk(yaml_dir):
+        for fname in files:
+            if fname.endswith('.yaml'):
+                with open(dirpath + '/' + fname) as students:
+                    contents = yaml.load(students)
 
-            if not isinstance(contents, list):
-                raise ValueError("%r is borked" % fname)
+                    if not isinstance(contents, list):
+                        raise ValueError("%r is borked" % fname)
 
-            student_data.extend(contents)
+                    student_data.extend(contents)
 
     assignments = ['litreview1']
     target_number = int((datetime.today() - COURSE_START).total_seconds() /
