@@ -135,13 +135,20 @@ def participant_page(year, term, username):
     )
 
 
-@app.route('/blogs')
-@app.route('/participants')
-@app.route('/checkblogs')
+@app.route('/blogs/')
+@app.route('/participants/')
+@app.route('/checkblogs/')
 def participants():
     year = str(date.today().year)
     print year
     return participants_year(year)
+
+
+@app.route('/blogs')
+@app.route('/participants')
+@app.route('/checkblogs')
+def participants_raw():
+    return redirect(url_for('/blogs/'))
 
 
 @app.route('/blogs/<year>')
@@ -154,6 +161,13 @@ def participants_year(year): return participants(year + '/')
 @app.route('/participants/<year>/<term>')
 @app.route('/checkblogs/<year>/<term>')
 def participants_year_term(year, term): return participants(year + '/' + term + '/')
+
+@app.route('/blogs/all')
+@app.route('/participants/all')
+@app.route('/checkblogs/all')
+def participants_all():
+    return participants('')
+
 
 
 def participants(root_dir):
@@ -175,6 +189,9 @@ def participants(root_dir):
                 with open(dirpath + '/' + fname) as students:
                     contents = yaml.load(students)
                     contents[0]['yaml'] = dirpath + '/' + fname
+                    year_term_data = dirpath.split('/')
+                    print year_term_data
+                    contents[0]['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
 
                     if not isinstance(contents, list):
                         raise ValueError("%r is borked" % fname)
