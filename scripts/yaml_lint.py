@@ -6,7 +6,7 @@ import yaml
 
 for root, dirs, fnames in os.walk(os.getcwd()):
     for fname in fnames:
-        if not fname.endswith('.yaml'):
+        if not (fname.endswith('.yaml') or fname.endswith('.yml')):
             continue
 
         fullname = os.path.join(root, fname)
