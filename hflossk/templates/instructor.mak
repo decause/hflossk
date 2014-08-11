@@ -13,9 +13,9 @@
             <li><a href="${link}">${link}</a></li>
         %endfor
         </ul>
-        % if instructor.get('ohloh'):
-          <a href="https://www.ohloh.net/accounts/${instructor['ohloh']}?ref=Tiny" target="_blank">
-            <img alt="Ohloh profile for ${instructor['ohloh']}" width="80" height="15" src="https://www.ohloh.net/accounts/${instructor['ohloh']}/widgets/account_tiny.gif" style="border: 0;" />
+        % if instructor.get('openhub'):
+          <a href="https://www.openhub.net/accounts/${instructor['openhub']}?ref=Tiny" target="_blank">
+            <img alt="OpenHub profile for ${instructor['openhub']}" width="80" height="15" src="https://www.openhub.net/accounts/${instructor['openhub']}/widgets/account_tiny.gif" style="border: 0;" />
           </a>
         % endif
         % if instructor.get('coderwall'):

@@ -1,0 +1,29 @@
+---
+# This is a database of all the students taking the course.
+#
+# By keeping this in a marked-up format in the public source repository, we can
+# write neat scripts that scrape, monitor, and aggregate data about the course.
+#
+# Add yourself to the following list (insert yourself in alphabetical order).
+# The required keys are 'name', 'rit_dce' (this is your RIT username), 'blog'
+# (this is a URL to your blog you'll be using for the course), 'irc' (your IRC
+# nick), and 'forges' (a list of URLs to any public forges you are on).
+#
+# Once you've modified this, there is a script located at
+# lib/ritfloss/model/validate.py you can run to see if you have any syntax
+# errors or problems with your entry.
+#
+# Once done and validated, you should:
+#
+#  - commit this in git
+#  - push back to your forked repository on github.com
+#  - issue a pull request on the upstream repository to be considered for a
+#    merge. 
+- blog: http://threebean.org/blog
+  feed: http://threebean.org/blog/feed/index.xml
+  forges:
+    - http://github.com/ralphbean
+    - http://bitbucket.org/ralphbean
+  irc: threebean
+  name: Ralph Bean
+  rit_dce: rjbpop

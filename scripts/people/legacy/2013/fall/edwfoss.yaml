@@ -1,0 +1,15 @@
+# "I hope this works!"
+- blog: http://edwfoss.wordpress.com/
+  feed: http://edwfoss.wordpress.com/feed
+  forges:
+    - http://github.com/edwfoss
+  irc: edwfoss
+  name: Erik Whalen
+  rit_dce: edw6640
+  litreview1: http://edwfoss.wordpress.com/2013/09/09/the-success-of-open-source-chapter-3-review/
+  quiz1: http://edwfoss.wordpress.com/2013/09/11/quiz-1-the-open-source-way/
+  bugfix: http://edwfoss.wordpress.com/2013/09/26/bug-fixing/
+  commarch: http://edwfoss.wordpress.com/2013/09/30/commarch/
+  teamproposal: http://edwfoss.wordpress.com/2013/10/09/team-proposal/
+  litreview2: http://edwfoss.wordpress.com/2013/11/20/the-meme-hustler-review/
+  finalpost: http://edwfoss.wordpress.com/2013/12/16/playtest-results/  

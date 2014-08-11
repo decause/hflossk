@@ -1,6 +1,8 @@
 HFLOSSK
 =======
 
+.. image:: https://api.travis-ci.org/decause/hflossk.svg
+
 Wat?
 ----
 This repository is an experiment to use Flask, Mako, and Bootstrap to make a
