@@ -3,4 +3,4 @@ python:
  - "2.7"
  - "3.3"
 install: python setup.py install
-script: python scripts/yaml_lint.py
+script: python setup.py test

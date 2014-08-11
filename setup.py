@@ -34,6 +34,12 @@ setup(
         "frozen-flask",
         "tornado"
     ],
+    tests_require=[
+        'nose',
+        'validator.py',
+    ],
+    test_suite='nose.collector',
+
     #TODO: Deal with entry_points
     #entry_points="""
     #[console_scripts]
