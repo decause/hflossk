@@ -69,7 +69,6 @@ def participants(root_dir):
                     contents = yaml.load(students)
                     contents[0]['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
-                    print year_term_data
                     contents[0]['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
 
                     if not isinstance(contents, list):
