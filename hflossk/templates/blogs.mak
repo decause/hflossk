@@ -49,7 +49,7 @@
 <div class="row">
   %for student in student_data:
     <div class="col-sm-4">
-      <div class="student shadowcard padded" data-student=${student['yaml']}>
+      <div class="student shadowcard padded" data-student=${"../blogs/" + student['participant_page']}>
         <div>
           <img class="uglymug pull-left" src="${gravatar(student['rit_dce'] + '@rit.edu')}" alt="${student['irc']}'s Avatar" />
           <h4 class="item"><a href="${student['participant_page']}">${student['irc']}</a></h4>
