@@ -115,9 +115,6 @@ def blog_posts(username):
 @app.route('/participants/<year>/<term>/<username>')
 @app.route('/checkblogs/<year>/<term>/<username>')
 def participant_page(year, term, username):
-    print year
-    print term
-    print username
     """
     Render a page that shows some stats about the selected participant
     """
@@ -139,6 +136,12 @@ def participant_page(year, term, username):
 @app.route('/participants/')
 @app.route('/checkblogs/')
 def participants():
+    """
+    This is the default landing
+    for the participants listing page.
+    It will list all of the participants
+    in the current term for HFOSS
+    """
     year = str(date.today().year)
     term = "fall" if date.today().month > 7 else "spring"
     return participants_year_term(year, term)
@@ -148,6 +151,11 @@ def participants():
 @app.route('/participants')
 @app.route('/checkblogs')
 def participants_raw():
+    """
+    Catches any requests for the
+    participants listing page that
+    are coming from the root directory
+    """
     return redirect(url_for('/blogs/'))
 
 
@@ -155,19 +163,29 @@ def participants_raw():
 @app.route('/participants/<year>')
 @app.route('/checkblogs/<year>')
 def participants_year(year): return participants(year + '/')
-
+"""
+This will get all the participants
+within a given year
+"""
 
 @app.route('/blogs/<year>/<term>')
 @app.route('/participants/<year>/<term>')
 @app.route('/checkblogs/<year>/<term>')
 def participants_year_term(year, term): return participants(year + '/' + term + '/')
+"""
+This will get all the participants
+within a given year and term
+"""
 
 @app.route('/blogs/all')
 @app.route('/participants/all')
 @app.route('/checkblogs/all')
 def participants_all():
     return participants('')
-
+"""
+This will get all the participants
+who have taken HFOSS
+"""
 
 
 def participants(root_dir):
