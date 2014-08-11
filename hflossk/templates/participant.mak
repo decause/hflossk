@@ -32,8 +32,8 @@
     </div>
     <div class="col-md-8">
         <p>
-            <h2>Bio</h2>
             %if 'bio' in participant_data:
+            <h2>Bio</h2>
             ${participant_data['bio']}
             %endif
 
