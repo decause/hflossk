@@ -140,8 +140,8 @@ def participant_page(year, term, username):
 @app.route('/checkblogs/')
 def participants():
     year = str(date.today().year)
-    print year
-    return participants_year(year)
+    term = "fall" if date.today().month > 7 else "spring"
+    return participants_year_term(year, term)
 
 
 @app.route('/blogs')
