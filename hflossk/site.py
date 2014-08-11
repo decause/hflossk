@@ -12,7 +12,7 @@ import os
 import glob
 import yaml
 import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 # flask dependencies
 from flask import Flask
@@ -23,6 +23,7 @@ from werkzeug.exceptions import NotFound
 # hflossk
 from hflossk.util import count_posts
 from hflossk.blueprints import homework, lectures, quizzes
+from hflossk.participants import participants_bp
 
 app = Flask(__name__)
 app.template_folder = "templates"
@@ -40,7 +41,6 @@ app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
-
 
 
 def gravatar(email):
@@ -93,8 +93,8 @@ def blog_posts(username):
     """
 
     student_data = None
-    yaml_dir = 'scripts/people/'
-    fname = os.path.join(yaml_dir, username + ".yaml")
+
+    fname = username
     with open(fname) as student:
         contents = yaml.load(student)
         if not isinstance(contents, list):
@@ -111,40 +111,24 @@ def blog_posts(username):
 
     return jsonify(number=num_posts)
 
-@app.route('/blogs')
-@app.route('/participants')
-@app.route('/checkblogs')
-def participants():
+@app.route('/blogs/<year>/<term>/<username>')
+@app.route('/participants/<year>/<term>/<username>')
+@app.route('/checkblogs/<year>/<term>/<username>')
+def participant_page(year, term, username):
     """
-    Render the participants page,
-    which shows a directory of all
-    the students with their forge
-    links, blog posts, assignment
-    links, and etc.
-
+    Render a page that shows some stats about the selected participant
     """
 
+    participant_data = {}
     yaml_dir = 'scripts/people/'
-
-    student_data = []
-    for fname in glob.glob(yaml_dir + "*.yaml"):
-        with open(fname) as students:
-            contents = yaml.load(students)
-
-            if not isinstance(contents, list):
-                raise ValueError("%r is borked" % fname)
-
-            student_data.extend(contents)
-
-    assignments = ['litreview1']
-    target_number = int((datetime.today() - COURSE_START).total_seconds() /
-                        timedelta(weeks=1).total_seconds() + 1 + len(assignments))
-
+    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    with open(participant_yaml) as participant_data:
+        participant_data = yaml.load(participant_data)
+    
     return render_template(
-        'blogs.mak', name='mako',
-        student_data=student_data,
-        gravatar=gravatar,
-        target_number=target_number
+        'participant.mak', name='make',
+        participant_data=participant_data[0],
+        gravatar=gravatar
     )
 
 
@@ -165,3 +149,6 @@ app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quizzes')
 app.register_blueprint(quizzes, url_prefix='/quiz')
+app.register_blueprint(participants_bp, url_prefix='/participants')
+app.register_blueprint(participants_bp, url_prefix='/blogs')
+app.register_blueprint(participants_bp, url_prefix='/checkblogs')
