@@ -10,6 +10,8 @@ import hflossk
 
 participants_bp = Blueprint('participants_bp', __name__, template_folder='templates')
 
+currentYear = str(date.today().year)
+currentTerm = "fall" if date.today().month > 7 else "spring"
 
 @participants_bp.route('/')
 def participants_blank():
@@ -19,9 +21,7 @@ def participants_blank():
     It will list all of the participants
     in the current term for HFOSS
     """
-    year = str(date.today().year)
-    term = "fall" if date.today().month > 7 else "spring"
-    return participants_year_term(year, term)
+    return participants_year_term(currentYear, currentTerm)
 
 
 @participants_bp.route('/<year>')
@@ -70,6 +70,8 @@ def participants(root_dir):
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
+
+                    contents['isActive'] = True if currentYear in year_term_data and currentTerm in year_term_data else False
 
                     student_data.append(contents)
 
