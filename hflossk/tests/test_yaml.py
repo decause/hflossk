@@ -41,7 +41,7 @@ class TestAllYaml(unittest.TestCase):
         for fullname in student_files:
             with open(fullname, 'r') as student:
                 content = yaml.load(student)
-                validity = validate(spec, content[0])
+                validity = validate(spec, content)
                 if not validity[0]:
                     out = ""
                     for k, v in validity[1].items():

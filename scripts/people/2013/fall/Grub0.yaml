@@ -1,11 +1,12 @@
 # Hi, I am Grub0
-- blog: http://robcliffordsportfolio.tumblr.com/
-  feed: http://robcliffordsportfolio.tumblr.com/rss
-  forges:
-   - https://github.com/Grub0
-  irc: Grub0
-  name: Rob Clifford
-  rit_dce: rjc9008
+blog: http://robcliffordsportfolio.tumblr.com/
+feed: http://robcliffordsportfolio.tumblr.com/rss
+forges:
+ - https://github.com/Grub0
+irc: Grub0
+name: Rob Clifford
+rit_dce: rjc9008
+hw:
   litreview1: http://robcliffordsportfolio.tumblr.com/post/61608619499/what-is-open-source
   quiz1: http://robcliffordsportfolio.tumblr.com/post/60971054231/quiz-1-for-hfoss
   bugfix: http://robcliffordsportfolio.tumblr.com/post/62076763221/homework-bugfix

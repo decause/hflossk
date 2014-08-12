@@ -1,11 +1,12 @@
 # Hey, it's dgonyeo!
-- blog: http://blog.gonyeo.com
-  feed: http://blog.gonyeo.com/feeds/hfoss.rss.xml
-  forges:
-    - http://github.com/dgonyeo
-  irc: dgonyeo
-  name: Derek Gonyeo
-  rit_dce: dwg7868
+blog: http://blog.gonyeo.com
+feed: http://blog.gonyeo.com/feeds/hfoss.rss.xml
+forges:
+  - http://github.com/dgonyeo
+irc: dgonyeo
+name: Derek Gonyeo
+rit_dce: dwg7868
+hw:
   litreview1: http://blog.gonyeo.com/webster-lit-review.html
   quiz1: http://blog.gonyeo.com/hfoss-quiz.1.html
   bugfix: http://blog.gonyeo.com/hfoss-pull-request.html

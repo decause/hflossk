@@ -1,12 +1,13 @@
 #I am KyungHwan Chang. Yeahi.
 #i fixed bug. example yaml https://github.com/kyung01/hflossk/blob/master/scripts/people/decause.yaml
-- blog: http://bluebugblog.weebly.com/1/category/hfoss/1.html
-  feed: http://bluebugblog.weebly.com/1/feed
-  forges:   
-    - http://github.com/kyung01
-  irc: Kyung
-  rit_dce: xxx1234
-  name: kyunghwan chang
+blog: http://bluebugblog.weebly.com/1/category/hfoss/1.html
+feed: http://bluebugblog.weebly.com/1/feed
+forges:
+  - http://github.com/kyung01
+irc: Kyung
+rit_dce: xxx1234
+name: kyunghwan chang
+hw:
   litreview1: http://bluebugblog.weebly.com/1/post/2014/02/school-assignment.html
   litreview2: http://bluebugblog.weebly.com/blog/litreview02-rhetological_fallacies
   quiz1: http://bluebugblog.weebly.com/1/post/2014/02/schoolassignment-hfoss_quiz.html

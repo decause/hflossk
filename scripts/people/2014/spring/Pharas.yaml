@@ -1,11 +1,12 @@
 # I'm a third year in GDD representing Texas
-- blog: http://pharaskn.blogspot.com/
-  feed: http://pharaskn.blogspot.com/feeds/posts/default 
-  forges:
-    - https://github.com/Pharas
-  irc: Pharas
-  name: Brian Escriche
-  rit_dce: bke2759
+blog: http://pharaskn.blogspot.com/
+feed: http://pharaskn.blogspot.com/feeds/posts/default
+forges:
+  - https://github.com/Pharas
+irc: Pharas
+name: Brian Escriche
+rit_dce: bke2759
+hw:
   litreview1: http://pharaskn.blogspot.com/2014/02/what-is-open-source-article-overview.html
   quiz1: http://pharaskn.blogspot.com/2014/02/article-follow-up-success-of-open-source.html
   teamprop1: http://pharaskn.blogspot.com/2014/03/commarch-team-proposal-monogame.html

@@ -1,12 +1,13 @@
 # Hi!  I coppied this from threebean
-- blog: http://bridgeurl.com/danshumway-blogs
-  feed: http://www.rssmix.com/u/3886341/rss.xml
-  forges:
-    - https://github.com/danShumway
-    - http://bitbucket.org/danShumway
-  irc: danShumway
-  name: Daniel Shumway
-  rit_dce: drs7453
+blog: http://bridgeurl.com/danshumway-blogs
+feed: http://www.rssmix.com/u/3886341/rss.xml
+forges:
+  - https://github.com/danShumway
+  - http://bitbucket.org/danShumway
+irc: danShumway
+name: Daniel Shumway
+rit_dce: drs7453
+hw:
   litreview1: http://blog.latinforimagination.com/lit-review-the-success-of-open-source-chpt-3/
   quiz1: http://blog.latinforimagination.com/quiz-writeup-principles-of-open-source/
   bugfix: http://danshumwayfoss.blogspot.com/2014/03/getting-started-with-contribution.html

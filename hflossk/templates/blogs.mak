@@ -71,14 +71,21 @@
           % endif
           -->
 
-          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>
-          % for key in keys:
-              % if student.get(key):
-                <li><a target="_blank" href="${student[key]}">${key}</a></li>
-              % else:
-                <li class="redtext">${key}?</li>
-              % endif
-          % endfor
+          <% if 'hw' not in student: student['hw'] = [] %>
+          % if student['isActive']:
+            <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>
+            % for key in keys:
+                % if key in student['hw']:
+                  <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
+                % else:
+                  <li class="redtext">${key}?</li>
+                % endif
+            % endfor
+          % else:
+            % for key in student['hw']:
+              <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
+            % endfor
+          % endif
 
           <!--This block used for quick grading reference ;)
           % if student.get('name'):

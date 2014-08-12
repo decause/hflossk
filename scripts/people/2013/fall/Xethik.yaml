@@ -1,11 +1,12 @@
 # Hi!  I am Xethik
-- blog: http://xethik.blogspot.com
-  feed: http://xethik.blogspot.com/feeds/posts/default
-  forges:
-    - http://github.com/xethik
-  irc: Xethik
-  name: Michael Hogan
-  rit_dce: mrh4856
+blog: http://xethik.blogspot.com
+feed: http://xethik.blogspot.com/feeds/posts/default
+forges:
+  - http://github.com/xethik
+irc: Xethik
+name: Michael Hogan
+rit_dce: mrh4856
+hw:
   litreview1: http://xethik.blogspot.com/2013/09/lit-review-what-is-open-source.html
   quiz1: http://xethik.blogspot.com/2013/09/quiz-1-open-source-way-and-success-of.html
   bugfix: http://xethik.blogspot.com/2013/09/bugfix-assignment-aka-riding-chariot.html

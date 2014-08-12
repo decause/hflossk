@@ -97,9 +97,7 @@ def blog_posts(username):
     fname = username
     with open(fname) as student:
         contents = yaml.load(student)
-        if not isinstance(contents, list):
-            raise ValueError("%s's yaml file is broken." % fname)
-        student_data = contents[0]
+        student_data = contents
 
     num_posts = 0
     if 'feed' in student_data:
@@ -127,7 +125,7 @@ def participant_page(year, term, username):
     
     return render_template(
         'participant.mak', name='make',
-        participant_data=participant_data[0],
+        participant_data=participant_data,
         gravatar=gravatar
     )
 

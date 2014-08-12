@@ -1,12 +1,13 @@
 # Hiiiii i'm valeatory :3
-- blog: http://valeatory.wordpress.com/
-  feed: http://valeatory.wordpress.com/category/FOSS/?feed=rss2
-  forges:
-    - http://github.com/valeatory
-    - http://bitbucket.org/vxm9790
-  irc: valeatory
-  name: Valerie Magri
-  rit_dce: vxm9790
+blog: http://valeatory.wordpress.com/
+feed: http://valeatory.wordpress.com/category/FOSS/?feed=rss2
+forges:
+  - http://github.com/valeatory
+  - http://bitbucket.org/vxm9790
+irc: valeatory
+name: Valerie Magri
+rit_dce: vxm9790
+hw:
   litreview1: http://valeatory.wordpress.com/2013/12/18/lit-review-the-success-of-open-source/
   quiz1: http://valeatory.wordpress.com/2013/09/11/foss-quiz-1-on-the-open-source-way/
   bugfix: http://valeatory.wordpress.com/2013/09/24/bugfix/

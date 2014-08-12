@@ -1,11 +1,12 @@
 #LinkSlayer64, or Giggles if you prefer
-- blog: http://gigglefoss.wordpress.com/
-  feed: http://gigglefoss.wordpress.com/?feed=rss2
-  forges:
-    - https://github.com/LinkSlayer64
-  irc: LinkSlayer64
-  name: Zachary Behrmann
-  rit_dce: zab5156
+blog: http://gigglefoss.wordpress.com/
+feed: http://gigglefoss.wordpress.com/?feed=rss2
+forges:
+  - https://github.com/LinkSlayer64
+irc: LinkSlayer64
+name: Zachary Behrmann
+rit_dce: zab5156
+hw:
   quiz1: http://gigglefoss.wordpress.com/2013/09/12/quiz1/
   litreview1: http://gigglefoss.wordpress.com/2013/09/09/litreview1/
   commarchteam: Valeatory
