@@ -67,14 +67,11 @@ def participants(root_dir):
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
                     contents = yaml.load(students)
-                    contents[0]['yaml'] = dirpath + '/' + fname
+                    contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
-                    contents[0]['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
+                    contents['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
 
-                    if not isinstance(contents, list):
-                        raise ValueError("%r is borked" % fname)
-
-                    student_data.extend(contents)
+                    student_data.append(contents)
 
     assignments = ['litreview1']
     target_number = int((datetime.today() - hflossk.site.COURSE_START).total_seconds() /
