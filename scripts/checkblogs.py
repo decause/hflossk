@@ -5,6 +5,7 @@ import time
 
 yaml_file = 'people.yaml'
 
+
 def check_blogs():
     with open(yaml_file) as students:
         student_data = yaml.load(students)
@@ -17,18 +18,20 @@ def check_blogs():
             print('Checking %s' % student['irc'])
 
             feed = feedparser.parse(student['feed'])
-            #print feed.version
+            # print feed.version
 
             for item in feed.entries:
-                #from pprint import pprint
-                #pprint(item)
-                #if 'published' in item:
-                #    print student['name'], item.published
-                #if 'summary' in item:
-                #    print item.summary
-                publish_time = datetime.fromtimestamp(time.mktime(item.updated_parsed))
+                # from pprint import pprint
+                # pprint(item)
+                # if 'published' in item:
+                #     print student['name'], item.published
+                # if 'summary' in item:
+                #     print item.summary
+                publish_time = datetime.fromtimestamp(
+                    time.mktime(item.updated_parsed))
                 if publish_time < target:
-                    #print('%s is older than %s, ignoring' % (publish_time, target))
+                    # print('%s is older than %s, ignoring' % (publish_time,
+                    #                                          target))
                     continue
                 when.append(item.updated)
 
@@ -50,5 +53,5 @@ def check_blogs():
             print('===%d %s' % (count, student))
 
 
-#ini_to_yaml()
+# ini_to_yaml()
 check_blogs()

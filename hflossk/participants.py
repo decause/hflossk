@@ -8,10 +8,14 @@ from datetime import datetime, date, timedelta
 import hflossk
 
 
-participants_bp = Blueprint('participants_bp', __name__, template_folder='templates')
+participants_bp = Blueprint('participants_bp',
+                            __name__,
+                            template_folder='templates')
+
 
 currentYear = str(date.today().year)
 currentTerm = "fall" if date.today().month > 7 else "spring"
+
 
 @participants_bp.route('/')
 def participants_blank():
@@ -25,19 +29,21 @@ def participants_blank():
 
 
 @participants_bp.route('/<year>')
-def participants_year(year): return participants(year + '/')
-"""
-This will get all the participants
-within a given year
-"""
+def participants_year(year):
+    """
+    This will get all the participants
+    within a given year
+    """
+    return participants(year + '/')
 
 
 @participants_bp.route('/<year>/<term>')
-def participants_year_term(year, term): return participants(year + '/' + term + '/')
-"""
-This will get all the participants
-within a given year and term
-"""
+def participants_year_term(year, term):
+    """
+    This will get all the participants
+    within a given year and term
+    """
+    return participants(year + '/' + term + '/')
 
 
 @participants_bp.route('/all')
@@ -69,15 +75,20 @@ def participants(root_dir):
                     contents = yaml.load(students)
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
-                    contents['participant_page'] = year_term_data[2] + '/' + year_term_data[3] + '/' + os.path.splitext(fname)[0]
-
-                    contents['isActive'] = True if currentYear in year_term_data and currentTerm in year_term_data else False
+                    contents['participant_page'] = "{y}/{t}/{u}".format(
+                        year_term_data[2],
+                        year_term_data[3],
+                        os.path.splitext(fname)[0]
+                    )
+                    contents['isActive'] = (currentYear in year_term_data
+                                            and currentTerm in year_term_data)
 
                     student_data.append(contents)
 
     assignments = ['litreview1']
-    target_number = int((datetime.today() - hflossk.site.COURSE_START).total_seconds() /
-                        timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+    elapsed = (datetime.today() - hflossk.site.COURSE_START).total_seconds()
+    target_number = int(elapsed / timedelta(weeks=1).total_seconds() + 1 +
+                        len(assignments))
 
     return render_template(
         'blogs.mak', name='mako',

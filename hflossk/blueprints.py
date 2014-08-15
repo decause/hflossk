@@ -7,6 +7,7 @@ homework = Blueprint('homework', __name__, template_folder='templates')
 lectures = Blueprint('lectures', __name__, template_folder='templates')
 quizzes = Blueprint('quizzes', __name__, template_folder='templates')
 
+
 @homework.route('/', defaults={'page': 'index'})
 @homework.route('/<page>')
 def display_homework(page):
@@ -21,6 +22,7 @@ def display_homework(page):
 
     return render_template('hw/{}.mak'.format(page), name='mako', hws=hws)
 
+
 @lectures.route('/', defaults={'page': 'index'})
 @lectures.route('/<page>')
 def display_lecture(page):
@@ -34,6 +36,7 @@ def display_lecture(page):
 
     return render_template('lectures/{}.mak'.format(page), name='mako',
                            lectures=lecture_notes)
+
 
 @quizzes.route('/<quiz_num>')
 def show_quiz(quiz_num):
