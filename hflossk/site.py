@@ -9,10 +9,9 @@ License: Apache 2.0
 from __future__ import division
 
 import os
-import glob
 import yaml
 import hashlib
-from datetime import datetime, timedelta, date
+from datetime import datetime
 
 # flask dependencies
 from flask import Flask
@@ -29,6 +28,7 @@ app = Flask(__name__)
 app.template_folder = "templates"
 mako = MakoTemplates(app)
 base_dir = os.path.split(__file__)[0]
+
 
 # Automatically include site config
 @app.context_processor
@@ -57,7 +57,7 @@ def gravatar(email):
     slug = hashlib.md5(email).hexdigest()
     libravatarURL = "https://seccdn.libravatar.org/avatar/"
     gravatarURL = "https://secure.gravatar.com/avatar/"
-    return libravatarURL + slug +"?d=" + gravatarURL + slug
+    return libravatarURL + slug + "?d=" + gravatarURL + slug
 
 
 @app.route('/', defaults=dict(page='home'))
@@ -84,6 +84,7 @@ def syllabus():
         schedule = yaml.load(schedule_yaml)
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
+
 @app.route('/blog/<username>')
 def blog_posts(username):
     """
@@ -109,6 +110,7 @@ def blog_posts(username):
 
     return jsonify(number=num_posts)
 
+
 @app.route('/blogs/<year>/<term>/<username>')
 @app.route('/participants/<year>/<term>/<username>')
 @app.route('/checkblogs/<year>/<term>/<username>')
@@ -122,7 +124,7 @@ def participant_page(year, term, username):
     participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
     with open(participant_yaml) as participant_data:
         participant_data = yaml.load(participant_data)
-    
+
     return render_template(
         'participant.mak', name='make',
         participant_data=participant_data,
@@ -133,13 +135,15 @@ def participant_page(year, term, username):
 @app.route('/oer')
 @app.route('/resources')
 def resources():
-    resources = dict()
-    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
-    resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
-    resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
-    resources['Videos'] = os.listdir(os.path.join(base_dir, 'static', 'videos'))
+    res = dict()
+    res['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
+    res['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
+    res['Challenges'] = os.listdir(os.path.join(
+        base_dir, 'static', 'challenges'))
+    res['Videos'] = os.listdir(os.path.join(
+        resdir, 'static', 'videos'))
 
-    return render_template('resources.mak', name='mako', resources=resources)
+    resnder_template('resources.mak', name='mako', resources=res)
 
 
 app.register_blueprint(homework, url_prefix='/assignments')

@@ -2,6 +2,7 @@ import time
 import feedparser
 from datetime import datetime
 
+
 def count_posts(feed, start_dt):
     """
     Return the number of entries on this blog feed since a
