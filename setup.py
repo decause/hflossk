@@ -42,7 +42,6 @@ setup(
         'validator.py',
         'pep8',
     ],
-    test_suite='nose.collector',
 
     #TODO: Deal with entry_points
     #entry_points="""
