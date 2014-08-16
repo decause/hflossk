@@ -8,6 +8,7 @@ from datetime import datetime, date, timedelta
 import hflossk
 
 
+base_dir = os.getcwd()
 participants_bp = Blueprint('participants_bp',
                             __name__,
                             template_folder='templates')
@@ -65,7 +66,7 @@ def participants(root_dir):
 
     """
 
-    yaml_dir = 'scripts/people/' + root_dir
+    yaml_dir = os.path.join(base_dir, 'people', root_dir)
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
@@ -76,9 +77,9 @@ def participants(root_dir):
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = "{y}/{t}/{u}".format(
-                        year_term_data[2],
-                        year_term_data[3],
-                        os.path.splitext(fname)[0]
+                        y=year_term_data[-3],
+                        t=year_term_data[-2],
+                        u=os.path.splitext(fname)[0]
                     )
                     contents['isActive'] = (currentYear in year_term_data
                                             and currentTerm in year_term_data)

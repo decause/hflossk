@@ -19,15 +19,18 @@ from flask import jsonify
 from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
+
+
+
 # hflossk
 from hflossk.util import count_posts
 from hflossk.blueprints import homework, lectures, quizzes
 from hflossk.participants import participants_bp
 
 app = Flask(__name__)
-app.template_folder = "templates"
+app.template_folder =  os.path.join(os.path.split(__file__)[0], "templates")
 mako = MakoTemplates(app)
-base_dir = os.path.split(__file__)[0]
+base_dir = os.getcwd()
 
 
 # Automatically include site config
@@ -120,8 +123,8 @@ def participant_page(year, term, username):
     """
 
     participant_data = {}
-    yaml_dir = 'scripts/people/'
-    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    yaml_dir = os.path.join(base_dir, 'people')
+    participant_yaml = os.path.join(yaml_dir, year, term, username + '.yaml')
     with open(participant_yaml) as participant_data:
         participant_data = yaml.load(participant_data)
 
@@ -141,9 +144,9 @@ def resources():
     res['Challenges'] = os.listdir(os.path.join(
         base_dir, 'static', 'challenges'))
     res['Videos'] = os.listdir(os.path.join(
-        resdir, 'static', 'videos'))
+        base_dir, 'static', 'videos'))
 
-    resnder_template('resources.mak', name='mako', resources=res)
+    render_template('resources.mak', name='mako', resources=res)
 
 
 app.register_blueprint(homework, url_prefix='/assignments')

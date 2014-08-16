@@ -4,7 +4,11 @@ License: Apache 2.0
 """
 
 import os
+
 import click
+import datetime
+from distutils import dir_util
+from distutils import file_util
 
 
 @click.group()
@@ -16,6 +20,7 @@ def cli():
 def run():
     from hflossk.site import app
     app.static_folder = os.path.join(os.getcwd(), 'static')
+    app.templates_folder = os.path.join(os.getcwd(), 'templates')
     app.run(
         debug=True,
         threaded=True,
@@ -24,58 +29,34 @@ def run():
 
 @cli.command()
 def new():
-    directories = {
-        "static": {
-            "books": None,
-            "challenges": None,
-            "css": None,
-            "decks": None,
-            "fonts": None,
-            "hw": None,
-            "img": None,
-            "ipynb": None,
-            "js": None,
-            "videos": None,
-        },
-        "people": None,
-        "scripts": None,
-        "templates": {
-            "hw":       None,
-            "lectures": None,
-            "quiz":     None,
-        },
-    }
-
-    def mkdirp(prefix, dirs):
-        for d, subs in dirs.items():
-            qualified = os.path.join(prefix, d)
-            if not os.path.isdir(qualified):
-                # make the directory if it isn't a thing
-                os.makedirs(qualified)
-            if subs is None:
-                # if it's a leaf of the directory structure
-                continue
-            mkdirp(qualified, subs)
-
-    #mkdirp(os.getcwd(), directories)
-
-    # TODO: also make a subdirectory of people corresponding with the upcoming
-    # academic semester + a sample student
-    print(u'\u2714 Made content directories')
     # \u2714 is a check mark
     # \u2717 is an x
-
     # TODO: include default README with instructions for starting your course
     print(u'\u2714 Glorious README')
 
-    tmpl_dir = os.path.split(__file__)[0].replace('cli', '')
-    from distutils import dir_util
-    dir_util.copy_tree(tmpl_dir + 'static', os.path.join(os.getcwd(), 'static'))
-    dir_util.copy_tree(tmpl_dir + 'templates', os.path.join(os.getcwd(), 'templates'))
+    source_dir = os.path.split(__file__)[0].replace('cli', '')
+
+    static_dir = os.path.join(os.getcwd(), 'static')
+    dir_util.copy_tree(source_dir + 'static', static_dir, update=True)
 
     print(u'\u2714 CSS/Javascript for browser art')
 
+    templates_dir = os.path.join(os.getcwd(), 'templates')
+    dir_util.copy_tree(source_dir + 'templates', templates_dir, update=True)
+
     print(u'\u2714 Starter Mako templates for great good')
+
+    yamls_dir = os.path.join(os.getcwd(), 'yamls')
+
+    people_dir = os.path.join(os.getcwd(), 'people', year(), season())
+    if not os.path.isdir(people_dir):
+        os.makedirs(people_dir)
+
+    file_util.copy_file(
+        yamls_dir + 'fake_student.yaml', people_dir, update=True)
+
+    file_util.copy_file(yamls_dir + 'site.yaml', os.getcwd(), update=True)
+    file_util.copy_file(yamls_dir + 'schedule.yaml', os.getcwd(), update=True)
 
     print(u'\u2714 Starter yaml files for data driven education')
 
@@ -85,3 +66,13 @@ def version():
     print("You are using hflossk version 0.5.0")
     print("Get more information at "
           "https://github.com/decause/hflossk")
+
+
+def season():
+    if datetime.date.today().month > 6:
+        return "fall"
+    return "spring"
+
+
+def year():
+    return str(datetime.date.today().year),

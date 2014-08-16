@@ -33,6 +33,7 @@ setup(
         "flask-mako",
         "feedparser",
         "pyyaml",
+        "Click",
         "frozen-flask",
         "tornado"
     ],
@@ -43,9 +44,8 @@ setup(
         'pep8',
     ],
 
-    #TODO: Deal with entry_points
-    #entry_points="""
-    #[console_scripts]
-    #pythong = pythong.util:parse_args
-    #"""
+    entry_points="""
+    [console_scripts]
+    hflossk = hflossk.cli:cli
+    """
 )

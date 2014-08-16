@@ -3,6 +3,7 @@ import os
 from flask import Blueprint
 from flask.ext.mako import render_template
 
+
 homework = Blueprint('homework', __name__, template_folder='templates')
 lectures = Blueprint('lectures', __name__, template_folder='templates')
 quizzes = Blueprint('quizzes', __name__, template_folder='templates')
@@ -12,9 +13,8 @@ quizzes = Blueprint('quizzes', __name__, template_folder='templates')
 @homework.route('/<page>')
 def display_homework(page):
     if page == 'index':
-        hws = os.listdir(os.path.join(os.path.split(__file__)[0],
-                                      'static', 'hw'))
-        hws.extend(os.listdir(os.path.join(os.path.split(__file__)[0],
+        hws = os.listdir(os.path.join(os.getcwd(), 'static', 'hw'))
+        hws.extend(os.listdir(os.path.join(os.getcwd(),
                                            'templates', 'hw')))
         hws = [hw for hw in sorted(hws) if not hw == "index.mak"]
     else:
@@ -27,7 +27,7 @@ def display_homework(page):
 @lectures.route('/<page>')
 def display_lecture(page):
     if page == 'index':
-        lecture_notes = os.listdir(os.path.join(os.path.split(__file__)[0],
+        lecture_notes = os.listdir(os.path.join(os.getcwd(),
                                                 'templates', 'lectures'))
         lecture_notes = [note for note in sorted(lecture_notes)
                          if not note == "index.mak"]
