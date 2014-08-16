@@ -36,6 +36,7 @@ setup(
         "PyYAML>=3.11",
         "feedparser>=5.1.3",
         "sh>=1.09",
+        "six>=1.7.3",
         "tornado>=4.0.1",
     ],
     tests_require=[

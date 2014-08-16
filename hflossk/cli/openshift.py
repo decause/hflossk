@@ -1,5 +1,6 @@
 from sh import git
 import os
+import six
 import tempfile
 import uuid
 
@@ -79,7 +80,7 @@ class TempBranch(object):
             if self.delete:
                 git.branch("-D", self.branch)
         else:
-            raise exc_type, value, tb
+            six.reraise(exc_type, value, tb)
 
 
 def push_to_openshift(remote=None):
