@@ -141,7 +141,7 @@ def resources():
     res['Challenges'] = os.listdir(app_path('static', 'challenges'))
     res['Videos'] = os.listdir(app_path('static', 'videos'))
 
-    render_template('resources.mak', name='mako', resources=res)
+    return render_template('resources.mak', name='mako', resources=res)
 
 
 app.register_blueprint(homework, url_prefix='/assignments')
