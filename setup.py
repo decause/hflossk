@@ -28,20 +28,21 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "Flask",
-        "mako",
-        "flask-mako",
-        "feedparser",
-        "pyyaml",
-        "Click",
-        "frozen-flask",
-        "tornado"
+        "Click>=3.1",
+        "Flask-Mako>=0.3",
+        "Flask>=0.10.1",
+        "Frozen-Flask>=0.11",
+        "Mako>=1.0.0",
+        "PyYAML>=3.11",
+        "feedparser>=5.1.3",
+        "tornado>=4.0.1",
     ],
     tests_require=[
         'tox',
-        'nose',
-        'validator.py',
-        'pep8',
+        "nose>=1.3.3",
+        "pep8",
+        "validator.py>=1.2.0",
+        "coverage>=3.6",
     ],
 
     entry_points="""
