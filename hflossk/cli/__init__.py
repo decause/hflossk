@@ -63,7 +63,7 @@ def new():
 
 @cli.command()
 def version():
-    print("You are using hflossk version 0.5.2")
+    print("You are using hflossk version 0.5.3")
     print("Get more information at "
           "https://github.com/decause/hflossk")
 
