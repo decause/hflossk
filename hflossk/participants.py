@@ -73,12 +73,13 @@ def participants(root_dir):
         for fname in files:
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
+                    if dirpath[-1] is '/': dirpath = dirpath[:-1]
                     contents = yaml.load(students)
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = "{y}/{t}/{u}".format(
-                        y=year_term_data[-3],
-                        t=year_term_data[-2],
+                        y=year_term_data[-2],
+                        t=year_term_data[-1],
                         u=os.path.splitext(fname)[0]
                     )
                     contents['isActive'] = (currentYear in year_term_data
