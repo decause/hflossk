@@ -4,11 +4,14 @@ License: Apache 2.0
 """
 
 import os
+import re
 
 import click
-import datetime
 from distutils import dir_util
 from distutils import file_util
+
+from hflossk.cli.util import year, season
+from hflossk.cli.openshift import push_to_openshift
 
 
 @click.group()
@@ -16,7 +19,8 @@ def cli():
     pass
 
 
-@cli.command()
+@cli.command(short_help="Run your course locally, and view it on "
+             "http://localhost:5000")
 def run():
     from hflossk.site import app
     app.run(
@@ -25,7 +29,7 @@ def run():
     )
 
 
-@cli.command()
+@cli.command(short_help="Make a new course site from scratch")
 def new():
     # \u2714 is a check mark
     # \u2717 is an x
@@ -68,11 +72,20 @@ def version():
           "https://github.com/decause/hflossk")
 
 
-def season():
-    if datetime.date.today().month > 6:
-        return "fall"
-    return "spring"
+@cli.command(short_help="Push this to openshift. Requires "
+             "http://openshift.com account")
+@click.option("--verbose", help="Show more info", is_flag=True)
+@click.argument('remote')
+def openshift(verbose, remote):
+    if not re.match(r'ssh://\w*@.*\.git.?$', remote):
+        click.echo("The git URL for your Openshift application (should look "
+                   "like ssh://1234@course-user.rhcloud.com/~/repo.git)")
+        click.echo("To find your git URL, go to your openshift.com dashboard "
+                   "and copy the link for your application's source code.")
+        return
 
-
-def year():
-    return str(datetime.date.today().year)
+    if verbose:
+        click.echo("Adding openshift files")
+    push_to_openshift(remote)
+    app_url = re.match(r'[^@]*@([^/]*)', remote).group(1)
+    click.echo("Your app is now on Openshift at http://{}/".format(app_url))
