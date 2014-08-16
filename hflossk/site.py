@@ -136,10 +136,24 @@ def participant_page(year, term, username):
 @app.route('/resources')
 def resources():
     res = dict()
+    oer_links = []
+    oer_yaml = app_path("oer.yaml")
+    with open(oer_yaml) as oer_data:
+        oer_links = yaml.load(oer_data)
+
+    res['links'] = {}
+
     res['Decks'] = os.listdir(app_path('static', 'decks'))
+    if 'decks' in oer_links: res['links']['decks'] = oer_links['decks']
+
     res['Books'] = os.listdir(app_path('static', 'books'))
+    if 'books' in oer_links: res['links']['books'] = oer_links['books']
+
     res['Challenges'] = os.listdir(app_path('static', 'challenges'))
+    if 'challenges' in oer_links: res['links']['challenges'] = oer_links['challenges']
+
     res['Videos'] = os.listdir(app_path('static', 'videos'))
+    if 'videos' in oer_links: res['links']['videos'] = oer_links['videos']
 
     return render_template('resources.mak', name='mako', resources=res)
 
