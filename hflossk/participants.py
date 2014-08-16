@@ -70,7 +70,7 @@ def participants(root_dir):
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
-        dirpath = dirpath.rstrip()
+        dirpath = dirpath.rstrip("/")
         for fname in files:
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
