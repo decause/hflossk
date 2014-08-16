@@ -46,17 +46,19 @@ def new():
 
     print(u'\u2714 Starter Mako templates for great good')
 
-    yamls_dir = os.path.join(os.getcwd(), 'yamls')
+    yamls_dir = os.path.join(source_dir, 'yamls')
 
     people_dir = os.path.join(os.getcwd(), 'people', year(), season())
     if not os.path.isdir(people_dir):
         os.makedirs(people_dir)
 
-    file_util.copy_file(
-        yamls_dir + 'fake_student.yaml', people_dir, update=True)
+    file_util.copy_file(os.path.join(yamls_dir, 'fake_student.yaml'),
+                        people_dir, update=True)
 
-    file_util.copy_file(yamls_dir + 'site.yaml', os.getcwd(), update=True)
-    file_util.copy_file(yamls_dir + 'schedule.yaml', os.getcwd(), update=True)
+    file_util.copy_file(os.path.join(yamls_dir, 'site.yaml'),
+                        os.getcwd(), update=True)
+    file_util.copy_file(os.path.join(yamls_dir, 'schedule.yaml'),
+                        os.getcwd(), update=True)
 
     print(u'\u2714 Starter yaml files for data driven education')
 
@@ -75,4 +77,4 @@ def season():
 
 
 def year():
-    return str(datetime.date.today().year),
+    return str(datetime.date.today().year)
