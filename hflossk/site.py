@@ -19,24 +19,21 @@ from flask import jsonify
 from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
-
-
-
 # hflossk
-from hflossk.util import count_posts
+from hflossk.util import count_posts, app_path
 from hflossk.blueprints import homework, lectures, quizzes
 from hflossk.participants import participants_bp
 
 app = Flask(__name__)
-app.template_folder =  os.path.join(os.path.split(__file__)[0], "templates")
+app.static_folder = app_path("static")
+app.templates_folder = app_path("templates")
 mako = MakoTemplates(app)
-base_dir = os.getcwd()
 
 
 # Automatically include site config
 @app.context_processor
 def inject_yaml():
-    with open(os.path.join(base_dir, 'site.yaml')) as site_yaml:
+    with open(app_path('site.yaml')) as site_yaml:
         site_config = yaml.load(site_yaml)
     return site_config
 
@@ -83,7 +80,7 @@ def syllabus():
 
     """
 
-    with open(os.path.join(base_dir, 'schedule.yaml')) as schedule_yaml:
+    with open(app_path('schedule.yaml')) as schedule_yaml:
         schedule = yaml.load(schedule_yaml)
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
@@ -123,7 +120,7 @@ def participant_page(year, term, username):
     """
 
     participant_data = {}
-    yaml_dir = os.path.join(base_dir, 'people')
+    yaml_dir = app_path('people')
     participant_yaml = os.path.join(yaml_dir, year, term, username + '.yaml')
     with open(participant_yaml) as participant_data:
         participant_data = yaml.load(participant_data)
@@ -139,12 +136,10 @@ def participant_page(year, term, username):
 @app.route('/resources')
 def resources():
     res = dict()
-    res['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
-    res['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
-    res['Challenges'] = os.listdir(os.path.join(
-        base_dir, 'static', 'challenges'))
-    res['Videos'] = os.listdir(os.path.join(
-        base_dir, 'static', 'videos'))
+    res['Decks'] = os.listdir(app_path('static', 'decks'))
+    res['Books'] = os.listdir(app_path('static', 'books'))
+    res['Challenges'] = os.listdir(app_path('static', 'challenges'))
+    res['Videos'] = os.listdir(app_path('static', 'videos'))
 
     render_template('resources.mak', name='mako', resources=res)
 

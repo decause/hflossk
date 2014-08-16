@@ -1,6 +1,14 @@
+import os
 import time
 import feedparser
 from datetime import datetime
+
+base_dir = os.getcwd()
+if os.path.isdir(os.path.join(os.getcwd(), "app-root", "repo")):
+    base_dir = os.path.join(os.getcwd(), "app-root", "repo")
+
+def app_path(*args):
+    return os.path.join(base_dir, *args)
 
 
 def count_posts(feed, start_dt):

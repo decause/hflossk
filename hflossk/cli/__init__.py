@@ -19,8 +19,6 @@ def cli():
 @cli.command()
 def run():
     from hflossk.site import app
-    app.static_folder = os.path.join(os.getcwd(), 'static')
-    app.templates_folder = os.path.join(os.getcwd(), 'templates')
     app.run(
         debug=True,
         threaded=True,
@@ -65,7 +63,7 @@ def new():
 
 @cli.command()
 def version():
-    print("You are using hflossk version 0.5.0")
+    print("You are using hflossk version 0.5.2")
     print("Get more information at "
           "https://github.com/decause/hflossk")
 

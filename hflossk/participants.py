@@ -6,9 +6,9 @@ from flask import Blueprint
 from flask.ext.mako import render_template
 from datetime import datetime, date, timedelta
 import hflossk
+from hflossk.util import app_path
 
 
-base_dir = os.getcwd()
 participants_bp = Blueprint('participants_bp',
                             __name__,
                             template_folder='templates')
@@ -66,7 +66,7 @@ def participants(root_dir):
 
     """
 
-    yaml_dir = os.path.join(base_dir, 'people', root_dir)
+    yaml_dir = app_path('people', root_dir)
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
