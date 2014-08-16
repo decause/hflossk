@@ -6,6 +6,7 @@ License: Apache 2.0
 import os
 import re
 
+import yaml
 import click
 from distutils import dir_util
 from distutils import file_util
@@ -73,11 +74,19 @@ def version():
 
 
 @cli.command(short_help="Push this to openshift. Requires "
-             "http://openshift.com account")
+             "http://openshift.com account. Will check for "
+             "course.openshift.git_url as well as CLI flag --remote")
 @click.option("--verbose", help="Show more info", is_flag=True)
-@click.argument('remote')
+@click.option('--remote', help="Openshift git URL")
 def openshift(verbose, remote):
-    if not re.match(r'ssh://\w*@.*\.git.?$', remote):
+    site_yaml = os.path.join(os.getcwd(), 'site.yaml')
+    if remote is None and os.path.isfile(site_yaml):
+        with open(site_yaml, 'r') as site:
+            s = yaml.load(site)
+            remote = s.get("course", {}
+                           ).get("openshift", {}
+                                 ).get("git_url", None)
+    if remote is None or not re.match(r'ssh://\w*@.*\.git.?$', remote):
         click.echo("The git URL for your Openshift application (should look "
                    "like ssh://1234@course-user.rhcloud.com/~/repo.git)")
         click.echo("To find your git URL, go to your openshift.com dashboard "
@@ -85,7 +94,7 @@ def openshift(verbose, remote):
         return
 
     if verbose:
-        click.echo("Adding openshift files")
+        click.echo("Pushing files to openshift {}".format(remote))
     push_to_openshift(remote)
     app_url = re.match(r'[^@]*@([^/]*)', remote).group(1)
     click.echo("Your app is now on Openshift at http://{}/".format(app_url))
