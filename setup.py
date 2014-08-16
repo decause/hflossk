@@ -35,6 +35,7 @@ setup(
         "Mako>=1.0.0",
         "PyYAML>=3.11",
         "feedparser>=5.1.3",
+        "sh>=1.09",
         "tornado>=4.0.1",
     ],
     tests_require=[
