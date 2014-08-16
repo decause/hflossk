@@ -70,10 +70,10 @@ def participants(root_dir):
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
+        dirpath = dirpath.rstrip()
         for fname in files:
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
-                    if dirpath[-1] is '/': dirpath = dirpath[:-1]
                     contents = yaml.load(students)
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
