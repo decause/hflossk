@@ -130,7 +130,9 @@ def push_to_openshift(remote=None):
     if is_dirty():
         return
 
-    with TempBranch(branch, repo, delete=(remote is not None)):
+    # with TempBranch(branch, repo, delete=(remote is not None)):
+    # TODO: when git push is fixed, autodelete the branch
+    with TempBranch(branch, repo, delete=False):
         for name, file_info in openshift_files.items():
             with open(name, 'w') as f:
                 f.write(file_info.get("contents", ""))
@@ -140,7 +142,14 @@ def push_to_openshift(remote=None):
                 )
             repo.stage(name)
         repo.do_commit("Commit openshift files")
-        git.push(remote, "{}:master".format(branch))
+        # TODO: actually push to the git server
+        # git.push(remote, "{}:master".format(branch))
+        print("Now just run the command")
+        print("git push --force {remote} {branch}:master".format(
+            remote=remote,
+            branch=branch,
+        ))
+        print("And your changes will be visible on openshift")
 
 
 def is_clean():
