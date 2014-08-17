@@ -1,0 +1,11 @@
+include README.rst
+include LICENSE
+include requirements.txt
+include test-requirements.txt
+include tox.ini
+include hflossk/yamls/site.yaml
+include hflossk/yamls/schedule.yaml
+include hflossk/yamls/fake_student.yaml
+recursive-include docs *
+recursive-include hflossk/templates *
+recursive-include hflossk/static *
