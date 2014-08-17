@@ -142,17 +142,25 @@ def resources():
         oer_links = yaml.load(oer_data)
 
     res['links'] = {}
+    res['Decks'] = []
+    res['Books'] = []
+    res['Challenges'] = []
+    res['Videos'] = []
 
-    res['Decks'] = os.listdir(app_path('static', 'decks'))
+    if os.path.exists(app_path('static', 'decks')):
+      res['Decks'] = os.listdir(app_path('static', 'decks'))
     if 'decks' in oer_links: res['links']['decks'] = oer_links['decks']
 
-    res['Books'] = os.listdir(app_path('static', 'books'))
+    if os.path.exists(app_path('static', 'books')):
+      res['Books'] = os.listdir(app_path('static', 'books'))
     if 'books' in oer_links: res['links']['books'] = oer_links['books']
 
-    res['Challenges'] = os.listdir(app_path('static', 'challenges'))
+    if os.path.exists(app_path('static', 'challenges')):
+      res['Challenges'] = os.listdir(app_path('static', 'challenges'))
     if 'challenges' in oer_links: res['links']['challenges'] = oer_links['challenges']
 
-    res['Videos'] = os.listdir(app_path('static', 'videos'))
+    if os.path.exists(app_path('static', 'videos')):
+      res['Videos'] = os.listdir(app_path('static', 'videos'))
     if 'videos' in oer_links: res['links']['videos'] = oer_links['videos']
 
     return render_template('resources.mak', name='mako', resources=res)
