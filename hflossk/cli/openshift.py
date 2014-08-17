@@ -3,11 +3,44 @@ Author: Ryan Brown <sb@ryansb.com>
 License: Apache 2.0
 """
 
-from sh import git
+import dulwich.porcelain as git
 import os
 import six
-import tempfile
 import uuid
+
+from hflossk.version import __version__
+
+openshift_files = {
+    "setup.py": {
+        "contents": """from setuptools import setup
+setup(name='thecourse',
+      version='1.0',
+      description='courseware on openshift',
+      author='Dr. Professor',
+      author_email='dr@professor.com',
+      url='http://www.python.org/sigs/distutils-sig/',
+      install_requires=['hflossk>={version}'],
+     )""".format(version=__version__),
+    },
+    "wsgi.py": {
+        "contents": """#!/usr/bin/python
+# IMPORTANT: Please do not make changes to this file unless you know what
+# you're doing. Thank you.
+
+import os
+
+virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
+virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
+try:
+    execfile(virtualenv, dict(__file__=virtualenv))
+except IOError:
+    pass
+
+import hflossk.site
+
+application = hflossk.site.app""",
+    },
+}
 
 openshift_patch = """
 From f5d949dfb8942c3c2e1996d1209816ed371f20a8 Mon Sep 17 00:00:00 2001
@@ -66,39 +99,57 @@ index 0000000..409ddfb
 
 
 class TempBranch(object):
-    def __init__(self, name, delete=True):
-        self.branch = name
+    def __init__(self, name, repo, delete=True):
+        self.branch = 'refs/heads/{}'.format(name)
         self.delete = delete
+        self.repo = repo
 
         # save the starting branch so we know where to go back to
-        self.start = git.symbolic_ref("--short", "HEAD").strip()
+        self.start = self.repo.refs.read_ref('HEAD').replace('ref: ', '')
 
     def __enter__(self):
-        try:
-            git.checkout(self.branch)
-        except:
-            git.checkout("-b", self.branch)
+        self.repo.refs.add_if_new(self.branch, self.repo.head())
+
+        self.repo.refs.set_symbolic_ref('HEAD', self.branch)
 
     def __exit__(self, exc_type, value, tb):
         if value is None:
-            git.checkout("--force", self.start)
+            self.repo.refs.set_symbolic_ref('HEAD', self.start)
+            # lol, only reset --hard is supported
+            git.reset(self.repo, "hard")
             if self.delete:
-                git.branch("-D", self.branch)
+                self.repo.refs.remove_if_equals(self.branch, None)
         else:
             six.reraise(exc_type, value, tb)
 
 
 def push_to_openshift(remote=None):
+    repo = git.Repo(os.getcwd())
     branch = "temp-{}".format(str(uuid.uuid4())[:8])
 
-    # make a temporary branch to push
-    with TempBranch(branch, delete=(remote is not None)):
-        _, name = tempfile.mkstemp(suffix=".patch")
-        with open(name, 'w') as f:
-            f.write(openshift_patch)
-        git.am(name)
-        os.remove(name)
-        if remote is None:
-            print("No remote to push to.")
-        else:
-            git.push("--force", remote, "{}:master".format(branch))
+    if is_dirty():
+        return
+
+    with TempBranch(branch, repo, delete=(remote is not None)):
+        for name, file_info in openshift_files.items():
+            with open(name, 'w') as f:
+                f.write(file_info.get("contents", ""))
+                print("Wrote {chars} chars to {name}".format(
+                    name=name,
+                    chars=len(file_info.get("contents", "")))
+                )
+            repo.stage(name)
+        repo.do_commit("Commit openshift files")
+        git.push("--force", remote, "{}:master".format(branch))
+        git.push(remote, "{}:master".format(branch))
+
+
+def is_clean():
+    return not is_dirty()
+
+
+def is_dirty():
+    """Check for uncommitted changes. True if dirty."""
+    repo = git.Repo(os.getcwd())
+    s = git.status(repo)
+    return any(s.staged.values() + [s.unstaged])

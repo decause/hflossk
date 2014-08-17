@@ -11,8 +11,9 @@ import click
 from distutils import dir_util
 from distutils import file_util
 
+from hflossk.version import __version__
 from hflossk.cli.util import year, season
-from hflossk.cli.openshift import push_to_openshift
+from hflossk.cli.openshift import push_to_openshift, is_clean
 
 
 @click.group()
@@ -68,7 +69,7 @@ def new():
 
 @cli.command()
 def version():
-    click.echo("You are using hflossk version 0.5.4")
+    click.echo("You are using hflossk version {}".format(__version__))
     click.echo("Get more information at "
                "https://github.com/decause/hflossk")
 
@@ -80,6 +81,13 @@ def version():
 @click.option('--remote', help="Openshift git URL")
 def openshift(verbose, remote):
     site_yaml = os.path.join(os.getcwd(), 'site.yaml')
+
+    is_clean() or click.confirm(
+        "You have uncommitted changes. Changes that aren't committed "
+        "won't be pushed to openshift.\n"
+        "Do you want to continue?", abort=True
+    )
+
     if remote is None and os.path.isfile(site_yaml):
         with open(site_yaml, 'r') as site:
             s = yaml.load(site)

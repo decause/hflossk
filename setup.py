@@ -8,11 +8,11 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
 
-version = "0.5.4"
+from .hflossk.version import __version__
 
 setup(
     name="hflossk",
-    version=version,
+    version=__version__,
     description="HFOSS course materials via flask",
     classifiers=[
         "Intended Audience :: Education",
