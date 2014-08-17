@@ -16,9 +16,9 @@
             </li>
           %endfor
           %if res_type.lower() in resources['links']:
-            %for res in resources['links'][res_type.lower()]:
+            %for res_name, res in resources['links'][res_type.lower()].items():
               <li>
-                <a href="${res}">${res}</a>
+                <a href="${res}">${res_name.replace("_", " ")}</a>
               </li>
             %endfor
           %endif
