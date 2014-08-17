@@ -59,6 +59,8 @@ def new():
 
     file_util.copy_file(os.path.join(yamls_dir, 'site.yaml'),
                         os.getcwd(), update=True)
+    file_util.copy_file(os.path.join(yamls_dir, 'oer.yaml'),
+                        os.getcwd(), update=True)
     file_util.copy_file(os.path.join(yamls_dir, 'schedule.yaml'),
                         os.getcwd(), update=True)
 
