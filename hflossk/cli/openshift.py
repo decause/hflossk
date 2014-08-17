@@ -140,7 +140,6 @@ def push_to_openshift(remote=None):
                 )
             repo.stage(name)
         repo.do_commit("Commit openshift files")
-        git.push("--force", remote, "{}:master".format(branch))
         git.push(remote, "{}:master".format(branch))
 
 
