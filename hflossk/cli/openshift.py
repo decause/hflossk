@@ -1,3 +1,8 @@
+"""
+Author: Ryan Brown <sb@ryansb.com>
+License: Apache 2.0
+"""
+
 from sh import git
 import os
 import six
