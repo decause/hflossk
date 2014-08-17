@@ -8,7 +8,7 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
 
-from .hflossk.version import __version__
+from hflossk.version import __version__
 
 setup(
     name="hflossk",
@@ -34,8 +34,8 @@ setup(
         "Frozen-Flask>=0.11",
         "Mako>=1.0.0",
         "PyYAML>=3.11",
+        "dulwich>=0.9.0",
         "feedparser>=5.1.3",
-        "sh>=1.09",
         "six>=1.7.3",
         "tornado>=4.0.1",
     ],
