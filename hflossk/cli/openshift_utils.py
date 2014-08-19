@@ -3,10 +3,17 @@ Author: Ryan Brown <sb@ryansb.com>
 License: Apache 2.0
 """
 
-import dulwich.porcelain as git
+import logging
+import sys
 import os
+import re
 import six
 import uuid
+
+import requests
+import oshift
+from StringIO import StringIO
+import dulwich.porcelain as git
 
 from hflossk.version import __version__
 
@@ -116,45 +123,52 @@ class TempBranch(object):
         if value is None:
             self.repo.refs.set_symbolic_ref('HEAD', self.start)
             # lol, only reset --hard is supported
-            git.reset(self.repo, "hard")
             if self.delete:
                 self.repo.refs.remove_if_equals(self.branch, None)
         else:
             six.reraise(exc_type, value, tb)
 
+        git.reset(self.repo, "hard")
 
-def push_to_openshift(remote=None):
+
+def push(name, api):
     repo = git.Repo(os.getcwd())
     branch = "temp-{}".format(str(uuid.uuid4())[:8])
+    #branch = "openshift-deploy"
+
+    remote = git_url(name, api)
 
     if is_dirty():
-        return
+        print("Nuking changes.")
+        git.reset(repo, "hard")
 
-    # with TempBranch(branch, repo, delete=(remote is not None)):
-    # TODO: when git push is fixed, autodelete the branch
-    with TempBranch(branch, repo, delete=False):
-        for name, file_info in openshift_files.items():
-            with open(name, 'w') as f:
+    with TempBranch(branch, repo, delete=True):
+        for fname, file_info in openshift_files.items():
+            with open(fname, 'w') as f:
                 f.write(file_info.get("contents", ""))
-                print("Wrote {chars} chars to {name}".format(
-                    name=name,
-                    chars=len(file_info.get("contents", "")))
-                )
-            repo.stage(name)
+            repo.stage(fname)
         repo.do_commit("Commit openshift files")
-        # TODO: actually push to the git server
-        print(repo, remote, "{}:master".format(branch))
-        #r = git.push(repo, remote, "{}:master".format(branch))
-        r = git.push(repo, remote, "refs/heads/{}:refs/heads/master".format(branch))
-        print("tried to push. ", r)
-        print("Now just run the command")
-        print("git push --force {remote} {branch}:master".format(
-            remote=remote,
-            branch=branch,
-        ))
-        print("And your changes will be visible on openshift")
+        push_out = StringIO()
+        push_err = StringIO()
+        print("Pushing to openshift (may take a few minutes)")
+        git.push(repo, remote, "refs/heads/{}".format(branch),
+                 outstream=push_out, errstream=push_err)
 
-    git.reset(repo, "hard")
+        push_out.seek(0)
+        out = push_out.read()
+        if not re.match(r'^Push to .* successful.', out):
+            print("There was a failure while pushing")
+            print("---BEGIN STDERR---")
+            push_err.seek(0)
+            print(push_err.read())
+            print("---BEGIN STDOUT---")
+            print(out)
+            print("There was a failure while pushing")
+        git.rm(repo, openshift_files.keys())
+        map(os.remove, openshift_files.keys())
+
+    set_deploy_branch(name, branch, api)
+    return get_app(name, api)['app_url']
 
 
 def is_clean():
@@ -166,3 +180,41 @@ def is_dirty():
     repo = git.Repo(os.getcwd())
     s = git.status(repo)
     return any(s.staged.values() + [s.unstaged])
+
+
+def get_api(token):
+    oshift.log.setLevel(logging.FATAL)
+    return oshift.Openshift("openshift.redhat.com", token=token)
+
+
+def generate_token(uname, passwd):
+    session = requests.post(
+        "https://openshift.redhat.com/broker/rest/user/authorizations",
+        auth=requests.auth.HTTPBasicAuth(uname, passwd),
+        params={'scope':'session'}
+    )
+    if session.status_code != 201:
+        raise Exception("Uhoh {} response={}".format(session.status_code, session.text))
+    return session.json().get("data", {}).get("token", "")
+
+
+def get_app(name, api):
+    apps = [a for a in api.app_list()[1] if a.get("name", "") == name]
+    if apps:
+        return apps[0]
+    raise Exception("Could not find app {}".format(name))
+
+
+def git_url(name, api):
+    app = get_app(name, api)
+    remote = app['git_url']
+    # change SSH URL
+    # from "ssh://user@host/dir/repo.git"
+    # to         "user@host:dir/repo.git"
+    return remote.replace("ssh://", "").replace("/", ":", 1)
+
+
+def set_deploy_branch(name, branch, api):
+    app = get_app(name, api)
+    if app['deployment_branch'] != branch:
+        api.app_action('UPDATE', name, deployment_branch=branch)

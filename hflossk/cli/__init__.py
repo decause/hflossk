@@ -4,7 +4,6 @@ License: Apache 2.0
 """
 
 import os
-import re
 
 import yaml
 import click
@@ -13,7 +12,7 @@ from distutils import file_util
 
 from hflossk.version import __version__
 from hflossk.cli.util import year, season
-from hflossk.cli.openshift import push_to_openshift, is_clean
+from hflossk.cli.openshift_utils import push, is_clean, get_api, generate_token
 
 
 @click.group()
@@ -80,8 +79,10 @@ def version():
              "http://openshift.com account. Will check for "
              "course.openshift.git_url as well as CLI flag --remote")
 @click.option("--verbose", help="Show more info", is_flag=True)
-@click.option('--remote', help="Openshift git URL")
-def openshift(verbose, remote):
+@click.option('--app', help="Openshift app name (e.g. hfoss)")
+@click.option('--user', help="Openshift username (usually your email)")
+#@click.option('--password', prompt=True, hide_input=True)
+def openshift(verbose, app, user):
     site_yaml = os.path.join(os.getcwd(), 'site.yaml')
 
     is_clean() or click.confirm(
@@ -89,28 +90,32 @@ def openshift(verbose, remote):
         "won't be pushed to openshift.\n"
         "Do you want to continue?", abort=True
     )
+    conf = os.path.join(os.getenv("HOME"), ".hflossk.token")
+    token = None
+    if os.path.isfile(conf):
+        with open(conf, 'r') as cfg:
+            token = cfg.read().strip()
+    else:
+        if not user:
+            user = click.prompt("Openshift username")
+        password = click.prompt("Openshift Password", hide_input=True)
+        token = generate_token(user, password)
+        with open(conf, 'w') as cfg:
+            cfg.write(token)
 
-    if remote is None and os.path.isfile(site_yaml):
+    api = get_api(token)
+
+
+
+    if app is None and os.path.isfile(site_yaml):
         with open(site_yaml, 'r') as site:
             s = yaml.load(site)
-            remote = s.get("course", {}
-                           ).get("openshift", {}
-                                 ).get("git_url", None)
-    if remote is not None and re.match(r'ssh://\w*@.*\.git.?$', remote):
-        # change SSH URL
-        # from "ssh://user@host/dir/repo.git"
-        # to         "user@host:dir/repo.git"
-        remote = remote.replace("ssh://", "").replace("/", ":", 1)
-
-    if remote is None or not re.match(r'(ssh://)?\w*@.*:~/.*\.git.?$', remote):
-        click.echo("The git URL for your Openshift application (should look "
-                   "like ssh://1234@course-user.rhcloud.com/~/repo.git)")
-        click.echo("To find your git URL, go to your openshift.com dashboard "
-                   "and copy the link for your application's source code.")
-        return
+            name = s.get("course", {}
+                         ).get("openshift", {}
+                               ).get("app_name", None)
 
     if verbose:
-        click.echo("Pushing files to openshift {}".format(remote))
-    push_to_openshift(remote)
-    app_url = re.match(r'[^@]*@([^/]*)', remote).group(1)
+        click.echo("Pushing files to openshift app {}".format(name))
+
+    app_url = push(name, api)
     click.echo("Your app is now on Openshift at http://{}/".format(app_url))
