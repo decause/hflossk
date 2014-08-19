@@ -96,7 +96,13 @@ def openshift(verbose, remote):
             remote = s.get("course", {}
                            ).get("openshift", {}
                                  ).get("git_url", None)
-    if remote is None or not re.match(r'ssh://\w*@.*\.git.?$', remote):
+    if remote is not None and re.match(r'ssh://\w*@.*\.git.?$', remote):
+        # change SSH URL
+        # from "ssh://user@host/dir/repo.git"
+        # to         "user@host:dir/repo.git"
+        remote = remote.replace("ssh://", "").replace("/", ":", 1)
+
+    if remote is None or not re.match(r'(ssh://)?\w*@.*:~/.*\.git.?$', remote):
         click.echo("The git URL for your Openshift application (should look "
                    "like ssh://1234@course-user.rhcloud.com/~/repo.git)")
         click.echo("To find your git URL, go to your openshift.com dashboard "

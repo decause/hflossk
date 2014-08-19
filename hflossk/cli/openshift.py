@@ -143,13 +143,18 @@ def push_to_openshift(remote=None):
             repo.stage(name)
         repo.do_commit("Commit openshift files")
         # TODO: actually push to the git server
-        # git.push(remote, "{}:master".format(branch))
+        print(repo, remote, "{}:master".format(branch))
+        #r = git.push(repo, remote, "{}:master".format(branch))
+        r = git.push(repo, remote, "refs/heads/{}:refs/heads/master".format(branch))
+        print("tried to push. ", r)
         print("Now just run the command")
         print("git push --force {remote} {branch}:master".format(
             remote=remote,
             branch=branch,
         ))
         print("And your changes will be visible on openshift")
+
+    git.reset(repo, "hard")
 
 
 def is_clean():
