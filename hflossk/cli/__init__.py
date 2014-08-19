@@ -12,7 +12,13 @@ from distutils import file_util
 
 from hflossk.version import __version__
 from hflossk.cli.util import year, season
-from hflossk.cli.openshift_utils import push, is_clean, get_api, generate_token
+from hflossk.cli.openshift_utils import (generate_token,
+                                         get_api,
+                                         get_app,
+                                         is_clean,
+                                         new_app,
+                                         push,
+                                         )
 
 
 @click.group()
@@ -83,6 +89,7 @@ def version():
 @click.option('--user', help="Openshift username (usually your email)")
 #@click.option('--password', prompt=True, hide_input=True)
 def openshift(verbose, app, user):
+    appname = app
     site_yaml = os.path.join(os.getcwd(), 'site.yaml')
 
     is_clean() or click.confirm(
@@ -105,17 +112,23 @@ def openshift(verbose, app, user):
 
     api = get_api(token)
 
-
-
-    if app is None and os.path.isfile(site_yaml):
+    if (not appname) and os.path.isfile(site_yaml):
         with open(site_yaml, 'r') as site:
             s = yaml.load(site)
-            name = s.get("course", {}
-                         ).get("openshift", {}
-                               ).get("app_name", None)
+            appname = s.get("course", {}
+                            ).get("openshift", {}
+                                  ).get("app_name", None)
+
+    try:
+        get_app(appname, api)
+    except:
+        if click.confirm("The app {} could not be found, should I create it"
+                         " automatically?".format(appname)):
+            new_app(appname, api)
+
 
     if verbose:
-        click.echo("Pushing files to openshift app {}".format(name))
+        click.echo("Pushing files to openshift app {}".format(appname))
 
-    app_url = push(name, api)
+    app_url = push(appname, api)
     click.echo("Your app is now on Openshift at http://{}/".format(app_url))

@@ -4,7 +4,6 @@ License: Apache 2.0
 """
 
 import logging
-import sys
 import os
 import re
 import six
@@ -135,6 +134,7 @@ def push(name, api):
     repo = git.Repo(os.getcwd())
     branch = "temp-{}".format(str(uuid.uuid4())[:8])
     #branch = "openshift-deploy"
+    set_deploy_branch(name, branch, api)
 
     remote = git_url(name, api)
 
@@ -167,7 +167,6 @@ def push(name, api):
         git.rm(repo, openshift_files.keys())
         map(os.remove, openshift_files.keys())
 
-    set_deploy_branch(name, branch, api)
     return get_app(name, api)['app_url']
 
 
@@ -196,6 +195,16 @@ def generate_token(uname, passwd):
     if session.status_code != 201:
         raise Exception("Uhoh {} response={}".format(session.status_code, session.text))
     return session.json().get("data", {}).get("token", "")
+
+
+def new_app(name, api):
+    try:
+        get_app(name, api)
+        return
+    except:
+        pass
+    # Ok, the app doesn't exist
+    api.app_create(name, ['python-2.7'])
 
 
 def get_app(name, api):
