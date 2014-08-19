@@ -131,4 +131,4 @@ def openshift(verbose, app, user):
         click.echo("Pushing files to openshift app {}".format(appname))
 
     app_url = push(appname, api)
-    click.echo("Your app is now on Openshift at http://{}/".format(app_url))
+    click.echo("Your app is now on Openshift at {}".format(app_url))
