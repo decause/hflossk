@@ -15,7 +15,7 @@ from hflossk.cli.util import year, season
 from hflossk.cli.openshift_utils import (generate_token,
                                          get_api,
                                          get_app,
-                                         is_clean,
+                                         is_dirty,
                                          new_app,
                                          push,
                                          )
@@ -92,20 +92,27 @@ def openshift(verbose, app, user):
     appname = app
     site_yaml = os.path.join(os.getcwd(), 'site.yaml')
 
-    is_clean() or click.confirm(
-        "You have uncommitted changes. Changes that aren't committed "
-        "won't be pushed to openshift.\n"
-        "Do you want to continue?", abort=True
-    )
+    if is_dirty():
+        click.confirm(
+            "You have uncommitted changes. Changes that aren't "
+            "committed won't be pushed to openshift.\n"
+            "Do you want to continue?", abort=True
+        )
     conf = os.path.join(os.getenv("HOME"), ".hflossk.token")
     token = None
-    if os.path.isfile(conf):
+    #if os.path.isfile(conf):
+    try:
         with open(conf, 'r') as cfg:
             token = cfg.read().strip()
-    else:
+        api = get_api(token)
+        # The idea here is that we test out the token by listing
+        # apps, and if there's a failure we just fall through to
+        # asking for uname/pass
+        api.app_list()
+    except Exception as e:
         if not user:
             user = click.prompt("Openshift username")
-        password = click.prompt("Openshift Password", hide_input=True)
+        password = click.prompt("Openshift password", hide_input=True)
         token = generate_token(user, password)
         with open(conf, 'w') as cfg:
             cfg.write(token)
