@@ -7,14 +7,19 @@ import logging
 import os
 import re
 import six
+import socket
 import uuid
 
 import requests
+import time
 import oshift
 from StringIO import StringIO
 import dulwich.porcelain as git
 
 from hflossk.version import __version__
+
+class NotFound(BaseException):
+    pass
 
 openshift_files = {
     "setup.py": {
@@ -197,7 +202,7 @@ def generate_token(uname, passwd):
     return session.json().get("data", {}).get("token", "")
 
 
-def new_app(name, api):
+def new_app(name, api, wait_until_available=True):
     try:
         get_app(name, api)
         return
@@ -205,13 +210,27 @@ def new_app(name, api):
         pass
     # Ok, the app doesn't exist
     api.app_create(name, ['python-2.7'])
+    if not wait_until_available:
+        return
+    while True:
+        try:
+            app = get_app(name, api)
+            socket.getaddrinfo(requests.utils.urlparse(app['app_url']).netloc, 80)
+            break
+        except NotFound:
+            print("Failed to get new app")
+            time.sleep(5)
+        except socket.gaierror as e:
+            if e.errno != -2:
+                raise e
+            time.sleep(5)
 
 
 def get_app(name, api):
     apps = [a for a in api.app_list()[1] if a.get("name", "") == name]
     if apps:
         return apps[0]
-    raise Exception("Could not find app {}".format(name))
+    raise NotFound("Could not find app {}".format(name))
 
 
 def git_url(name, api):
