@@ -141,7 +141,7 @@ def resources():
     res['Challenges'] = os.listdir(os.path.join(
         base_dir, 'static', 'challenges'))
     res['Videos'] = os.listdir(os.path.join(
-        resdir, 'static', 'videos'))
+        base_dir, 'static', 'videos'))
 
     resnder_template('resources.mak', name='mako', resources=res)
 
