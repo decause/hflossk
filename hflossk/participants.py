@@ -76,9 +76,9 @@ def participants(root_dir):
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = "{y}/{t}/{u}".format(
-                        year_term_data[2],
-                        year_term_data[3],
-                        os.path.splitext(fname)[0]
+                        y=year_term_data[2],
+                        t=year_term_data[3],
+                        u=os.path.splitext(fname)[0]
                     )
                     contents['isActive'] = (currentYear in year_term_data
                                             and currentTerm in year_term_data)
