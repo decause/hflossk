@@ -83,10 +83,10 @@
   <a class="headerlink" name="licensing"></a>
   <h2>Licensing</h2>
   <p>All code developed by students in the course must be licensed (by the student)
-  under any one of the <a class="" href="http://www.opensource.org/licenses/category">licenses approved by the open source initiative</a>.</p>
-  <p>Your code that you write is your <strong>code</strong>, with which you can do what you will;
-  true. However, if you&#8217;re unwilling to license code you write for an open source
-  course with an open source license, you may be in the wrong course.</p>
+  under any one of the <a class="" href="http://www.opensource.org/licenses/category">licenses approved by the Open Source Initiative</a>.</p>
+  <p>Code that you write is <strong>your</strong> code, with which you can do what you will;
+  true. However, if you&#8217;re unwilling to license code you write for an Free/Open Source
+  course with a Free/Open Source license, you may be in the wrong course.</p>
 </div>
 <div class="section">
     <a class="headerlink" name="schedule"></a>
