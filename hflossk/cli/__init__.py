@@ -87,7 +87,6 @@ def version():
 @click.option("--verbose", help="Show more info", is_flag=True)
 @click.option('--app', help="Openshift app name (e.g. hfoss)")
 @click.option('--user', help="Openshift username (usually your email)")
-#@click.option('--password', prompt=True, hide_input=True)
 def openshift(verbose, app, user):
     appname = app
     site_yaml = os.path.join(os.getcwd(), 'site.yaml')
@@ -100,7 +99,6 @@ def openshift(verbose, app, user):
         )
     conf = os.path.join(os.getenv("HOME"), ".hflossk.token")
     token = None
-    #if os.path.isfile(conf):
     try:
         with open(conf, 'r') as cfg:
             token = cfg.read().strip()
@@ -132,7 +130,6 @@ def openshift(verbose, app, user):
         if click.confirm("The app {} could not be found, should I create it"
                          " automatically?".format(appname)):
             new_app(appname, api)
-
 
     if verbose:
         click.echo("Pushing files to openshift app {}".format(appname))

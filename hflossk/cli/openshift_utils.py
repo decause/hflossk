@@ -18,8 +18,10 @@ import dulwich.porcelain as git
 
 from hflossk.version import __version__
 
+
 class NotFound(BaseException):
     pass
+
 
 openshift_files = {
     "setup.py": {
@@ -138,7 +140,6 @@ class TempBranch(object):
 def push(name, api):
     repo = git.Repo(os.getcwd())
     branch = "temp-{}".format(str(uuid.uuid4())[:8])
-    #branch = "openshift-deploy"
     set_deploy_branch(name, branch, api)
 
     remote = git_url(name, api)
@@ -195,10 +196,11 @@ def generate_token(uname, passwd):
     session = requests.post(
         "https://openshift.redhat.com/broker/rest/user/authorizations",
         auth=requests.auth.HTTPBasicAuth(uname, passwd),
-        params={'scope':'session'}
+        params={'scope': 'session'}
     )
     if session.status_code != 201:
-        raise Exception("Uhoh {} response={}".format(session.status_code, session.text))
+        raise Exception("Uhoh {} response={}".format(session.status_code,
+                                                     session.text))
     return session.json().get("data", {}).get("token", "")
 
 
@@ -215,7 +217,8 @@ def new_app(name, api, wait_until_available=True):
     while True:
         try:
             app = get_app(name, api)
-            socket.getaddrinfo(requests.utils.urlparse(app['app_url']).netloc, 80)
+            socket.getaddrinfo(requests.utils.urlparse(
+                app['app_url']).netloc, 80)
             break
         except NotFound:
             print("Failed to get new app")
