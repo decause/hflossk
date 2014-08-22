@@ -221,11 +221,12 @@ def new_app(name, api, wait_until_available=True):
                 app['app_url']).netloc, 80)
             break
         except NotFound:
-            print("Failed to get new app")
+            print("Waiting for new app...")
             time.sleep(5)
         except socket.gaierror as e:
             if e.errno != -2:
                 raise e
+            print("Waiting for new app...")
             time.sleep(5)
 
 
