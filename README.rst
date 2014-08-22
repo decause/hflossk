@@ -94,6 +94,55 @@ Once you've done that you'll probably want to edit some of the
 pre-generated files for the course. That way the website will
 reflect your course's information.
 
+Modifying the Courseware
+---------------------------
+
+Before you can do anything with this (run the webserver locally, or any of the
+scripts) you'll need to setup and activate a python `virtualenv
+<http://pypi.python.org/pypi/virtualenv>`_.  Run the following at the command
+prompt...
+
+On Linux/Mac OS X
++++++++++++++++++
+
+If you don't have virtualenv installed yet, try::
+
+ $ sudo easy_install virtualenv virtualenvwrapper
+
+If you're using a distro like Fedora or Ubuntu, you should try this instead::
+
+ Fedora:
+ $ sudo yum install python-virtualenv
+
+ Ubuntu/Debian:
+ $ sudo apt-get install python-virtualenv
+
+Once you have virtualenv installed, you should be able to run::
+
+ $ cd code
+ $ git clone git@github.com:YOUR_USERNAME/hflossk.git
+ $ virtualenv --no-site-packages -p python2 hflosskenv
+ $ . hflosskenv/bin/activate
+ $ cd hflossk
+ $ python setup.py develop
+
+On Windows
+++++++++++
+
+At the windows command prompt::
+
+ $ virtualenv --no-site-packages -p python2 hflosskenv
+ $ hflosskenv/Scripts/activate.bat
+
+In msysGit or git-bash::
+
+ $ git clone git@github.com:YOUR_USERNAME/hflossk.git
+
+Back in the windows command prompt::
+
+ $ cd hflossk
+ $ python setup.py develop
+
 Running the Tests
 ----------------------------
 
