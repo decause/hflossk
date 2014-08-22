@@ -61,11 +61,12 @@ If you're using a distro like Fedora or Ubuntu, you should try this instead::
 Once you have virtualenv installed, you should be able to run::
 
  $ cd code
- $ git clone git@github.com:YOUR_USERNAME/hflossk.git
+ $ git clone git@github.com:YOUR_USERNAME/hfoss-content.git
  $ virtualenv --no-site-packages -p python2 hflosskenv
- $ . hflosskenv/bin/activate
- $ cd hflossk
- $ python setup.py develop
+ $ pip install hflossk
+ $ ./hflosskenv/bin/activate
+ $ cd hfoss-content
+ $ hflossk run
 
 On Windows
 ++++++++++
@@ -74,20 +75,21 @@ At the windows command prompt::
 
  $ virtualenv --no-site-packages -p python2 hflosskenv
  $ hflosskenv/Scripts/activate.bat
+ $ pip install hflossk
 
 In msysGit or git-bash::
 
- $ git clone git@github.com:YOUR_USERNAME/hflossk.git
+ $ git clone git@github.com:YOUR_USERNAME/hfoss-content.git
 
 Back in the windows command prompt::
 
- $ cd hflossk
- $ python setup.py develop
+ $ cd hfoss-content
+ $ hflossk run
 
 Running the Tests
 ----------------------------
 
-All tests are run on python2.7 and python3.3 using tox. To run the tests::
+All tests are run using tox. To run the tests::
 
 $ virtualenv --no-site-packages -p python2 hflosskenv
 $ pip install tox
@@ -128,7 +130,7 @@ In order to do that, first make sure you have your virtualenv activated.
 
 Being certain of that, in the root directory, simply run::
 
- $ python app.py
+ $ hflossk run
 
 You should see a success message such as::
 
