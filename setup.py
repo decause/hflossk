@@ -36,7 +36,7 @@ setup(
         "PyYAML>=3.11",
         "dulwich>=0.9.0",
         "feedparser>=5.1.3",
-        "pyopenshift>=0.2",
+        "oshift>=0.2.1",
         "requests>=2.3",
         "six>=1.7.3",
         "tornado>=4.0.1",
