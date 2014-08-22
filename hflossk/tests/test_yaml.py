@@ -23,17 +23,24 @@ class TestAllYaml(unittest.TestCase):
                     self.fail(msg.format(name=fullname, exc=str(e)))
 
     def test_student_yaml(self):
+        is_str = InstanceOf(type(""))
         spec = {
-            'blog': [Required, InstanceOf(type(""))],
-            'feed': [Required, InstanceOf(type(""))],
+            'blog': [Required, is_str],
+            'feed': [Required, is_str],
             'forges': [Required, InstanceOf(list)],
-            'irc': [Required, InstanceOf(type(""))],
-            'name': [Required, InstanceOf(type(""))],
-            'rit_dce': [Required, InstanceOf(type(""))],
+            'irc': [Required, is_str],
+            'name': [Required, is_str],
+            'rit_dce': [Required, is_str],
+            # optional fields
+            'hw': [InstanceOf(dict)],
+            'bio': [is_str],
+            'twitter': [is_str],
+            'coderwall': [is_str],
         }
 
         student_files = []
-        for root, _, fnames in os.walk(os.path.join(os.getcwd(), "scripts/people")):
+        for root, _, fnames in os.walk(
+                os.path.join(os.getcwd(), "scripts/people")):
             for fname in fnames:
                 if (fname.endswith('.yaml') or fname.endswith('.yml')):
                     student_files.append(os.path.join(root, fname))
@@ -45,5 +52,9 @@ class TestAllYaml(unittest.TestCase):
                 if not validity[0]:
                     out = ""
                     for k, v in validity[1].items():
-                        out += "File: {f} Key: {key} failed check {check}\n\n".format(key=k, check=v, f=fullname)
+                        out += ("File: {f} Key: {key} "
+                                "{check}\n\n".format(key=k,
+                                                     check=v,
+                                                     f=fullname)
+                                )
                     self.fail(out)
