@@ -1,0 +1,12 @@
+# Comments are a thing.
+blog: http://cognettings.wordpress.com
+feed: http://cognettings.wordpress.com/feed
+forges:
+  - http://github.com/cognettings
+irc: cognettings
+name: John Cognetti
+rit_dce: jdc5082
+hw:
+  litreview1: http://cognettings.wordpress.com/2014/02/11/what-is-open-source-review/
+  quiz1: http://cognettings.wordpress.com/2014/02/12/open-source-software-different-perspectives/
+  bugfix: http://cognettings.wordpress.com/2014/03/03/open-source-bug-fixing-assignment/

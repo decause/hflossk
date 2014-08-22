@@ -3,7 +3,7 @@ import urllib2
 from BeautifulSoup import BeautifulSoup
 
 # List of the default months the HFOSS course runs
-#months = ["09", "10", "11", "12"]
+# months = ["09", "10", "11", "12"]
 months = ["02", "03", "04", "05"]
 
 # Scrape the whole page
@@ -68,32 +68,32 @@ for link in html:
         present.append(name.getText().split()[0].lower())
 
     # List of students in the class
-    #classDict = {
-    #    "AgitatedBadger": [],
-    #    "Akaleth": ["Akaleth|Class"],
-    #    "ArcticSphinx": [],
-    #    "Fangy": [],
-    #    "BeruBeruFunBot": [],
-    #    "ChrisKnepper": [],
-    #    "Consuuume": [],
-    #    "Destroyer675000": [],
-    #    "dudeman514": ["Dudeman514"],
-    #    "ExplosiveHippo": [],
-    #    "Grub0": [],
-    #    "LinkSlayer64": ["XLS64|Lappy", "LS64"],
-    #    "Nolski": [],
-    #    "Obliv": ["Obliv|class"],
-    #    "Spectralshadow": ["Spectralshadow5"],
-    #    "TheOnlyTaters": [],
-    #    "Waterseas": [],
-    #    "Xethik": ["XethikClass"],
-    #    "edwfoss": [],
-    #    "emmix": [],
-    #    "gecko_": [],
-    #    "h2g2guy": [],
-    #    "valeatory": [],
-    #    "zanarama": ["zanarama1"]
-    #}
+    # classDict = {
+    #     "AgitatedBadger": [],
+    #     "Akaleth": ["Akaleth|Class"],
+    #     "ArcticSphinx": [],
+    #     "Fangy": [],
+    #     "BeruBeruFunBot": [],
+    #     "ChrisKnepper": [],
+    #     "Consuuume": [],
+    #     "Destroyer675000": [],
+    #     "dudeman514": ["Dudeman514"],
+    #     "ExplosiveHippo": [],
+    #     "Grub0": [],
+    #     "LinkSlayer64": ["XLS64|Lappy", "LS64"],
+    #     "Nolski": [],
+    #     "Obliv": ["Obliv|class"],
+    #     "Spectralshadow": ["Spectralshadow5"],
+    #     "TheOnlyTaters": [],
+    #     "Waterseas": [],
+    #     "Xethik": ["XethikClass"],
+    #     "edwfoss": [],
+    #     "emmix": [],
+    #     "gecko_": [],
+    #     "h2g2guy": [],
+    #     "valeatory": [],
+    #     "zanarama": ["zanarama1"]
+    # }
 
     # List of students in the class
     classDict = {
@@ -115,8 +115,6 @@ for link in html:
         "beWhitty": [],
         "kyung01": [],
     }
-
-
 
     date = link.getText().split('.')[1]
     year = date.split('-')[0]

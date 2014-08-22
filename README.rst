@@ -1,6 +1,8 @@
 HFLOSSK
 =======
 
+.. image:: https://api.travis-ci.org/decause/hflossk.svg
+
 Wat?
 ----
 This repository is an experiment to use Flask, Mako, and Bootstrap to make a
@@ -81,6 +83,18 @@ Back in the windows command prompt::
 
  $ cd hflossk
  $ python setup.py develop
+
+Running the Tests
+----------------------------
+
+All tests are run on python2.7 and python3.3 using tox. To run the tests::
+
+$ virtualenv --no-site-packages -p python2 hflosskenv
+$ pip install tox
+$ tox
+
+Tests check validity of all yaml, and the keys in any student yaml files. Tests
+also checks that code conforms to PEP8.
 
 
 Building the "Documentation"

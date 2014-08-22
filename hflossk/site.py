@@ -9,10 +9,9 @@ License: Apache 2.0
 from __future__ import division
 
 import os
-import glob
 import yaml
 import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # flask dependencies
 from flask import Flask
@@ -23,11 +22,13 @@ from werkzeug.exceptions import NotFound
 # hflossk
 from hflossk.util import count_posts
 from hflossk.blueprints import homework, lectures, quizzes
+from hflossk.participants import participants_bp
 
 app = Flask(__name__)
 app.template_folder = "templates"
 mako = MakoTemplates(app)
 base_dir = os.path.split(__file__)[0]
+
 
 # Automatically include site config
 @app.context_processor
@@ -36,10 +37,10 @@ def inject_yaml():
         site_config = yaml.load(site_yaml)
     return site_config
 
+app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
-
 
 
 def gravatar(email):
@@ -56,7 +57,7 @@ def gravatar(email):
     slug = hashlib.md5(email).hexdigest()
     libravatarURL = "https://seccdn.libravatar.org/avatar/"
     gravatarURL = "https://secure.gravatar.com/avatar/"
-    return libravatarURL + slug +"?d=" + gravatarURL + slug
+    return libravatarURL + slug + "?d=" + gravatarURL + slug
 
 
 @app.route('/', defaults=dict(page='home'))
@@ -83,6 +84,7 @@ def syllabus():
         schedule = yaml.load(schedule_yaml)
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
+
 @app.route('/blog/<username>')
 def blog_posts(username):
     """
@@ -92,13 +94,11 @@ def blog_posts(username):
     """
 
     student_data = None
-    yaml_dir = 'scripts/people/'
-    fname = os.path.join(yaml_dir, username + ".yaml")
+
+    fname = username
     with open(fname) as student:
         contents = yaml.load(student)
-        if not isinstance(contents, list):
-            raise ValueError("%s's yaml file is broken." % fname)
-        student_data = contents[0]
+        student_data = contents
 
     num_posts = 0
     if 'feed' in student_data:
@@ -110,51 +110,40 @@ def blog_posts(username):
 
     return jsonify(number=num_posts)
 
-@app.route('/participants')
-@app.route('/checkblogs')
-def participants():
-    """
-    Render the participants page,
-    which shows a directory of all
-    the students with their forge
-    links, blog posts, assignment
-    links, and etc.
 
+@app.route('/blogs/<year>/<term>/<username>')
+@app.route('/participants/<year>/<term>/<username>')
+@app.route('/checkblogs/<year>/<term>/<username>')
+def participant_page(year, term, username):
+    """
+    Render a page that shows some stats about the selected participant
     """
 
+    participant_data = {}
     yaml_dir = 'scripts/people/'
-
-    student_data = []
-    for fname in glob.glob(yaml_dir + "*.yaml"):
-        with open(fname) as students:
-            contents = yaml.load(students)
-
-            if not isinstance(contents, list):
-                raise ValueError("%r is borked" % fname)
-
-            student_data.extend(contents)
-
-    assignments = ['litreview1']
-    target_number = int((datetime.today() - COURSE_START).total_seconds() /
-                        timedelta(weeks=1).total_seconds() + 1 + len(assignments))
+    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    with open(participant_yaml) as participant_data:
+        participant_data = yaml.load(participant_data)
 
     return render_template(
-        'blogs.mak', name='mako',
-        student_data=student_data,
-        gravatar=gravatar,
-        target_number=target_number
+        'participant.mak', name='make',
+        participant_data=participant_data,
+        gravatar=gravatar
     )
 
 
 @app.route('/oer')
 @app.route('/resources')
 def resources():
-    resources = dict()
-    resources['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
-    resources['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
-    resources['Challenges'] = os.listdir(os.path.join(base_dir, 'static', 'challenges'))
+    res = dict()
+    res['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
+    res['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
+    res['Challenges'] = os.listdir(os.path.join(
+        base_dir, 'static', 'challenges'))
+    res['Videos'] = os.listdir(os.path.join(
+        base_dir, 'static', 'videos'))
 
-    return render_template('resources.mak', name='mako', resources=resources)
+    return render_template('resources.mak', name='mako', resources=res)
 
 
 app.register_blueprint(homework, url_prefix='/assignments')
@@ -162,3 +151,6 @@ app.register_blueprint(homework, url_prefix='/hw')
 app.register_blueprint(lectures, url_prefix='/lectures')
 app.register_blueprint(quizzes, url_prefix='/quizzes')
 app.register_blueprint(quizzes, url_prefix='/quiz')
+app.register_blueprint(participants_bp, url_prefix='/participants')
+app.register_blueprint(participants_bp, url_prefix='/blogs')
+app.register_blueprint(participants_bp, url_prefix='/checkblogs')

@@ -1,10 +1,12 @@
 #!/bin/env python
 # -*- coding: utf8 -*-
 
-from distribute_setup import use_setuptools
-use_setuptools()
-
-from setuptools import setup, find_packages
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    from distribute_setup import use_setuptools
+    use_setuptools()
+    from setuptools import setup, find_packages
 
 version = "0.5.0"
 
@@ -26,7 +28,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "flask",
+        "Flask",
         "mako",
         "flask-mako",
         "feedparser",
@@ -34,6 +36,13 @@ setup(
         "frozen-flask",
         "tornado"
     ],
+    tests_require=[
+        'tox',
+        'nose',
+        'validator.py',
+        'pep8',
+    ],
+
     #TODO: Deal with entry_points
     #entry_points="""
     #[console_scripts]

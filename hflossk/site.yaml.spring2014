@@ -2,11 +2,11 @@ course:
     name: HFOSS
     desc: The RIT Humanitarian Free/Open Source Software Development Course
     place: RIT
-    start: 2014-09-25
-    end: 2014-12-10
-    times: Tues & Thurs 6:30PM - 7:45PM
+    start: 2014-01-27
+    end: 2014-05-17
+    times: Mon & Wed 5:00PM - 6:15PM
     course: 4085.582.01
-    location: Orange Hall (ORN)-1380
+    location: Orange Hall (ORN)-1375
 
 instructor:
     name: Remy DeCausemaker
@@ -26,6 +26,6 @@ instructor:
         opensource: http://opensource.com/users/remyd
 
 assistant:
-    name: Thunderdome
-    email: Thunderdome@foss.rit.edu
-    irc: Thunderdome
+    name: Sam Lucidi
+    email: mansam@csh.rit.edu
+    irc: mansam

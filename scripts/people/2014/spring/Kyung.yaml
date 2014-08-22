@@ -1,0 +1,25 @@
+#I am KyungHwan Chang. Yeahi.
+#i fixed bug. example yaml https://github.com/kyung01/hflossk/blob/master/scripts/people/decause.yaml
+blog: http://bluebugblog.weebly.com/1/category/hfoss/1.html
+feed: http://bluebugblog.weebly.com/1/feed
+forges:
+  - http://github.com/kyung01
+irc: Kyung
+rit_dce: xxx1234
+name: kyunghwan chang
+hw:
+  litreview1: http://bluebugblog.weebly.com/1/post/2014/02/school-assignment.html
+  litreview2: http://bluebugblog.weebly.com/blog/litreview02-rhetological_fallacies
+  quiz1: http://bluebugblog.weebly.com/1/post/2014/02/schoolassignment-hfoss_quiz.html
+  quiz2: http://bluebugblog.weebly.com/blog/fallacyquiz
+  bugfix: http://bluebugblog.weebly.com/1/post/2014/03/bug-fix-found-bug.html
+  bugfixupstream: https://github.com/hvp/Squareosity/commit/65fa8202a950c846cc0d295470d15d8c85c156ae
+  teamproposal: http://bluebugblog.weebly.com/1/post/2014/03/hfoss-my-team.html
+  commarch: http://bluebugblog.weebly.com/1/post/2014/03/hfoss-commarch-my-thought-on-the-project.html
+  commarchteam:  https://docs.google.com/document/d/19AUYrdaJROWOed72IL4Bgj8tbT2xSfbl5-AZRIF-XhE/edit?usp=sharing
+  commarchpreso: https://docs.google.com/presentation/d/1T_uowb4maKJ7ydjUsw4CXr4KxwCv9Xhk1TPhxjt7vp4/edit?usp=sharing
+  commarchreport: https://docs.google.com/document/d/19AUYrdaJROWOed72IL4Bgj8tbT2xSfbl5-AZRIF-XhE/edit?usp=sharing
+  curriculum: http://bluebugblog.weebly.com/1/post/2014/04/4th-grader-education-comparison-nyma.html
+  projprop: http://bluebugblog.weebly.com/1/post/2014/04/transition-and-combination-team-project-proposal-2.html
+  teamprop1: http://bluebugblog.weebly.com/1/post/2014/03/hfoss-my-team.html
+  teamprop2: http://bluebugblog.weebly.com/1/post/2014/04/transition-and-combination-team-project-proposal-2.html

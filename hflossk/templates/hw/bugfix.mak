@@ -41,7 +41,7 @@
 
         <div class="alert">
             <p class="last">For background, you might want to also check out the project on
-            <code><a target="_blank" href="http://ohloh.net/">http://ohloh.net/</a></code>.
+            <code><a target="_blank" href="http://openhub.net/">http://openhub.net/</a></code>.
             It can help you characterize what kind of community orbits around
             your choice.</p>
         </div>
@@ -121,7 +121,7 @@
     </div>
     <div class="alert">
         <h2>An Afterthought (not required)</h2>
-        <p>Once your patch has been accepted, mosey on over to <code><a target="_blank" href="http://ohloh.net">http://ohloh.net</a>.</p></code>
+        <p>Once your patch has been accepted, mosey on over to <code><a target="_blank" href="http://openhub.net">http://openhub.net</a>.</p></code>
         <blockquote>
             <div><ol>
                     <li>Create an account</li>

@@ -49,7 +49,7 @@
 <div class="row">
   %for student in student_data:
     <div class="col-sm-4">
-      <div class="student shadowcard padded" data-student=${student['irc']}>
+      <div class="student shadowcard padded" data-student=${"../blogs/" + student['participant_page']}>
         <div>
           <img class="uglymug pull-left" src="${gravatar(student.get('avatar', student['rit_dce'] + '@rit.edu'))}" alt="${student['irc']}'s Avatar" />
           <h4 class="item">${student['irc']}</h4>
@@ -71,14 +71,21 @@
           % endif
           -->
 
-          <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>
-          % for key in keys:
-              % if student.get(key):
-                <li><a target="_blank" href="${student[key]}">${key}</a></li>
-              % else:
-                <li class="redtext">${key}?</li>
-              % endif
-          % endfor
+          <% if 'hw' not in student: student['hw'] = [] %>
+          % if student['isActive']:
+            <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>
+            % for key in keys:
+                % if key in student['hw']:
+                  <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
+                % else:
+                  <li class="redtext">${key}?</li>
+                % endif
+            % endfor
+          % else:
+            % for key in student['hw']:
+              <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
+            % endfor
+          % endif
 
           <!--This block used for quick grading reference ;)
           % if student.get('name'):

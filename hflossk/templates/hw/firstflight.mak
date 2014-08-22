@@ -141,6 +141,35 @@ and/or all of the above.
     </ol>
 </div>
 
+<div class="alert alert-info">
+<p>
+    <span class="label label-info">Note</span>
+</p>
+
+<p>
+<strong>
+Attention Wordpress Users!
+</strong>
+By default Wordpress will limit the number of posts that are listed in the
+RSS feed to 10. This will create an issue roughly halfway through the term when
+you are supposed to have more than 10 blog posts. In order to fix this issue
+you must take the following steps.
+  <ol>
+      <li>
+      Log in to your Wordpress Administration Site
+      </li>
+      <li>
+      Go to Settings
+      </li>
+      <li>
+      Go to Reading
+      </li>
+      <li>
+      Set "Syndication feeds show the most recent"
+      </li>
+  </ol>
+</p>
+</div>
 
 <h2>Github</h2>
 
@@ -193,8 +222,10 @@ forge.
             href="http://help.github.com/fork-a-repo/">github help</a> on
         this).</li>
             <li>Clone a local copy.</li>
-            <li>Add a file in the <code>/scripts/people</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
-            a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example.
+            <li>Add a file in the <code>/scripts/people/$YEAR/$TERM</code> folder titled <code>$YOUR_IRC_NICK.yaml</code>. Perhaps obviously, it is
+            a <a href="http://www.yaml.org/">YAML</a> file. You can use the <code>rjbpop.yaml</code> file as an example. You will want to make sure
+            that you have $TERM in all lowercase. For example a student in HFOSS fall of 2014 would have their YAML file in the
+            <code>/scripts/people/2014/fall</code> folder.
 
 
             <div class="alert alert-warning">
