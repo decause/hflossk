@@ -35,7 +35,7 @@ CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
 
 
-Setting up your environment
+Creating a New hflossk Course
 ---------------------------
 
 Before you can do anything with this (run the webserver locally, or any of the
@@ -61,12 +61,16 @@ If you're using a distro like Fedora or Ubuntu, you should try this instead::
 Once you have virtualenv installed, you should be able to run::
 
  $ cd code
- $ git clone git@github.com:YOUR_USERNAME/hfoss-content.git
+ $ git clone git@github.com:YOUR_USERNAME/YOUR_COURSENAME-content.git
  $ virtualenv --no-site-packages -p python2 hflosskenv
  $ pip install hflossk
  $ ./hflosskenv/bin/activate
- $ cd hfoss-content
- $ hflossk run
+ $ cd YOUR_COURSENAME-content
+ $ hflossk new
+
+Once you've done that you'll probably want to edit some of the
+pre-generated files for the course. That way the website will
+reflect your course's information.
 
 On Windows
 ++++++++++
@@ -79,12 +83,16 @@ At the windows command prompt::
 
 In msysGit or git-bash::
 
- $ git clone git@github.com:YOUR_USERNAME/hfoss-content.git
+ $ git clone git@github.com:YOUR_USERNAME/YOUR_COURSENAME-content.git
 
 Back in the windows command prompt::
 
- $ cd hfoss-content
- $ hflossk run
+ $ cd YOUR_COURSENAME-content
+ $ hflossk new
+
+Once you've done that you'll probably want to edit some of the
+pre-generated files for the course. That way the website will
+reflect your course's information.
 
 Running the Tests
 ----------------------------
