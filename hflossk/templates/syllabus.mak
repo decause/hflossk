@@ -747,8 +747,8 @@
             <td class="sessionnumber">1</td>
             <td>12/09</td>
             <td>
-                <p class="topic ">
-                TBD
+                <p class="topic special">
+                Playtesting Session ???
                 </p>
             </td>
 
@@ -761,8 +761,8 @@
             <td class="sessionnumber">2</td>
             <td>12/11</td>
             <td>
-                <p class="topic ">
-                TBD
+                <p class="topic special">
+                Playtesting Session ???
                 </p>
             </td>
 
@@ -776,8 +776,8 @@
             <td>***</td>
             <td>12/10</td>
             <td>
-                <p class="topic hackathon">
-                Playtesting Section 1 - Meet at 1:15pm
+                <p class="topic special">
+                Playtesting Session ???
                 </p>
             </td>
 
@@ -789,10 +789,10 @@
 
         </tr><tr>
             <td>***</td>
-            <td>12/11</td>
+            <td>12/12</td>
             <td>
-                <p class="topic hackathon">
-                Playtesting Section 2 - Meet at 12:15pm
+                <p class="topic special">
+                Playtesting Session ???
                 </p>
             </td>
 
@@ -832,7 +832,6 @@
 
             <td>
                 <p class="topic ">
-                <a target="_blank" href="/hw/final">Final Presentation Details</a>
                 </p>
             </td>
             <td>
