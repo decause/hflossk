@@ -79,7 +79,7 @@ def participants(root_dir):
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = "{y}/{t}/{u}".format(
                         y=year_term_data[-2],
-                        t=year_term_data[-1],
+                        t=year_term_data[-1]
                         u=os.path.splitext(fname)[0]
                     )
                     contents['isActive'] = (currentYear in year_term_data
