@@ -508,8 +508,8 @@
             <td class="sessionnumber">1</td>
             <td>10/28</td>
             <td>
-                <p class="topic ">
-                TBD
+                <p class="topic guest">
+                Guest Lecture: Rochester Mini Maker Faire 
                 </p>
             </td>
 
