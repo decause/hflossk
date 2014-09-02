@@ -1,8 +1,8 @@
 ---
-blog: http://www.thomasconroy.net/blog
-feed: http://www.thomasconroy.net/blog/feeds/rss
+blog: "http://www.thomasconroy.net/blog"
+feed: "http://www.thomasconroy.net/blog/feeds/rss"
 forges:
-  - http://github.com/tconroy
+  - "http://github.com/tconroy"
 irc: tcon
-name: Tom Conroy
+name: "Tom Conroy"
 rit_dce: tdc5536
