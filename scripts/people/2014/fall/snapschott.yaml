@@ -1,7 +1,7 @@
 blog: http://andrewhfoss.blogspot.com/
 feed: http://andrewhfoss.blogspot.com/feeds/posts/default?alt=rss
 forges:
-  - http://fsf.org
+  - https://github.com/snapschott
 irc: snapschott
 name: Andrew Schott
 rit_dce: afs7827
