@@ -3,6 +3,7 @@
 *.egg*
 *.gz
 *.swp
+.tox/
 build
 peerevals
 hflossk/grades.yaml

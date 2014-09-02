@@ -13,5 +13,4 @@ if __name__ == "__main__":
         http_server.listen(port, address=host)
         IOLoop.instance().start()
     else:
-        app.debug = True
-        app.run(threaded=True)
+        app.run(debug=True, threaded=True)

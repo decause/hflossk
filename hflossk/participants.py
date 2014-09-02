@@ -6,6 +6,7 @@ from flask import Blueprint
 from flask.ext.mako import render_template
 from datetime import datetime, date, timedelta
 import hflossk
+from hflossk.util import app_path
 
 
 participants_bp = Blueprint('participants_bp',
@@ -65,10 +66,11 @@ def participants(root_dir):
 
     """
 
-    yaml_dir = 'scripts/people/' + root_dir
+    yaml_dir = app_path('people', root_dir)
 
     student_data = []
     for dirpath, dirnames, files in os.walk(yaml_dir):
+        dirpath = dirpath.rstrip("/")
         for fname in files:
             if fname.endswith('.yaml'):
                 with open(dirpath + '/' + fname) as students:
@@ -76,8 +78,8 @@ def participants(root_dir):
                     contents['yaml'] = dirpath + '/' + fname
                     year_term_data = dirpath.split('/')
                     contents['participant_page'] = "{y}/{t}/{u}".format(
-                        y=year_term_data[2],
-                        t=year_term_data[3],
+                        y=year_term_data[-2],
+                        t=year_term_data[-1],
                         u=os.path.splitext(fname)[0]
                     )
                     contents['isActive'] = (currentYear in year_term_data

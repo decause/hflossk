@@ -20,20 +20,20 @@ from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
 # hflossk
-from hflossk.util import count_posts
+from hflossk.util import count_posts, app_path
 from hflossk.blueprints import homework, lectures, quizzes
 from hflossk.participants import participants_bp
 
 app = Flask(__name__)
-app.template_folder = "templates"
+app.static_folder = app_path("static")
+app.templates_folder = app_path("templates")
 mako = MakoTemplates(app)
-base_dir = os.path.split(__file__)[0]
 
 
 # Automatically include site config
 @app.context_processor
 def inject_yaml():
-    with open(os.path.join(base_dir, 'site.yaml')) as site_yaml:
+    with open(app_path('site.yaml')) as site_yaml:
         site_config = yaml.load(site_yaml)
     return site_config
 
@@ -80,7 +80,7 @@ def syllabus():
 
     """
 
-    with open(os.path.join(base_dir, 'schedule.yaml')) as schedule_yaml:
+    with open(app_path('schedule.yaml')) as schedule_yaml:
         schedule = yaml.load(schedule_yaml)
     return render_template('syllabus.mak', schedule=schedule, name='mako')
 
@@ -120,8 +120,8 @@ def participant_page(year, term, username):
     """
 
     participant_data = {}
-    yaml_dir = 'scripts/people/'
-    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    yaml_dir = app_path('people')
+    participant_yaml = os.path.join(yaml_dir, year, term, username + '.yaml')
     with open(participant_yaml) as participant_data:
         participant_data = yaml.load(participant_data)
 
@@ -136,12 +136,36 @@ def participant_page(year, term, username):
 @app.route('/resources')
 def resources():
     res = dict()
-    res['Decks'] = os.listdir(os.path.join(base_dir, 'static', 'decks'))
-    res['Books'] = os.listdir(os.path.join(base_dir, 'static', 'books'))
-    res['Challenges'] = os.listdir(os.path.join(
-        base_dir, 'static', 'challenges'))
-    res['Videos'] = os.listdir(os.path.join(
-        base_dir, 'static', 'videos'))
+    oer_links = []
+    oer_yaml = app_path("oer.yaml")
+    with open(oer_yaml) as oer_data:
+        oer_links = yaml.load(oer_data)
+
+    res['links'] = {}
+    res['Decks'] = []
+    res['Books'] = []
+    res['Challenges'] = []
+    res['Videos'] = []
+
+    if os.path.exists(app_path('static', 'decks')):
+        res['Decks'] = os.listdir(app_path('static', 'decks'))
+    if 'decks' in oer_links:
+        res['links']['decks'] = oer_links['decks']
+
+    if os.path.exists(app_path('static', 'books')):
+        res['Books'] = os.listdir(app_path('static', 'books'))
+    if 'books' in oer_links:
+        res['links']['books'] = oer_links['books']
+
+    if os.path.exists(app_path('static', 'challenges')):
+        res['Challenges'] = os.listdir(app_path('static', 'challenges'))
+    if 'challenges' in oer_links:
+        res['links']['challenges'] = oer_links['challenges']
+
+    if os.path.exists(app_path('static', 'videos')):
+        res['Videos'] = os.listdir(app_path('static', 'videos'))
+    if 'videos' in oer_links:
+        res['links']['videos'] = oer_links['videos']
 
     return render_template('resources.mak', name='mako', resources=res)
 
