@@ -62,7 +62,7 @@ Once you have virtualenv installed, you should be able to run::
  $ cd code
  $ git clone git@github.com:YOUR_USERNAME/hflossk.git
  $ virtualenv --no-site-packages -p python2 hflosskenv
- $ . ./hflosskenv/bin/activate
+ $ . hflosskenv/bin/activate
  $ cd hflossk
  $ python setup.py develop
 
