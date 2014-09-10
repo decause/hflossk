@@ -1,4 +1,3 @@
----
 blog: "http://www.thomasconroy.net/blog"
 feed: "http://www.thomasconroy.net/blog/feeds/rss"
 forges:
@@ -6,5 +5,4 @@ forges:
 irc: "tcon"
 name: "Tom Conroy"
 rit_dce: "tdc5536"
-hw:
-  litreview1: http://thomasconroy.net/blog/posts/literature-review-what-is-open-source-by-steve-weber
+litreview1: "http://thomasconroy.net/blog/posts/literature-review-what-is-open-source-by-steve-weber"
