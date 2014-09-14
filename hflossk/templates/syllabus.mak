@@ -201,7 +201,7 @@
 
             <td>
                 <p class="topic ">
-                <a target="_blank" href="/books">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
+                <a target="_blank" href="/static/books/Weber-SuccessofOpenSource-Chap3.pdf">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
                 </p>
             </td>
 
@@ -328,7 +328,7 @@
         <tr>
             <td></td>
             <td>***</td>
-            <td>11/26 <br/>to 11/28</td>
+            <td>9/26 <br/>to 9/28</td>
             <td>
                 <p class="topic hackathon">
                 Hackathon @ Cornell: <a target="_blank" href="http://bigredhacks.com">http://bigredhacks.com</a>
