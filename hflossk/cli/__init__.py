@@ -10,7 +10,6 @@ import click
 from distutils import dir_util
 from distutils import file_util
 
-from hflossk.version import __version__
 from hflossk.cli.util import year, season
 from hflossk.cli.openshift_utils import (generate_token,
                                          get_api,
@@ -19,6 +18,7 @@ from hflossk.cli.openshift_utils import (generate_token,
                                          new_app,
                                          push,
                                          )
+from hflossk.version import __version__
 
 
 @click.group()
