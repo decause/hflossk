@@ -310,8 +310,8 @@
             <td class="sessionnumber">2</td>
             <td>09/25</td>
             <td>
-                <p class="topic ">
-                Smoke Testing Results
+                <p class="topic cancelled">
+                Class cancelled. Go to <a target="_blank" href="http://www.meetup.com/HackshackersROC/events/203575872/">Hacks/Hackers Rochester</a>
                 </p>
             </td>
 
@@ -328,7 +328,7 @@
         <tr>
             <td></td>
             <td>***</td>
-            <td>11/26 <br/>to 11/28</td>
+            <td>9/26 <br/>to 9/28</td>
             <td>
                 <p class="topic hackathon">
                 Hackathon @ Cornell: <a target="_blank" href="http://bigredhacks.com">http://bigredhacks.com</a>
