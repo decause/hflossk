@@ -16,8 +16,6 @@ import oshift
 from StringIO import StringIO
 import dulwich.porcelain as git
 
-from hflossk.version import __version__
-
 
 class NotFound(BaseException):
     pass
@@ -32,8 +30,8 @@ setup(name='thecourse',
       author='Dr. Professor',
       author_email='dr@professor.com',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['hflossk>={version}'],
-     )""".format(version=__version__),
+      install_requires=['hflossk'],
+     )""",
     },
     "wsgi.py": {
         "contents": """#!/usr/bin/python
