@@ -1,7 +1,7 @@
 blog: http://kocsen-hfoss.blogspot.com
 feed: http://kocsen-hfoss.blogspot.com/feeds/posts/default?alt=rss
 forges:
-    - http://forge.kocsen.com
+    - https://github.com/kocsenc
 irc: Kocsen
 name: Kocsen Chung
 rit_dce: kxc4519
