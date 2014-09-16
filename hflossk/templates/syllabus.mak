@@ -201,7 +201,7 @@
 
             <td>
                 <p class="topic ">
-                <a target="_blank" href="/books">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
+                <a target="_blank" href="/static/books/Weber-SuccessofOpenSource-Chap3.pdf">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
                 </p>
             </td>
 
