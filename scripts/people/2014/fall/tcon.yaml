@@ -5,5 +5,6 @@ forges:
 irc: tcon
 name: Tom Conroy
 rit_dce: tdc5536
-litreview1: http://thomasconroy.net/blog/posts/literature-review-what-is-open-source-by-steve-weber
-quiz1: http://www.thomasconroy.net/blog/posts/the-open-source-way
+hw:
+  litreview1: http://thomasconroy.net/blog/posts/literature-review-what-is-open-source-by-steve-weber
+  quiz1: http://www.thomasconroy.net/blog/posts/the-open-source-way

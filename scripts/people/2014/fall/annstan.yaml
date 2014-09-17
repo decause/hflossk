@@ -5,5 +5,6 @@ forges:
 irc: AnnStan
 name: Jennifer Stanton
 rit_dce: jas2715
-litreview1: http://ann-stan.blogspot.com/2014/09/lit-review-what-is-open-source.html
-quiz1: http://ann-stan.blogspot.com/2014/09/this-is-quiz-1.html
+hw:
+  litreview1: http://ann-stan.blogspot.com/2014/09/lit-review-what-is-open-source.html
+  quiz1: http://ann-stan.blogspot.com/2014/09/this-is-quiz-1.html
