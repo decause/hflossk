@@ -1,4 +1,5 @@
+tox
 nose>=1.3.3
-flake8>=2.2
+pep8
 validator.py>=1.2.0
 coverage>=3.6
