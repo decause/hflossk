@@ -1,10 +1,10 @@
 blog: http://dtendr.blogspot.com/
 feed: http://dtendr.blogspot.com/feeds/posts/default?alt=rss
 forges:
-  - https://github.com/dtendr
+    - https://github.com/dtendr
 irc: dtendr
 name: Josh Davis
 rit_dce: jad2828
 hw:
-	litreview1: http://dtendr.blogspot.com/2014/09/review-of-open-source.html
-	quiz1: http://dtendr.blogspot.com/2014/09/tosw-quiz.html
+    litreview1: http://dtendr.blogspot.com/2014/09/review-of-open-source.html
+    quiz1: http://dtendr.blogspot.com/2014/09/tosw-quiz.html
