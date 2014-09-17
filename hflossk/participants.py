@@ -7,7 +7,7 @@ from flask.ext.mako import render_template
 from datetime import datetime, date, timedelta
 import hflossk
 from hflossk.util import app_path
-
+from urlparse import urlparse
 
 participants_bp = Blueprint('participants_bp',
                             __name__,
@@ -82,6 +82,12 @@ def participants(root_dir):
                         t=year_term_data[-1],
                         u=os.path.splitext(fname)[0]
                     )
+
+                    for forge in contents['forges']:
+                        url = urlparse(forge)
+                        if "github.com" in url.netloc:
+                            contents['github'] = url.path[1:]
+
                     contents['isActive'] = (currentYear in year_term_data
                                             and currentTerm in year_term_data)
 
