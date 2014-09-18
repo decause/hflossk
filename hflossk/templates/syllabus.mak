@@ -238,9 +238,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/hw/bugfix">Homework - Bugfix</a>
-                </p>
             </td>
 
             <td>
@@ -257,6 +254,9 @@
             <td>
                 <p class="topic ">
                 <a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a>
+                </p>
+                <p class="topic ">
+                <a target="_blank" href="/hw/bugfix">Homework - Bugfix</a>
                 </p>
             </td>
 
@@ -302,9 +302,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/hw/bugfix"><em>Homework - Bugfix</em></a>
-                </p>
             </td>
         </tr><tr>
             <td class="sessionnumber">2</td>
@@ -322,6 +319,9 @@
                 <p class="topic ">
                 <a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a>
                 <p>Commarch Team Formation</p>
+                </p>
+                <p class="topic ">
+                <a target="_blank" href="/hw/bugfix"><em>Homework - Bugfix</em></a>
                 </p>
             </td>
         </tr>
