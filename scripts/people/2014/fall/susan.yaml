@@ -1,0 +1,10 @@
+blog: http://emollient.github.io/blog
+feed: http:http://emollient.github.io/blog/susan-lunn.xml
+forges:
+  - https://github.com/emollient
+irc: susan
+name: Susan Lunn
+rit_dce: skl1958
+hw:
+  litreview1: http://emollient.github.io/blog/hfoss-literature-review.html
+  quiz1: http://emollient.github.io/blog/hfoss-quiz-1.html

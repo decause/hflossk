@@ -75,7 +75,7 @@
         - name: "Lit Review Discussion: What is Open Source?"
       due:
         - name: "LitReview1: <em>What is Open Source?</em> by Steve Weber"
-          link: /books
+          link: /static/books/Weber-SuccessofOpenSource-Chap3.pdf
     - class: true
       topics:
         - name: "LIT: 5 Pillars of Opensource.com"
