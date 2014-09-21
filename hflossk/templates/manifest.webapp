@@ -1,7 +1,7 @@
 {
   "name": "hflossk",
   "description": "RIT Humanitarian Free/Open Source Software Development Course",
-  "launch_path": "/index.html",
+  "launch_path": "/",
   "icons": {
     "512": "static/img/icon-512.png",
     "128": "static/img/icon-128.png"
