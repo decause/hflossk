@@ -10,6 +10,7 @@
     <!-- Le styles -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/static/css/site.css" rel="stylesheet" />
+    <script src="/static/js/fxos.js" defer></script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
