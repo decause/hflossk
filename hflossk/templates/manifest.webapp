@@ -1,0 +1,14 @@
+{
+  "name": "hflossk",
+  "description": "RIT Humanitarian Free/Open Source Software Development Course",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "static/img/icon-512.png",
+    "128": "static/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Remy DeCausemaker",
+    "url": "http://github.com/decause/hflossk"
+  },
+  "default_locale": "en"
+}
