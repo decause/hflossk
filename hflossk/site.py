@@ -73,6 +73,14 @@ def simple_page(page):
     return render_template('{}.mak'.format(page), name='mako')
 
 
+@app.route('/static/manifest.webapp')
+def webapp():
+    """
+    Render as a FxOS App
+    """
+    return render_template('manifest.webapp', mimetype='application/x-web-app-manifest+json')
+
+
 @app.route('/syllabus')
 def syllabus():
     """
