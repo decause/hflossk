@@ -79,7 +79,7 @@ def webapp():
     Render as a FxOS App
     """
     return render_template('manifest.webapp',
-                            mimetype='application/x-web-app-manifest+json')
+                           mimetype='application/x-web-app-manifest+json')
 
 
 @app.route('/syllabus')
