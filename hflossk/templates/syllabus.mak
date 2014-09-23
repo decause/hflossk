@@ -307,8 +307,8 @@
             <td class="sessionnumber">2</td>
             <td>09/25</td>
             <td>
-                <p class="topic cancelled">
-                Class cancelled. Go to <a target="_blank" href="http://www.meetup.com/HackshackersROC/events/203575872/">Hacks/Hackers Rochester</a>
+                <p>
+                Commarch-ery: Reporting and analysis using GBAB, GBAT, Github, and Gource
                 </p>
             </td>
 
