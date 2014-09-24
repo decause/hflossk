@@ -1,8 +1,5 @@
 <%inherit file="master.mak" />
 
-<script src="../static/js/fxos.js"></script>
-
-
 <div class="jumbotron">
     <h1>${course['name']}</h1>
     <p>${course['desc']}</p>
