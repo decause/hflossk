@@ -56,7 +56,7 @@
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
             <!--WTF HAPPENED TO POST COUNTS!!!-->
-            <span class="label" id=${student['irc']}></span>
+            <span class="label" id=${"../blogs/" + student['participant_page']}></span>
           </div>
         </div>
         <ul class="cardlist list-unstyled">
