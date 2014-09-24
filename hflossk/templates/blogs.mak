@@ -55,7 +55,6 @@
           <h4 class="item"><a href="${student['participant_page']}">${student['irc']}</a></h4>
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
-            <!--WTF HAPPENED TO POST COUNTS!!!-->
             <span class="label" id="${student['irc']}"></span>
           </div>
         </div>
