@@ -1,0 +1,9 @@
+blog: http://hfossblog.citruspi.io/
+feed: http://hfossblog.citruspi.io/atom.xml
+forges:
+  - https://github.com/citruspi
+irc: citruspi
+name: Mihir Singh
+rit_dce: ms8303
+hw:
+  quiz1: http://hfossblog.citruspi.io/09-11-2014-quiz-1.txt

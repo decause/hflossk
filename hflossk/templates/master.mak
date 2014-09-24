@@ -80,6 +80,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/static/js/jquery.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/fxos.js"></script>
 
   </body>
 </html>

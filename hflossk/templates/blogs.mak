@@ -49,13 +49,13 @@
 <div class="row">
   %for student in student_data:
     <div class="col-sm-4">
-      <div class="student shadowcard padded" data-student=${"../blogs/" + student['participant_page']}>
+      <div class="student shadowcard padded" data-student="${student['irc']}">
         <div>
           <img class="uglymug pull-left" src="${gravatar(student.get('avatar', student['rit_dce'] + '@rit.edu'))}" alt="${student['irc']}'s Avatar!" />
           <h4 class="item"><a href="${student['participant_page']}">${student['irc']}</a></h4>
           <div class="item blog clearfix">
             <a target="_blank" href="${student['blog']}">Blog</a>
-            <span class="label" id=${student['irc']}></span>
+            <span class="label" id="${student['irc']}"></span>
           </div>
         </div>
         <ul class="cardlist list-unstyled">
@@ -71,9 +71,10 @@
           % endif
           -->
 
+          <!--<% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>-->
           <% if 'hw' not in student: student['hw'] = [] %>
           % if student['isActive']:
-            <% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>
+            <% keys = ['quiz1', 'litreview1', 'bugfix', 'teamprop1', 'meetup1'] %>
             % for key in keys:
                 % if key in student['hw']:
                   <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
