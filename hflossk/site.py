@@ -110,9 +110,8 @@ def blog_posts(username):
         for fname in files:
             if str(username + '.yaml').lower() in fname.lower():
                 with open(dirpath + '/' + fname) as students:
-                contents = yaml.load(students)
-                student_data = contents
-
+                    contents = yaml.load(students)
+                    student_data = contents
 
     num_posts = 0
     if 'feed' in student_data:
