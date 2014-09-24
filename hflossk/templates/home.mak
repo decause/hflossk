@@ -1,6 +1,6 @@
 <%inherit file="master.mak" />
 
-    <script src="/static/js/fxos.js"></script>
+<script src="../static/js/fxos.js"></script>
 
 
 <div class="jumbotron">
