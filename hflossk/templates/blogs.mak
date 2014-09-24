@@ -17,7 +17,7 @@
         method: "GET",
         dataType: "json",
         success: function(data) {
-	   var count = data['number'];
+          var count = data['number'];
           $('span#' + username).text(count);
           if (count >= target) {
             $('span#' + username).addClass('label-success');
