@@ -5,5 +5,8 @@ forges:
 irc: Lynxfive
 name: Cole Cooper
 rit_dce: cjc6417
-litreview1: http://lynxfive.blogspot.com/2014/09/what-is-open-source-article-overview.html
-quiz1: http://lynxfive.blogspot.com/2014/09/foss-quiz-1.html
+hw:
+  litreview1: http://lynxfive.blogspot.com/2014/09/what-is-open-source-article-overview.html
+  quiz1: http://lynxfive.blogspot.com/2014/09/foss-quiz-1.html
+  bugfix: http://lynxfive.blogspot.com/2014/09/squashing-bugs.html
+  teamprop1: http://lynxfive.blogspot.com/2014/09/commarch-team-proposal.html
