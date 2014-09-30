@@ -73,6 +73,15 @@ def simple_page(page):
     return render_template('{}.mak'.format(page), name='mako')
 
 
+@app.route('/static/manifest.webapp')
+def webapp():
+    """
+    Render as a FxOS App
+    """
+    return render_template('manifest.webapp',
+                           mimetype='application/x-web-app-manifest+json')
+
+
 @app.route('/syllabus')
 def syllabus():
     """
@@ -96,9 +105,13 @@ def blog_posts(username):
     student_data = None
 
     fname = username
-    with open(fname) as student:
-        contents = yaml.load(student)
-        student_data = contents
+
+    for dirpath, dirnames, files in os.walk("scripts/people/"):
+        for fname in files:
+            if str(username + '.yaml').lower() in fname.lower():
+                with open(dirpath + '/' + fname) as students:
+                    contents = yaml.load(students)
+                    student_data = contents
 
     num_posts = 0
     if 'feed' in student_data:
