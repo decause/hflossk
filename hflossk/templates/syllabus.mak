@@ -352,9 +352,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
-                </p>
             </td>
 
             <td>
@@ -403,15 +400,17 @@
             <td>10/07</td>
             <td>
                 <p class="topic ">
-                Commarch Presentations II &amp; Project Team Formation
+                XO Projects Info/Demo Day!
                 </p>
             </td>
 
             <td>
+                <p class="topic ">
+                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
+                </p>
             </td>
 
             <td>
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
             </td>
         </tr><tr>
             <td class="sessionnumber">2</td>
@@ -428,6 +427,7 @@
             </td>
 
             <td>
+                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
             </td>
 
         </tr>
