@@ -417,7 +417,7 @@
             <td>10/09</td>
             <td>
                 <p class="topic guest">
-                EDU: Curriculum Exploration. (Tentatively) Remote Lecture via IRC from <a target="_blank" href="http://levelupcon.com">http://levelupcon.com</a></p>
+                EDU: Curriculum Exploration</p>
             </td>
 
             <td>
@@ -427,7 +427,6 @@
             </td>
 
             <td>
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
             </td>
 
         </tr>
@@ -467,6 +466,7 @@
                 <p class="topic ">
                 <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
                 </p>
+                <p><a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></p>
             </td>
 
         </tr>
