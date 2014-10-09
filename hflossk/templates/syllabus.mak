@@ -416,7 +416,7 @@
             <td class="sessionnumber">2</td>
             <td>10/09</td>
             <td>
-                <p class="topic guest">
+                <p class="topic">
                 EDU: Curriculum Exploration</p>
             </td>
 
@@ -441,13 +441,12 @@
             </td>
 
             <td>
-                <p class="topic ">
-                </p>
-                <p class="topic ">
-                </p>
             </td>
 
             <td>
+                <p class="topic ">
+                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
+                </p>
             </td>
 
         </tr><tr>
@@ -463,9 +462,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
-                </p>
                 <p><a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></p>
             </td>
 
