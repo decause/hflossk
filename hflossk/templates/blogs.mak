@@ -74,7 +74,7 @@
           <!--<% keys = ['quiz1', 'litreview1', 'bugfix', 'commarchpreso', 'commarchreport', 'teamprop1', 'teamprop2', 'litreview2', 'quiz2'] %>-->
           <% if 'hw' not in student: student['hw'] = [] %>
           % if student['isActive']:
-            <% keys = ['quiz1', 'litreview1', 'bugfix', 'teamprop1', 'meetup1'] %>
+            <% keys = ['quiz1', 'litreview1', 'bugfix', 'teamprop1', 'meetup1', 'commarchreport', 'commarchpreso'] %>
             % for key in keys:
                 % if key in student['hw']:
                   <li><a target="_blank" href="${student['hw'][key]}">${key}</a></li>
