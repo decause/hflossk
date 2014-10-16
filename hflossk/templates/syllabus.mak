@@ -318,7 +318,10 @@
             <td>
                 <p class="topic ">
                 <a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a>
-                <a target="_blank" href="http://activities.sugarlabs.org/en-US/sugar/collection/3f700a16-19bc-f31b-f532-54c74ad3a626">HFOSS@RIT SugarLabs Bundle</a>
+                </p>
+		<p class="topic ">
+		<a target="_blank" href="http://activities.sugarlabs.org/en-US/sugar/collection/3f700a16-19bc-f31b-f532-54c74ad3a626">HFOSS@RIT SugarLabs Bundle</a>
+		</p>
 		<p>Commarch Team Formation</p>
                 </p>
                 <p class="topic ">
