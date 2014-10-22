@@ -126,7 +126,7 @@ def participant_page(year, term, username):
     """
 
     person_yaml = os.path.abspath(os.path.join(YAML_LOCATION,
-        year, term, username + '.yaml'))
+                                  year, term, username + '.yaml'))
     with open(person_yaml) as participant_file:
         return render_template(
             'participant.mak', name='make',
