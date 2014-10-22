@@ -14,8 +14,7 @@ import hashlib
 from datetime import datetime
 
 # flask dependencies
-from flask import Flask
-from flask import jsonify
+from flask import Flask, jsonify, abort
 from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
@@ -132,11 +131,24 @@ def participant_page(year, term, username):
     Render a page that shows some stats about the selected participant
     """
 
-    participant_data = {}
+    participant_data = {} #{Year: {Term: {Username: pathToYaml}}}
     yaml_dir = 'scripts/people/'
-    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
-    with open(participant_yaml) as participant_data:
-        participant_data = yaml.load(participant_data)
+    for dirpath, dirnames, files in os.walk(yaml_dir):
+        for student in files:
+            path = dirpath.split('/')
+            student_term = path[len(path) - 1]
+            student_year = path[len(path) - 2]
+            if student_year not in participant_data:
+                participant_data[student_year] = {}
+            if student_term not in participant_data[student_year]:
+                participant_data[student_year][student_term] = {}
+            participant_data[student_year][student_term][student.split('.yaml')[0]] = dirpath + '/' + student
+
+    if year in participant_data and term in participant_data[year] and username in participant_data[year][term]:
+        with open(participant_data[year][term][username]) as participant_data:
+            participant_data = yaml.load(participant_data)
+    else:
+        abort(404)
 
     return render_template(
         'participant.mak', name='make',
