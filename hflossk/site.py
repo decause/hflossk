@@ -14,8 +14,7 @@ import hashlib
 from datetime import datetime
 
 # flask dependencies
-from flask import Flask
-from flask import jsonify
+from flask import Flask, jsonify
 from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
@@ -106,10 +105,9 @@ def blog_posts(username):
 
     for dirpath, dirnames, files in os.walk(YAML_LOCATION):
         for fname in files:
-            if str(username + '.yaml').lower() in fname.lower():
-                with open(dirpath + '/' + fname) as students:
-                    contents = yaml.load(students)
-                    student_data = contents
+            if (username + '.yaml').lower() == fname.lower():
+                with open(os.path.join(dirpath, fname)) as student_file:
+                    student_data = yaml.load(student_file)
 
     if 'feed' in student_data:
         print("Checking %s's blog feed." % username)
@@ -127,17 +125,14 @@ def participant_page(year, term, username):
     Render a page that shows some stats about the selected participant
     """
 
-    participant_data = {}
-    yaml_dir = 'scripts/people/'
-    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
-    with open(participant_yaml) as participant_data:
-        participant_data = yaml.load(participant_data)
-
-    return render_template(
-        'participant.mak', name='make',
-        participant_data=participant_data,
-        gravatar=gravatar
-    )
+    person_yaml = os.path.abspath(os.path.join(YAML_LOCATION,
+        year, term, username + '.yaml'))
+    with open(person_yaml) as participant_file:
+        return render_template(
+            'participant.mak', name='make',
+            participant_data=yaml.load(participant_file),
+            gravatar=gravatar
+        )
 
 
 @app.route('/oer')
