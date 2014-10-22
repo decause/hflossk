@@ -41,6 +41,7 @@ app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
+YAML_LOCATION = os.path.abspath(os.path.join("scripts", "people"))
 
 
 def gravatar(email):
@@ -60,7 +61,7 @@ def gravatar(email):
     return libravatarURL + slug + "?d=" + gravatarURL + slug
 
 
-@app.route('/', defaults=dict(page='home'))
+@app.route('/', defaults={'page': 'home'})
 @app.route('/<page>')
 def simple_page(page):
     """
@@ -104,24 +105,19 @@ def blog_posts(username):
 
     student_data = None
 
-    fname = username
-
-    for dirpath, dirnames, files in os.walk("scripts/people/"):
+    for dirpath, dirnames, files in os.walk(YAML_LOCATION):
         for fname in files:
             if str(username + '.yaml').lower() in fname.lower():
                 with open(dirpath + '/' + fname) as students:
                     contents = yaml.load(students)
                     student_data = contents
 
-    num_posts = 0
     if 'feed' in student_data:
         print("Checking %s's blog feed." % username)
-        num_posts = count_posts(student_data['feed'], COURSE_START)
+        return jsonify(number=count_posts(student_data['feed'], COURSE_START))
     else:
         print("No feed listed for %s!" % username)
         raise NotFound()
-
-    return jsonify(number=num_posts)
 
 
 @app.route('/blogs/<year>/<term>/<username>')
