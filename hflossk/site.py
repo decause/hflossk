@@ -48,9 +48,8 @@ def gravatar(email):
     """
     Get a gravatar for an email address.
 
-    I wish I could use libravatar here, but honestly, the students
-    will be better off using gravatar at this point (due to github
-    integration :/)
+    Attempts to use Libravatar by default, but due to Github
+    integration with Gravatar will fall back onto Gravatar
 
     """
 
