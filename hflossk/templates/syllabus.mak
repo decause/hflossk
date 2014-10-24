@@ -201,7 +201,7 @@
 
             <td>
                 <p class="topic ">
-                <a target="_blank" href="/books">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
+                <a target="_blank" href="/static/books/Weber-SuccessofOpenSource-Chap3.pdf">LitReview1: <em>What is Open Source?</em> by Steve Weber</a>
                 </p>
             </td>
 
@@ -238,9 +238,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/hw/bugfix">Homework - Bugfix</a>
-                </p>
             </td>
 
             <td>
@@ -257,6 +254,9 @@
             <td>
                 <p class="topic ">
                 <a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a>
+                </p>
+                <p class="topic ">
+                <a target="_blank" href="/hw/bugfix">Homework - Bugfix</a>
                 </p>
             </td>
 
@@ -302,16 +302,13 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/hw/bugfix"><em>Homework - Bugfix</em></a>
-                </p>
             </td>
         </tr><tr>
             <td class="sessionnumber">2</td>
             <td>09/25</td>
             <td>
-                <p class="topic ">
-                Smoke Testing Results
+                <p>
+                Commarch-ery: Reporting and analysis using GBAB, GBAT, Github, and Gource
                 </p>
             </td>
 
@@ -323,12 +320,15 @@
                 <a target="_blank" href="http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test">Smoke Test</a>
                 <p>Commarch Team Formation</p>
                 </p>
+                <p class="topic ">
+                <a target="_blank" href="/hw/bugfix"><em>Homework - Bugfix</em></a>
+                </p>
             </td>
         </tr>
         <tr>
             <td></td>
             <td>***</td>
-            <td>11/26 <br/>to 11/28</td>
+            <td>9/26 <br/>to 9/28</td>
             <td>
                 <p class="topic hackathon">
                 Hackathon @ Cornell: <a target="_blank" href="http://bigredhacks.com">http://bigredhacks.com</a>
@@ -352,9 +352,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
-                </p>
             </td>
 
             <td>
@@ -403,22 +400,24 @@
             <td>10/07</td>
             <td>
                 <p class="topic ">
-                Commarch Presentations II &amp; Project Team Formation
+                XO Projects Info/Demo Day!
+                </p>
+            </td>
+
+            <td>
+                <p class="topic ">
+                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
                 </p>
             </td>
 
             <td>
             </td>
-
-            <td>
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
-            </td>
         </tr><tr>
             <td class="sessionnumber">2</td>
             <td>10/09</td>
             <td>
-                <p class="topic guest">
-                EDU: Curriculum Exploration. (Tentatively) Remote Lecture via IRC from <a target="_blank" href="http://levelupcon.com">http://levelupcon.com</a></p>
+                <p class="topic">
+                EDU: Curriculum Exploration</p>
             </td>
 
             <td>
@@ -442,13 +441,12 @@
             </td>
 
             <td>
-                <p class="topic ">
-                </p>
-                <p class="topic ">
-                </p>
             </td>
 
             <td>
+                <p class="topic ">
+                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
+                </p>
             </td>
 
         </tr><tr>
@@ -464,9 +462,7 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
-                </p>
+                <p><a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></p>
             </td>
 
         </tr>
