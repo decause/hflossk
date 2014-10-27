@@ -307,8 +307,8 @@
             <td class="sessionnumber">2</td>
             <td>09/25</td>
             <td>
-                <p class="topic cancelled">
-                Class cancelled. Go to <a target="_blank" href="http://www.meetup.com/HackshackersROC/events/203575872/">Hacks/Hackers Rochester</a>
+                <p>
+                Commarch-ery: Reporting and analysis using GBAB, GBAT, Github, and Gource
                 </p>
             </td>
 
@@ -352,9 +352,6 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
-                </p>
             </td>
 
             <td>
@@ -403,22 +400,24 @@
             <td>10/07</td>
             <td>
                 <p class="topic ">
-                Commarch Presentations II &amp; Project Team Formation
+                XO Projects Info/Demo Day!
+                </p>
+            </td>
+
+            <td>
+                <p class="topic ">
+                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
                 </p>
             </td>
 
             <td>
             </td>
-
-            <td>
-                <a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a>
-            </td>
         </tr><tr>
             <td class="sessionnumber">2</td>
             <td>10/09</td>
             <td>
-                <p class="topic guest">
-                EDU: Curriculum Exploration. (Tentatively) Remote Lecture via IRC from <a target="_blank" href="http://levelupcon.com">http://levelupcon.com</a></p>
+                <p class="topic">
+                EDU: Curriculum Exploration</p>
             </td>
 
             <td>
@@ -442,13 +441,12 @@
             </td>
 
             <td>
-                <p class="topic ">
-                </p>
-                <p class="topic ">
-                </p>
             </td>
 
             <td>
+                <p class="topic ">
+                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
+                </p>
             </td>
 
         </tr><tr>
@@ -464,9 +462,7 @@
             </td>
 
             <td>
-                <p class="topic ">
-                <a target="_blank" href="/oer"><em>NY &amp; MA 4th Grade Curriculum</em></a>
-                </p>
+                <p><a target="_blank" href="/static/hw/teamproposal.html"><em>Homework - Team Proposal</em></a></p>
             </td>
 
         </tr>

@@ -3,6 +3,7 @@
 <div class="jumbotron">
     <h1>${course['name']}</h1>
     <p>${course['desc']}</p>
+    <a class="btn btn-default" id="mozinstall">FxOS?</a>
 </div>
 
 <div class="row">
