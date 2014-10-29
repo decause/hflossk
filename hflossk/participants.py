@@ -85,7 +85,8 @@ def participants(root_dir):
 
                     student_data.append(contents)
 
-    assignments = ['quiz1', 'litreview1', 'meetup1', 'bugfix1', ]
+    assignments = ['quiz1', 'litreview1', 'bugfix', 'teamprop1', 'meetup1',
+                   'commarchreport', 'commarchpreso']
     elapsed = (datetime.today() - hflossk.site.COURSE_START).total_seconds()
     target_number = int(elapsed / timedelta(weeks=1).total_seconds() + 1 +
                         len(assignments))
