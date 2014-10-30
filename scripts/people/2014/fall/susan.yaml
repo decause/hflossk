@@ -1,0 +1,18 @@
+blog: http://emollient.me/
+feed: http://emollient.me/feeds/all.atom.xml
+forges:
+  - https://github.com/emollient
+irc: susan
+name: Susan Lunn
+rit_dce: skl1958
+hw:
+  litreview1: http://emollient.me/blog/hfoss-literature-review.html
+  quiz1: http://emollient.me/blog/hfoss-quiz-1.html
+  bugfix: http://emollient.me/blog/bugfix.html
+  teamprop1: http://emollient.me/blog/team-proposal-commarch-report.html 
+  meetup1: http://emollient.me/rocpy.html
+  commarchreport: http://emollient.me/blog/the-commarch-report-of-videolan.html
+  commarchpreso: https://docs.google.com/presentation/d/1yYUtLupf6jJ1GfbAhk1-S4IdGj1yk4TcSQwbmNNswRI/edit?usp=sharing
+  meetup2: http://emollient.me/vimeo-presentation.html 
+  vidreview1: http://emollient.me/hfoss-video-review-rip-a-remix-manifesto.html 
+
