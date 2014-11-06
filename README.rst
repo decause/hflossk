@@ -2,6 +2,8 @@ HFLOSSK
 =======
 
 .. image:: https://api.travis-ci.org/decause/hflossk.svg
+.. image:: https://pypip.in/v/hflossk/badge.png
+.. image:: https://pypip.in/d/hflossk/badge.png
 
 Wat?
 ----
