@@ -6,7 +6,7 @@
 
 <div class='jumbotron'>
     <h1>${participant_data['irc']}</h1>
-    <p>${participant_data['name']}</p>
+    <!--<p>${participant_data['name']}</p>-->
 </div>
 <div class="row">
     <div class="col-md-4">
