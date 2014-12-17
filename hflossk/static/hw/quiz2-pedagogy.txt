@@ -1,0 +1,28 @@
+Please post both the answers AND questions for this quiz in a post on your
+development blog, and send a pull-request to your .yaml file with the key
+'quiz2' to the course repository by the end of class. Remember, your quizzes
+will be evaluated based on BOTH content AND HTML markup. Good Luck.
+
+0)  Expand the following acronyms:
+        a) FOSS
+        b) OLPC
+        c) tl;dr
+        g) LGTM
+        h) RTFM
+        i) PEBKAC
+        f) LOL
+
+1)  Define the following instructional theories:
+        a) Didactic
+        b) Dialectic
+        c) Constructivist
+        d) Multiple Intelligences
+
+2)  Describe the role of the instructor in each theory.
+
+3)  What are the three key aspects of a lesson plan?
+
+4)  How does Sugar integrate and implement constructivist learning theory?
+
+Bonus: Where can new Sugar users and contributors go to find out more
+information, ask questions, and get involved?
