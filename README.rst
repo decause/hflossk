@@ -85,11 +85,10 @@ Back in the windows command prompt::
  $ python setup.py develop
 
 Running the Tests
-----------------------------
+-----------------
 
 All tests are run on python2.7 and python3.3 using tox. To run the tests::
 
-$ virtualenv --no-site-packages -p python2 hflosskenv
 $ pip install tox
 $ tox
 
