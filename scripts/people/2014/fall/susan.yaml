@@ -5,6 +5,16 @@ forges:
 irc: susan
 name: Susan Lunn
 rit_dce: skl1958
+
+hackathon0: http://emollient.me/software-freedom-day-2014.html
+hackathon1: http://emollient.me/big-red-hacks-at-cornell.html
+hackathon2: http://emollient.me/election-day-hackathon.html
+hackathon3: http://emollient.me/girl-develop-it.html
+hackathon4: http://emollient.me/vimeo-presentation.html
+hackathon5: http://emollient.me/rochester-mini-maker-faire.html #attended as a volunteer
+hackathon6: http://emollient.me/homestretch-hackathon.html
+playtesting2: http://emollient.me/playtesting-2.html
+
 hw:
   litreview1: http://emollient.me/blog/hfoss-literature-review.html
   quiz1: http://emollient.me/blog/hfoss-quiz-1.html
@@ -21,11 +31,7 @@ hw:
   curriculum: http://emollient.me/ny-4th-grade-curriculum.html
   litreview2: http://emollient.me/hacking-politics.html
   quiz2: http://emollient.me/quiz-2.html
-  hackathon0: http://emollient.me/software-freedom-day-2014.html
-  hackathon1: http://emollient.me/big-red-hacks-at-cornell.html
-  hackathon2: http://emollient.me/election-day-hackathon.html
-  hackathon3: http://emollient.me/girl-develop-it.html
-  hackathon4: http://emollient.me/vimeo-presentation.html
+  meetup3: http://emollient.me/rochester-mini-maker-faire.html  #I'm not sure if this counts as meetup3
   finalpreso: http://www.csh.rit.edu/~slunn/geomunchers-pres/presentation.html
 
 
