@@ -18,6 +18,7 @@ rit_dce: tdc5536
 hw:
   smoketest: http://thomasconroy.net/blog/posts/xo-laptop-smoke-test
   quiz1: http://www.thomasconroy.net/blog/posts/the-open-source-way
+  quiz2: http://thomasconroy.net/blog/posts/hfoss-quiz-2-pedagogy
   bugfix: http://www.thomasconroy.net/blog/posts/bug-smashing
   meetup1: http://www.thomasconroy.net/blog/posts/foss-meetups
   meetup2: http://thomasconroy.net/blog/posts/foss-presentation-hudl

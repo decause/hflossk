@@ -5,6 +5,7 @@ forges:
 irc: dropofwill
 name: Will Paul
 rit_dce: whp3652
+upstream1: https://github.com/bradvin/FooTable/pull/276
 hw:
   litreview1: http://dropofwill.herokuapp.com/2014/09/07/review-what-is-open-source-and-how-does-it-work/
   quiz1: http://dropofwill.herokuapp.com/2014/09/11/quiz-1/
@@ -14,7 +15,6 @@ hw:
   commarchreport: http://dropofwill.herokuapp.com/2014/09/30/community-architecture-team-project/
   commarchpreso: https://docs.google.com/presentation/d/1mhkialtW512EKhttsdwwF0h30TKVvoj_CZ3Vzh2jXCU/edit?usp=sharing
   hackathon1: http://dropofwill.herokuapp.com/2014/10/13/hudl-visit/
-  upstream1: https://github.com/bradvin/FooTable/pull/276
   curriculum: http://dropofwill.herokuapp.com/2014/10/14/ny-and-ma-curriculum-comparison/
   teamprop2: http://dropofwill.herokuapp.com/2014/10/16/xo-team-proposal/
   vidreview1: http://dropofwill.herokuapp.com/2014/10/22/rip-a-remix-manifesto/
@@ -23,3 +23,4 @@ hw:
   meetup2: http://dropofwill.herokuapp.com/2014/11/15/roc-py-october-python-with-other-languages/
   litreview2: http://dropofwill.herokuapp.com/2014/12/02/review-hacking-politics-the-tl-dr/
   quiz2: http://dropofwill.herokuapp.com/2014/12/04/quiz-2/
+  meetup3: http://dropofwill.herokuapp.com/2014/12/10/roc-py-last-meetup-of-the-semester/
