@@ -1,5 +1,3 @@
-<<<<<<< HEAD
----
 blog: "http://www.thomasconroy.net/blog"
 feed: "http://www.thomasconroy.net/blog/feeds/rss"
 forges:
@@ -7,7 +5,6 @@ forges:
 irc: tcon
 name: "Tom Conroy"
 rit_dce: tdc5536
-=======
 blog: http://www.thomasconroy.net/blog
 feed: http://www.thomasconroy.net/blog/feeds/rss
 forges:
@@ -31,8 +28,4 @@ hw:
   litreview2: http://thomasconroy.net/blog/posts/literature-review-hacking-politics-by-david-moon
   vidreview1: http://thomasconroy.net/blog/posts/video-review-rip-a-remix
   vidreview2: http://thomasconroy.net/blog/posts/video-review-simple-made-easy
-<<<<<<< HEAD
->>>>>>> 8683dc52e1a61f14ab18e84fef44bf956c2efaeb
-=======
   finalpreso: https://docs.google.com/presentation/d/1dBAUiYulvIq7X6-z6Kz-yY517DvCr1jwDlI498-OdfI/edit?usp=sharing
->>>>>>> 2252a755eec4b55192b142f16a772514e76bbdfd
