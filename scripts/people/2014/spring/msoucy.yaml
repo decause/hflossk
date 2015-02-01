@@ -1,0 +1,20 @@
+# Hey, it's msoucy!
+blog: http://msoucy.me
+feed: http://msoucy.me/feeds/tag/hfoss.atom.xml
+forges:
+  - http://github.com/msoucy
+  - http://bitbucket.org/msoucy
+irc: msoucy
+name: Matt Soucy
+rit_dce: mas5997
+hw:
+  litreview1: http://msoucy.me/2014/02/literature-review-what-is-open-source/
+  quiz1: http://msoucy.me/2014/02/hfoss-quiz1/
+  bugfix: http://msoucy.me/2014/03/d-bugfix-1/
+  teamprop1: http://msoucy.me/2014/03/commarch-proposal/
+  commarchreport: http://msoucy.me/2014/03/commarch/
+  curriculum: http://msoucy.me/2014/04/hfoss-curriculum/
+  teamprop2: http://msoucy.me/2014/04/teamprop2/
+  commarchpreso: http://msoucy.me/2014/04/commarch-slides/
+  litreview2: http://msoucy.me/2014/05/litreview2/
+  quiz2: http://msoucy.me/2014/05/hfoss-quiz2/

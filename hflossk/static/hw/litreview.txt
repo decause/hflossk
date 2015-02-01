@@ -1,0 +1,56 @@
+Literature Review
+
+This is not a literature course, but as a member of the FOSS community, there
+are many texts to grok to help you down the path. The instructor has provided
+some texts, and many more were contributed by other Professors, hackers, and
+community members who thought these works were important enough to share with
+graduating college students about to enter the "real-world." 
+
+As far as this instructor is concerned, you should at the very minimum be able
+to remember the basics:
+
+
+    Who
+        Author
+
+    What
+        Title
+
+    Where
+        URL
+
+    When
+        Date Published
+
+    The Gist
+        You're in a social setting. Someone says "Hey, did you ever read X?"
+        You quickly respond "Oh heck yeah! X was teh {awesome,suck}!" The
+        person next to you in the circle says "Oh snap, I didn't read X. What
+        was it about...?" 
+
+        ..You have exactly 3 lines, MAX, to prove you are not a hipster--and
+        "The Gist" is those 3 lines.
+
+    The Good
+    3 things that: 
+        you thought were good
+        made sense
+        will stick with you or 
+        were lolzy.
+
+    The Bad
+    3 things that: 
+        you thought were bad
+        didn't make sense
+        will be easy to forget or 
+        made you want to send a patch
+
+    The Questions
+    3 Questions you have after reading the literature.
+
+    Your Review
+        Imagine you are on Yelp, Amazon, Ebay, Netflix, or any other online
+        community that has customer reviews. This is the message that you want
+        to leave behind, to represent yourself, and inform (or warn) others.
+        You should add a quick rating system of your choosing (X/Y stars, X thumbs
+        up) as part of the review.

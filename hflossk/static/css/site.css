@@ -1,0 +1,99 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+.padded {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.headerlink {
+    padding-top: 50px;
+}
+
+/* Don't overlap affix below md size*/
+@media(max-width:991px){
+    .affix {
+        position: relative;
+         width: auto;
+    }
+}
+
+.item {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.lecture_list>li{
+    font-size: 24.5px;
+    margin: -10px 0;
+    font-weight: bold;
+    line-height: 40px;
+}
+.lecture_list>li ol, .lecture_list>li ul{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+/* showblogs-specific */
+.uglymug {
+    border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+}
+
+.blog {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.cardlist {
+    margin-top: 10px;
+}
+
+.shadowcard {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.topic {
+    margin: 0;
+}
+
+/* Colors! */
+.special {
+    background: yellow;
+}
+
+.cancelled {
+    background: red;
+}
+
+.guest {
+    background: lightgreen;
+}
+
+.tbd {
+    background: lightgrey;
+}
+
+.hackathon {
+    background: orange;
+}
+
+.vaycay {
+    background: darkgrey;
+}
+
+.redtext {
+    color: darkred;
+}

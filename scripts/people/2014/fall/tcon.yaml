@@ -1,0 +1,24 @@
+blog: http://www.thomasconroy.net/blog
+feed: http://www.thomasconroy.net/blog/feeds/rss
+forges:
+  - http://github.com/tconroy
+irc: tcon
+name: Tom Conroy
+rit_dce: tdc5536
+hw:
+  smoketest: http://thomasconroy.net/blog/posts/xo-laptop-smoke-test
+  quiz1: http://www.thomasconroy.net/blog/posts/the-open-source-way
+  quiz2: http://thomasconroy.net/blog/posts/hfoss-quiz-2-pedagogy
+  bugfix: http://www.thomasconroy.net/blog/posts/bug-smashing
+  meetup1: http://www.thomasconroy.net/blog/posts/foss-meetups
+  meetup2: http://thomasconroy.net/blog/posts/foss-presentation-hudl
+  teamprop1: http://www.thomasconroy.net/blog/posts/commarch-team-proposal
+  teamprop2: http://www.thomasconroy.net/blog/posts/xo-team-project-proposal
+  commarchreport: http://www.thomasconroy.net/blog/posts/community-architecture-report
+  commarchpreso: https://docs.google.com/a/g.rit.edu/presentation/d/1xM0P5NI0oSyJH6BoVZ_VqTXS7GkG70Ogje_4YMSGe0M/edit?usp=sharing
+  curriculum: http://www.thomasconroy.net/blog/posts/xo-projects-4th-grade-math-curriculum-examination
+  litreview1: http://thomasconroy.net/blog/posts/literature-review-what-is-open-source-by-steve-weber
+  litreview2: http://thomasconroy.net/blog/posts/literature-review-hacking-politics-by-david-moon
+  vidreview1: http://thomasconroy.net/blog/posts/video-review-rip-a-remix
+  vidreview2: http://thomasconroy.net/blog/posts/video-review-simple-made-easy
+  finalpreso: https://docs.google.com/presentation/d/1dBAUiYulvIq7X6-z6Kz-yY517DvCr1jwDlI498-OdfI/edit?usp=sharing

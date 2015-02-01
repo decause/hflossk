@@ -1,0 +1,19 @@
+# i make internet
+blog: http://fosstertheweb.wordpress.com/
+feed: http://fosstertheweb.wordpress.com/feed/
+forges:
+  - http://github.com/fostertheweb
+irc: fostertheweb
+name: Jonathan Foster
+rit_dce: jxf9099
+hw:
+  litreview1: http://fosstertheweb.wordpress.com/2014/02/10/lit-review-1/
+  quiz1: http://fosstertheweb.wordpress.com/2014/02/12/tosw-quiz-1/
+  bugfix: http://fosstertheweb.wordpress.com/2014/03/03/my-first-bugfix/
+  bugfixupstream: https://github.com/addyosmani/prism-js/pull/5
+  teamprop1: https://fosstertheweb.wordpress.com/2014/03/13/team-proposal-node-js/
+  commarchreport: http://fosstertheweb.wordpress.com/2014/03/19/commarch-report-node-js/
+  commarchpreso: https://docs.google.com/a/g.rit.edu/presentation/d/1ZpVgPToA3Kj2zxtnLuxvshtaUOHgAxpyegZxlxOsqks/pub?start=false&loop=false&delayms=3000#slide=id.g1d6602536_063
+  teamprop2: http://fosstertheweb.wordpress.com/2014/04/07/team-proposal/
+  litreview2: http://fosstertheweb.wordpress.com/2014/05/14/literature-review-2/
+  quiz2: http://fosstertheweb.wordpress.com/2014/05/14/quiz-2/

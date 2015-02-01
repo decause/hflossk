@@ -1,0 +1,27 @@
+blog: http://gearchicken.com/blog/
+feed: http://gearchicken.com/blog/rss.xml
+forges:
+  - http://github.com/liam-middlebrook
+  - http://bitbucket.org/liam-middlebrook
+irc: loothelion
+name: Liam Middlebrook
+rit_dce: ljm2906
+hw:
+  litreview1: http://gearchicken.com/blog/2014/02/10/litreview-weber-the-success-of-open-source-chapter-3-what-is-open-source-and-how-does-it-work.html
+  quiz1: http://gearchicken.com/blog/2014/02/12/hfoss-quiz-1.html
+  bugfix: http://gearchicken.com/blog/2014/02/24/hw-bugfix.html
+  teamprop1: http://gearchicken.com/blog/2014/03/13/hfoss-comarch-team-proposal.html
+  commarchreport: http://gearchicken.com/blog/2014/03/19/community-architecture-analysis-monogame.html
+  commarchpreso: http://gearchicken.com/commarch_hfoss.pdf #Displays incorrectly in FireFox for GNU/Linux
+  curriculum: http://gearchicken.com/blog/2014/04/09/curriculum-review-4th-grade-math-for-ma-and-ny.html
+  teamprop2: http://gearchicken.com/blog/2014/04/16/hfoss-final-project-team-proposal.html
+  litreview2: http://gearchicken.com/blog/2014/05/14/litreview-2-rhetological-fallacies.html
+  quiz2: http://gearchicken.com/blog/2014/05/14/rhetological-fallcies-quiz.html
+bio: |
+  This is a long string of text
+  that I'm using as my personal biography on
+  the RIT HFOSS site
+github: liam-middlebrook
+twitter: liammiddlebrook
+coderwall: liam-middlebrook
+

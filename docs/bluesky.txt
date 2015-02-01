@@ -1,0 +1,17 @@
+User enters irc handle, presses button
+
+returns a dict of their stats:
+    in_channel(bool)
+    github
+        handle(str)
+        # of repos
+        # of followers
+        # of stargazers
+        # of commits
+        Last commit
+    opensource report card
+    blog
+        URL
+        Feed
+        # of posts
+        Over/Under (2/week)

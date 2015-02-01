@@ -1,0 +1,70 @@
+<table>
+<tr>
+  <colgroup>
+  <col width="5%" />
+  <col width="4%" />
+  <col width="38%" />
+  <col width="26%" />
+  <col width="26%" />
+  </colgroup>
+  <tbody valign="top">
+  <tr class="row-odd"><td>Week</td>
+  <td>Day</td>
+  <td>Topic</td>
+  <td>Assigned</td>
+  <td>Due</td>
+  </tr>
+1
+    26 a    Welcome, intro, Syllabus, RTFM
+    28 a    First Flight - get ready for lmacken
+2
+    2  a    Guest Lecture: lmacken - Red Hat Software Engineer 
+    4  b    Intro to Git and Github
+3
+    9  a    LIT: What is Open Source?
+    11 b    LIT: Rhetoric, Flamewars, and Trolling
+4
+    16 a    EDU: Pedagogy and Grokkery
+    18 b    EDU: Curriculum Exploration
+    Bonus:  Software Freedom Day
+5
+    23 a    Commarch: Git-by-a-bus and CCF: Callaway Coefficient of Fail
+    25 b    Commarch: Gource (Guest Lecture zanarama)
+6
+    30 a    Project Pitches
+    2  b    Team Formation
+7
+    7  a    OLPC Distribution. Smoke Tests. Vote on Wed Class
+    9  b
+    Bonus:  Weekend Hackathon at SU.
+8
+    15 a    XXX Cancelled: RIT closing? Tues ROC.py Meetup
+    16 b    XXX Cancelled: Prof. Flys to Google
+9
+    21 a    Guest Lecture: threebean - Red Hat 
+    23 b    TBD
+10
+    28 a    Vote on Wed Class. Vote on Monday Class.
+    30 b
+    Bonus:  BarcampROC and Pre-BarcampROC Hackathon
+11
+    4  a    XXX No Class. Election Night Hackathon Tues 11/5.
+    6  b
+12
+    11 a    Feature Freeze
+    13 b    User Testing
+13
+    18 a    ROC.py 11/19 - ROC.py Demo/Testing
+    20 b    Prof. Ovedotter Alm -- Intro to Natural Language Processing
+XX
+    28 a    Thanksgiving Break
+    30 b    Thanksgiving Break
+14
+    2  a    Docs/Release
+    4  b    Docs/Release
+15
+    9  a    Docs/Release
+    11 b    Docs/Release
+16
+    TBD     Final Presentations
+</table>

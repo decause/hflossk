@@ -1,0 +1,251 @@
+# How to use:
+#  Items in a week are grouped together under week #X. An item
+#  can has 'class: true' or 'class: false'. This is the only required
+#  parameter.
+#
+#  When class is true, it is given an automatic classnumber and date,
+#  though a manual date may be given with the 'date' parameter.
+#
+#  Items may have topics, assign, and due. All three are optional.
+#
+#  Each of topics, assign, and due are treated the same. There is a
+#  required 'name' parameter, and and optional 'special' and 'link'
+#  parameters. A link may contain anything that fits in an href,
+#  and special attaches an HTML class to the finished cell.
+#  Built-in options include 'cancelled', 'guest', 'tba',
+#  'hackathon', and others.
+#
+#  You can have as many parts to topics, assign, or due as
+#  you like.
+#
+# - week:
+#    - class: true
+#      topics:
+#        - name: The name of this class
+#          link: /some/link
+#      assign:
+#        - name: The name of this assignment
+#        - name: The other assignment given
+#      due:
+#        - name: The name of the assignment due
+#    - class: true # This class has no assignments issued or due
+#      topics:
+#        - special: guest
+#          name: The name of this class
+#          link: /some/link
+#    - class: false
+#      date: 2013-12-23
+#      topics:
+#        - name: this is a non-class event
+# - week: # And so on...
+#
+#
+- week:
+    - class: true
+      topics:
+        - name: "Welcome, intro, Syllabus, RTFM"
+      assign:
+        - name: "LitReview1: <em>What is Open Source?</em> by Steve Weber"
+          link: /static/books/Weber-SuccessofOpenSource-Chap3.pdf
+    - class: true
+      topics:
+        - name: "First Flight"
+          link: /lectures/w01c2
+      assign:
+        - name: <em>Homework - First Flight</em>
+          link: /hw/firstflight
+- week:
+    - class: true
+      topics:
+        - name: "Formal Introduction to Git and Github"
+    - class: true
+      topics:
+        - name: "Writing for HFOSS - litreviews and blog posts"
+      assign:
+        - name: grok litreview.txt
+          link: /static/hw/litreview.txt
+      due:
+        - name: <em>Homework - First Flight</em>
+          link: /hw/firstflight
+        - name: grok litreview.txt
+          link: /static/hw/litreview.txt
+- week:
+    - class: true
+      topics:
+        - name: "Lit Review Discussion: What is Open Source?"
+      due:
+        - name: "LitReview1: <em>What is Open Source?</em> by Steve Weber"
+          link: /static/books/Weber-SuccessofOpenSource-Chap3.pdf
+    - class: true
+      topics:
+        - name: "LIT: 5 Pillars of Opensource.com"
+      assign:
+        - name: TOSW Quiz
+          link: /quiz/quiz1
+      due:
+        - name: TOSW Quiz
+          link: /quiz/quiz1
+- week:
+    - class: true
+      topics:
+        - special: cancelled
+          name: MONDAY CANCELLED. GO TO ROC.py Tuesday!
+      assign:
+        - name: Homework - Bugfix</em>
+          link: /hw/bugfix
+    - class: true
+      topics:
+        - name: OLPC Distribution &amp; Smoke testing
+      assign:
+        - name: Smoke Test
+          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
+- week:
+    - class: true
+      topics:
+        - name: "COMMARCH: Git-by-a-bus and CCF: Callaway Coefficient of Fail."
+        - special: guest
+          name: "Special Guest Lecturers from RIT Career Fair - TBA"
+      assign:
+        - name: Commarch Team Formation
+        - name: Commarch Report
+          link: /static/hw/commarch.txt
+      due:
+        - name: <em>Homework - Bugfix</em>
+          link: /hw/bugfix
+    - class: true
+      topics:
+        - special: guest
+          name: "Special Guest Lecturers from RIT Career Fair - TBA"
+      due:
+        - name: Commarch Team Formation
+- week:
+    - class: true
+      topics:
+        - name: Commarch Presentations
+      assign:
+        - name: <em>Homework - Team Proposal</em>
+          link: /static/hw/teamproposal.html
+      due:
+        - name: Commarch Report
+          link: /static/hw/commarch.txt
+    - class: true
+      topics:
+          - name: Teams Draft
+      due:
+        - name: <em>Homework - Team Proposal</em>
+          link: /static/hw/teamproposal.html
+- week:
+    - class: true
+      topics:
+        - name: Final Commarch Presentations and Open Team Time
+    - class: true
+      topics:
+        - name: "EDU: Curriculum Exploration"
+      assign:
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
+- week:
+    - class: true
+      topics:
+        - special: special
+          name: "TUESDAY 7-9pm ROCpy Meetup (carpool in parking lot 6:15pm)"
+      assign:
+        - name: ROCpy on Meetup.com
+          link: http://www.meetup.com/Rochester-Python-Meetup/
+        - name: Smoke Test
+          link: http://wiki.laptop.org/go/Smoke_test/10.1.x/1_hour_smoke_test
+    - class: true
+      topics:
+          - name: "TBD"
+      due:
+        - name: <em>NY &amp; MA 4th Grade Curriculum</em>
+          link: /oer
+- week:
+    - class: true
+      topics:
+        - special: cancelled
+          name: "NO CLASS - Spring Break"
+    - class: true
+      topics:
+        - special: cancelled
+          name: "NO CLASS - Spring Break"
+- week:
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - name: TBD
+- week:
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture - TBA"
+    - class: true
+      topics:
+        - special: guest
+          name: "Guest Lecture - TBA"
+- week:
+    - class: true
+      topics:
+        - special: guest
+          name: "Tele-Lecture from PyCON"
+    - class: true
+      topics:
+        - special: guest
+          name: "Tele-Lecture from PyCON"
+- week:
+    - class: true
+      topics:
+        - special: special
+          name: "TUESDAY 7-9pm ROCpy Demos (carpool in parking lot 6:15pm)"
+      assign:
+        - name: ROCpy on Meetup.com
+          link: http://www.meetup.com/Rochester-Python-Meetup/
+    - class: true
+      topics:
+        - special: guest
+          name: TBD
+- week:
+    - class: true
+      topics:
+        - name: Lit Review 2
+    - class: true
+      topics:
+        - name: TBD
+- week:
+    - class: true
+      topics:
+        - name: TBD
+    - class: true
+      topics:
+        - name: TBD
+- week:
+    - class: true
+      topics:
+        - name: Regular Class
+    - class: true
+      topics:
+        - name: Regular Class
+    - class: false
+      date: 2013-12-10
+      topics:
+        - special: hackathon
+          name: Playtesting Section 1 - Meet at 1:15pm
+    - class: false
+      date: 2013-12-11
+      topics:
+        - special: hackathon
+          name: Playtesting Section 2 - Meet at 12:15pm
+- week:
+    - class: true
+      topics:
+        - special: cancelled
+          name: Finals Week, No Class
+    - class: true
+      topics:
+        - special: special
+          name: Return XO's &amp; Final Presentations (w/ Pizza)
+      assign:
+        - name: Final Presentation Details
+          link: /hw/final

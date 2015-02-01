@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+*.egg*
+*.gz
+*.swp
+build
+peerevals
+hflossk/grades.yaml
