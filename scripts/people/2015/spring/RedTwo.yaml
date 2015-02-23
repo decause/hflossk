@@ -3,8 +3,10 @@ feed: http://redtwo-foss.blogspot.com/feeds/posts/default?alt=rss
 forges:
   - https://github.com/Red-Two
 irc: RedTwo
+name: William Russell
 rit_dce: war9646
 hw:
   firstflight: http://redtwo-foss.blogspot.com/2015/02/first-flight.html
   litreview1: http://redtwo-foss.blogspot.com/2015/02/litreview1-what-is-open-source-and-how.html
   quiz1: http://redtwo-foss.blogspot.com/2015/02/tosw.html
+  bugfix: https://github.com/openstack/horizon/pull/44
