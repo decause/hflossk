@@ -14,7 +14,8 @@ import hashlib
 from datetime import datetime
 
 # flask dependencies
-from flask import Flask, jsonify
+from flask import Flask
+from flask import jsonify
 from flask.ext.mako import MakoTemplates, render_template
 from werkzeug.exceptions import NotFound
 
@@ -40,15 +41,15 @@ app.config['MAKO_TRANSLATE_EXCEPTIONS'] = False
 config = inject_yaml()
 COURSE_START = datetime.combine(config['course']['start'], datetime.min.time())
 COURSE_END = datetime.combine(config['course']['end'], datetime.max.time())
-YAML_LOCATION = os.path.abspath(os.path.join("scripts", "people"))
 
 
 def gravatar(email):
     """
     Get a gravatar for an email address.
 
-    Attempts to use Libravatar by default, but due to Github
-    integration with Gravatar will fall back onto Gravatar
+    I wish I could use libravatar here, but honestly, the students
+    will be better off using gravatar at this point (due to github
+    integration :/)
 
     """
 
@@ -59,7 +60,7 @@ def gravatar(email):
     return libravatarURL + slug + "?d=" + gravatarURL + slug
 
 
-@app.route('/', defaults={'page': 'home'})
+@app.route('/', defaults=dict(page='home'))
 @app.route('/<page>')
 def simple_page(page):
     """
@@ -70,15 +71,6 @@ def simple_page(page):
     """
 
     return render_template('{}.mak'.format(page), name='mako')
-
-
-@app.route('/static/manifest.webapp')
-def webapp():
-    """
-    Render as a FxOS App
-    """
-    return render_template('manifest.webapp',
-                           mimetype='application/x-web-app-manifest+json')
 
 
 @app.route('/syllabus')
@@ -103,18 +95,20 @@ def blog_posts(username):
 
     student_data = None
 
-    for dirpath, dirnames, files in os.walk(YAML_LOCATION):
-        for fname in files:
-            if (username + '.yaml').lower() == fname.lower():
-                with open(os.path.join(dirpath, fname)) as student_file:
-                    student_data = yaml.load(student_file)
+    fname = username
+    with open(fname) as student:
+        contents = yaml.load(student)
+        student_data = contents
 
+    num_posts = 0
     if 'feed' in student_data:
         print("Checking %s's blog feed." % username)
-        return jsonify(number=count_posts(student_data['feed'], COURSE_START))
+        num_posts = count_posts(student_data['feed'], COURSE_START)
     else:
         print("No feed listed for %s!" % username)
         raise NotFound()
+
+    return jsonify(number=num_posts)
 
 
 @app.route('/blogs/<year>/<term>/<username>')
@@ -125,14 +119,17 @@ def participant_page(year, term, username):
     Render a page that shows some stats about the selected participant
     """
 
-    person_yaml = os.path.abspath(os.path.join(YAML_LOCATION,
-                                  year, term, username + '.yaml'))
-    with open(person_yaml) as participant_file:
-        return render_template(
-            'participant.mak', name='make',
-            participant_data=yaml.load(participant_file),
-            gravatar=gravatar
-        )
+    participant_data = {}
+    yaml_dir = 'scripts/people/'
+    participant_yaml = yaml_dir + year + '/' + term + '/' + username + '.yaml'
+    with open(participant_yaml) as participant_data:
+        participant_data = yaml.load(participant_data)
+
+    return render_template(
+        'participant.mak', name='make',
+        participant_data=participant_data,
+        gravatar=gravatar
+    )
 
 
 @app.route('/oer')
